@@ -1,154 +1,142 @@
+# outlook_trn_save_attachments_codes_only_v2.py
+
 import os
 import re
-import sys
+from pathlib import Path
 import win32com.client as win32
 
-# ===== KONFİQURASİYA =====
 MAILBOX_NAME = "spp2dcc@kolin.com.tr"
 SUBPATH = r"Inbox\TO PROYAPI\TRN"
+MAX_ROWS = 200
+SAVE_DIR = r"C:\Users\X\Desktop\new"
 
-# Saxlanılacaq qovluq (sənin verdiyin ünvan)
-SAVE_DIR = r"\\10.10.8.253\DataServer\Teknik Ofis\Huseyn Cavid\Software Cavid"
+# şəkillər – skip
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"}
 
-# Boş set() = bütün uzantılar; istəsən məhdudlaşdır: {".pdf", ".xlsx", ".xls", ".docx", ".dwg"}
-ONLY_EXTENSIONS = set()
 
-# True etsən, hər maili ayrıca alt qovluğa (YYYY-MM-DD\Subject) saxlayar
-ORGANIZE_BY_DATE_AND_SUBJECT = False
-# =========================
+def is_code_file(filename: str) -> bool:
+    """
+    Yalnız kodlu faylları saxla:
+    - KLN- ilə başlayanlar (KLN-SPP2-..., KLN-SPP2-MAR-... və s.)
+    """
+    name, _ = os.path.splitext(filename)
+    return name.upper().startswith("KLN-")
 
-SAFE_CHARS = re.compile(r'[^A-Za-z0-9._ -]')
 
-def sanitize(s: str, maxlen=120) -> str:
-    """Fayl/klasör adını təhlükəsizləşdir."""
-    if not s:
-        return "No Name"
-    s = s.replace("\r", " ").replace("\n", " ").strip()
-    s = SAFE_CHARS.sub("_", s)
-    s = re.sub(r"\s+", " ", s)
-    return s[:maxlen] if len(s) > maxlen else s
+def clean_filename_keep_code_only(filename: str) -> str:
+    """
+    Fayl adından yalnız kod hissəsini saxlayır.
 
-def unique_path(path):
-    """Eyni ad varsa name (1).ext kimi unikallaşdır."""
-    if not os.path.exists(path):
+    Nümunələr:
+    KLN-SPP2-MAR-WE-GN00-045_R00 Fire Alarm System Part-2 (MOXA).pdf
+        -> KLN-SPP2-MAR-WE-GN00-045_R00.pdf
+
+    KLN-SPP2-MES-CV-GN00-103_R01_METHOD.pdf
+        -> KLN-SPP2-MES-CV-GN00-103_R01.pdf
+
+    KLN-SPP2-STQ-AR-GN00-326_R00_Prokon_Proyapi_Reply.xlsx
+        -> KLN-SPP2-STQ-AR-GN00-326_R00.xlsx
+
+    KLN-PRO-SPP2-MOM-PM-037_20251105_engineer comments.docx
+        -> KLN-PRO-SPP2-MOM-PM-037_20251105.docx
+    """
+    name, ext = os.path.splitext(filename)
+
+    # 1) _R00, _R01 və s.
+    m = re.search(r"_R\d{2}", name, flags=re.IGNORECASE)
+    if m:
+        code = name[: m.end()]
+    else:
+        # 2) -R00 tipli kodlar
+        m = re.search(r"-R\d{2}", name, flags=re.IGNORECASE)
+        if m:
+            code = name[: m.end()]
+        else:
+            # 3) _YYYYMMDD (tarix)
+            m = re.search(r"_\d{8}", name)
+            if m:
+                code = name[: m.end()]
+            else:
+                # fallback: ilk boşluğa qədər
+                code = name.split(" ")[0]
+
+    # Windows üçün təhlükəli simvolları təmizlə
+    code = re.sub(r'[\\/:*?"<>|]', "_", code)
+
+    return code + ext
+
+
+def unique_path(base_dir: Path, filename: str) -> Path:
+    """
+    Eyni adlı fayl varsa, sonuna _1, _2 və s. əlavə edir.
+    """
+    path = base_dir / filename
+    if not path.exists():
         return path
-    root, ext = os.path.splitext(path)
+
+    stem, ext = os.path.splitext(filename)
     i = 1
     while True:
-        cand = f"{root} ({i}){ext}"
-        if not os.path.exists(cand):
-            return cand
+        candidate = base_dir / f"{stem}_{i}{ext}"
+        if not candidate.exists():
+            return candidate
         i += 1
 
-def get_mailbox(ns, mailbox_name: str):
-    """Mailbox-ı adı ilə tap (case-insensitive)."""
-    target = mailbox_name.strip().lower()
-    for i in range(1, ns.Folders.Count + 1):
-        store = ns.Folders.Item(i)
-        if store.Name.strip().lower() == target:
-            return store
-    return None
 
-def child_by_name_ci(parent, name):
-    """Alt qovluğu ada görə tap (case-insensitive)."""
-    want = name.strip().lower()
-    for i in range(1, parent.Folders.Count + 1):
-        f = parent.Folders.Item(i)
-        if f.Name.strip().lower() == want:
-            return f
-    return None
-
-def get_folder_by_path(root, path_str: str):
-    """Root-dan başlayıb 'A\\B\\C' yolunu travers edir."""
-    parts = [p for p in path_str.split("\\") if p.strip()]
-    folder = root
-    if parts and parts[0].strip().lower() == "inbox":
-        folder = root.Folders["Inbox"]
-        parts = parts[1:]
-    for part in parts:
-        nxt = child_by_name_ci(folder, part)
-        if not nxt:
-            available = [folder.Folders.Item(i+1).Name for i in range(folder.Folders.Count)]
-            raise RuntimeError(f"'{part}' tapılmadı. Bu səviyyədə olanlar: {available}")
-        folder = nxt
+def get_target_folder(ns, mailbox, subpath):
+    folder = ns.Folders[mailbox]
+    for part in subpath.split("\\"):
+        if part:
+            folder = folder.Folders[part]
     return folder
 
-def save_attachments_from_folder(folder):
-    """Verilən Outlook qovluğundakı bütün maillərin attachmentlərini SAVE_DIR-ə saxla."""
-    os.makedirs(SAVE_DIR, exist_ok=True)
-
-    items = folder.Items
-    items.Sort("[ReceivedTime]", True)  # ən yenilər üstdə
-    total = items.Count
-    print(f"📬 Tapıldı: {total} mail. Saxlama qovluğu: {SAVE_DIR}\n")
-
-    saved_files = 0
-    processed_mails = 0
-
-    for m in items:
-        if getattr(m, "Class", None) != 43:  # 43 = MailItem
-            continue
-
-        subject = getattr(m, "Subject", "") or "(No Subject)"
-        received = getattr(m, "ReceivedTime", None)
-        atts = getattr(m, "Attachments", None)
-        if not atts or atts.Count == 0:
-            continue
-
-        # Hədəf qovluq: düz (flat) və ya tarix/subject ilə
-        target_dir = SAVE_DIR
-        if ORGANIZE_BY_DATE_AND_SUBJECT and received:
-            day = f"{received.year:04d}-{received.month:02d}-{received.day:02d}"
-            target_dir = os.path.join(SAVE_DIR, day, sanitize(subject, 100))
-        os.makedirs(target_dir, exist_ok=True)
-
-        wrote_any = False
-        for i in range(1, atts.Count + 1):
-            att = atts.Item(i)
-            name = att.FileName or "attachment"
-            ext = os.path.splitext(name)[1].lower()
-
-            if ONLY_EXTENSIONS and ext not in ONLY_EXTENSIONS:
-                continue
-
-            safe_name = sanitize(name, 180)
-            dst = unique_path(os.path.join(target_dir, safe_name))
-
-            try:
-                att.SaveAsFile(dst)
-                saved_files += 1
-                wrote_any = True
-                print(f"✅ {dst}")
-            except Exception as e:
-                print(f"⚠️ Saxlanmadı: {name} → {e}")
-
-        if wrote_any:
-            processed_mails += 1
-
-    print(f"\n🏁 Bitdi. Mail işlənib: {processed_mails}, fayl saxlanıb: {saved_files}")
 
 def main():
-    try:
-        outlook = win32.Dispatch("Outlook.Application").GetNamespace("MAPI")
+    save_path = Path(SAVE_DIR)
+    save_path.mkdir(parents=True, exist_ok=True)
 
-        store = get_mailbox(outlook, MAILBOX_NAME)
-        if not store:
-            print(f"❌ Mailbox tapılmadı: {MAILBOX_NAME}")
-            print("➡️ Mövcud mailbox-lar:")
-            for i in range(1, outlook.Folders.Count + 1):
-                print(" -", outlook.Folders.Item(i).Name)
-            sys.exit(1)
+    outlook = win32.Dispatch("Outlook.Application").GetNamespace("MAPI")
+    folder = get_target_folder(outlook, MAILBOX_NAME, SUBPATH)
 
-        trn = get_folder_by_path(store, SUBPATH)
-        save_attachments_from_folder(trn)
-        sys.exit(0)
+    items = folder.Items
+    items.Sort("[ReceivedTime]", True)
 
-    except PermissionError:
-        print("❌ İcazə xətası: Şəbəkə qovluğuna yazma icazən yoxdur.")
-        sys.exit(1)
-    except Exception as e:
-        print(f"❌ Xəta: {e}")
-        sys.exit(1)
+    saved_total = 0
+    skipped_no_code = 0
+    skipped_image = 0
+
+    for item in items:
+        if getattr(item, "Class", None) != 43:
+            continue
+
+        for att in item.Attachments:
+            raw = att.FileName
+            ext = os.path.splitext(raw)[1].lower()
+
+            # 1) şəkilləri at
+            if ext in IMAGE_EXTS:
+                skipped_image += 1
+                continue
+
+            # 2) KLN- ilə başlamırsa, ümumiyyətlə götürmə
+            if not is_code_file(raw):
+                print(f"SKIP (no code prefix): {raw}")
+                skipped_no_code += 1
+                continue
+
+            # 3) yalnız kod hissəsini saxla
+            clean_name = clean_filename_keep_code_only(raw)
+
+            target = unique_path(save_path, clean_name)
+            att.SaveAsFile(str(target))
+            saved_total += 1
+            print(f"Saved: {target.name}")
+
+    print("\n-------------------------------")
+    print(f"Saved total code files      : {saved_total}")
+    print(f"Skipped (no code in name)   : {skipped_no_code}")
+    print(f"Skipped (image attachments) : {skipped_image}")
+
 
 if __name__ == "__main__":
     main()
