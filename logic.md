@@ -9,29 +9,22 @@ MAILBOX_NAME = "spp2dcc@kolin.com.tr"
 SUBPATH = r"Inbox\TO PROYAPI\TRN"
 
 # LOG kök path-lər
+
 STQ_ROOT = Path(r"\\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\3. STQ")
 TRN_ROOT = Path(r"\\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\1. TRN")
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"}
 EXCEL_EXTS = {".xls", ".xlsx", ".xlsm", ".xlsb"}
 
-
-def is_code_file(filename: str) -> bool:
-    """
-    Yalnız KLN- ilə başlayan faylları işləyirik.
-    """
-    name, _ = os.path.splitext(filename)
-    return name.upper().startswith("KLN-")
-
+def is*code_file(filename: str) -> bool:
+name, * = os.path.splitext(filename)
+return name.upper().startswith("KLN-")
 
 def clean_filename_keep_code_only(filename: str) -> str:
-    """
-    _R00 / _R01-ə qədər saxlayır, sonrası silinir.
-    Məs:
-        KLN-SPP2-MAR-MC-GN00-007_R00 Proyapi Reply.xlsx
-        -> KLN-SPP2-MAR-MC-GN00-007_R00.xlsx
-    """
-    name, ext = os.path.splitext(filename)
+"""
+\_R00 / \_R01-ə qədər saxlayır, sonrası silinir.
+"""
+name, ext = os.path.splitext(filename)
 
     m = re.search(r"_R\d{2}", name, flags=re.IGNORECASE)
     if m:
@@ -42,13 +35,12 @@ def clean_filename_keep_code_only(filename: str) -> str:
     code = re.sub(r'[\\/:*?"<>|]', "_", code)
     return code + ext
 
-
-def extract_stq_prefix(filename: str) -> str:
-    """
-    KLN-SPP2-STQ-EL-GN00-336_R00 -> KLN-SPP2-STQ-EL-GN00
-    """
-    name, _ = os.path.splitext(filename)
-    upper = name.upper()
+def extract*stq_prefix(filename: str) -> str:
+"""
+KLN-SPP2-STQ-EL-GN00-336_R00 -> KLN-SPP2-STQ-EL-GN00
+"""
+name, * = os.path.splitext(filename)
+upper = name.upper()
 
     m = re.search(r"(KLN-SPP2-STQ-[A-Z0-9]+-[A-Z0-9]+)", upper)
     if m:
@@ -56,19 +48,12 @@ def extract_stq_prefix(filename: str) -> str:
     else:
         base = re.split(r"_R\d{2}", upper)[0]
 
-    # Sonda "-336" kimi rəqəmi sil
     base = re.sub(r"-\d{1,4}$", "", base)
     return base
 
-
 def get_next_index(root: Path) -> int:
-    """
-    Qovluq adlarının əvvəlindəki rəqəmlərə görə növbəti index qaytarır.
-    Məs: '336. KLN-SPP2-...' -> 337
-         '003' -> 4
-    """
-    if not root.exists():
-        root.mkdir(parents=True, exist_ok=True)
+if not root.exists():
+root.mkdir(parents=True, exist_ok=True)
 
     nums = []
     for d in root.iterdir():
@@ -80,26 +65,24 @@ def get_next_index(root: Path) -> int:
 
     return (max(nums) + 1) if nums else 1
 
-
 def get_target_folder(ns, mailbox, subpath):
-    folder = ns.Folders[mailbox]
-    for part in subpath.split("\\"):
-        if part:
-            folder = folder.Folders[part]
-    return folder
-
+folder = ns.Folders[mailbox]
+for part in subpath.split("\\"):
+if part:
+folder = folder.Folders[part]
+return folder
 
 def main():
-    outlook = win32.Dispatch("Outlook.Application").GetNamespace("MAPI")
-    folder = get_target_folder(outlook, MAILBOX_NAME, SUBPATH)
+outlook = win32.Dispatch("Outlook.Application").GetNamespace("MAPI")
+folder = get_target_folder(outlook, MAILBOX_NAME, SUBPATH)
 
     items = folder.Items
     items.Sort("[ReceivedTime]", True)
 
-    # STQ üçün növbəti index (hər STQ excel üçün ayrı folder)
+    # STQ üçün növbəti index
     next_stq_no = get_next_index(STQ_ROOT)
 
-    # TRN üçün BU RUN-da yalnız bir yeni qovluq yaradılır
+    # TRN üçün BU RUN-da yalnız *bir* yeni qovluq yaradılır
     next_trn_no = get_next_index(TRN_ROOT)
     trn_folder_name = f"{next_trn_no:03d}"
     trn_folder = TRN_ROOT / trn_folder_name
@@ -112,14 +95,13 @@ def main():
     skipped_no_code = 0
 
     for item in items:
-        if getattr(item, "Class", None) != 43:  # yalnız MailItem
+        if getattr(item, "Class", None) != 43:
             continue
 
         subject = getattr(item, "Subject", "") or ""
         body = getattr(item, "Body", "") or ""
         mail_text_upper = (subject + " " + body).upper()
 
-        # Mail STQ mail-dirmi?
         is_stq_mail = ("STQ" in mail_text_upper)
 
         for att in item.Attachments:
@@ -139,8 +121,8 @@ def main():
 
             # 3) STQ CASE: excel + mail STQ-dursa → hər fayla ayrıca folder
             if ext in EXCEL_EXTS and is_stq_mail:
-                stq_prefix = extract_stq_prefix(raw)           # KLN-SPP2-STQ-EL-GN00
-                stq_code = f"{stq_prefix}-{next_stq_no}"       # KLN-SPP2-STQ-EL-GN00-336
+                stq_prefix = extract_stq_prefix(raw)   # KLN-SPP2-STQ-EL-GN00
+                stq_code = f"{stq_prefix}-{next_stq_no}"  # KLN-SPP2-STQ-EL-GN00-336
                 folder_name = f"{next_stq_no}. {stq_code}"
 
                 stq_folder = STQ_ROOT / folder_name
@@ -176,6 +158,5 @@ def main():
     print(f"Skipped images  : {skipped_image}")
     print(f"Skipped no-code : {skipped_no_code}")
 
-
-if __name__ == "__main__":
-    main()
+if **name** == "**main**":
+main()
