@@ -5,68 +5,68 @@ Mənə sənəd göndərənlər:
     bizim şirkətin departamentlərinin göndərdiyi sənədlərin gəldiyi mail qovluğu: spp2dcc@kolin.com.tr Inbox/Sunulacaklar
     Bizim şirkətin departamentlərinin göndərdiyi sənədləraşağdakılar ola bilər:
     a. CLC, DWG, FRM, ITP, JSA, LOG, LST, MAR, MES, NCR, ORG, REP, SPE, SAR bu sənəd növləri Transmittal ilə göndərilir.
-    Məsələn:  
-     - KLN-SPP2-FRM-MC-GN00-137_R00.xlsx - KLN-SPP2-FRM-MC-GN00-104_R03.pdf - KLN-SPP2-MAR-MC-GN00-145_R00.pdf - KLN-SPP2-MES-MC-GN00-003_R00.pdf
-    b. SHD bu sənəd növləri Transmittal ilə göndərilir.
-    bu sənədlər mənə bizi local file serverdə saxlanılır və link şəklində göndərilir.
+    Məsələn:
 
-        c. STQ bu sənəd növü adi mail ilə göndərilir.
-        məsələn:
-            - KLN-SPP2-STQ-MC-GN00-001_R00.xlsx
-        d. LET bu sənəd növü adi mail ilə göndərilir.
-        məsələn:
-            - SPP2-KLN-PRO-LET-0001.docx
+    - KLN-SPP2-FRM-MC-GN00-137_R00.xlsx - KLN-SPP2-FRM-MC-GN00-104_R03.pdf - KLN-SPP2-MAR-MC-GN00-145_R00.pdf - KLN-SPP2-MES-MC-GN00-003_R00.pdf
+      b. SHD bu sənəd növləri Transmittal ilə göndərilir.
+      bu sənədlər mənə bizi local file serverdə saxlanılır və link şəklində göndərilir.
 
-
-            Kodun etməli olduğu işlər:
-            1. bunlar mənə mail əlavələri kimi Inbox/Sunulacaklar qovluğuna gəlir.
-            2. 2 ci addımda yuxarıdakı qovluq scan edilir(həmən qovluqda yerləşən maillərin subjecti, bodysi, və əlvələrin adları).
-            3. əgər a bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir
-                step 1: \\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\1. TRN qovluğunda növbəti transmittal folderi yaradılır.
-                step 2: növbəti transmittal folderinin içində 1. main, 2. attachments, 3. docs qovluqları yaradılır.
-                step 3: səndlər müvafiq olaraq 3. docs alt qovluğunun içində save edilir
-                step 4: bütün sənədlər KLN-SPP2-FRM-MC-GN00-137_R00 patterninə uyğun olmalıdır, yəni bununla birə bir eyni olmamalı, başlığı bu patternə uyğun
-                        olmalıdır.
-            4. Əgər b bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir
-                step 1: step 1: \\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\1. TRN qovluğunda növbəti transmittal folderi yaradılır.
-                step 2: növbəti transmittal folderinin içində 1. main, 2. attachments, 3. docs qovluqları yaradılır.
-                step 3: sənədlərin linkləri komputer tərəfindən açılmalı,  sənədlərin yerləşdiyi bir üst parent folder copyalanmalı və 3. docs alt qovluğunun içində save edilməldiri
-                        məsələn:
-                        \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\SOCKET SYSTEM INSTALLATION\ES03 bu link mailin bodysindədir
-                        \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\SOCKET SYSTEM INSTALLATION a gəlib ES03 qovlugu kopyalanır və 3. docs alt qovluğunun içində save edilir.
-                        \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\SOCKET SYSTEM INSTALLATION\EW13
-                        \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\CABLE TRAY SYSTEM INSTALLATION\G13G
-                        \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\CABLE TRAY SYSTEM INSTALLATION\GF05
-                        bunlarda eyni qaydada mənə sənədlərin yox sənədlərin yerləşdiyi parent folderin kopyalanıb və 3. docs alt qovluğuna  save edilməsi lazımdr.
-            5. Əgər c bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir.
-                step 1: \\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\3. STQ qovluğunda növbəti stq folderi yaradılır.
-                step 2: Nöbəti STQ folderi yaradılarkən diqqət edilməsi gərəkən məqamlar:
-                    a. növbəti STQ folderinin rəqəmi tapılır
-                        məsələn:
-                        341. KLN-SPP2-STQ-CV-GN00-341 sonuncu SQT folderi budursa, növbəti yaradılacaq STQ folderinin rəqəmi 342 tapılır.
-
-                    b. daha sonra mail əlavəsində olan STQ sənədinin kodu çıxarılır
-                        məsələn:
-                        KLN-SPP2-STQ-MC-GN00-001_R00.xlsx
-                    c. daha sonra bu fayl başlığında olan kod KLN-SPP2-STQ-MC-GN00 bu hissəyə qədər kəsilir
-                    d. daha sonra növbəti STQ folderinin rəqəmi. + fayl başlığından kəsilən hissə-növbəti STQ folderinin rəqəmi birləşdirilir və yeni STQ sənədinin adı yaradılır
-                        məsələn:
-                        342. KLN-SPP2-STQ-MC-GN00-342
-                    e. daha sonra mail əlavəsindən götürülmüş xlsx formatında olan STQ sənədi və əlavə pdf ləri varsa, bu yeni yaradılmış STQ folderinin ichine save edilir.
-                            342. KLN-SPP2-STQ-MC-GN00-342    bu folderin ichine
-
-            6. Əgər d bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir.
-                    url: G:\My Drive\4-S1 ve S2 Ortak Dökümanlar\03-SPP LETTERS\SPP2-LET\1. KLN-PRO\01-Outgoing
-                    step 1: yuxarıdakı url-ə daxil olunur
-                    step 2: növbəti LET folderi yaradılır
-                    step 3: mail əlavəsindən götürülmüş docx formatında olan LET sənədi bu yeni yaradılmış LET folderinin ichine save edilir.
-                        məsələn:
-                        son letter folderinin nömrəsi SPP2-KLN-PRO-LET-0086 dırsa, növbəti yaradılacaq letter folderi SPP2-KLN-PRO-LET-0087 olacaq.
-                    step 4: yeni yaradılmış LET folderinin ichde 1. letter, 2. docs alt qovluqları yaradılır
-                    step 5: mail əlavəsindən götürülmüş docx formatında olan LET sənədi 2. docs alt qovluğunun ichine save edilir.
+          c. STQ bu sənəd növü adi mail ilə göndərilir.
+          məsələn:
+              - KLN-SPP2-STQ-MC-GN00-001_R00.xlsx
+          d. LET bu sənəd növü adi mail ilə göndərilir.
+          məsələn:
+              - SPP2-KLN-PRO-LET-0001.docx
 
 
-            2. Proyapi
+              Kodun etməli olduğu işlər:
+              1. bunlar mənə mail əlavələri kimi Inbox/Sunulacaklar qovluğuna gəlir.
+              2. 2 ci addımda yuxarıdakı qovluq scan edilir(həmən qovluqda yerləşən maillərin subjecti, bodysi, və əlvələrin adları).
+              3. əgər a bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir
+                  step 1: \\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\1. TRN qovluğunda növbəti transmittal folderi yaradılır.
+                  step 2: növbəti transmittal folderinin içində 1. main, 2. attachments, 3. docs qovluqları yaradılır.
+                  step 3: səndlər müvafiq olaraq 3. docs alt qovluğunun içində save edilir
+                  step 4: bütün sənədlər KLN-SPP2-FRM-MC-GN00-137_R00 patterninə uyğun olmalıdır, yəni bununla birə bir eyni olmamalı, başlığı bu patternə uyğun
+                          olmalıdır.
+              4. Əgər b bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir
+                  step 1: step 1: \\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\1. TRN qovluğunda növbəti transmittal folderi yaradılır.
+                  step 2: növbəti transmittal folderinin içində 1. main, 2. attachments, 3. docs qovluqları yaradılır.
+                  step 3: sənədlərin linkləri komputer tərəfindən açılmalı,  sənədlərin yerləşdiyi bir üst parent folder copyalanmalı və 3. docs alt qovluğunun içində save edilməldiri
+                          məsələn:
+                          \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\SOCKET SYSTEM INSTALLATION\ES03 bu link mailin bodysindədir
+                          \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\SOCKET SYSTEM INSTALLATION a gəlib ES03 qovlugu kopyalanır və 3. docs alt qovluğunun içində save edilir.
+                          \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\SOCKET SYSTEM INSTALLATION\EW13
+                          \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\CABLE TRAY SYSTEM INSTALLATION\G13G
+                          \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\CABLE TRAY SYSTEM INSTALLATION\GF05
+                          bunlarda eyni qaydada mənə sənədlərin yox sənədlərin yerləşdiyi parent folderin kopyalanıb və 3. docs alt qovluğuna  save edilməsi lazımdr.
+              5. Əgər c bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir.
+                  step 1: \\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\3. STQ qovluğunda növbəti stq folderi yaradılır.
+                  step 2: Nöbəti STQ folderi yaradılarkən diqqət edilməsi gərəkən məqamlar:
+                      a. növbəti STQ folderinin rəqəmi tapılır
+                          məsələn:
+                          341. KLN-SPP2-STQ-CV-GN00-341 sonuncu SQT folderi budursa, növbəti yaradılacaq STQ folderinin rəqəmi 342 tapılır.
+
+                      b. daha sonra mail əlavəsində olan STQ sənədinin kodu çıxarılır
+                          məsələn:
+                          KLN-SPP2-STQ-MC-GN00-001_R00.xlsx
+                      c. daha sonra bu fayl başlığında olan kod KLN-SPP2-STQ-MC-GN00 bu hissəyə qədər kəsilir
+                      d. daha sonra növbəti STQ folderinin rəqəmi. + fayl başlığından kəsilən hissə-növbəti STQ folderinin rəqəmi birləşdirilir və yeni STQ sənədinin adı yaradılır
+                          məsələn:
+                          342. KLN-SPP2-STQ-MC-GN00-342
+                      e. daha sonra mail əlavəsindən götürülmüş xlsx formatında olan STQ sənədi və əlavə pdf ləri varsa, bu yeni yaradılmış STQ folderinin ichine save edilir.
+                              342. KLN-SPP2-STQ-MC-GN00-342    bu folderin ichine
+
+              6. Əgər d bəndində göstərilən sənəd növləri varsa aşağıdakı addımlar həyata keçirilir.
+                      url: G:\My Drive\4-S1 ve S2 Ortak Dökümanlar\03-SPP LETTERS\SPP2-LET\1. KLN-PRO\01-Outgoing
+                      step 1: yuxarıdakı url-ə daxil olunur
+                      step 2: növbəti LET folderi yaradılır
+                      step 3: mail əlavəsindən götürülmüş docx formatında olan LET sənədi bu yeni yaradılmış LET folderinin ichine save edilir.
+                          məsələn:
+                          son letter folderinin nömrəsi SPP2-KLN-PRO-LET-0086 dırsa, növbəti yaradılacaq letter folderi SPP2-KLN-PRO-LET-0087 olacaq.
+                      step 4: yeni yaradılmış LET folderinin ichde 1. letter, 2. docs alt qovluqları yaradılır
+                      step 5: mail əlavəsindən götürülmüş docx formatında olan LET sənədi 2. docs alt qovluğunun ichine save edilir.
+
+2.  Proyapi
 
     göndərdiyi sənədlərin gəldiyi mail qovluğu: spp2dcc@kolin.com.tr Inbox/From Proyapi
     Proyapi göndərdiyi sənədləraşağdakılar ola bilər:
@@ -79,14 +79,12 @@ Mənə sənəd göndərənlər:
     KLN-SPP2-STQ-MC-EW09-332_R00_Prokon_Reply və.s
     Bu maillər mənə DCC SPP2 | PROYAPI <dccspp2@proyapimusavirlik.com> ünvanıdan gəlir.
 
-        c. LET
-        məsələn:
-            SPP2-PRO-KLN-LET-0020
-            SPP2-PRO-KLN-LET-0019
-            SPP2-PRO-KLN-LET-0018
-            Bu maillər mənə DCC SPP2 | PROYAPI <dccspp2@proyapimusavirlik.com> ünvanıdan gəlir.
-
-
+    c. LET
+    məsələn:
+    SPP2-PRO-KLN-LET-0020
+    SPP2-PRO-KLN-LET-0019
+    SPP2-PRO-KLN-LET-0018
+    Bu maillər mənə DCC SPP2 | PROYAPI <dccspp2@proyapimusavirlik.com> ünvanıdan gəlir.
 
         Kodun etməli olduğu işlər:
         1. bunlar mənə mail əlavələri kimi Inbox/From Proyapi qovluğuna gəlir.
@@ -297,3 +295,20 @@ Mənə sənəd göndərənlər:
         }
 
         Write-Host "Proses tamamlandı."
+
+3.  əgər b bəndində göstərilən sənəd növüdürsə bu zaman aşağıdakı addımdalar həyata keçirilir
+    step 1: \\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\3. STQ qovluğunda axtarılır və uyğun gələn folder tapılır
+    məsələn:
+    KLN-SPP2-STQ-WE-GN00-309_R00_Prokon_Reply
+    step 2: daha sonra file bashligi bu formata KLN-SPP2-STQ-WE-GN00-309 salinir
+    step 3: daha sonra yuxarıda təmin edilmish qovlugun ichinde bu koda uygun gelen folder tapilir KLN-SPP2-STQ-WE-GN00-309
+    step 4: daha sonra file bashligi bu formatdan (KLN-SPP2-STQ-WE-GN00-309_R00_Prokon_Reply) bu formata (KLN-SPP2-STQ-WE-GN00-309_R00 Reply) salinir
+    step 5: daha sonra tapilan folderin ichine save edilir
+
+4.  əgər c bəndində göstərilən sənəd növüdürsə bu zaman aşağıdakı addımdalar həyata keçirilir
+    step 1: url: G:\My Drive\4-S1 ve S2 Ortak Dökümanlar\03-SPP LETTERS\SPP2-LET\1. KLN-PRO\02-Incoming qovlugunda növbəti LET folderi yaradılır.
+    məsələn:
+    son letter folderinin nömrəsi SPP2-PRO-KLN-LET-0021 dırsa, növbəti yaradılacaq letter folderi SPP2-PRO-KLN-LET-0022 olacaq.
+    step 2: daha sonra qovluğun içində 1. letter, 2. docs alt qovluqları yaradılır
+    step 3: mail əlavəsindən götürülmüş pdf formatında olan LET sənədi 1. letter alt qovluğunun ichine save edilir.
+    step 4: əhər əlavə fayllar varsa onlar 2. docs alt qovluğunun ichine save edilir.
