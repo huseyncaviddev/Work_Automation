@@ -1,4 +1,3 @@
-
 # outlook_kolin_sunulacaklar_auto.py
 
 import os
@@ -217,12 +216,126 @@ def copy_shd_folder_to_trn(shd_path: str, trn_docs_folder: Path) -> bool:
         return False
 
 
+# --------- SHD üçün PowerShell lojiqasının Python versiyası ---------
+
+def add_r00_to_subfiles_without_rev(docs_root: Path):
+    """
+    Subfolder faylları üçün rev normalizasiya:
+      - Hər hansı rev varsa (_Rdd və ya -Rdd) → rev var sayılır
+      - Əgər -Rdd varsa → _Rdd-ə çevirilir
+      - Əgər ümumiyyətlə rev yoxdursa → sona _R00 əlavə edilir
+    """
+    if not docs_root.exists():
+        return
+
+    # Rev tapmaq üçün pattern
+    rev_pattern = re.compile(r"([_-]R(\d{2}))", re.IGNORECASE)
+
+    for f in docs_root.rglob("*"):
+        if not f.is_file():
+            continue
+        if f.parent == docs_root:
+            continue  # Root-a toxunmuruq
+
+        stem = f.stem
+        suffix = f.suffix
+
+        match = rev_pattern.search(stem)
+
+        if match:
+            # REV VAR → indi yoxlayaq ki dash-dırsa underscore edək
+            full_rev = match.group(1)   # məsələn: -R00 və ya _R00
+            rev_number = match.group(2) # 00, 01, 02...
+
+            if full_rev.startswith("-"):
+                # -R00 → _R00
+                fixed_rev = f"_R{rev_number}"
+                new_stem = rev_pattern.sub(fixed_rev, stem)
+
+                new_name = new_stem + suffix
+                target = f.with_name(new_name)
+
+                if f.name != new_name:
+                    try:
+                        if target.exists():
+                            target.unlink()
+                        f.rename(target)
+                        print(f"[SHD-REV-FIX] {f.name} → {new_name}")
+                    except Exception as e:
+                        print(f"[SHD-ERR] {f.name} → {e}")
+            # _R00 olduqda toxunmuruq
+            continue
+
+        else:
+            # REV YOXDUR → _R00 əlavə edilir
+            new_name = f"{stem}_R00{suffix}"
+            target = f.with_name(new_name)
+
+            try:
+                if target.exists():
+                    target.unlink()
+                f.rename(target)
+                print(f"[SHD-R00-ADD] {f.name} → {new_name}")
+            except Exception as e:
+                print(f"[SHD-R00-ERR] {f.name} → {e}")
+
+
+def copy_pdfs_from_subfolders_to_root(docs_root: Path):
+    """
+    PS: PDF Copier
+    - Subfolder-lərdəki bütün PDF-ləri 3. docs root-a kopyalayır
+    """
+    if not docs_root.exists():
+        return
+
+    for pdf in docs_root.rglob("*.pdf"):
+        if pdf.parent == docs_root:
+            continue
+        dest = docs_root / pdf.name
+        try:
+            if dest.exists():
+                dest.unlink()   # PS-də -Force kimi
+            shutil.copy2(pdf, dest)
+            print(f"[SHD-PDF] {pdf} → {dest}")
+        except Exception as e:
+            print(f"[SHD-PDF-ERR] {pdf} → {e}")
+
+
+def move_xlsx_docx_from_subfolders_to_root(docs_root: Path):
+    """
+    PS: XLSX & DOCX Mover
+    - Subfolder-lərdəki .xlsx və .docx fayllarını 3. docs root-a move edir
+    """
+    if not docs_root.exists():
+        return
+
+    exts = {".xlsx", ".docx"}
+
+    for f in docs_root.rglob("*"):
+        if not f.is_file():
+            continue
+        if f.parent == docs_root:
+            continue
+        if f.suffix.lower() not in exts:
+            continue
+
+        dest = docs_root / f.name
+        try:
+            if dest.exists():
+                dest.unlink()   # PS -Force
+            shutil.move(str(f), str(dest))
+            print(f"[SHD-MOVE] {f} → {dest}")
+        except Exception as e:
+            print(f"[SHD-MOVE-ERR] {f} → {e}")
+
+
 # ---------------------------------
 # MAIN
 # ---------------------------------
 def main():
-    outlook = win32.Dispatch("Outlook.Application").GetNamespace("MAPI")
-    folder = get_target_folder(outlook, MAILBOX_NAME, SUBPATH)
+    outlook = win32.Dispatch("Outlook.Application")
+    session = outlook.Session
+    folder = get_target_folder(session, MAILBOX_NAME, SUBPATH)
 
     items = folder.Items
     items.Sort("[ReceivedTime]", True)
@@ -290,13 +403,18 @@ def main():
                 att.SaveAsFile(str(target))
                 print(f"[TRN-doc] Saved → {target}")
 
-    # 2) b-bəndi: SHD sunumlar üçün AYRI transmittal
+    # 2) b-bəndi: SHD sunumlar üçün AYRI transmittal (+ PS lojiqası)
     if shd_paths:
         trn_folder_shd = get_next_trn_folder(TRN_ROOT)
         docs_dir_shd = trn_folder_shd / "3. docs"
 
         for shd in shd_paths:
             copy_shd_folder_to_trn(shd, docs_dir_shd)
+
+        # PowerShell-də əl ilə etdiklərini indi auto edir:
+        add_r00_to_subfiles_without_rev(docs_dir_shd)
+        copy_pdfs_from_subfolders_to_root(docs_dir_shd)
+        move_xlsx_docx_from_subfolders_to_root(docs_dir_shd)
 
     # 3) c-bəndi: STQ-lər
     if stq_attachments:
