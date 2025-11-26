@@ -4,6 +4,7 @@
 import os
 import re
 import shutil
+import subprocess
 from pathlib import Path
 
 import win32com.client as win32
@@ -49,7 +50,72 @@ def get_target_folder(ns, mailbox, subpath):
 
 
 # ---------------------------------------------------------
-# TRN FUNKSİYALARI  (v1 lojiqası)
+# SIMPLE PROGRESS BAR
+# ---------------------------------------------------------
+def print_progress(current: int, total: int, label: str = ""):
+    """
+    Konsolda sadə progress bar:
+    [_ _ _ _ _ _ _ _ _ _ _ _ _ _     ] 60% Processing mailbox...
+    """
+    if total <= 0:
+        return
+
+    percent = int(current * 100 / total)
+    bar_len = 30
+    filled = int(bar_len * percent / 100)
+
+    bar = "_" * filled + " " * (bar_len - filled)
+    suffix = f" {label}" if label else ""
+    print(f"\r[{bar}] {percent:3d}%{suffix}", end="", flush=True)
+
+
+# ---------------------------------------------------------
+# WINRAR EXTRACT
+# ---------------------------------------------------------
+def extract_with_winrar(zip_path: Path, out_dir: Path):
+    """
+    ZIP faylını WinRAR ilə extract edir.
+    WinRAR tapılmazsa → shutil.unpack_archive fallback.
+    """
+    winrar_paths = [
+        r"C:\Program Files\WinRAR\WinRAR.exe",
+        r"C:\Program Files (x86)\WinRAR\WinRAR.exe",
+    ]
+
+    winrar_exe = None
+    for p in winrar_paths:
+        if Path(p).exists():
+            winrar_exe = p
+            break
+
+    if not winrar_exe:
+        print("\n[WARN] WinRAR tapılmadı, shutil.unpack_archive istifadə olunur.")
+        shutil.unpack_archive(str(zip_path), str(out_dir))
+        return
+
+    cmd = [
+        winrar_exe,
+        "x",          # extract
+        "-o+",        # overwrite all without prompt
+        str(zip_path),
+        str(out_dir) + "\\",
+    ]
+
+    print(f"\n[TRN] Using WinRAR → {zip_path}")
+    try:
+        subprocess.run(
+            cmd,
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+    except Exception as e:
+        print(f"\n[WARN] WinRAR extract alınmadı ({e}), shutil.unpack_archive istifadə olunur.")
+        shutil.unpack_archive(str(zip_path), str(out_dir))
+
+
+# ---------------------------------------------------------
+# TRN FUNKSİYALARI
 # ---------------------------------------------------------
 def notify_missing_trn(trn_code):
     msg = (
@@ -59,13 +125,60 @@ def notify_missing_trn(trn_code):
     print(msg)
 
 
-def ensure_trn_subfolders(base_folder):
+def ensure_trn_subfolders(base_folder: Path):
     """1. main / 2. attachments / 3. docs qovluqlarını yaradır."""
     for name in ["1. main", "2. attachments", "3. docs"]:
         (base_folder / name).mkdir(exist_ok=True)
 
 
-def move_pdf_and_zip(base_folder, trn_code):
+def is_trn_already_processed(base_folder: Path, trn_code: str) -> bool:
+    """
+    TRN artıq full işlənibsə → True (docx + 3. docs var).
+    Bu halda sonrakı TRN əməliyyatlarını SKIP edirik (sürət üçün).
+    """
+    main_folder = base_folder / "1. main"
+    docs_folder = base_folder / "3. docs"
+
+    docx_path = main_folder / f"{trn_code}.docx"
+    if docx_path.exists() and docs_folder.exists():
+        print(f"[TRN] Already processed → {trn_code}, heavy ops skipped.")
+        return True
+    return False
+
+
+def cleanup_trn_base_folder(base_folder: Path, trn_code: str):
+    """
+    Base folder-də qalan artıqları təmizləyir:
+      - SPP2-PRO-KLN-TRN-0493 qovluğu varsa → 3. docs altına daşı
+      - SPP2-PRO-KLN-TRN-0493.zip varsa → 2. attachments altına daşı
+    """
+    docs_folder = base_folder / "3. docs"
+    attachments_folder = base_folder / "2. attachments"
+    ensure_trn_subfolders(base_folder)
+
+    raw_folder = base_folder / trn_code
+    if raw_folder.exists() and raw_folder.is_dir():
+        target_extracted = docs_folder / raw_folder.name
+        if target_extracted.exists():
+            # artıq orada varsa, qalıq raw_folder-i silək
+            shutil.rmtree(raw_folder)
+            print(f"[TRN-CLEAN] Extra raw folder removed → {raw_folder}")
+        else:
+            shutil.move(str(raw_folder), str(target_extracted))
+            print(f"[TRN-CLEAN] Raw folder moved → {target_extracted}")
+
+    raw_zip = base_folder / f"{trn_code}.zip"
+    if raw_zip.exists() and raw_zip.is_file():
+        target_zip = attachments_folder / raw_zip.name
+        if target_zip.exists():
+            raw_zip.unlink()
+            print(f"[TRN-CLEAN] Extra ZIP removed → {raw_zip}")
+        else:
+            shutil.move(str(raw_zip), str(target_zip))
+            print(f"[TRN-CLEAN] ZIP moved → {target_zip}")
+
+
+def move_pdf_and_zip(base_folder: Path, trn_code: str):
     """
     PDF → 1. main
     ZIP extract → 3. docs
@@ -82,15 +195,18 @@ def move_pdf_and_zip(base_folder, trn_code):
     # PDF → 1. main (move)
     if pdf_path.exists():
         target_pdf = main_folder / pdf_path.name
-        shutil.move(str(pdf_path), str(target_pdf))
-        print(f"[TRN] PDF moved → {target_pdf}")
+        if not target_pdf.exists():
+            shutil.move(str(pdf_path), str(target_pdf))
+            print(f"[TRN] PDF moved → {target_pdf}")
+        else:
+            print(f"[TRN] PDF already in main → {target_pdf}")
     else:
         print(f"[WARN] PDF not found: {pdf_path}")
 
     # ZIP → extract
     if zip_path.exists():
         try:
-            shutil.unpack_archive(str(zip_path), str(base_folder))
+            extract_with_winrar(zip_path, base_folder)
             print(f"[TRN] ZIP extracted → {base_folder}")
 
             # Extracted folderi 3. docs-a move et
@@ -105,19 +221,25 @@ def move_pdf_and_zip(base_folder, trn_code):
 
             # ZIP → 2. attachments
             target_zip = attachments_folder / zip_path.name
-            shutil.move(str(zip_path), str(target_zip))
-            print(f"[TRN] ZIP moved → {target_zip}")
+            if not target_zip.exists():
+                shutil.move(str(zip_path), str(target_zip))
+                print(f"[TRN] ZIP moved → {target_zip}")
+            else:
+                print(f"[TRN] ZIP already in attachments → {target_zip}")
 
         except Exception as e:
             print(f"[ERROR] Error while extracting ZIP {zip_path}: {e}")
     else:
         print(f"[WARN] ZIP not found: {zip_path}")
 
+    # Əlavə safety cleanup – screenshotdakı problemi öldürmək üçün
+    cleanup_trn_base_folder(base_folder, trn_code)
 
-def copy_all_pdfs_to_docs_root(docs_folder):
+
+def copy_all_pdfs_to_docs_root(docs_folder: Path):
     """
     3. docs altındakı bütün pdf-ləri rekursiv tapır,
-    3. docs root-a kopyalayır. Eyni ad varsa → _copy əlavə edir.
+    3. docs root-a kopyalayır. Eyni ad varsa → SKIP.
     """
     if not docs_folder.exists():
         return
@@ -128,16 +250,14 @@ def copy_all_pdfs_to_docs_root(docs_folder):
 
         target = docs_folder / pdf.name
         if target.exists():
-            stem = target.stem
-            ext = target.suffix
-            new_name = f"{stem}_copy{ext}"
-            target = docs_folder / new_name
+            print(f"[TRN] PDF already in docs root, skip → {target}")
+            continue
 
         shutil.copy2(str(pdf), str(target))
         print(f"[TRN] PDF copied to docs root → {target}")
 
 
-def rename_r_dash_to_r_underscore(docs_folder):
+def rename_r_dash_to_r_underscore(docs_folder: Path):
     """3. docs içindəki bütün pdf adlarında '-R' → '_R'."""
     if not docs_folder.exists():
         return
@@ -154,7 +274,7 @@ def rename_r_dash_to_r_underscore(docs_folder):
                 print(f"[RENAME-SKIP] Target exists: {target}")
 
 
-def title_cleanup_pattern(docs_folder):
+def title_cleanup_pattern(docs_folder: Path):
     """
     Fayl adlarını KLN-SPP2-XXX-..._R00 formatına salır:
     Pattern: (_Rdd)_.* → yalnız _Rdd saxlanır.
@@ -182,7 +302,7 @@ def title_cleanup_pattern(docs_folder):
         print(f"[TITLE] {old_name} → {new_name}")
 
 
-def convert_main_pdf_to_docx(base_folder, trn_code):
+def convert_main_pdf_to_docx(base_folder: Path, trn_code: str):
     """
     1. main içindəki SPP2-PRO-KLN-TRN-XXXX.pdf → eyni addan .docx
     """
@@ -193,9 +313,13 @@ def convert_main_pdf_to_docx(base_folder, trn_code):
         return
 
     docx_path = pdf_path.with_suffix(".docx")
+    if docx_path.exists():
+        print(f"[DOCX] Already exists, skip → {docx_path}")
+        return
+
     print(f"[DOCX] Converting to Word: {pdf_path} → {docx_path}")
 
-    word = None
+    word = None    # Word açmaq ağır əməliyyatdır – yalnız ehtiyac olanda
     try:
         word = win32.Dispatch("Word.Application")
         word.Visible = False
@@ -212,14 +336,15 @@ def convert_main_pdf_to_docx(base_folder, trn_code):
             word.Quit()
 
 
-def process_single_trn(trn_code):
+def process_single_trn(trn_code: str):
     """
     1) QA-QC Proyapi-də folderi tap
     2) Incoming 1. TRN altına copy
-    3) 1.main / 2.attachments / 3.docs yarat
-    4) PDF & ZIP əməliyyatları
-    5) 3.docs flatten + rename
-    6) Main PDF → DOCX
+    3) Already processed? → skip heavy ops
+    4) 1.main / 2.attachments / 3.docs yarat
+    5) PDF & ZIP əməliyyatları
+    6) 3.docs flatten + rename
+    7) Main PDF → DOCX
     """
     source_folder = PROYAPI_TRN_SOURCE_ROOT / trn_code
     if not source_folder.exists():
@@ -239,6 +364,13 @@ def process_single_trn(trn_code):
         print(f"[TRN] Incoming folder already exists, will reuse: {target_folder}")
 
     ensure_trn_subfolders(target_folder)
+
+    # FULL işlənmişdirsə → sonik skip
+    if is_trn_already_processed(target_folder, trn_code):
+        # Yenə də əmin olmaq üçün cleanup (əgər köhnə run artıqları qalıbsa)
+        cleanup_trn_base_folder(target_folder, trn_code)
+        return True
+
     move_pdf_and_zip(target_folder, trn_code)
 
     docs_folder = target_folder / "3. docs"
@@ -251,9 +383,9 @@ def process_single_trn(trn_code):
 
 
 # ---------------------------------------------------------
-# STQ FUNKSİYALARI  (rev-lisiz subject üçün də)
+# STQ FUNKSİYALARI  (multi-STQ, idempotent)
 # ---------------------------------------------------------
-def find_stq_target_folder(base_code):
+def find_stq_target_folder(base_code: str):
     """
     STQ qovluqları:
        309. KLN-SPP2-STQ-WE-GN00-309
@@ -275,52 +407,20 @@ def find_stq_target_folder(base_code):
     return None
 
 
-def process_single_stq_mail(mail_item, subject):
+def process_single_stq_mail(mail_item, subject: str) -> int:
     """
-    STQ subject variantları:
-      1) KLN-SPP2-STQ-WE-GN00-309_R00_Prokon_Reply
-      2) KLN-SPP2-STQ-MC-GF04-277_Prokon_Reply
+    Hər attachment üçün ayrıca işləyir.
+    STQ kodu və rev-i əsasən attachment adından çıxardır:
+
+      KLN-SPP2-STQ-AR-GN00-282_R00_Proyapi_Reply.xlsx
+      KLN-SPP2-STQ-CV-GN00-211_R00_Prokon_Reply.xlsx
+
+    Eyni mail içində birdən çox STQ ola bilər – hamısını götürür.
+    Eyni fayl adı artıq mövcuddursa → SKIP (yenidən kopyalamır).
     """
-    base_code = None
-    rev = None
-
-    # Variant 1: subject-də rev var
-    m = re.match(r"^(KLN-SPP2-STQ-[A-Za-z0-9-]+)_R(\d{2})_.*$", subject)
-    if m:
-        base_code = m.group(1)
-        rev = m.group(2)
-    else:
-        # Variant 2: subject-də rev YOXDUR → base_code götür
-        m2 = re.match(r"^(KLN-SPP2-STQ-[A-Za-z0-9-]+)_.*$", subject)
-        if not m2:
-            print(f"[STQ] Subject STQ pattern-ə düşmədi → {subject}")
-            return False
-
-        base_code = m2.group(1)
-
-        # Rev-i attachment adlarından tapmağa çalış
-        atts = mail_item.Attachments
-        for att in atts:
-            fname = att.FileName or ""
-            mr = re.search(r"_R(\d{2})[_\-.]", fname)
-            if mr:
-                rev = mr.group(1)
-                break
-
-        # Hələ də tapılmadısa → 00
-        if rev is None:
-            rev = "00"
-            print(f"[STQ] Rev subject və attach-də tapılmadı, default R{rev} istifadə olunur.")
-
-    target = find_stq_target_folder(base_code)
-    if target is None:
-        return False
-
-    print(f"[STQ] → {target} (rev R{rev})")
-
     atts = mail_item.Attachments
-    idx = 0
-    saved = False
+    counters = {}  # "base_Rxx" -> idx
+    saved_count = 0
 
     for att in atts:
         fname = att.FileName or ""
@@ -330,27 +430,58 @@ def process_single_stq_mail(mail_item, subject):
             print(f"[STQ] Skip image → {fname}")
             continue
 
-        idx += 1
-        if idx == 1:
-            new = f"{base_code}_R{rev} Reply{ext}"
-        else:
-            new = f"{base_code}_R{rev} Reply_{idx}{ext}"
+        base_code = None
+        rev = None
 
-        save_path = target / new
+        # 1) Əsas qaynaq: fayl adı
+        m_fname = re.match(
+            r"^(KLN-SPP2-STQ-[A-Za-z0-9-]+)_R(\d{2})[_.-].*$", fname
+        )
+        if m_fname:
+            base_code = m_fname.group(1)
+            rev = m_fname.group(2)
+        else:
+            # 2) Fallback: subject-dən ilk STQ kodu
+            m_subj = re.search(
+                r"(KLN-SPP2-STQ-[A-Za-z0-9-]+)(?:_R(\d{2}))?", subject
+            )
+            if m_subj:
+                base_code = m_subj.group(1)
+                rev = m_subj.group(2) or "00"
+
+        if not base_code:
+            print(f"[STQ] Attachment skipped, no STQ code found: {fname}")
+            continue
+
+        key = f"{base_code}_R{rev}"
+        idx = counters.get(key, 0) + 1
+        counters[key] = idx
+
+        target = find_stq_target_folder(base_code)
+        if target is None:
+            continue
+
+        if idx == 1:
+            new_name = f"{base_code}_R{rev} Reply{ext}"
+        else:
+            new_name = f"{base_code}_R{rev} Reply_{idx}{ext}"
+
+        save_path = target / new_name
         if save_path.exists():
-            save_path = target / (save_path.stem + "_copy" + save_path.suffix)
+            print(f"[STQ] Exists, skipping: {save_path}")
+            continue
 
         att.SaveAsFile(str(save_path))
         print(f"[STQ] Saved: {save_path}")
-        saved = True
+        saved_count += 1
 
-    return saved
+    return saved_count
 
 
 # ---------------------------------------------------------
 # LET FUNKSİYALARI
 # ---------------------------------------------------------
-def get_next_let_folder_name(root):
+def get_next_let_folder_name(root: Path) -> str:
     max_n = 0
     if root.exists():
         for child in root.iterdir():
@@ -363,7 +494,7 @@ def get_next_let_folder_name(root):
     return f"SPP2-PRO-KLN-LET-{max_n + 1:04d}"
 
 
-def process_single_let_mail(mail_item, subject):
+def process_single_let_mail(mail_item, subject: str) -> bool:
     folder_name = get_next_let_folder_name(LET_INCOMING_ROOT)
     base = LET_INCOMING_ROOT / folder_name
     letter_f = base / "1. letter"
@@ -394,7 +525,8 @@ def process_single_let_mail(mail_item, subject):
             save_path = docs_f / fname
 
         if save_path.exists():
-            save_path = save_path.with_name(save_path.stem + "_copy" + save_path.suffix)
+            print(f"[LET] Exists, skipping: {save_path}")
+            continue
 
         att.SaveAsFile(str(save_path))
         print(f"[LET] Saved: {save_path}")
@@ -416,11 +548,21 @@ def main():
     items = folder.Items
     items.Sort("[ReceivedTime]", True)
 
-    done_trn = set()
-    done_stq = set()
-    done_let = set()
+    total_items = items.Count
+    processed_items = 0
+
+    done_trn = set()   # TRN kodları
+    done_stq = set()   # Mail EntryID-ləri
+    done_let = set()   # Mail EntryID-ləri
+
+    stq_file_count = 0
+
+    print_progress(0, total_items, "Processing mailbox...")
 
     for mail in items:
+        processed_items += 1
+        print_progress(processed_items, total_items, "Processing mailbox...")
+
         if getattr(mail, "Class", None) != 43:
             continue
 
@@ -429,7 +571,7 @@ def main():
             continue
 
         # ---------- TRN ----------
-        m_trn = re.match(r"^(SPP2-PRO-KLN-TRN-\d{4})$", subject)
+        m_trn = re.search(r"(SPP2-PRO-KLN-TRN-\d{4})", subject)
         if m_trn:
             code = m_trn.group(1)
             if code not in done_trn:
@@ -439,26 +581,32 @@ def main():
             continue
 
         # ---------- STQ ----------
-        # Rev olsa da, olmasa da STQ kimi tut
-        m_stq = re.match(r"^(KLN-SPP2-STQ-[A-Za-z0-9-]+)(?:_R\d{2})?_.*$", subject)
-        if m_stq and subject not in done_stq:
-            print(f"\n--- STQ FOUND: {subject}")
-            if process_single_stq_mail(mail, subject):
-                done_stq.add(subject)
+        if re.search(r"KLN-SPP2-STQ-[A-Za-z0-9-]+", subject):
+            entry_id = mail.EntryID
+            if entry_id not in done_stq:
+                print(f"\n--- STQ MAIL FOUND: {subject}")
+                saved = process_single_stq_mail(mail, subject)
+                if saved > 0:
+                    done_stq.add(entry_id)
+                    stq_file_count += saved
             continue
 
         # ---------- LET ----------
-        m_let = re.match(r"^(SPP2-PRO-KLN-LET-\d{4})$", subject)
-        if m_let and subject not in done_let:
-            print(f"\n--- LET FOUND: {subject}")
-            if process_single_let_mail(mail, subject):
-                done_let.add(subject)
+        m_let = re.search(r"(SPP2-PRO-KLN-LET-\d{4})", subject)
+        if m_let:
+            entry_id = mail.EntryID
+            if entry_id not in done_let:
+                print(f"\n--- LET FOUND: {subject}")
+                if process_single_let_mail(mail, subject):
+                    done_let.add(entry_id)
             continue
+
+    print()  # progress line-i qırmaq üçün
 
     print("\nDONE.")
     print(f"Processed TRNs: {sorted(done_trn) if done_trn else 'none'}")
-    print(f"Processed STQs: {len(done_stq)}")
-    print(f"Processed LETs: {len(done_let)}")
+    print(f"Processed STQs (files): {stq_file_count}")
+    print(f"Processed LETs (mails): {len(done_let)}")
 
 
 if __name__ == "__main__":
