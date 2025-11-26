@@ -479,31 +479,34 @@ def process_single_stq_mail(mail_item, subject: str) -> int:
 
 
 # ---------------------------------------------------------
-# LET FUNKSİYALARI
+# LET FUNKSİYALARI  (DƏYİŞƏN HİSSƏ)
 # ---------------------------------------------------------
-def get_next_let_folder_name(root: Path) -> str:
-    max_n = 0
-    if root.exists():
-        for child in root.iterdir():
-            if not child.is_dir():
-                continue
-            m = re.match(r"SPP2-PRO-KLN-LET-(\d{4})", child.name)
-            if m:
-                n = int(m.group(1))
-                max_n = max(max_n, n)
-    return f"SPP2-PRO-KLN-LET-{max_n + 1:04d}"
+def get_let_folder_by_code(root: Path, let_code: str) -> Path:
+    """
+    Məs: let_code = 'SPP2-PRO-KLN-LET-0022'
+    Əgər bu qovluq varsa → onu istifadə edir,
+    yoxdursa → eyni adla yeni qovluq yaradır.
+    """
+    base = root / let_code
+    base.mkdir(parents=True, exist_ok=True)
+    return base
 
 
-def process_single_let_mail(mail_item, subject: str) -> bool:
-    folder_name = get_next_let_folder_name(LET_INCOMING_ROOT)
-    base = LET_INCOMING_ROOT / folder_name
+def process_single_let_mail(mail_item, subject: str, let_code: str) -> bool:
+    """
+    LET mail:
+      - Qovluq adı birbaşa subject-dən çıxan LET kodu olur
+        (məs: SPP2-PRO-KLN-LET-0022)
+      - Qovluq artıq varsa, yenisi yaradılmır, reuse olunur.
+    """
+    base = get_let_folder_by_code(LET_INCOMING_ROOT, let_code)
     letter_f = base / "1. letter"
     docs_f = base / "2. docs"
 
     letter_f.mkdir(parents=True, exist_ok=True)
     docs_f.mkdir(exist_ok=True)
 
-    print(f"[LET] {folder_name}")
+    print(f"[LET] {let_code}")
 
     atts = mail_item.Attachments
     subject_pdf = subject + ".pdf"
@@ -596,8 +599,9 @@ def main():
         if m_let:
             entry_id = mail.EntryID
             if entry_id not in done_let:
+                let_code = m_let.group(1)  # məsələn SPP2-PRO-KLN-LET-0022
                 print(f"\n--- LET FOUND: {subject}")
-                if process_single_let_mail(mail, subject):
+                if process_single_let_mail(mail, subject, let_code):
                     done_let.add(entry_id)
             continue
 
