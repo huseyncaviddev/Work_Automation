@@ -1,241 +1,445 @@
+# outlook_kolin_sunulacaklar_auto.py
+
+import os
+import re
+import shutil
 from pathlib import Path
-import sys # Xəta idarəçiliyi üçün əlavə edildi
+from datetime import datetime, timedelta
+import win32com.client as win32
 
-from openpyxl import Workbook
-from openpyxl.styles import Alignment, Font, Border, Side, PatternFill
+# ---------------------------------
+# KONFİQ
+# ---------------------------------
+MAILBOX_NAME = "spp2dcc@kolin.com.tr"
+SUBPATH = r"Inbox\Sunulacaklar"   # KOLIN dept mail-ləri
 
-# Qalın kənar tərzi (THIN side style)
-THIN = Side(border_style="thin", color="000000")
+TRN_ROOT = Path(r"\\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\1. TRN")
+STQ_ROOT = Path(r"\\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\3. STQ")
+LET_ROOT = Path(r"G:\My Drive\4-S1 ve S2 Ortak Dökümanlar\03-SPP LETTERS\SPP2-LET\1. KLN-PRO\01-Outgoing")
 
-# Excel faylının konkret yaranacağı yer
-# Yolu özünüzə uyğun dəyişdirə bilərsiniz.
-OUTPUT_DIR = Path(r"C:\Users\husey\OneDrive\Desktop\Development\Work_Automation")
-OUTPUT_PATH = OUTPUT_DIR / "SPP2-KLN-PRO-TRN-0164.xlsx"
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"}
+EXCEL_EXTS = {".xls", ".xlsx", ".xlsm", ".xlsb"}
+
+LOOKBACK_DAYS = 3
+
+# TRN ilə göndərilən sənəd növləri
+TRN_DOC_TYPES = {
+    "CLC", "DWG", "FRM", "ITP", "JSA", "LOG", "LST",
+    "MAR", "MES", "NCR", "ORG", "REP", "SPE", "SAR", 
+    "LPL"
+}
 
 
-def create_trn_0164_excel(output_path: Path = OUTPUT_PATH):
-    """SPP2-KLN-PRO-TRN-0164 adlı Transmittal faylını yaradır."""
-    
-    # Kataloqu yaratmaq üçün cəhd, icazə problemini əvvəlcədən yoxlamaq üçün
+# ---------------------------------
+# TRN – növbəti qovluq
+# ---------------------------------
+def get_next_trn_folder(root: Path) -> Path:
+    if not root.exists():
+        root.mkdir(parents=True, exist_ok=True)
+
+    max_num = 0
+    for d in root.iterdir():
+        if not d.is_dir():
+            continue
+        m = re.match(r"^SPP2-KLN-PRO-TRN-(\d{4})$", d.name)
+        if not m:
+            continue
+        num = int(m.group(1))
+        if num > max_num:
+            max_num = num
+
+    next_num = max_num + 1
+    folder_name = f"SPP2-KLN-PRO-TRN-{next_num:04d}"
+    new_folder = root / folder_name
+    new_folder.mkdir(parents=True, exist_ok=True)
+
+    for sub in ["1. main", "2. attachments", "3. docs"]:
+        (new_folder / sub).mkdir(exist_ok=True)
+
+    print(f"[TRN] Created → {new_folder}")
+    return new_folder
+
+
+# ---------------------------------
+# STQ – növbəti index
+# ---------------------------------
+def get_next_stq_index(root: Path) -> int:
+    if not root.exists():
+        root.mkdir(parents=True, exist_ok=True)
+
+    max_num = 0
+    for d in root.iterdir():
+        if not d.is_dir():
+            continue
+        m = re.match(r"^(\d+)", d.name)
+        if not m:
+            continue
+        num = int(m.group(1))
+        if num > max_num:
+            max_num = num
+
+    return max_num + 1 if max_num > 0 else 1
+
+
+def create_stq_folder_and_save(next_index: int, stq_attachment, base_folder: Path) -> int:
+    raw = stq_attachment.FileName
+    name, ext = os.path.splitext(raw)
+    upper = name.upper()
+
+    m = re.search(r"(KLN-SPP2-STQ-[A-Z0-9]+-[A-Z0-9]+)", upper)
+    if m:
+        prefix = m.group(1)
+    else:
+        prefix = re.split(r"_R\d{2}", upper)[0]
+
+    stq_code = f"{prefix}-{next_index}"
+    folder_name = f"{next_index}. {stq_code}"
+    stq_folder = base_folder / folder_name
+    stq_folder.mkdir(parents=True, exist_ok=True)
+
+    m_rev = re.search(r"_R\d{2}", upper)
+    rev_part = m_rev.group(0) if m_rev else "_R00"
+    new_filename = f"{stq_code}{rev_part}{ext}"
+
+    target = stq_folder / new_filename
+    stq_attachment.SaveAsFile(str(target))
+
+    print(f"[STQ] Saved → {target}")
+    return next_index + 1
+
+
+# ---------------------------------
+# LET – növbəti folder
+# ---------------------------------
+def get_next_let_folder(root: Path) -> Path:
+    if not root.exists():
+        root.mkdir(parents=True, exist_ok=True)
+
+    max_num = 0
+    for d in root.iterdir():
+        if not d.is_dir():
+            continue
+        m = re.match(r"^SPP2-KLN-PRO-LET-(\d{4})$", d.name)
+        if not m:
+            continue
+        num = int(m.group(1))
+        if num > max_num:
+            max_num = num
+
+    next_num = max_num + 1
+    folder_name = f"SPP2-KLN-PRO-LET-{next_num:04d}"
+    new_folder = root / folder_name
+    new_folder.mkdir(parents=True, exist_ok=True)
+
+    for sub in ["1. letter", "2. docs"]:
+        (new_folder / sub).mkdir(exist_ok=True)
+
+    print(f"[LET] Created → {new_folder}")
+    return new_folder
+
+
+# ---------------------------------
+# Helper-lər
+# ---------------------------------
+def get_target_folder(ns, mailbox, subpath):
+    folder = ns.Folders[mailbox]
+    for part in subpath.split("\\"):
+        if part:
+            folder = folder.Folders[part]
+    return folder
+
+
+def is_kln_code_file(filename: str) -> bool:
+    upper = filename.upper()
+    return upper.startswith("KLN-SPP2-") or upper.startswith("PRO-SPP2-")
+
+
+
+def get_doc_type_from_filename(filename: str) -> str | None:
+    # COMPANY-SPP2-XXX-... formatını tutur (KLN, PRO fərq etmir)
+    m = re.match(r"(?i)[A-Z0-9]+-SPP2-([A-Z0-9]{3})-", filename)
+    return m.group(1).upper() if m else None
+
+
+def clean_filename_keep_code_only(filename: str) -> str:
+    name, ext = os.path.splitext(filename)
+    m = re.search(r"_R\d{2}", name, flags=re.IGNORECASE)
+    if m:
+        code = name[:m.end()]
+    else:
+        code = name.split(" ")[0]
+    code = re.sub(r'[\\/:*?"<>|]', "_", code)
+    return code + ext
+
+
+def extract_shd_paths_from_mail(item) -> list[str]:
+    """
+    Body + HTMLBody-dən UNC path-ləri çıxarır:
+      \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\...\ES03
+    """
+    body = (getattr(item, "Body", "") or "")
+    html = (getattr(item, "HTMLBody", "") or "")
+    text = body + "\n" + html
+
+    raw_matches = re.findall(r"(\\\\[^\r\n<>]+)", text)
+
+    cleaned: list[str] = []
+    for m in raw_matches:
+        p = m.strip()
+        p = p.rstrip(" .;,)")
+        if p not in cleaned:
+            cleaned.append(p)
+
+    return cleaned
+
+
+def copy_shd_folder_to_trn(shd_path: str, trn_docs_folder: Path) -> bool:
+    """
+    \\DATA\...\SOCKET SYSTEM INSTALLATION\ES03
+      → TRN-XXXX\3. docs\ES03
+    """
+    src = Path(shd_path)
+
+    if not src.exists():
+        print(f"[SHD] SKIP — path does NOT exist: {src}")
+        return False
+
+    folder_name = src.name  # ES03
+    dst = trn_docs_folder / folder_name
+
+    if dst.exists():
+        print(f"[SHD] SKIP — already copied: {dst}")
+        return False
+
     try:
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-    except PermissionError:
-        print(f"❌ XƏTA: '{output_path.parent}' yoluna yazmaq üçün icazə yoxdur.")
-        print("Zəhmət olmasa, yolu dəyişdirin və ya proqramı Administrator icazələri ilə işə salın.")
-        sys.exit(1)
+        shutil.copytree(src, dst)
+        print(f"[SHD] COPIED → {dst}")
+        return True
     except Exception as e:
-        print(f"❌ XƏTA: Kataloq yaratma zamanı naməlum xəta: {e}")
-        sys.exit(1)
+        print(f"[SHD] ERROR copying {src} → {e}")
+        return False
 
 
-    wb = Workbook()
-    ws = wb.active
-    ws.title = "Transmittal"
+# --------- SHD üçün PowerShell lojiqasının Python versiyası ---------
 
-    # ================== COLUMN WIDTHS ==================
-    ws.column_dimensions["A"].width = 4
-    ws.column_dimensions["B"].width = 30
-    ws.column_dimensions["C"].width = 10
-    ws.column_dimensions["D"].width = 8
-    ws.column_dimensions["E"].width = 12
-    ws.column_dimensions["F"].width = 60
+def add_r00_to_subfiles_without_rev(docs_root: Path):
+    """
+    Subfolder faylları üçün rev normalizasiya:
+      - Hər hansı rev varsa (_Rdd və ya -Rdd) → rev var sayılır
+      - Əgər -Rdd varsa → _Rdd-ə çevirilir
+      - Əgər ümumiyyətlə rev yoxdursa → sona _R00 əlavə edilir
+    """
+    if not docs_root.exists():
+        return
 
-    # ================== TOP TITLES ==================
-    ws.row_dimensions[1].height = 22
-    ws.row_dimensions[2].height = 18
-    ws.row_dimensions[3].height = 4  # green line
+    # Rev tapmaq üçün pattern
+    rev_pattern = re.compile(r"([_-]R(\d{2}))", re.IGNORECASE)
 
-    # Header 1
-    ws.merge_cells("A1:F1")
-    ws["A1"] = "SITALCHAY 2 PRODUCTION PLANT"
-    ws["A1"].font = Font(size=14, bold=True)
-    ws["A1"].alignment = Alignment(horizontal="center", vertical="center")
+    for f in docs_root.rglob("*"):
+        if not f.is_file():
+            continue
+        if f.parent == docs_root:
+            continue  # Root-a toxunmuruq
 
-    # Header 2
-    ws.merge_cells("A2:F2")
-    ws["A2"] = "DOCUMENTATION TRANSMITTAL"
-    ws["A2"].font = Font(size=12, bold=True)
-    ws["A2"].alignment = Alignment(horizontal="center", vertical="center")
+        stem = f.stem
+        suffix = f.suffix
 
-    # Green bar
-    green_fill = PatternFill(start_color="00B050", end_color="00B050", fill_type="solid")
-    for col in range(1, 7):
-        cell = ws.cell(row=3, column=col)
-        cell.fill = green_fill
+        match = rev_pattern.search(stem)
 
-    # ================== TRANS INFO BOX ==================
-    for r in range(5, 8):
-        for c in range(1, 7):
-            ws.cell(row=r, column=c).border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
+        if match:
+            # REV VAR → indi yoxlayaq ki dash-dırsa underscore edək
+            full_rev = match.group(1)   # məsələn: -R00 və ya _R00
+            rev_number = match.group(2) # 00, 01, 02...
 
-    # Row 5
-    ws["A5"] = "TRANSMITTAL NUMBER"
-    ws["A5"].font = Font(bold=True)
-    ws.merge_cells("B5:C5")
-    ws["B5"] = "SPP2-KLN-PRO-TRN-0164"
-    ws["D5"] = "DATE"
-    ws["D5"].font = Font(bold=True)
-    ws.merge_cells("E5:F5")
-    ws["E5"] = "29-Jul-2025"
-    
-    # Row 6
-    ws["A6"] = "PROJECT"
-    ws["A6"].font = Font(bold=True)
-    ws.merge_cells("B6:C6")
-    ws["B6"] = "SPP2\nSITALCHAY 2 PRODUCTION PLANT"
-    ws["B6"].alignment = Alignment(wrap_text=True, vertical="top")
-    ws["D6"] = "LOCATION"
-    ws["D6"].font = Font(bold=True)
-    ws.merge_cells("E6:F6")
-    ws["E6"] = "SUMGAIT AZERBAIJAN"
+            if full_rev.startswith("-"):
+                # -R00 → _R00
+                fixed_rev = f"_R{rev_number}"
+                new_stem = rev_pattern.sub(fixed_rev, stem)
 
-    # Row 7 (Empty row inside box)
-    ws.merge_cells("A7:F7")
+                new_name = new_stem + suffix
+                target = f.with_name(new_name)
 
-    # ================== FROM / TO BLOKLARI ==================
-    ws.row_dimensions[9].height = 18
+                if f.name != new_name:
+                    try:
+                        if target.exists():
+                            target.unlink()
+                        f.rename(target)
+                        print(f"[SHD-REV-FIX] {f.name} → {new_name}")
+                    except Exception as e:
+                        print(f"[SHD-ERR] {f.name} → {e}")
+            # _R00 olduqda toxunmuruq
+            continue
 
-    ws.merge_cells("A9:C9")
-    ws["A9"] = "From:"
-    ws["A9"].font = Font(bold=True)
+        else:
+            # REV YOXDUR → _R00 əlavə edilir
+            new_name = f"{stem}_R00{suffix}"
+            target = f.with_name(new_name)
 
-    ws.merge_cells("D9:F9")
-    ws["D9"] = "To:"
-    ws["D9"].font = Font(bold=True)
-
-    from_block = (
-        '"KOLIN"  İNŞAAT SANAYI VE TICARET A.Ş\n'
-        "Teoman Uludag\n"
-        "Project Manager\n"
-        "tuludag@kolin.com.tr"
-    )
-
-    to_block = (
-        '"PROYAPI/PROKON" JV\n'
-        "Mesut Sorgec\n"
-        "Project Manager\n"
-        "mesutsorgec@proyapimusavirlik.com"
-    )
-
-    # From block content
-    ws.merge_cells("A10:C13")
-    ws["A10"] = from_block
-    ws["A10"].alignment = Alignment(wrap_text=True, vertical="top")
-
-    # To block content
-    ws.merge_cells("D10:F13")
-    ws["D10"] = to_block
-    ws["D10"].alignment = Alignment(wrap_text=True, vertical="top")
-
-    # From/To border-lər
-    for r in range(9, 14):
-        for c in range(1, 7):
-            ws.cell(row=r, column=c).border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-
-    # ================== DOCUMENT LIST HEADER ==================
-    ws.merge_cells("A15:F15")
-    ws["A15"] = "DOCUMENT LIST"
-    ws["A15"].font = Font(bold=True)
-    ws["A15"].alignment = Alignment(horizontal="center")
-
-    header_row = 17
-    headers = ["#", "Document Number", "Format", "Rev.", "Issue Code", "Document Title"]
-    header_fill = PatternFill(start_color="DDDDDD", end_color="DDDDDD", fill_type="solid")
-    
-    for col, text in enumerate(headers, start=1):
-        cell = ws.cell(row=header_row, column=col, value=text)
-        cell.font = Font(bold=True)
-        cell.alignment = Alignment(horizontal="center", vertical="center")
-        cell.border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-        cell.fill = header_fill
-
-    # ================== DOCUMENT ROWS ==================
-    docs = [
-        (1, "KLN-SPP2-ITP-CV-GN00-201", "PDF", "05", "IFA",
-         "Inspection And Test Plan For Concrete And Insulation Works"),
-        (2, "KLN-SPP2-MAR-AR-GN00-037", "PDF", "00", "IFA",
-         "VesnaMetal Jacketing Starting U Profile"),
-        (3, "KLN-SPP2-MAR-AR-GN00-038", "PDF", "00", "IFA",
-         "Aluminium Verticale Profil 140/120/100/80"),
-        (4, "KLN-SPP2-MAR-AR-GN00-039", "PDF", "00", "IFA",
-         "Knauf Corner Profile"),
-        (5, "KLN-SPP2-MAR-CV-GN00-065", "PDF", "00", "IFA",
-         "Razor Wire"),
-        (6, "KLN-SPP2-MAR-MC-GN00-072", "PDF", "00", "IFA",
-         "Pipe Grooved Couplings"),
-        (7, "KLN-SPP2-MAR-MC-GN00-073", "PDF", "00", "IFA",
-         "Flexible Air Ducts"),
-        # '*END*' sətrini sildim, çünki bu, fayl formatına uyğun deyil.
-        # Əgər faylın sonunu göstərmək lazımdırsa, sətir nömrəsi olmadan boş sətir saxlanmalıdır.
-    ]
-
-    row = header_row + 1
-    for no, doc_no, fmt, rev, issue, title in docs:
-        ws.cell(row=row, column=1, value=no)
-        ws.cell(row=row, column=2, value=doc_no)
-        ws.cell(row=row, column=3, value=fmt)
-        ws.cell(row=row, column=4, value=rev)
-        ws.cell(row=row, column=5, value=issue)
-        ws.cell(row=row, column=6, value=title)
-
-        for col in range(1, 7):
-            c = ws.cell(row=row, column=col)
-            c.border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-            if col == 6:
-                # Document Title üçün wrap və vertical top alignment
-                c.alignment = Alignment(wrap_text=True, vertical="top")
-                ws.row_dimensions[row].height = 30 # Sətir hündürlüyünü artırırıq
-            elif col == 2 or col == 5:
-                # Document Number və Issue Code sola
-                c.alignment = Alignment(horizontal="left", vertical="center")
-            else:
-                # Digərləri mərkəzə
-                c.alignment = Alignment(horizontal="center", vertical="center")
-
-        row += 1
-        
-    # Ən son sətirə "END" qeydini əlavə etmək istəsəniz:
-    ws.cell(row=row, column=1, value="*END*").alignment = Alignment(horizontal="center")
-    for col in range(1, 7):
-        ws.cell(row=row, column=col).border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-        
-    row += 1 # Növbəti hissə üçün sətiri artırırıq
+            try:
+                if target.exists():
+                    target.unlink()
+                f.rename(target)
+                print(f"[SHD-R00-ADD] {f.name} → {new_name}")
+            except Exception as e:
+                print(f"[SHD-R00-ERR] {f.name} → {e}")
 
 
-    # ================== ATTACHMENT & FOOTER ==================
-    attach_row = row + 2
-    ws.merge_cells(f"A{attach_row}:F{attach_row}")
-    ws[f"A{attach_row}"] = "Attachment : ITP, MAR"
+def copy_pdfs_from_subfolders_to_root(docs_root: Path):
+    """
+    PS: PDF Copier
+    - Subfolder-lərdəki bütün PDF-ləri 3. docs root-a kopyalayır
+    """
+    if not docs_root.exists():
+        return
 
-    footer_row_1 = attach_row + 3
-    ws.merge_cells(f"A{footer_row_1}:F{footer_row_1}")
-    ws[f"A{footer_row_1}"] = "VektorDS LLC | U.Hajibeyli str., 62, Baku, Azerbaijan. info@vektords.az"
-    ws[f"A{footer_row_1}"].alignment = Alignment(wrap_text=True)
-
-    footer_row_2 = footer_row_1 + 2
-    ws.merge_cells(f"A{footer_row_2}:F{footer_row_2}")
-    ws[f"A{footer_row_2}"] = (
-        "Status Code: A = Accepted, AC = Accepted with Comments, CR = Commented-Resubmit, NA = Not Accepted; "
-        "ADV = Advanced Copy, IFD = Issued For Design, IFI = Issued For Information, "
-        "IFR = Issued For Review, IFA = Issued For Approval, IFC = Issued For Construction"
-    )
-    ws[f"A{footer_row_2}"].alignment = Alignment(wrap_text=True)
-
-    # ================== FAYLIN SAXlanMASI ==================
-    try:
-        wb.save(output_path)
-        print(f"✅ Uğurla yaradıldı: {output_path}")
-    except PermissionError:
-        print(f"❌ XƏTA: Faylı '{output_path}' yoluna yaza bilmədim.")
-        print("Zəhmət olmasa, **faylın (SPP2-KLN-PRO-TRN-0164.xlsx) Microsoft Excel-də açıq olmadığını** yoxlayın və kodu yenidən işə salın.")
-    except Exception as e:
-        print(f"❌ XƏTA: Faylın saxlanması zamanı naməlum xəta: {e}")
+    for pdf in docs_root.rglob("*.pdf"):
+        if pdf.parent == docs_root:
+            continue
+        dest = docs_root / pdf.name
+        try:
+            if dest.exists():
+                dest.unlink()   # PS-də -Force kimi
+            shutil.copy2(pdf, dest)
+            print(f"[SHD-PDF] {pdf} → {dest}")
+        except Exception as e:
+            print(f"[SHD-PDF-ERR] {pdf} → {e}")
 
 
+def move_xlsx_docx_from_subfolders_to_root(docs_root: Path):
+    """
+    PS: XLSX & DOCX Mover
+    - Subfolder-lərdəki .xlsx və .docx fayllarını 3. docs root-a move edir
+    """
+    if not docs_root.exists():
+        return
+
+    exts = {".xlsx", ".docx"}
+
+    for f in docs_root.rglob("*"):
+        if not f.is_file():
+            continue
+        if f.parent == docs_root:
+            continue
+        if f.suffix.lower() not in exts:
+            continue
+
+        dest = docs_root / f.name
+        try:
+            if dest.exists():
+                dest.unlink()   # PS -Force
+            shutil.move(str(f), str(dest))
+            print(f"[SHD-MOVE] {f} → {dest}")
+        except Exception as e:
+            print(f"[SHD-MOVE-ERR] {f} → {e}")
+
+
+# ---------------------------------
+# MAIN
+# ---------------------------------
 def main():
-    print("Working dir:", Path.cwd())
-    print("Target file:", OUTPUT_PATH)
-    create_trn_0164_excel()
+    outlook = win32.Dispatch("Outlook.Application")
+    session = outlook.Session
+    folder = get_target_folder(session, MAILBOX_NAME, SUBPATH)
+
+    items = folder.Items
+    items.Sort("[ReceivedTime]", True)
+
+    cutoff = datetime.now() - timedelta(days=LOOKBACK_DAYS)
+
+    trn_attachments = []   # a) KLN-SPP2-FRM/MAR/MES... fayllar
+    shd_paths = set()      # b) SHD sunum UNC path-ləri
+    stq_attachments = []   # c) STQ
+    let_attachments = []   # d) LET
+
+    for item in items:
+        if getattr(item, "Class", None) != 43:
+            continue
+
+        recv_time = getattr(item, "ReceivedTime", None)
+        if isinstance(recv_time, datetime):
+            recv_time_naive = recv_time.replace(tzinfo=None)
+        else:
+            recv_time_naive = None
+
+        if recv_time_naive and recv_time_naive < cutoff:
+            print("Reached cutoff date. Stopping scan.")
+            break
+
+        # SHD sunum linkləri
+        for p in extract_shd_paths_from_mail(item):
+            shd_paths.add(p)
+
+        if not item.Attachments:
+            continue
+
+        for att in item.Attachments:
+            fname = att.FileName
+            ext = os.path.splitext(fname)[1].lower()
+
+            if ext in IMAGE_EXTS:
+                continue
+
+            # LET (d) → SPP2-KLN-PRO-LET-XXXX.docx
+            if re.match(r"(?i)^SPP2-KLN-PRO-LET-\d{4}\.docx$", fname):
+                let_attachments.append(att)
+                continue
+
+            # KLN-SPP2-* sənədlər
+            if not is_kln_code_file(fname):
+                continue
+
+            doc_type = get_doc_type_from_filename(fname)
+
+            if doc_type in TRN_DOC_TYPES:
+                trn_attachments.append(att)      # a) outgoing TRN docs
+            elif doc_type == "STQ":
+                stq_attachments.append(att)      # c) STQ
+
+    # 1) a-bəndi: TRN docs üçün AYRI transmittal
+    if trn_attachments:
+        trn_folder_docs = get_next_trn_folder(TRN_ROOT)
+        docs_dir_docs = trn_folder_docs / "3. docs"
+
+        for att in trn_attachments:
+            clean_name = clean_filename_keep_code_only(att.FileName)
+            target = docs_dir_docs / clean_name
+            if not target.exists():
+                att.SaveAsFile(str(target))
+                print(f"[TRN-doc] Saved → {target}")
+
+    # 2) b-bəndi: SHD sunumlar üçün AYRI transmittal (+ PS lojiqası)
+    if shd_paths:
+        trn_folder_shd = get_next_trn_folder(TRN_ROOT)
+        docs_dir_shd = trn_folder_shd / "3. docs"
+
+        for shd in shd_paths:
+            copy_shd_folder_to_trn(shd, docs_dir_shd)
+
+        # PowerShell-də əl ilə etdiklərini indi auto edir:
+        add_r00_to_subfiles_without_rev(docs_dir_shd)
+        copy_pdfs_from_subfolders_to_root(docs_dir_shd)
+        move_xlsx_docx_from_subfolders_to_root(docs_dir_shd)
+
+    # 3) c-bəndi: STQ-lər
+    if stq_attachments:
+        next_stq_no = get_next_stq_index(STQ_ROOT)
+        for att in stq_attachments:
+            next_stq_no = create_stq_folder_and_save(next_stq_no, att, STQ_ROOT)
+
+    # 4) d-bəndi: LET-lər
+    for att in let_attachments:
+        let_folder = get_next_let_folder(LET_ROOT)
+        docs_dir = let_folder / "2. docs"
+        target = docs_dir / att.FileName
+        if not target.exists():
+            att.SaveAsFile(str(target))
+            print(f"[LET-doc] Saved → {target}")
+
+    print("\nSUMMARY:")
+    print(f"  TRN docs  : {len(trn_attachments)}")
+    print(f"  SHD paths : {len(shd_paths)}")
+    print(f"  STQ files : {len(stq_attachments)}")
+    print(f"  LET files : {len(let_attachments)}")
 
 
 if __name__ == "__main__":
