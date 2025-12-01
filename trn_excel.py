@@ -1,242 +1,311 @@
 from pathlib import Path
-import sys # Xəta idarəçiliyi üçün əlavə edildi
 
 from openpyxl import Workbook
-from openpyxl.styles import Alignment, Font, Border, Side, PatternFill
+from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
+from openpyxl.drawing.image import Image
 
-# Qalın kənar tərzi (THIN side style)
+
 THIN = Side(border_style="thin", color="000000")
 
-# Excel faylının konkret yaranacağı yer
-# Yolu özünüzə uyğun dəyişdirə bilərsiniz.
-OUTPUT_DIR = Path(r"C:\Users\husey\OneDrive\Desktop\Development\Work_Automation")
-OUTPUT_PATH = OUTPUT_DIR / "SPP2-KLN-PRO-TRN-0164.xlsx"
+
+def apply_border(ws, cell_range: str):
+    """Apply thin border to all cells in an A1-style range, e.g. 'A1:Z10'."""
+    for row in ws[cell_range]:
+        for cell in row:
+            cell.border = Border(top=THIN, bottom=THIN, left=THIN, right=THIN)
 
 
-def create_trn_0164_excel(output_path: Path = OUTPUT_PATH):
-    """SPP2-KLN-PRO-TRN-0164 adlı Transmittal faylını yaradır."""
-    
-    # Kataloqu yaratmaq üçün cəhd, icazə problemini əvvəlcədən yoxlamaq üçün
-    try:
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-    except PermissionError:
-        print(f"❌ XƏTA: '{output_path.parent}' yoluna yazmaq üçün icazə yoxdur.")
-        print("Zəhmət olmasa, yolu dəyişdirin və ya proqramı Administrator icazələri ilə işə salın.")
-        sys.exit(1)
-    except Exception as e:
-        print(f"❌ XƏTA: Kataloq yaratma zamanı naməlum xəta: {e}")
-        sys.exit(1)
+def add_logos(ws, left_logo_path: Path, right_logo_path: Path):
+    """
+    Logoları header-in sol və sağ bloklarına əlavə edir.
+    Şəkillərin ölçüsünü ehtiyac olsa aşağıda tweak edə bilərsən.
+    """
+    if left_logo_path.is_file():
+        left_img = Image(str(left_logo_path))
+        left_img.width = 140
+        left_img.height = 50
+        # Sol böyük boş blok: A2:F6
+        left_img.anchor = "A2"
+        ws.add_image(left_img)
+
+    if right_logo_path.is_file():
+        right_img = Image(str(right_logo_path))
+        right_img.width = 140
+        right_img.height = 60
+        # Sağ böyük blok: U2:Y6
+        right_img.anchor = "U2"
+        ws.add_image(right_img)
 
 
+def safe_save_workbook(wb: Workbook, output_path: Path) -> Path:
+    """
+    Faylı təhlükəsiz saxlayır:
+      - Əgər eyni adda fayl varsa, yanına '_NEW' əlavə edir.
+    PermissionError / overwrite problemlərinin qabağını alır.
+    """
+    output_path = Path(output_path)
+
+    # Eyni adda artıq fayl varsa, yeni adla yaz
+    if output_path.exists():
+        output_path = output_path.with_name(
+            output_path.stem + "_NEW" + output_path.suffix
+        )
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    wb.save(output_path)
+    return output_path
+
+
+def create_trn_excel(
+    output_path: Path = Path("SPP2-KLN-PRO-TRN-0164_AUTO.xlsx"),
+    trn_no: str = "SPP2-KLN-PRO-TRN-0164",
+    date_str: str = "29-Jul-2025",
+    left_logo: str = "vektords.png",
+    right_logo: str = "proyapi_prokon.png",
+):
     wb = Workbook()
     ws = wb.active
-    ws.title = "Transmittal"
+    ws.title = "TRN Maker"
 
-    # ================== COLUMN WIDTHS ==================
-    ws.column_dimensions["A"].width = 4
-    ws.column_dimensions["B"].width = 30
-    ws.column_dimensions["C"].width = 10
-    ws.column_dimensions["D"].width = 8
-    ws.column_dimensions["E"].width = 12
-    ws.column_dimensions["F"].width = 60
-
-    # ================== TOP TITLES ==================
-    ws.row_dimensions[1].height = 22
-    ws.row_dimensions[2].height = 18
-    ws.row_dimensions[3].height = 4  # green line
-
-    # Header 1
-    ws.merge_cells("A1:F1")
-    ws["A1"] = "SITALCHAY 2 PRODUCTION PLANT"
-    ws["A1"].font = Font(size=14, bold=True)
-    ws["A1"].alignment = Alignment(horizontal="center", vertical="center")
-
-    # Header 2
-    ws.merge_cells("A2:F2")
-    ws["A2"] = "DOCUMENTATION TRANSMITTAL"
-    ws["A2"].font = Font(size=12, bold=True)
-    ws["A2"].alignment = Alignment(horizontal="center", vertical="center")
-
-    # Green bar
-    green_fill = PatternFill(start_color="00B050", end_color="00B050", fill_type="solid")
-    for col in range(1, 7):
-        cell = ws.cell(row=3, column=col)
-        cell.fill = green_fill
-
-    # ================== TRANS INFO BOX ==================
-    for r in range(5, 8):
-        for c in range(1, 7):
-            ws.cell(row=r, column=c).border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-
-    # Row 5
-    ws["A5"] = "TRANSMITTAL NUMBER"
-    ws["A5"].font = Font(bold=True)
-    ws.merge_cells("B5:C5")
-    ws["B5"] = "SPP2-KLN-PRO-TRN-0164"
-    ws["D5"] = "DATE"
-    ws["D5"].font = Font(bold=True)
-    ws.merge_cells("E5:F5")
-    ws["E5"] = "29-Jul-2025"
-    
-    # Row 6
-    ws["A6"] = "PROJECT"
-    ws["A6"].font = Font(bold=True)
-    ws.merge_cells("B6:C6")
-    ws["B6"] = "SPP2\nSITALCHAY 2 PRODUCTION PLANT"
-    ws["B6"].alignment = Alignment(wrap_text=True, vertical="top")
-    ws["D6"] = "LOCATION"
-    ws["D6"].font = Font(bold=True)
-    ws.merge_cells("E6:F6")
-    ws["E6"] = "SUMGAIT AZERBAIJAN"
-
-    # Row 7 (Empty row inside box)
-    ws.merge_cells("A7:F7")
-
-    # ================== FROM / TO BLOKLARI ==================
-    ws.row_dimensions[9].height = 18
-
-    ws.merge_cells("A9:C9")
-    ws["A9"] = "From:"
-    ws["A9"].font = Font(bold=True)
-
-    ws.merge_cells("D9:F9")
-    ws["D9"] = "To:"
-    ws["D9"].font = Font(bold=True)
-
-    from_block = (
-        '"KOLIN"  İNŞAAT SANAYI VE TICARET A.Ş\n'
-        "Teoman Uludag\n"
-        "Project Manager\n"
-        "tuludag@kolin.com.tr"
-    )
-
-    to_block = (
-        '"PROYAPI/PROKON" JV\n'
-        "Mesut Sorgec\n"
-        "Project Manager\n"
-        "mesutsorgec@proyapimusavirlik.com"
-    )
-
-    # From block content
-    ws.merge_cells("A10:C13")
-    ws["A10"] = from_block
-    ws["A10"].alignment = Alignment(wrap_text=True, vertical="top")
-
-    # To block content
-    ws.merge_cells("D10:F13")
-    ws["D10"] = to_block
-    ws["D10"].alignment = Alignment(wrap_text=True, vertical="top")
-
-    # From/To border-lər
-    for r in range(9, 14):
-        for c in range(1, 7):
-            ws.cell(row=r, column=c).border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-
-    # ================== DOCUMENT LIST HEADER ==================
-    ws.merge_cells("A15:F15")
-    ws["A15"] = "DOCUMENT LIST"
-    ws["A15"].font = Font(bold=True)
-    ws["A15"].alignment = Alignment(horizontal="center")
-
-    header_row = 17
-    headers = ["#", "Document Number", "Format", "Rev.", "Issue Code", "Document Title"]
-    header_fill = PatternFill(start_color="DDDDDD", end_color="DDDDDD", fill_type="solid")
-    
-    for col, text in enumerate(headers, start=1):
-        cell = ws.cell(row=header_row, column=col, value=text)
-        cell.font = Font(bold=True)
-        cell.alignment = Alignment(horizontal="center", vertical="center")
-        cell.border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-        cell.fill = header_fill
-
-    # ================== DOCUMENT ROWS ==================
-    docs = [
-        (1, "KLN-SPP2-ITP-CV-GN00-201", "PDF", "05", "IFA",
-         "Inspection And Test Plan For Concrete And Insulation Works"),
-        (2, "KLN-SPP2-MAR-AR-GN00-037", "PDF", "00", "IFA",
-         "VesnaMetal Jacketing Starting U Profile"),
-        (3, "KLN-SPP2-MAR-AR-GN00-038", "PDF", "00", "IFA",
-         "Aluminium Verticale Profil 140/120/100/80"),
-        (4, "KLN-SPP2-MAR-AR-GN00-039", "PDF", "00", "IFA",
-         "Knauf Corner Profile"),
-        (5, "KLN-SPP2-MAR-CV-GN00-065", "PDF", "00", "IFA",
-         "Razor Wire"),
-        (6, "KLN-SPP2-MAR-MC-GN00-072", "PDF", "00", "IFA",
-         "Pipe Grooved Couplings"),
-        (7, "KLN-SPP2-MAR-MC-GN00-073", "PDF", "00", "IFA",
-         "Flexible Air Ducts"),
-        # '*END*' sətrini sildim, çünki bu, fayl formatına uyğun deyil.
-        # Əgər faylın sonunu göstərmək lazımdırsa, sətir nömrəsi olmadan boş sətir saxlanmalıdır.
-    ]
-
-    row = header_row + 1
-    for no, doc_no, fmt, rev, issue, title in docs:
-        ws.cell(row=row, column=1, value=no)
-        ws.cell(row=row, column=2, value=doc_no)
-        ws.cell(row=row, column=3, value=fmt)
-        ws.cell(row=row, column=4, value=rev)
-        ws.cell(row=row, column=5, value=issue)
-        ws.cell(row=row, column=6, value=title)
-
-        for col in range(1, 7):
+    # --- Base defaults ---
+    base_font = Font(name="Times New Roman", size=9)
+    for row in range(1, 60):
+        for col in range(1, 27):
             c = ws.cell(row=row, column=col)
-            c.border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-            if col == 6:
-                # Document Title üçün wrap və vertical top alignment
-                c.alignment = Alignment(wrap_text=True, vertical="top")
-                ws.row_dimensions[row].height = 30 # Sətir hündürlüyünü artırırıq
-            elif col == 2 or col == 5:
-                # Document Number və Issue Code sola
-                c.alignment = Alignment(horizontal="left", vertical="center")
-            else:
-                # Digərləri mərkəzə
-                c.alignment = Alignment(horizontal="center", vertical="center")
+            c.font = base_font
+            c.alignment = Alignment(vertical="center", wrap_text=True)
 
-        row += 1
-        
-    # Ən son sətirə "END" qeydini əlavə etmək istəsəniz:
-    ws.cell(row=row, column=1, value="*END*").alignment = Alignment(horizontal="center")
-    for col in range(1, 7):
-        ws.cell(row=row, column=col).border = Border(top=THIN, left=THIN, right=THIN, bottom=THIN)
-        
-    row += 1 # Növbəti hissə üçün sətiri artırırıq
+    # Column widths – sənin templatedən təxmini götürülüb
+    ws.column_dimensions["A"].width = 4
+    ws.column_dimensions["B"].width = 4
+    ws.column_dimensions["C"].width = 4
+    ws.column_dimensions["D"].width = 4
+    ws.column_dimensions["E"].width = 4
+    ws.column_dimensions["F"].width = 4
+    ws.column_dimensions["G"].width = 4
+    ws.column_dimensions["H"].width = 4
+    ws.column_dimensions["I"].width = 4
+    ws.column_dimensions["J"].width = 4
+    ws.column_dimensions["K"].width = 4
+    ws.column_dimensions["L"].width = 4
+    ws.column_dimensions["M"].width = 4
+    ws.column_dimensions["N"].width = 4
+    ws.column_dimensions["O"].width = 4
+    ws.column_dimensions["P"].width = 4
+    ws.column_dimensions["Q"].width = 4
+    ws.column_dimensions["R"].width = 4
+    ws.column_dimensions["S"].width = 4
+    ws.column_dimensions["T"].width = 4
+    ws.column_dimensions["U"].width = 4
+    ws.column_dimensions["V"].width = 4
+    ws.column_dimensions["W"].width = 4
+    ws.column_dimensions["X"].width = 4
+    ws.column_dimensions["Y"].width = 4
+    ws.column_dimensions["Z"].width = 4
 
+    # Row heights – səninkinə yaxınlaşdırılıb
+    for r in range(11, 16):
+        ws.row_dimensions[r].height = 16
+    for r in range(19, 25):
+        ws.row_dimensions[r].height = 17.5
+    for r in range(21, 39):
+        ws.row_dimensions[r].height = 18.5
+    ws.row_dimensions[49].height = 13.5
+    ws.row_dimensions[50].height = 13.5
 
-    # ================== ATTACHMENT & FOOTER ==================
-    attach_row = row + 2
-    ws.merge_cells(f"A{attach_row}:F{attach_row}")
-    ws[f"A{attach_row}"] = "Attachment : ITP, MAR"
+    # === ÜST BOŞ QUTU ===
+    ws.merge_cells("A1:Z1")
+    apply_border(ws, "A1:Z1")
+    fill_green = PatternFill(start_color="91D050", end_color="91D050", fill_type="solid")
+    ws["A1"].fill = fill_green
 
-    footer_row_1 = attach_row + 3
-    ws.merge_cells(f"A{footer_row_1}:F{footer_row_1}")
-    ws[f"A{footer_row_1}"] = "VektorDS LLC | U.Hajibeyli str., 62, Baku, Azerbaijan. info@vektords.az"
-    ws[f"A{footer_row_1}"].alignment = Alignment(wrap_text=True)
+    # === HEADER / TITLE AREA ===
+    # Sol blok (logo üçün)
+    ws.merge_cells("A2:E6")
+    apply_border(ws, "A2:E6")
 
-    footer_row_2 = footer_row_1 + 2
-    ws.merge_cells(f"A{footer_row_2}:F{footer_row_2}")
-    ws[f"A{footer_row_2}"] = (
-        "Status Code: A = Accepted, AC = Accepted with Comments, CR = Commented-Resubmit, NA = Not Accepted; "
-        "ADV = Advanced Copy, IFD = Issued For Design, IFI = Issued For Information, "
-        "IFR = Issued For Review, IFA = Issued For Approval, IFC = Issued For Construction"
+    # Başlıq ortada
+    ws.merge_cells("F2:U4")
+    title = ws["F2"]
+    title.value = "SITALCHAY 2 PRODUCTION PLANT\nDOCUMENTATION TRANSMITTAL"
+    title.font = Font(name="Times New Roman", size=10, bold=True)
+    title.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    apply_border(ws, "F2:U4")
+    # Sağ blok (logo + page/rev)
+    ws.merge_cells("V2:Z6")
+    apply_border(ws, "V2:Z6")
+
+    # TRANSMITTAL NUMBER sahəsi
+    ws.merge_cells("F5:M6")
+    ws["F5"].value = "TRANSMITTAL  NUMBER:"
+    ws["F5"].font = Font(name="Times New Roman", size=10, bold=True)
+    ws["F5"].alignment = Alignment(horizontal="left", vertical="center")
+
+    ws.merge_cells("N5:U6")
+    ws["N5"].value = trn_no
+    ws["N5"].alignment = Alignment(horizontal="left", vertical="center")
+    apply_border(ws, "F5:U6")
+
+    # DATE / PROJECT / LOCATION / PAGE / REV sətiri
+    # Sol – Date
+    ws.merge_cells("A7:E8")
+    ws["A7"].value = f"DATE: {date_str}"
+    ws["A7"].alignment = Alignment(horizontal="center", vertical="center")
+
+    # PROJECT
+    ws.merge_cells("F7:M8")
+    ws["F7"].value = "PROJECT: SPP2 \nSITALCHAY 2 PRODUCTION PLANT "
+    ws["F7"].alignment = Alignment(horizontal="left", vertical="center")
+
+    # LOCATION
+    ws.merge_cells("N7:U8")
+    ws["N7"].value = "LOCATION: \nSUMGAIT AZERBAIJAN "
+    ws["N7"].alignment = Alignment(horizontal="left", vertical="center")
+
+   
+    # Page & Rev sağda
+    ws.merge_cells("V7:X8")
+    ws["V7"].value = "Page 1 of 1"
+    ws["V7"].alignment = Alignment(horizontal="center", vertical="center")
+
+    ws.merge_cells("Y7:Z8")
+    ws["Y7"].value = "Rev.03"
+    ws["Y7"].alignment = Alignment(horizontal="center", vertical="center")
+
+    apply_border(ws, "A2:Z8")
+
+    # === FROM / TO BLOCK ===
+    ws.merge_cells("A11:M11")
+    ws.merge_cells("N11:Y11")
+    ws["A11"].value = "From:"
+    ws["N11"].value = "To:"
+
+    ws.merge_cells("A12:M12")
+    ws.merge_cells("N12:Y12")
+    ws["A12"].value = '   “KOLIN”  İNŞAAT VE TICARET A.Ş'
+    ws["N12"].value = '“PROYAPI/PROKON” JV'
+
+    ws.merge_cells("A13:M13")
+    ws.merge_cells("N13:Y13")
+    ws["A13"].value = "Teoman Uludag"
+    ws["N13"].value = "Mesut Sorgec"
+
+    ws.merge_cells("A14:M14")
+    ws.merge_cells("N14:Y14")
+    ws["A14"].value = "Project Manager"
+    ws["N14"].value = "Project Manager"
+
+    ws.merge_cells("A15:M15")
+    ws.merge_cells("N15:Y15")
+    ws["A15"].value = "tuludag@kolin.com.tr"
+    ws["N15"].value = "mesutsorgec@proyapimusavirlik.com"
+
+    apply_border(ws, "A11:Y15")
+
+    # === DOCUMENT LIST TITLE ===
+    ws.merge_cells("J17:O17")
+    ws["J17"].value = "DOCUMENT LIST"
+    ws["J17"].font = Font(name="Calibri", size=10, bold=True)
+    ws["J17"].alignment = Alignment(horizontal="center", vertical="center")
+
+    # === DOCUMENT LIST TABLE HEADER ===
+    header_fill = PatternFill("solid", fgColor="FFE7E6E6")
+
+    ws.merge_cells("A19:A20")
+    ws.merge_cells("B19:G20")
+    ws.merge_cells("H19:J20")
+    ws.merge_cells("K19:L20")
+    ws.merge_cells("M19:N20")
+    ws.merge_cells("O19:Y20")
+
+    headers = {
+        "A19": "#",
+        "B19": "Document Number",
+        "H19": "Format",
+        "K19": "Rev.",
+        "M19": "Issue\nCode",
+        "O19": "Document Title",
+    }
+
+    for cell_ref, text in headers.items():
+        c = ws[cell_ref]
+        c.value = text
+        c.font = Font(name="Calibri", size=10, bold=True)
+        c.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+        c.fill = header_fill
+
+    apply_border(ws, "A19:Y20")
+
+    # === DATA ROWLAR (21–38) ===
+    for row in range(21, 39):
+        ws.merge_cells(f"B{row}:G{row}")
+        ws.merge_cells(f"H{row}:J{row}")
+        ws.merge_cells(f"K{row}:L{row}")
+        ws.merge_cells(f"M{row}:N{row}")
+        ws.merge_cells(f"O{row}:Y{row}")
+
+    # Row 21 – nümunə
+    ws["A21"].value = 1
+    ws["A21"].alignment = Alignment(horizontal="center", vertical="center")
+    ws["B21"].value = "KLN-SPP2-ITP-CV-GN00-201"
+    ws["H21"].value = "PDF"
+    ws["K21"].value = "00"
+    ws["M21"].value = "IFA"
+    ws["O21"].value = "Inspection And Test Plan For Concrete And Insulation Works"
+
+    for col in ("B", "H", "K", "M"):
+        ws[f"{col}21"].alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    ws["O21"].alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+
+    # Növbəti sətirlər üçün auto nömrələmə formula
+    for row in range(22, 39):
+        ws[f"A{row}"].value = f"=A{row-1}+1"
+        ws[f"A{row}"].alignment = Alignment(horizontal="center", vertical="center")
+
+    # END sətiri
+    ws["A39"].value = "=A38+1"
+    ws["A39"].alignment = Alignment(horizontal="center", vertical="center")
+    ws.merge_cells("B39:G39")
+    ws.merge_cells("H39:J39")
+    ws.merge_cells("K39:L39")
+    ws.merge_cells("M39:N39")
+    ws.merge_cells("O39:Y39")
+    ws["B39"].value = "*END*"
+    ws["B39"].alignment = Alignment(horizontal="left", vertical="center")
+
+    apply_border(ws, "A21:Y39")
+
+    # === FOOTER ===
+    ws.merge_cells("A41:Y41")
+    ws["A41"].value = "Attachment: ITP, MAR"
+    ws["A41"].alignment = Alignment(horizontal="left", vertical="center")
+    apply_border(ws, "A41:Y41")
+
+    ws.merge_cells("A45:Y48")
+    ws["A45"].value = (
+        "Status Code: A = Accepted, AC = Accepted with Comments, CR = Commented-Resubmit, NA = Not Accepted\n"
+        "ADV = Advanced Copy, IFD = Issued For Design, IFI = Issued For Information, IFR = Issued For Review, IFA = Issued For Approval\n"
+        "IFC = Issued For Construction"
     )
-    ws[f"A{footer_row_2}"].alignment = Alignment(wrap_text=True)
+    ws["A45"].alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    apply_border(ws, "A45:Y48")
 
-    # ================== FAYLIN SAXlanMASI ==================
-    try:
-        wb.save(output_path)
-        print(f"✅ Uğurla yaradıldı: {output_path}")
-    except PermissionError:
-        print(f"❌ XƏTA: Faylı '{output_path}' yoluna yaza bilmədim.")
-        print("Zəhmət olmasa, **faylın (SPP2-KLN-PRO-TRN-0164.xlsx) Microsoft Excel-də açıq olmadığını** yoxlayın və kodu yenidən işə salın.")
-    except Exception as e:
-        print(f"❌ XƏTA: Faylın saxlanması zamanı naməlum xəta: {e}")
+    ws.merge_cells("A51:Y52")
+    ws["A51"].value = (
+        "VektorDS LLC | U.Hajibeyli str., 62, Baku, Azerbaijan. info@vektords.az\n"
+        "This Document is VEKTORDS LLC property and cannot be used by others for any purpose without prior written consent."
+    )
+    ws["A51"].alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    apply_border(ws, "A51:Y52")
 
+    # Logoları əlavə et
+    script_dir = Path(__file__).resolve().parent
+    add_logos(ws, script_dir / left_logo, script_dir / right_logo)
 
-def main():
-    print("Working dir:", Path.cwd())
-    print("Target file:", OUTPUT_PATH)
-    create_trn_0164_excel()
+    # Faylı təhlükəsiz saxla
+    saved = safe_save_workbook(wb, output_path)
+    print(f"TRN Excel yaradıldı: {saved}")
 
 
 if __name__ == "__main__":
-    main()
+    create_trn_excel()
