@@ -375,8 +375,10 @@ def main():
         # Attachmentləri listə yığırıq ki, eyni maili 2 dəfə dolaşa bilək
         attachments = [att for att in item.Attachments]
 
-        # 1) Bu maildə STQ varmı?
-        stq_attachment = None
+        # 1) Bu maildə STQ varmı? (multi-STQ dəstəyi)
+        stq_atts = []
+        non_stq_atts = []
+
         for att in attachments:
             fname = att.FileName
             ext = os.path.splitext(fname)[1].lower()
@@ -387,23 +389,20 @@ def main():
             if is_kln_code_file(fname):
                 doc_type = get_doc_type_from_filename(fname)
                 if doc_type == "STQ":
-                    stq_attachment = att
-                    break
-
-        if stq_attachment:
-            # Bu mail STQ mailidir → digər attachmentləri də həmin STQ qovluğuna atacağıq
-            extra_atts = []
-            for att in attachments:
-                if att is stq_attachment:
+                    # Hər STQ faylı ayrıca işlənəcək
+                    stq_atts.append(att)
                     continue
-                fname = att.FileName
-                ext = os.path.splitext(fname)[1].lower()
-                if ext in IMAGE_EXTS:
-                    continue
-                extra_atts.append(att)
 
-            stq_jobs.append((stq_attachment, extra_atts))
-            continue  # Bu mail üçün TRN/LET lojiqasına girmirik
+            # STQ olmayan (amma image də olmayan) bütün attachmentlər
+            non_stq_atts.append(att)
+
+        if stq_atts:
+            # Bu mail STQ mailidir → hər STQ üçün ayrı job, eyni extra-lar paylaşılır
+            for stq_att in stq_atts:
+                stq_jobs.append((stq_att, non_stq_atts))
+            # Bu mail üçün TRN/LET lojiqasına girmirik
+            continue
+
 
         # 2) STQ yoxdursa, əvvəlki kimi TRN/LET lojiqası
         for att in attachments:
