@@ -20,27 +20,42 @@ def apply_border(ws, cell_range: str):
             cell.border = Border(top=THIN, bottom=THIN, left=THIN, right=THIN)
 
 
-def add_logos(ws, left_logo_path: Path, right_logo_path: Path):
+def add_logos(
+    ws,
+    left_logo_path: Path,
+    right_top_logo_path: Path,
+    right_bottom_logo_path: Path,
+):
     """
     Logoları header-in sol və sağ bloklarına yerləşdirir.
-    - Sol logo: A2 hüceyrəsinin üzərinə anchor olunur (A2:E6 area).
-    - Sağ logo: U2/Y6 tərəfə anchor olunur.
+    - Sol logo:  VEKTORDS  → A2 (A2:E6 area)
+    - Sağ üst:   PROYAPI   → V2 (V2:Z3 area)
+    - Sağ alt:   PROKON    → V4 (V4:Z6 area)
     """
+
     # Sol logo faylı varsa, şəkli sheet-ə əlavə et
     if left_logo_path.is_file():
         left_img = Image(str(left_logo_path))  # Şəkli yükləyirik
-        left_img.width = 140                  # Şəkilin eni (px)
-        left_img.height = 50                  # Şəkilin hündürlüyü (px)
-        left_img.anchor = "A2"                # Şəkilin başlanğıc hüceyrəsi
-        ws.add_image(left_img)                # Sheet-ə əlavə et
+        left_img.width = 140                   # Şəkilin eni (px)
+        left_img.height = 50                   # Şəkilin hündürlüyü (px)
+        left_img.anchor = "A2"                 # Şəkilin başlanğıc hüceyrəsi
+        ws.add_image(left_img)                 # Sheet-ə əlavə et
 
-    # Sağ logo faylı varsa, onu da sheet-ə əlavə et
-    if right_logo_path.is_file():
-        right_img = Image(str(right_logo_path))
-        right_img.width = 140
-        right_img.height = 60
-        right_img.anchor = "U2"               # Sağ tərəfdə başlanğıc hüceyrə
-        ws.add_image(right_img)
+    # Sağ üst logo (PROYAPI)
+    if right_top_logo_path.is_file():
+        top_img = Image(str(right_top_logo_path))
+        top_img.width = 140
+        top_img.height = 35
+        top_img.anchor = "V2"
+        ws.add_image(top_img)
+
+    # Sağ alt logo (PROKON)
+    if right_bottom_logo_path.is_file():
+        bottom_img = Image(str(right_bottom_logo_path))
+        bottom_img.width = 140
+        bottom_img.height = 35
+        bottom_img.anchor = "V4"
+        ws.add_image(bottom_img)
 
 
 def safe_save_workbook(wb: Workbook, output_path: Path) -> Path:
@@ -68,17 +83,19 @@ def create_trn_excel(
     output_path: Path = Path("SPP2-KLN-PRO-TRN-0164_AUTO.xlsx"),
     trn_no: str = "SPP2-KLN-PRO-TRN-0164",
     date_str: str = "29-Jul-2025",
-    left_logo: str = "vektords.png",
-    right_logo: str = "proyapi_prokon.png",
+    left_logo: str = "vektords.jpg",      # images/vektords.jpg
+    right_top_logo: str = "proyapi.png",  # images/proyapi.png
+    right_bottom_logo: str = "prokon.png" # images/prokon.png
 ):
     """
     TRN transmittal template-ini sıfırdan yaradan əsas funksiya.
     Parametrlərlə:
-      - output_path  → çıxış faylının adı / yolu
-      - trn_no       → transmittal nömrəsi
-      - date_str     → tarix mətn formatında
-      - left_logo    → sol logo fayl adı
-      - right_logo   → sağ logo fayl adı
+      - output_path        → çıxış faylının adı / yolu
+      - trn_no             → transmittal nömrəsi
+      - date_str           → tarix mətn formatında
+      - left_logo          → sol logo fayl adı (VEKTORDS)
+      - right_top_logo     → sağ üst logo fayl adı (PROYAPI)
+      - right_bottom_logo  → sağ alt logo fayl adı (PROKON)
     """
     wb = Workbook()           # Yeni Excel workbook yaradırıq
     ws = wb.active            # Default olaraq açılan ilk sheet
@@ -94,32 +111,8 @@ def create_trn_excel(
             c.alignment = Alignment(vertical="center", wrap_text=True)
 
     # Sütun genişlikləri – sənin templatedəki layout-a yaxın
-    ws.column_dimensions["A"].width = 4
-    ws.column_dimensions["B"].width = 4
-    ws.column_dimensions["C"].width = 4
-    ws.column_dimensions["D"].width = 4
-    ws.column_dimensions["E"].width = 4
-    ws.column_dimensions["F"].width = 4
-    ws.column_dimensions["G"].width = 4
-    ws.column_dimensions["H"].width = 4
-    ws.column_dimensions["I"].width = 4
-    ws.column_dimensions["J"].width = 4
-    ws.column_dimensions["K"].width = 4
-    ws.column_dimensions["L"].width = 4
-    ws.column_dimensions["M"].width = 4
-    ws.column_dimensions["N"].width = 4
-    ws.column_dimensions["O"].width = 4
-    ws.column_dimensions["P"].width = 4
-    ws.column_dimensions["Q"].width = 4
-    ws.column_dimensions["R"].width = 4
-    ws.column_dimensions["S"].width = 4
-    ws.column_dimensions["T"].width = 4
-    ws.column_dimensions["U"].width = 4
-    ws.column_dimensions["V"].width = 4
-    ws.column_dimensions["W"].width = 4
-    ws.column_dimensions["X"].width = 4
-    ws.column_dimensions["Y"].width = 4
-    ws.column_dimensions["Z"].width = 4
+    for col_letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        ws.column_dimensions[col_letter].width = 4
 
     # Müəyyən sətirlərə xüsusi hündürlük veririk (layout matching)
     for r in range(11, 16):
@@ -163,7 +156,7 @@ def create_trn_excel(
     ws.merge_cells("F5:M6")
     ws["F5"].value = "TRANSMITTAL  NUMBER:"
     ws["F5"].font = Font(name="Calibri", size=10, bold=True)
-    ws["F5"].alignment = Alignment(horizontal="left", vertical="center", )
+    ws["F5"].alignment = Alignment(horizontal="left", vertical="center")
 
     # TRN nömrəsinin yazıldığı box
     ws.merge_cells("N5:U6")
@@ -181,12 +174,12 @@ def create_trn_excel(
     # PROJECT hissəsi (F7:M8)
     ws.merge_cells("F7:M8")
     ws["F7"].value = "PROJECT: SPP2 \nSITALCHAY 2 PRODUCTION PLANT "
-    ws["F7"].alignment = Alignment(horizontal="left", vertical="center", wrapText=True)
+    ws["F7"].alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
 
     # LOCATION hissəsi (N7:U8)
     ws.merge_cells("N7:U8")
     ws["N7"].value = "LOCATION: \nSUMGAIT AZERBAIJAN "
-    ws["N7"].alignment = Alignment(horizontal="left", vertical="center", wrapText=True)
+    ws["N7"].alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
 
     # Sağda Page info (V7:X8)
     ws.merge_cells("V7:X8")
@@ -201,7 +194,7 @@ def create_trn_excel(
     # A2–Z8 aralığına sərhəd əlavə edirik (bütün header blok)
     apply_border(ws, "A2:Z8")
 
-############### === FROM / TO BLOKU ===###################
+    ############### === FROM / TO BLOKU === ###################
 
     # “From:” və “To:” başlıqları üçün sətir merge-ləri
     ws.merge_cells("A11:M11")
@@ -320,7 +313,7 @@ def create_trn_excel(
     ws["B39"].alignment = Alignment(horizontal="left", vertical="center")
 
     # Data table üçün sərhədlər
-    apply_border(ws, "A21:Y39")
+    apply_border(ws, "A21:Z39")
 
     # === FOOTER / ƏLAVƏ QEYDLƏR ===
 
@@ -353,8 +346,15 @@ def create_trn_excel(
 
     # Cari script-in olduğu qovluq
     script_dir = Path(__file__).resolve().parent
-    # Sol və sağ logo fayllarının tam yolu
-    add_logos(ws, script_dir / left_logo, script_dir / right_logo)
+    images_dir = script_dir / "images"
+
+    # Sol, sağ üst və sağ alt logo fayllarının tam yolu
+    add_logos(
+        ws,
+        images_dir / left_logo,
+        images_dir / right_top_logo,
+        images_dir / right_bottom_logo,
+    )
 
     # Faylı təhlükəsiz şəkildə saxlayırıq
     saved = safe_save_workbook(wb, output_path)
