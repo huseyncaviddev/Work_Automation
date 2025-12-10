@@ -20,13 +20,13 @@ LET_ROOT = Path(r"G:\My Drive\4-S1 ve S2 Ortak Dökümanlar\03-SPP LETTERS\SPP2-
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"}
 EXCEL_EXTS = {".xls", ".xlsx", ".xlsm", ".xlsb"}
 
-LOOKBACK_DAYS = 3
+LOOKBACK_DAYS = None 
 
 # TRN ilə göndərilən sənəd növləri
 TRN_DOC_TYPES = {
     "CLC", "DWG", "FRM", "ITP", "JSA", "LOG", "LST",
     "MAR", "MES", "NCR", "ORG", "REP", "SPE", "SAR",
-    "LPL"
+    "LPL", "SRF"
 }
 
 
@@ -202,8 +202,15 @@ def extract_shd_paths_from_mail(item) -> list[str]:
 
 def copy_shd_folder_to_trn(shd_path: str, trn_docs_folder: Path) -> bool:
     """
-    \\DATA\...\SOCKET SYSTEM INSTALLATION\ES03
-      → TRN-XXXX\3. docs\ES03
+    SHD sunum path-lərini TRN docs qovluğuna kopyalayır.
+
+    Məsələn:
+      \\DATA\...\SOCKET SYSTEM INSTALLATION\GF19
+      \\DATA\...\LIGHTING INSTALLATION\GF19
+
+    TRN strukturu belə olsun:
+      TRN-XXXX\3. docs\GF19\SOCKET SYSTEM INSTALLATION\...
+      TRN-XXXX\3. docs\GF19\LIGHTING INSTALLATION\...
     """
     src = Path(shd_path)
 
@@ -211,8 +218,23 @@ def copy_shd_folder_to_trn(shd_path: str, trn_docs_folder: Path) -> bool:
         print(f"[SHD] SKIP — path does NOT exist: {src}")
         return False
 
-    folder_name = src.name  # ES03
-    dst = trn_docs_folder / folder_name
+    # Son qovluq adı (məs: GF19)
+    zone_folder = src.name
+
+    # Onun parent qovluğu (məs: SOCKET SYSTEM INSTALLATION / LIGHTING INSTALLATION)
+    parent = src.parent
+    parent_name = parent.name if parent and parent != src else None
+
+    # Əsas GF19 root-u (3. docs içində)
+    zone_root = trn_docs_folder / zone_folder
+    zone_root.mkdir(parents=True, exist_ok=True)
+
+    # Əgər parent varsa → GF19 altında parent qovluğu açıb ora kopyalayırıq
+    if parent_name:
+        dst = zone_root / parent_name
+    else:
+        # Fallback: köhnə lojiqa kimi birbaşa 3. docs altına
+        dst = zone_root
 
     if dst.exists():
         print(f"[SHD] SKIP — already copied: {dst}")
@@ -344,12 +366,16 @@ def main():
     items = folder.Items
     items.Sort("[ReceivedTime]", True)
 
-    cutoff = datetime.now() - timedelta(days=LOOKBACK_DAYS)
+    # LOOKBACK_DAYS None olarsa → cutoff yoxdur
+    if LOOKBACK_DAYS is not None:
+        cutoff = datetime.now() - timedelta(days=LOOKBACK_DAYS)
+    else:
+        cutoff = None
 
-    trn_attachments = []   # a) KLN-SPP2-FRM/MAR/MES... fayllar
+    trn_attachments = []   # a) KLN-SPP2-* fayllar
     shd_paths = set()      # b) SHD sunum UNC path-ləri
-    stq_jobs = []          # c) (stq_attachment, other_attachments)
-    let_attachments = []   # d) LET
+    stq_jobs = []          # c) STQ paketləri
+    let_attachments = []   # d) LET faylları
 
     for item in items:
         if getattr(item, "Class", None) != 43:
@@ -361,9 +387,11 @@ def main():
         else:
             recv_time_naive = None
 
-        if recv_time_naive and recv_time_naive < cutoff:
+        # cutoff yalnız təyin olunubsa işləsin
+        if cutoff is not None and recv_time_naive and recv_time_naive < cutoff:
             print("Reached cutoff date. Stopping scan.")
             break
+
 
         # SHD sunum linkləri
         for p in extract_shd_paths_from_mail(item):
@@ -402,7 +430,6 @@ def main():
                 stq_jobs.append((stq_att, non_stq_atts))
             # Bu mail üçün TRN/LET lojiqasına girmirik
             continue
-
 
         # 2) STQ yoxdursa, əvvəlki kimi TRN/LET lojiqası
         for att in attachments:
