@@ -36,25 +36,25 @@ def add_logos(
     # Sol logo faylı varsa, şəkli sheet-ə əlavə et
     if left_logo_path.is_file():
         left_img = Image(str(left_logo_path))  # Şəkli yükləyirik
-        left_img.width = 140                   # Şəkilin eni (px)
-        left_img.height = 50                   # Şəkilin hündürlüyü (px)
-        left_img.anchor = "A2"                 # Şəkilin başlanğıc hüceyrəsi
-        ws.add_image(left_img)                 # Sheet-ə əlavə et
+        left_img.width = 90  # Şəkilin eni (px)
+        left_img.height = 30  # Şəkilin hündürlüyü (px)
+        left_img.anchor = "B4"  # Şəkilin başlanğıc hüceyrəsi
+        ws.add_image(left_img)  # Sheet-ə əlavə et
 
     # Sağ üst logo (PROYAPI)
     if right_top_logo_path.is_file():
         top_img = Image(str(right_top_logo_path))
-        top_img.width = 140
-        top_img.height = 35
-        top_img.anchor = "V2"
+        top_img.width = 100
+        top_img.height = 55
+        top_img.anchor = "W2"
         ws.add_image(top_img)
 
     # Sağ alt logo (PROKON)
     if right_bottom_logo_path.is_file():
         bottom_img = Image(str(right_bottom_logo_path))
-        bottom_img.width = 140
-        bottom_img.height = 35
-        bottom_img.anchor = "V4"
+        bottom_img.width = 100
+        bottom_img.height = 40
+        bottom_img.anchor = "W4"
         ws.add_image(bottom_img)
 
 
@@ -83,9 +83,9 @@ def create_trn_excel(
     output_path: Path = Path("SPP2-KLN-PRO-TRN-0164_AUTO.xlsx"),
     trn_no: str = "SPP2-KLN-PRO-TRN-0164",
     date_str: str = "29-Jul-2025",
-    left_logo: str = "vektords.jpg",      # images/vektords.jpg
+    left_logo: str = "vektords.jpg",  # images/vektords.jpg
     right_top_logo: str = "proyapi.png",  # images/proyapi.png
-    right_bottom_logo: str = "prokon.png" # images/prokon.png
+    right_bottom_logo: str = "prokon.png",  # images/prokon.png
 ):
     """
     TRN transmittal template-ini sıfırdan yaradan əsas funksiya.
@@ -97,9 +97,9 @@ def create_trn_excel(
       - right_top_logo     → sağ üst logo fayl adı (PROYAPI)
       - right_bottom_logo  → sağ alt logo fayl adı (PROKON)
     """
-    wb = Workbook()           # Yeni Excel workbook yaradırıq
-    ws = wb.active            # Default olaraq açılan ilk sheet
-    ws.title = "TRN Maker"    # Sheet-in adını dəyişirik
+    wb = Workbook()  # Yeni Excel workbook yaradırıq
+    ws = wb.active  # Default olaraq açılan ilk sheet
+    ws.title = "TRN Maker"  # Sheet-in adını dəyişirik
 
     # --- Ümumi default font və alignment ---
     base_font = Font(name="Calibri", size=9)
@@ -125,11 +125,13 @@ def create_trn_excel(
     ws.row_dimensions[50].height = 13.5
 
     # === ÜST YAŞIL BAR / QUTU ===
-    ws.merge_cells("A1:Z1")   # A1–Z1 aralığını bir hüceyrə kimi merge edirik
-    apply_border(ws, "A1:Z1") # Sərhəd tətbiq edirik
+    ws.merge_cells("A1:Z1")  # A1–Z1 aralığını bir hüceyrə kimi merge edirik
+    apply_border(ws, "A1:Z1")  # Sərhəd tətbiq edirik
 
     # Yaşıl dolgu (header bar rəngi – #91D050)
-    fill_green = PatternFill(start_color="91D050", end_color="91D050", fill_type="solid")
+    fill_green = PatternFill(
+        start_color="91D050", end_color="91D050", fill_type="solid"
+    )
     ws["A1"].fill = fill_green
 
     # === HEADER / TITLE AREA ===
@@ -205,8 +207,8 @@ def create_trn_excel(
     # Şirkət adları
     ws.merge_cells("A12:M12")
     ws.merge_cells("N12:Z12")
-    ws["A12"].value = ' “KOLIN”  İNŞAAT VE TICARET A.Ş'
-    ws["N12"].value = ' “PROYAPI/PROKON” JV'
+    ws["A12"].value = " “KOLIN”  İNŞAAT VE TICARET A.Ş"
+    ws["N12"].value = " “PROYAPI/PROKON” JV"
 
     # Adlar
     ws.merge_cells("A13:M13")
@@ -243,12 +245,12 @@ def create_trn_excel(
     header_fill = PatternFill("solid", fgColor="FFE7E6E6")
 
     # Header cell-lərini strukturlaşdırmaq üçün merge-lər
-    ws.merge_cells("A19:A20")   # Serial #
-    ws.merge_cells("B19:G20")   # Document Number
-    ws.merge_cells("H19:J20")   # Format
-    ws.merge_cells("K19:L20")   # Rev.
-    ws.merge_cells("M19:N20")   # Issue Code
-    ws.merge_cells("O19:Z20")   # Document Title
+    ws.merge_cells("A19:A20")  # Serial #
+    ws.merge_cells("B19:G20")  # Document Number
+    ws.merge_cells("H19:J20")  # Format
+    ws.merge_cells("K19:L20")  # Rev.
+    ws.merge_cells("M19:N20")  # Issue Code
+    ws.merge_cells("O19:Z20")  # Document Title
 
     # Header text-lərini dictionary ilə yazırıq
     headers = {
@@ -291,9 +293,13 @@ def create_trn_excel(
 
     # Mərkəzləndirilmiş alignment – format sahələri üçün
     for col in ("B", "H", "K", "M"):
-        ws[f"{col}21"].alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+        ws[f"{col}21"].alignment = Alignment(
+            horizontal="center", vertical="center", wrap_text=True
+        )
     # Title soldan hizalı
-    ws["O21"].alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+    ws["O21"].alignment = Alignment(
+        horizontal="left", vertical="center", wrap_text=True
+    )
 
     # Növbəti sətirlər üçün avtomatik sıra nömrəsi (formula ilə)
     for row in range(22, 39):
@@ -330,7 +336,9 @@ def create_trn_excel(
         "ADV = Advanced Copy, IFD = Issued For Design, IFI = Issued For Information, IFR = Issued For Review, IFA = Issued For Approval\n"
         "IFC = Issued For Construction"
     )
-    ws["A45"].alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    ws["A45"].alignment = Alignment(
+        horizontal="center", vertical="center", wrap_text=True
+    )
     apply_border(ws, "A45:Y48")
 
     # VektorDS footer mətni
@@ -339,7 +347,9 @@ def create_trn_excel(
         "VektorDS LLC | U.Hajibeyli str., 62, Baku, Azerbaijan. info@vektords.az\n"
         "This Document is VEKTORDS LLC property and cannot be used by others for any purpose without prior written consent."
     )
-    ws["A51"].alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    ws["A51"].alignment = Alignment(
+        horizontal="center", vertical="center", wrap_text=True
+    )
     apply_border(ws, "A51:Y52")
 
     # === Logoları sheet-ə əlavə etmə ===

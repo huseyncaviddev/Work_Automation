@@ -11,22 +11,37 @@ import win32com.client as win32
 # KONFİQ
 # ---------------------------------
 MAILBOX_NAME = "spp2dcc@kolin.com.tr"
-SUBPATH = r"Inbox\Sunulacaklar"   # KOLIN dept mail-ləri
+SUBPATH = r"Inbox\Sunulacaklar"  # KOLIN dept mail-ləri
 
 TRN_ROOT = Path(r"\\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\1. TRN")
 STQ_ROOT = Path(r"\\10.10.8.253\DataServer\STP-S2-Projeler\Log\1. Outgoing\3. STQ")
-LET_ROOT = Path(r"G:\My Drive\4-S1 ve S2 Ortak Dökümanlar\03-SPP LETTERS\SPP2-LET\1. KLN-PRO\01-Outgoing")
+LET_ROOT = Path(
+    r"G:\My Drive\4-S1 ve S2 Ortak Dökümanlar\03-SPP LETTERS\SPP2-LET\1. KLN-PRO\01-Outgoing"
+)
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp"}
 EXCEL_EXTS = {".xls", ".xlsx", ".xlsm", ".xlsb"}
 
-LOOKBACK_DAYS = None 
+LOOKBACK_DAYS = None
 
 # TRN ilə göndərilən sənəd növləri
 TRN_DOC_TYPES = {
-    "CLC", "DWG", "FRM", "ITP", "JSA", "LOG", "LST",
-    "MAR", "MES", "NCR", "ORG", "REP", "SPE", "SAR",
-    "LPL", "SRF"
+    "CLC",
+    "DWG",
+    "FRM",
+    "ITP",
+    "JSA",
+    "LOG",
+    "LST",
+    "MAR",
+    "MES",
+    "NCR",
+    "ORG",
+    "REP",
+    "SPE",
+    "SAR",
+    "LPL",
+    "SRF",
 }
 
 
@@ -81,7 +96,9 @@ def get_next_stq_index(root: Path) -> int:
     return max_num + 1 if max_num > 0 else 1
 
 
-def create_stq_folder_and_save(next_index: int, stq_attachment, base_folder: Path) -> tuple[int, Path]:
+def create_stq_folder_and_save(
+    next_index: int, stq_attachment, base_folder: Path
+) -> tuple[int, Path]:
     """
     Verilən STQ attachment üçün:
       - STQ kodunu çıxarır
@@ -172,7 +189,7 @@ def clean_filename_keep_code_only(filename: str) -> str:
     name, ext = os.path.splitext(filename)
     m = re.search(r"_R\d{2}", name, flags=re.IGNORECASE)
     if m:
-        code = name[:m.end()]
+        code = name[: m.end()]
     else:
         code = name.split(" ")[0]
     code = re.sub(r'[\\/:*?"<>|]', "_", code)
@@ -184,8 +201,8 @@ def extract_shd_paths_from_mail(item) -> list[str]:
     Body + HTMLBody-dən UNC path-ləri çıxarır:
       \\DATA\DataServer\Elektrik\11- SHOPDRAWING\PROYAPI SUNUM\...\ES03
     """
-    body = (getattr(item, "Body", "") or "")
-    html = (getattr(item, "HTMLBody", "") or "")
+    body = getattr(item, "Body", "") or ""
+    html = getattr(item, "HTMLBody", "") or ""
     text = body + "\n" + html
 
     raw_matches = re.findall(r"(\\\\[^\r\n<>]+)", text)
@@ -274,8 +291,8 @@ def add_r00_to_subfiles_without_rev(docs_root: Path):
         match = rev_pattern.search(stem)
 
         if match:
-            full_rev = match.group(1)   # -R00 və ya _R00
-            rev_number = match.group(2) # 00, 01, 02...
+            full_rev = match.group(1)  # -R00 və ya _R00
+            rev_number = match.group(2)  # 00, 01, 02...
 
             if full_rev.startswith("-"):
                 fixed_rev = f"_R{rev_number}"
@@ -372,10 +389,10 @@ def main():
     else:
         cutoff = None
 
-    trn_attachments = []   # a) KLN-SPP2-* fayllar
-    shd_paths = set()      # b) SHD sunum UNC path-ləri
-    stq_jobs = []          # c) STQ paketləri
-    let_attachments = []   # d) LET faylları
+    trn_attachments = []  # a) KLN-SPP2-* fayllar
+    shd_paths = set()  # b) SHD sunum UNC path-ləri
+    stq_jobs = []  # c) STQ paketləri
+    let_attachments = []  # d) LET faylları
 
     for item in items:
         if getattr(item, "Class", None) != 43:
@@ -391,7 +408,6 @@ def main():
         if cutoff is not None and recv_time_naive and recv_time_naive < cutoff:
             print("Reached cutoff date. Stopping scan.")
             break
-
 
         # SHD sunum linkləri
         for p in extract_shd_paths_from_mail(item):
@@ -481,7 +497,9 @@ def main():
     if stq_jobs:
         next_stq_no = get_next_stq_index(STQ_ROOT)
         for stq_att, extra_atts in stq_jobs:
-            next_stq_no, stq_folder = create_stq_folder_and_save(next_stq_no, stq_att, STQ_ROOT)
+            next_stq_no, stq_folder = create_stq_folder_and_save(
+                next_stq_no, stq_att, STQ_ROOT
+            )
 
             # Eyni maildəki digər attachmentləri də STQ qovluğuna saxlayırıq
             for att in extra_atts:

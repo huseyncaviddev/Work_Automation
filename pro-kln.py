@@ -95,8 +95,8 @@ def extract_with_winrar(zip_path: Path, out_dir: Path):
 
     cmd = [
         winrar_exe,
-        "x",          # extract
-        "-o+",        # overwrite all without prompt
+        "x",  # extract
+        "-o+",  # overwrite all without prompt
         str(zip_path),
         str(out_dir) + "\\",
     ]
@@ -110,7 +110,9 @@ def extract_with_winrar(zip_path: Path, out_dir: Path):
             stderr=subprocess.DEVNULL,
         )
     except Exception as e:
-        print(f"\n[WARN] WinRAR extract alınmadı ({e}), shutil.unpack_archive istifadə olunur.")
+        print(
+            f"\n[WARN] WinRAR extract alınmadı ({e}), shutil.unpack_archive istifadə olunur."
+        )
         shutil.unpack_archive(str(zip_path), str(out_dir))
 
 
@@ -319,7 +321,7 @@ def convert_main_pdf_to_docx(base_folder: Path, trn_code: str):
 
     print(f"[DOCX] Converting to Word: {pdf_path} → {docx_path}")
 
-    word = None    # Word açmaq ağır əməliyyatdır – yalnız ehtiyac olanda
+    word = None  # Word açmaq ağır əməliyyatdır – yalnız ehtiyac olanda
     try:
         word = win32.Dispatch("Word.Application")
         word.Visible = False
@@ -434,17 +436,13 @@ def process_single_stq_mail(mail_item, subject: str) -> int:
         rev = None
 
         # 1) Əsas qaynaq: fayl adı
-        m_fname = re.match(
-            r"^(KLN-SPP2-STQ-[A-Za-z0-9-]+)_R(\d{2})[_.-].*$", fname
-        )
+        m_fname = re.match(r"^(KLN-SPP2-STQ-[A-Za-z0-9-]+)_R(\d{2})[_.-].*$", fname)
         if m_fname:
             base_code = m_fname.group(1)
             rev = m_fname.group(2)
         else:
             # 2) Fallback: subject-dən ilk STQ kodu
-            m_subj = re.search(
-                r"(KLN-SPP2-STQ-[A-Za-z0-9-]+)(?:_R(\d{2}))?", subject
-            )
+            m_subj = re.search(r"(KLN-SPP2-STQ-[A-Za-z0-9-]+)(?:_R(\d{2}))?", subject)
             if m_subj:
                 base_code = m_subj.group(1)
                 rev = m_subj.group(2) or "00"
@@ -554,9 +552,9 @@ def main():
     total_items = items.Count
     processed_items = 0
 
-    done_trn = set()   # TRN kodları
-    done_stq = set()   # Mail EntryID-ləri
-    done_let = set()   # Mail EntryID-ləri
+    done_trn = set()  # TRN kodları
+    done_stq = set()  # Mail EntryID-ləri
+    done_let = set()  # Mail EntryID-ləri
 
     stq_file_count = 0
 
