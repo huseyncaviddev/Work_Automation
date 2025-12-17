@@ -4026,3 +4026,921 @@ pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None
 [2025-12-15 22:29:21] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
 [2025-12-15 22:29:21] Scan stats => checked:0 matched:0 (Unread-only)
 [2025-12-15 22:29:21] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 08:50:34] === Proyapi TRN Internal Distributor started ===
+[2025-12-16 08:50:34] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-16 08:50:34] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-16 08:50:34] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-16 08:50:34] Signature mode: oft | OFT exists: True | Display modal: False
+[2025-12-16 08:50:34] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-16 08:50:34] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 08:50:34] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 08:55:34] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 08:55:34] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 09:00:36] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 09:00:36] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 09:46:32] === Proyapi TRN Internal Distributor started ===
+[2025-12-16 09:46:32] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-16 09:46:32] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-16 09:46:32] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-16 09:46:32] Signature mode: oft | OFT exists: True | Display modal: False
+[2025-12-16 09:46:32] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-16 09:46:32] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: Disregard of Transmittal No. SPP2-PRO-KLN-TRN-0531
+[2025-12-16 09:46:32] ⚠️ TRN matched but no PDF found: RE: Disregard of Transmittal No. SPP2-PRO-KLN-TRN-0531
+[2025-12-16 09:46:32] Scan stats => checked:1 matched:0 (Unread-only)
+[2025-12-16 09:46:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 09:51:32] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: Disregard of Transmittal No. SPP2-PRO-KLN-TRN-0531
+[2025-12-16 09:51:32] ⚠️ TRN matched but no PDF found: RE: Disregard of Transmittal No. SPP2-PRO-KLN-TRN-0531
+[2025-12-16 09:51:32] Scan stats => checked:1 matched:0 (Unread-only)
+[2025-12-16 09:51:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 09:56:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 09:56:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:01:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:01:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:06:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:06:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:20:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:20:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:25:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:25:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:30:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:30:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:35:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:35:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:40:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:40:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:45:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:45:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:50:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:50:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 10:55:32] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 10:55:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:00:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:00:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:05:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:05:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:10:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:10:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:15:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:15:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:20:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:20:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:25:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:25:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:30:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:30:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:35:33] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 11:35:33] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 11:40:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 11:40:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 11:45:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 11:45:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 11:50:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 11:50:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 11:55:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 11:55:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:00:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:00:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:05:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:05:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:10:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:10:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:15:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:15:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:20:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:20:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:25:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:25:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:30:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:30:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:35:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:35:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:40:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:40:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:45:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:45:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:50:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:50:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 12:55:33] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 12:55:33] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:17:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:17:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:22:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:22:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:27:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:27:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:32:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:32:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:37:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:37:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:42:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:42:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:54:57] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:54:57] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 13:59:57] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 13:59:57] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 520, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 417, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 14:02:05] === Proyapi TRN Internal Distributor started ===
+[2025-12-16 14:02:05] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-16 14:02:05] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-16 14:02:05] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-16 14:02:05] Signature mode: oft | OFT exists: True | Display modal: False
+[2025-12-16 14:02:05] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-16 14:02:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:02:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:07:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:07:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:12:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:12:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:17:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:17:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:22:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:22:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:27:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:27:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:32:05] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: SPP2-PRO-KLN-TRN-0334-updated
+[2025-12-16 14:32:05] Scan stats => checked:1 matched:1 (Unread-only)
+[2025-12-16 14:32:05] FOUND => SPP2-PRO-KLN-TRN-0334 | PDFs=1 | Date=16 Dec 2025
+[2025-12-16 14:32:07] 👀 Displayed: SPP2-PRO-KLN-TRN-0334 | PDFs=1 (modal=False)
+[2025-12-16 14:32:07] ✅ Sent after display: SPP2-PRO-KLN-TRN-0334 | PDFs=1
+[2025-12-16 14:32:07] ✅ DONE => SPP2-PRO-KLN-TRN-0334 (incoming marked READ)
+[2025-12-16 14:37:07] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:37:07] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:42:07] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:42:08] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:54:45] === Proyapi TRN Internal Distributor started (v2) ===
+[2025-12-16 14:54:45] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-16 14:54:45] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-16 14:54:45] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-16 14:54:45] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-16 14:54:45] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-16 14:54:45] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:54:45] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 14:59:45] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 14:59:45] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:00:17] === Proyapi TRN Internal Distributor started (v2.1) ===
+[2025-12-16 15:00:17] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-16 15:00:17] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-16 15:00:17] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-16 15:00:17] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-16 15:00:17] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-16 15:00:17] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 15:00:17] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:05:17] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 15:05:17] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:10:17] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 15:10:17] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:15:17] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:15:17] ⚠️ TRN matched but no PDF found: RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:15:17] Scan stats => checked:1 matched:0 (Unread-only)
+[2025-12-16 15:15:17] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:20:17] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:20:17] ⚠️ TRN matched but no PDF found: RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:20:17] Scan stats => checked:1 matched:0 (Unread-only)
+[2025-12-16 15:20:17] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:25:17] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:25:17] ⚠️ TRN matched but no PDF found: RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:25:17] Scan stats => checked:1 matched:0 (Unread-only)
+[2025-12-16 15:25:17] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:30:17] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0531
+[2025-12-16 15:30:17] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:30:17] ⚠️ TRN matched but no PDF found: RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:30:17] Scan stats => checked:2 matched:1 (Unread-only)
+[2025-12-16 15:30:17] FOUND => SPP2-PRO-KLN-TRN-0531 | PDFs=1 | Date=16 Dec 2025 | is_update=False | already_seen=False
+[2025-12-16 15:30:18] 👀 Displayed: SPP2-PRO-KLN-TRN-0531 | PDFs=1 (modal=False)
+[2025-12-16 15:30:18] ✅ Sent after display: SPP2-PRO-KLN-TRN-0531 | PDFs=1
+[2025-12-16 15:30:18] ✅ DONE => SPP2-PRO-KLN-TRN-0531 (incoming marked READ)
+[2025-12-16 15:35:18] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:35:18] ⚠️ TRN matched but no PDF found: RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:35:18] Scan stats => checked:1 matched:0 (Unread-only)
+[2025-12-16 15:35:18] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:44:03] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:44:04] ⚠️ TRN matched but no PDF found: RE: SPP2-PRO-KLN-TRN-0525-updated
+[2025-12-16 15:44:04] Scan stats => checked:1 matched:0 (Unread-only)
+[2025-12-16 15:44:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:49:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 15:49:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:54:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 15:54:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 15:59:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 15:59:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:04:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:04:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:09:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:09:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:14:04] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0532
+[2025-12-16 16:14:04] Scan stats => checked:1 matched:1 (Unread-only)
+[2025-12-16 16:14:04] FOUND => SPP2-PRO-KLN-TRN-0532 | PDFs=1 | Date=16 Dec 2025 | is_update=False | already_seen=False
+[2025-12-16 16:14:04] 👀 Displayed: SPP2-PRO-KLN-TRN-0532 | PDFs=1 (modal=False)
+[2025-12-16 16:14:04] ✅ Sent after display: SPP2-PRO-KLN-TRN-0532 | PDFs=1
+[2025-12-16 16:14:04] ✅ DONE => SPP2-PRO-KLN-TRN-0532 (incoming marked READ)
+[2025-12-16 16:19:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:19:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:24:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:24:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:29:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:29:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:34:04] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:34:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:39:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:39:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:44:05] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 16:44:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 16:49:05] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0533
+[2025-12-16 16:49:05] Scan stats => checked:1 matched:1 (Unread-only)
+[2025-12-16 16:49:05] FOUND => SPP2-PRO-KLN-TRN-0533 | PDFs=1 | Date=16 Dec 2025 | is_update=False | already_seen=False
+[2025-12-16 16:49:05] 👀 Displayed: SPP2-PRO-KLN-TRN-0533 | PDFs=1 (modal=False)
+[2025-12-16 16:49:05] ✅ Sent after display: SPP2-PRO-KLN-TRN-0533 | PDFs=1
+[2025-12-16 16:49:05] ✅ DONE => SPP2-PRO-KLN-TRN-0533 (incoming marked READ)
+[2025-12-16 16:54:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 16:54:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 16:59:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 16:59:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:04:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:04:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:09:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:09:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:14:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:14:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:19:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:19:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:24:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:24:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:29:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:29:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:34:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:34:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:39:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:39:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:44:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:44:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:49:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:49:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:54:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:54:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 17:59:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 17:59:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 18:04:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 18:04:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 18:09:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 18:09:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 18:14:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 18:14:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 21:03:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 21:03:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 21:05:18] === Proyapi TRN Internal Distributor started ===
+[2025-12-16 21:05:18] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-16 21:05:18] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-16 21:05:18] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-16 21:05:18] Signature mode: oft | OFT exists: True | Display modal: False
+[2025-12-16 21:05:18] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-16 21:05:18] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-16 21:05:18] No matching unread TRN found. Sleeping 300s...
+[2025-12-16 21:08:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 21:08:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 21:13:05] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 21:13:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 22:52:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 22:52:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 22:57:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 22:57:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-16 23:02:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-16 23:02:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 00:03:01] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 00:03:01] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 00:44:04] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 00:44:04] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 03:17:44] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 03:17:44] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 07:22:16] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 07:22:16] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 07:27:16] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 07:27:16] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 08:35:32] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 08:35:32] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 08:40:32] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 08:40:32] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 08:46:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 08:46:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 08:51:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 08:51:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 08:56:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 08:56:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:01:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:01:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:06:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:06:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:11:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:11:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:16:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:16:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:21:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:21:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:26:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:26:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:31:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:31:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:36:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:36:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:41:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 09:41:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributorv1.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 09:46:50] === Proyapi TRN Internal Distributor started (v2.1) ===
+[2025-12-17 09:46:50] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-17 09:46:50] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-17 09:46:50] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-17 09:46:50] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-17 09:46:50] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-17 09:46:50] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 09:46:50] No matching unread TRN found. Sleeping 300s...

@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Proyapi TRN Incoming -> Internal Distribution Automation (ULTRA PREMIUM GOLD)
+Proyapi TRN Incoming -> Internal Distribution Automation (ULTRA PREMIUM GOLD v2.1)
 
-Fixes:
+Fixes / Features:
 - Body date is dynamic from incoming mail (SentOn preferred, fallback ReceivedTime)
 - Date format is EN: "22 Sep 2025"
 - TRN number is BOLD (HTML)
-- Keeps fast performance: Restrict(UnRead + ReceivedTime) + MAX_SCAN
+- Best performance: Restrict(UnRead + ReceivedTime) + MAX_SCAN
+- ✅ Handles UPDATED scenario:
+    - Keeps TRN-level history (trn_history)
+    - If same TRN arrives again -> marks as UPDATED distribution
+    - If same TRN + same attachments signature arrives -> SKIP (no spam)
 """
 
 import json
@@ -19,7 +23,7 @@ import shutil
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import List, Optional, Tuple, Dict, Any
 
 import win32com.client  # pip install pywin32
 
@@ -37,15 +41,13 @@ MAILBOX_NAME_HINT = "spp2dcc@kolin.com.tr"
 WATCH_FOLDER_PATH = r"Inbox\From Proyapi"
 
 # ✅ Proyapi sender filter
-SENDER_EMAIL = "chuseyn@kolin.com.tr"
-# SENDER_EMAIL = "dccspp2@proyapimusavirlik.com"
+SENDER_EMAIL = "dccspp2@proyapimusavirlik.com"
 
 # ✅ OFT template (signature/layout stable)
 OFT_TEMPLATE_PATH = Path(
     r"C:\Users\husey\OneDrive\Desktop\SPP2-OFT\4.1. SPP2-TRN_internal.oft"
 )
 
-# "oft" recommended
 SIGNATURE_MODE = "oft"  # "oft" or "file"
 SIGNATURE_NAME = None
 
@@ -53,8 +55,12 @@ POLL_SECONDS = 300  # 5 minutes
 LOOKBACK_DAYS = 7
 MAX_SCAN = 200
 
-SEND_MODE = "display"
-DISPLAY_MODAL = False
+# Send behavior
+SEND_MODE = "display"  # "send" | "draft" | "display"
+DISPLAY_MODAL = False  # If True: blocks until user closes the window
+AUTO_SEND_AFTER_DISPLAY = (
+    True  # if SEND_MODE="display" and DISPLAY_MODAL=False -> auto-send
+)
 
 DEBUG_PREVIEW = True
 DEBUG_PREVIEW_LIMIT = 5
@@ -100,13 +106,21 @@ RAW_TO_RECIPIENTS = [
     "Orxan Dursunov <odursunov@kolin.com.tr>",
 ]
 
-
 CC_RECIPIENTS: List[str] = []
 
+# State limits
 MAX_STATE_IDS = 5000
+MAX_TRN_HISTORY = 5000  # keep last N TRNs
 
 TRN_SUBJECT_RE = re.compile(r"\bSPP2-PRO-KLN-TRN-\d{4}\b", re.IGNORECASE)
 OUTLOOK_MAILITEM_CLASS = 43
+
+# Detect "updated / corrected" keywords (TR, AZ, EN-ish)
+UPDATED_RE = re.compile(
+    r"\b(updated|update|corrected|correction|revised|revision|rev\.)\b|"
+    r"\b(güncellendi|güncellenmiş|güncellenmistir|düzəldildi|duzeldildi|duzeltme)\b",
+    re.IGNORECASE,
+)
 
 
 # =========================================================
@@ -118,7 +132,10 @@ class TrnMailPayload:
     incoming_entry_id: str
     pdf_files: List[Path]
     mail_item: object
-    sent_dt: Optional[datetime]  # ✅ dynamic date source
+    sent_dt: Optional[datetime]
+    subject: str
+    sig: str
+    subject_says_update: bool
 
 
 # =========================================================
@@ -140,17 +157,40 @@ def log(msg: str) -> None:
         f.write(line)
 
 
-def load_state() -> dict:
+def safe_iso(dt_obj: Optional[datetime]) -> str:
+    if not dt_obj:
+        return ""
+    try:
+        return dt_obj.isoformat()
+    except Exception:
+        return ""
+
+
+def parse_iso(dt_str: str) -> Optional[datetime]:
+    if not dt_str:
+        return None
+    try:
+        return datetime.fromisoformat(dt_str)
+    except Exception:
+        return None
+
+
+def load_state() -> Dict[str, Any]:
     try:
         if STATE_PATH.exists():
             with open(STATE_PATH, "r", encoding="utf-8") as f:
-                return json.load(f)
+                s = json.load(f)
+                if "processed_entry_ids" not in s:
+                    s["processed_entry_ids"] = []
+                if "trn_history" not in s:
+                    s["trn_history"] = {}
+                return s
     except Exception as e:
-        log(f"STATE read error: {e}")
-    return {"processed_entry_ids": []}
+        log(f"STATE read error (will reset safely): {e}")
+    return {"processed_entry_ids": [], "trn_history": {}}
 
 
-def save_state(state: dict) -> None:
+def save_state(state: Dict[str, Any]) -> None:
     ensure_parent(STATE_PATH)
     with open(STATE_PATH, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
@@ -160,6 +200,25 @@ def prune_state_ids(ids_list: List[str]) -> List[str]:
     if len(ids_list) <= MAX_STATE_IDS:
         return ids_list
     return ids_list[-MAX_STATE_IDS:]
+
+
+def prune_trn_history(trn_history: Dict[str, Any]) -> Dict[str, Any]:
+    if len(trn_history) <= MAX_TRN_HISTORY:
+        return trn_history
+
+    items = []
+    for k, v in trn_history.items():
+        ts = v.get("last_seen_ts", "")
+        items.append((k, ts))
+
+    items.sort(key=lambda x: x[1])  # oldest first
+    drop_count = max(0, len(items) - MAX_TRN_HISTORY)
+    to_drop = set([k for k, _ in items[:drop_count]])
+
+    for k in to_drop:
+        trn_history.pop(k, None)
+
+    return trn_history
 
 
 def dedupe_recipients(raw_list: List[str]) -> Tuple[List[str], List[str]]:
@@ -201,9 +260,22 @@ def extract_trn_no(subject: str) -> Optional[str]:
 
 
 def format_en_date(dt_obj: Optional[datetime]) -> str:
-    # EN date like: 22 Sep 2025
     dt_obj = dt_obj or datetime.now()
     return dt_obj.strftime("%d %b %Y")
+
+
+def is_update_subject(subject: str) -> bool:
+    return bool(subject and UPDATED_RE.search(subject))
+
+
+def pdf_signature(pdf_files: List[Path]) -> str:
+    parts = []
+    for p in pdf_files:
+        try:
+            parts.append(f"{p.name.lower()}:{p.stat().st_size}")
+        except Exception:
+            parts.append(f"{p.name.lower()}:?")
+    return "|".join(sorted(parts))
 
 
 def get_outlook():
@@ -322,13 +394,35 @@ def cleanup_pdf_temp(pdf_files: List[Path]) -> None:
 
 
 # =========================================================
-# MAIL BUILD (✅ Dynamic date + EN format + BOLD TRN)
+# MAIL BUILD
 # =========================================================
-def build_internal_body_html(trn_no: str, sent_dt: Optional[datetime]) -> str:
+def build_internal_body_html(
+    trn_no: str,
+    sent_dt: Optional[datetime],
+    is_update: bool,
+    prev_sent_dt: Optional[datetime],
+) -> str:
     date_str = format_en_date(sent_dt)
+    prev_str = format_en_date(prev_sent_dt) if prev_sent_dt else ""
 
-    # Bahnschrift yoxdursa fallback-lar işə düşəcək
     font_style = "font-family:Bahnschrift, Calibri, Arial, sans-serif; font-size:11pt;"
+
+    if is_update:
+        # ✅ Short, official Turkish + optional previous date
+        extra = "<p><b>Not:</b> Bu e-posta, daha önce paylaşılan transmittalın <b>güncellenmiş</b> versiyonudur"
+        if prev_str:
+            extra += f" (önceki paylaşım tarihi: <b>{prev_str}</b>)"
+        extra += ". Lütfen önceki versiyonu dikkate almayınız.</p>"
+
+        return (
+            f"<div style='{font_style}'>"
+            "<p>Sayın İlgililer,</p>"
+            f"<p>Müşavir tarafından <b>{date_str}</b> tarihinde Sitalçay 2 Üretim Tesisi için "
+            f"paylaşılan <b>güncellenmiş</b> transmittal № <b>{trn_no}</b> ekte bulunan dosyadaki gibidir.</p>"
+            f"{extra}"
+            "<br>"
+            "</div>"
+        )
 
     return (
         f"<div style='{font_style}'>"
@@ -346,14 +440,24 @@ def prepend_intro_keep_existing_html(msg, intro_html: str) -> None:
 
 
 def create_internal_mail(
-    outlook_app, trn_no: str, sent_dt: Optional[datetime], pdf_files: List[Path]
+    outlook_app,
+    trn_no: str,
+    sent_dt: Optional[datetime],
+    pdf_files: List[Path],
+    is_update: bool,
+    prev_sent_dt: Optional[datetime],
 ) -> None:
     to_unique, removed = dedupe_recipients(RAW_TO_RECIPIENTS)
     if removed:
         log(f"Recipient duplicates removed ({len(removed)}): " + " | ".join(removed))
 
+    # Create mail
     if SIGNATURE_MODE == "oft" and OFT_TEMPLATE_PATH.exists():
-        msg = outlook_app.CreateItemFromTemplate(str(OFT_TEMPLATE_PATH))
+        try:
+            msg = outlook_app.CreateItemFromTemplate(str(OFT_TEMPLATE_PATH))
+        except Exception as e:
+            log(f"⚠️ OFT failed ({e}). Falling back to blank mail item.")
+            msg = outlook_app.CreateItem(0)
     else:
         msg = outlook_app.CreateItem(0)
         sig_html = (
@@ -364,29 +468,35 @@ def create_internal_mail(
 
     msg.To = "; ".join(to_unique)
     msg.CC = "; ".join(CC_RECIPIENTS) if CC_RECIPIENTS else ""
-    msg.Subject = trn_no
 
-    intro_html = build_internal_body_html(trn_no, sent_dt)
+    subject = f"{trn_no} (UPDATED)" if is_update else trn_no
+    msg.Subject = subject
+
+    intro_html = build_internal_body_html(trn_no, sent_dt, is_update, prev_sent_dt)
     prepend_intro_keep_existing_html(msg, intro_html)
 
     for p in pdf_files:
         if p.exists():
             msg.Attachments.Add(str(p))
 
+    # Dispatch
     if SEND_MODE == "send":
         msg.Send()
-        log(f"✅ Sent internal mail: {trn_no} | PDFs={len(pdf_files)}")
-    elif SEND_MODE == "draft":
-        msg.Save()
-        log(f"📝 Saved draft: {trn_no} | PDFs={len(pdf_files)}")
-    else:
-        msg.Display(DISPLAY_MODAL)
-    log(f"👀 Displayed: {trn_no} | PDFs={len(pdf_files)} (modal={DISPLAY_MODAL})")
+        log(f"✅ Sent internal mail: {subject} | PDFs={len(pdf_files)}")
+        return
 
-    # ✅ Display-dən sonra auto-send
-    if not DISPLAY_MODAL:
+    if SEND_MODE == "draft":
+        msg.Save()
+        log(f"📝 Saved draft: {subject} | PDFs={len(pdf_files)}")
+        return
+
+    # display mode
+    msg.Display(DISPLAY_MODAL)
+    log(f"👀 Displayed: {subject} | PDFs={len(pdf_files)} (modal={DISPLAY_MODAL})")
+
+    if AUTO_SEND_AFTER_DISPLAY and not DISPLAY_MODAL:
         msg.Send()
-        log(f"✅ Sent after display: {trn_no} | PDFs={len(pdf_files)}")
+        log(f"✅ Sent after display: {subject} | PDFs={len(pdf_files)}")
 
 
 def mark_mail_as_read(mail_item) -> None:
@@ -466,13 +576,15 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
             if not trn_no:
                 continue
 
-            # ✅ dynamic date source: SentOn preferred, fallback ReceivedTime
             sent_dt = normalize_outlook_dt(getattr(mail, "SentOn", None)) or received
 
             pdfs = save_pdf_attachments(mail)
             if not pdfs:
                 log(f"⚠️ TRN matched but no PDF found: {subject}")
                 continue
+
+            sig = pdf_signature(pdfs)
+            subject_update = is_update_subject(subject)
 
             results.append(
                 TrnMailPayload(
@@ -481,6 +593,9 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
                     pdf_files=pdfs,
                     mail_item=mail,
                     sent_dt=sent_dt,
+                    subject=subject,
+                    sig=sig,
+                    subject_says_update=subject_update,
                 )
             )
             matched += 1
@@ -497,10 +612,11 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
 # MAIN LOOP
 # =========================================================
 def main():
-    log("=== Proyapi TRN Internal Distributor started ===")
+    log("=== Proyapi TRN Internal Distributor started (v2.1) ===")
 
     state = load_state()
     processed_ids = set(state.get("processed_entry_ids", []))
+    trn_history = state.get("trn_history", {}) or {}
 
     outlook_app, ns = get_outlook()
     root = find_mailbox_root(ns, MAILBOX_NAME_HINT)
@@ -512,7 +628,7 @@ def main():
         f"Mode: {SEND_MODE} | Poll: {POLL_SECONDS}s | Lookback: {LOOKBACK_DAYS}d | MaxScan:{MAX_SCAN}"
     )
     log(
-        f"Signature mode: {SIGNATURE_MODE} | OFT exists: {OFT_TEMPLATE_PATH.exists()} | Display modal: {DISPLAY_MODAL}"
+        f"Signature mode: {SIGNATURE_MODE} | OFT exists: {OFT_TEMPLATE_PATH.exists()} | Display modal: {DISPLAY_MODAL} | AutoSendAfterDisplay: {AUTO_SEND_AFTER_DISPLAY}"
     )
     log("Filter: ONLY UNREAD mails. Processed mail will be marked READ.")
 
@@ -524,22 +640,70 @@ def main():
                 log(f"No matching unread TRN found. Sleeping {POLL_SECONDS}s...")
             else:
                 for p in payloads:
+                    prev = (
+                        trn_history.get(p.trn_no, {})
+                        if isinstance(trn_history, dict)
+                        else {}
+                    )
+                    prev_sig = prev.get("last_sig", "")
+                    prev_sent_dt = parse_iso(prev.get("last_sent_dt", ""))
+
+                    already_seen_trn = bool(prev)
+                    # update logic: subject says update OR we already distributed this TRN earlier
+                    is_update = p.subject_says_update or already_seen_trn
+
                     log(
-                        f"FOUND => {p.trn_no} | PDFs={len(p.pdf_files)} | Date={format_en_date(p.sent_dt)}"
+                        f"FOUND => {p.trn_no} | PDFs={len(p.pdf_files)} | Date={format_en_date(p.sent_dt)} | is_update={is_update} | already_seen={already_seen_trn}"
                     )
 
                     try:
+                        # ✅ anti-spam: same TRN + same attachments => SKIP
+                        if already_seen_trn and prev_sig and p.sig == prev_sig:
+                            log(
+                                f"⏭️ SKIP duplicate content: {p.trn_no} (same attachment signature)"
+                            )
+                            mark_mail_as_read(p.mail_item)
+
+                            # Still mark as processed to avoid re-processing loop
+                            processed_ids.add(p.incoming_entry_id)
+                            state["processed_entry_ids"] = prune_state_ids(
+                                list(processed_ids)
+                            )
+
+                            # Update last seen (optional but useful)
+                            trn_history[p.trn_no]["last_seen_ts"] = now_ts()
+                            state["trn_history"] = prune_trn_history(trn_history)
+
+                            save_state(state)
+                            continue
+
+                        # Send / Display mail
                         create_internal_mail(
-                            outlook_app, p.trn_no, p.sent_dt, p.pdf_files
+                            outlook_app,
+                            p.trn_no,
+                            p.sent_dt,
+                            p.pdf_files,
+                            is_update,
+                            prev_sent_dt,
                         )
+
                         mark_mail_as_read(p.mail_item)
 
                         processed_ids.add(p.incoming_entry_id)
                         state["processed_entry_ids"] = prune_state_ids(
                             list(processed_ids)
                         )
-                        save_state(state)
 
+                        trn_history[p.trn_no] = {
+                            "last_entry_id": p.incoming_entry_id,
+                            "last_sent_dt": safe_iso(p.sent_dt),
+                            "last_sig": p.sig,
+                            "last_seen_ts": now_ts(),
+                            "last_was_update": bool(is_update),
+                        }
+                        state["trn_history"] = prune_trn_history(trn_history)
+
+                        save_state(state)
                         log(f"✅ DONE => {p.trn_no} (incoming marked READ)")
 
                     finally:
