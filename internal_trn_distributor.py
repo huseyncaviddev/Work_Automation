@@ -55,6 +55,11 @@ POLL_SECONDS = 300  # 5 minutes
 LOOKBACK_DAYS = 7
 MAX_SCAN = 200
 
+# Performance & Reliability settings
+MAX_RETRY_ATTEMPTS = 3
+RETRY_DELAY = 5  # seconds
+COM_RECONNECT_INTERVAL = 3600  # Recreate COM objects every hour to prevent stale connections
+
 # Send behavior
 SEND_MODE = "display"  # "send" | "draft" | "display"
 DISPLAY_MODAL = False  # If True: blocks until user closes the window
@@ -121,6 +126,64 @@ UPDATED_RE = re.compile(
     r"\b(güncellendi|güncellenmiş|güncellenmistir|düzəldildi|duzeldildi|duzeltme)\b",
     re.IGNORECASE,
 )
+
+
+# =========================================================
+# COM CONNECTION MANAGER
+# =========================================================
+class OutlookConnectionManager:
+    """Manages Outlook COM connection with auto-reconnect on errors."""
+
+    def __init__(self):
+        self.app = None
+        self.ns = None
+        self.last_connect_time = None
+        self.reconnect()
+
+    def reconnect(self):
+        """Establish or re-establish Outlook connection."""
+        log("🔄 Connecting to Outlook...")
+        self.app, self.ns = get_outlook_with_retry()
+        self.last_connect_time = time.time()
+
+    def should_reconnect(self):
+        """Check if we should proactively reconnect."""
+        if self.last_connect_time is None:
+            return True
+        elapsed = time.time() - self.last_connect_time
+        return elapsed >= COM_RECONNECT_INTERVAL
+
+    def execute_with_retry(self, func, *args, **kwargs):
+        """Execute a function with automatic retry on COM errors."""
+        for attempt in range(1, MAX_RETRY_ATTEMPTS + 1):
+            try:
+                return func(*args, **kwargs)
+            except Exception as e:
+                error_str = str(e).lower()
+                is_com_error = any(keyword in error_str for keyword in [
+                    'rpc server', 'rpc_e_', 'disconnected', 'not available',
+                    'invalid', 'automation error'
+                ])
+
+                if is_com_error and attempt < MAX_RETRY_ATTEMPTS:
+                    log(f"⚠️ COM error detected (attempt {attempt}/{MAX_RETRY_ATTEMPTS}): {e}")
+                    log("🔄 Reconnecting to Outlook...")
+                    time.sleep(RETRY_DELAY)
+                    self.reconnect()
+                else:
+                    raise
+
+        raise RuntimeError("Failed after all retry attempts")
+
+    def get_folder(self, root, folder_path: str):
+        """Get folder with retry logic."""
+        def _get_folder():
+            parts = folder_path.split("\\")
+            f = root
+            for p in parts:
+                f = f.Folders.Item(p)
+            return f
+        return self.execute_with_retry(_get_folder)
 
 
 # =========================================================
@@ -278,10 +341,31 @@ def pdf_signature(pdf_files: List[Path]) -> str:
     return "|".join(sorted(parts))
 
 
+def get_outlook_with_retry(max_attempts=MAX_RETRY_ATTEMPTS):
+    """Get Outlook with retry mechanism for RPC errors."""
+    for attempt in range(1, max_attempts + 1):
+        try:
+            app = win32com.client.Dispatch("Outlook.Application")
+            ns = app.GetNamespace("MAPI")
+            # Test connection
+            _ = ns.Folders.Count
+            log(f"✅ Outlook connection established (attempt {attempt}/{max_attempts})")
+            return app, ns
+        except Exception as e:
+            log(f"⚠️ Outlook connection attempt {attempt}/{max_attempts} failed: {e}")
+            if attempt < max_attempts:
+                log(f"Retrying in {RETRY_DELAY} seconds...")
+                time.sleep(RETRY_DELAY)
+            else:
+                log("❌ Failed to connect to Outlook after all retry attempts")
+                raise
+
+    raise RuntimeError("Failed to establish Outlook connection")
+
+
 def get_outlook():
-    app = win32com.client.Dispatch("Outlook.Application")
-    ns = app.GetNamespace("MAPI")
-    return app, ns
+    """Legacy wrapper - uses retry mechanism."""
+    return get_outlook_with_retry()
 
 
 def find_mailbox_root(ns, mailbox_hint: str):
@@ -525,6 +609,7 @@ def try_restrict_items(items, cutoff_dt: datetime):
 
 
 def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
+    """Optimized scan with batch processing and property caching."""
     items = folder.Items
     items.Sort("[ReceivedTime]", True)
 
@@ -534,6 +619,9 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
     results: List[TrnMailPayload] = []
     checked = 0
     matched = 0
+    skipped_read = 0
+    skipped_sender = 0
+    skipped_no_trn = 0
     preview_left = DEBUG_PREVIEW_LIMIT
 
     try:
@@ -546,38 +634,47 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
             mail = items.Item(idx)
             checked += 1
 
+            # Fast early exits
             if getattr(mail, "Class", None) != OUTLOOK_MAILITEM_CLASS:
                 continue
 
             if not bool(getattr(mail, "UnRead", False)):
+                skipped_read += 1
                 continue
 
+            # Batch property access (minimize COM calls)
             entry_id = str(mail.EntryID)
             if entry_id in processed_ids:
                 continue
 
-            sender = get_sender_smtp_address(mail)
             subject = str(getattr(mail, "Subject", "") or "")
             received = normalize_outlook_dt(getattr(mail, "ReceivedTime", None))
 
-            if DEBUG_PREVIEW and preview_left > 0:
-                log(
-                    f"DEBUG => UnRead={mail.UnRead} | Sender={sender} | Subject={subject}"
-                )
-                preview_left -= 1
-
+            # Early date check
             if received and received < cutoff:
                 break
 
-            if SENDER_EMAIL.lower() not in sender:
-                continue
-
+            # Quick TRN check before expensive sender lookup
             trn_no = extract_trn_no(subject)
             if not trn_no:
+                skipped_no_trn += 1
                 continue
 
+            # Now check sender (more expensive)
+            sender = get_sender_smtp_address(mail)
+
+            if DEBUG_PREVIEW and preview_left > 0:
+                log(f"DEBUG => UnRead={mail.UnRead} | Sender={sender} | Subject={subject}")
+                preview_left -= 1
+
+            if SENDER_EMAIL.lower() not in sender:
+                skipped_sender += 1
+                continue
+
+            # Get sent date
             sent_dt = normalize_outlook_dt(getattr(mail, "SentOn", None)) or received
 
+            # Save PDFs
             pdfs = save_pdf_attachments(mail)
             if not pdfs:
                 log(f"⚠️ TRN matched but no PDF found: {subject}")
@@ -604,7 +701,10 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
             log(f"Error while scanning item #{idx}: {e}")
             log(traceback.format_exc())
 
-    log(f"Scan stats => checked:{checked} matched:{matched} (Unread-only)")
+    log(
+        f"Scan stats => checked:{checked} matched:{matched} | "
+        f"skipped: read={skipped_read} sender={skipped_sender} no_trn={skipped_no_trn}"
+    )
     return results
 
 
@@ -612,28 +712,47 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
 # MAIN LOOP
 # =========================================================
 def main():
-    log("=== Proyapi TRN Internal Distributor started (v2.1) ===")
+    log("=== Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===")
 
+    # Load state
     state = load_state()
     processed_ids = set(state.get("processed_entry_ids", []))
     trn_history = state.get("trn_history", {}) or {}
 
-    outlook_app, ns = get_outlook()
+    # Initialize connection manager with retry
+    conn_mgr = OutlookConnectionManager()
+    outlook_app = conn_mgr.app
+    ns = conn_mgr.ns
+
     root = find_mailbox_root(ns, MAILBOX_NAME_HINT)
-    folder = get_folder(root, WATCH_FOLDER_PATH)
+    folder = conn_mgr.get_folder(root, WATCH_FOLDER_PATH)
 
     log(f"Watching: {root.Name} / {WATCH_FOLDER_PATH}")
     log(f"Sender filter: {SENDER_EMAIL}")
     log(
         f"Mode: {SEND_MODE} | Poll: {POLL_SECONDS}s | Lookback: {LOOKBACK_DAYS}d | MaxScan:{MAX_SCAN}"
     )
+    log(f"Retry: {MAX_RETRY_ATTEMPTS} attempts | Delay: {RETRY_DELAY}s | Reconnect interval: {COM_RECONNECT_INTERVAL}s")
     log(
         f"Signature mode: {SIGNATURE_MODE} | OFT exists: {OFT_TEMPLATE_PATH.exists()} | Display modal: {DISPLAY_MODAL} | AutoSendAfterDisplay: {AUTO_SEND_AFTER_DISPLAY}"
     )
     log("Filter: ONLY UNREAD mails. Processed mail will be marked READ.")
 
+    loop_count = 0
     while True:
         try:
+            loop_count += 1
+
+            # Proactive reconnect to avoid stale connections
+            if conn_mgr.should_reconnect():
+                log("⏰ Proactive reconnect scheduled (hourly refresh)")
+                conn_mgr.reconnect()
+                outlook_app = conn_mgr.app
+                ns = conn_mgr.ns
+                root = find_mailbox_root(ns, MAILBOX_NAME_HINT)
+                folder = conn_mgr.get_folder(root, WATCH_FOLDER_PATH)
+
+            log(f"\n[Loop #{loop_count}] Scanning for unread TRN mails...")
             payloads = scan_unread_trn_mails(folder, processed_ids)
 
             if not payloads:
@@ -710,8 +829,29 @@ def main():
                         cleanup_pdf_temp(p.pdf_files)
 
         except Exception as e:
-            log(f"Loop error: {e}")
-            log(traceback.format_exc())
+            error_str = str(e).lower()
+            is_com_error = any(keyword in error_str for keyword in [
+                'rpc server', 'rpc_e_', 'disconnected', 'not available',
+                'invalid', 'automation error'
+            ])
+
+            if is_com_error:
+                log(f"❌ COM/RPC error in main loop: {e}")
+                log(traceback.format_exc())
+                log("🔄 Attempting to reconnect Outlook...")
+                try:
+                    conn_mgr.reconnect()
+                    outlook_app = conn_mgr.app
+                    ns = conn_mgr.ns
+                    root = find_mailbox_root(ns, MAILBOX_NAME_HINT)
+                    folder = conn_mgr.get_folder(root, WATCH_FOLDER_PATH)
+                    log("✅ Reconnection successful, continuing...")
+                except Exception as reconnect_error:
+                    log(f"❌ Reconnection failed: {reconnect_error}")
+                    log(f"⏸️ Waiting {POLL_SECONDS}s before retry...")
+            else:
+                log(f"❌ Loop error: {e}")
+                log(traceback.format_exc())
 
         time.sleep(POLL_SECONDS)
 

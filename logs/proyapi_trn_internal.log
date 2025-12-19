@@ -4944,3 +4944,1257 @@ pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None
 [2025-12-17 09:46:50] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
 [2025-12-17 09:46:50] Scan stats => checked:0 matched:0 (Unread-only)
 [2025-12-17 09:46:50] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 09:48:42] === Proyapi TRN Internal Distributor started (v2.1) ===
+[2025-12-17 09:48:42] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-17 09:48:42] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-17 09:48:42] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-17 09:48:42] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-17 09:48:42] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-17 09:48:42] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 09:48:42] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 09:53:43] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 09:53:44] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 09:58:44] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 09:58:44] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 10:03:44] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 10:03:44] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 10:08:44] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 10:08:44] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 10:13:44] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 10:13:44] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 10:18:44] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 10:18:44] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 10:23:44] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 10:23:44] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 10:28:44] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 10:28:44] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 10:33:44] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 10:33:44] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 10:38:44] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 10:38:44] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 10:43:44] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 10:43:44] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 10:47:09] === Proyapi TRN Internal Distributor started (v2.1) ===
+[2025-12-17 10:47:10] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-17 10:47:10] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-17 10:47:10] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-17 10:47:10] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-17 10:47:10] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-17 10:47:10] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0534
+[2025-12-17 10:47:10] Scan stats => checked:1 matched:1 (Unread-only)
+[2025-12-17 10:47:10] FOUND => SPP2-PRO-KLN-TRN-0534 | PDFs=1 | Date=17 Dec 2025 | is_update=False | already_seen=False
+[2025-12-17 10:47:11] 👀 Displayed: SPP2-PRO-KLN-TRN-0534 | PDFs=1 (modal=False)
+[2025-12-17 10:47:11] ✅ Sent after display: SPP2-PRO-KLN-TRN-0534 | PDFs=1
+[2025-12-17 10:47:11] ✅ DONE => SPP2-PRO-KLN-TRN-0534 (incoming marked READ)
+[2025-12-17 10:52:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 10:52:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 10:57:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 10:57:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:02:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:02:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:07:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:07:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:12:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:12:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:17:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:17:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:22:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:22:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:27:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:27:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:32:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:32:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:37:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:37:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:42:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:42:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:47:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:47:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:52:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:52:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 11:57:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 11:57:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:02:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:02:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:07:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:07:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:12:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:12:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:17:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:17:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:22:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:22:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:27:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:27:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:32:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:32:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:37:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:37:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:42:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:42:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:47:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:47:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:52:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:52:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 12:57:12] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 12:57:12] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 13:23:25] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 13:23:25] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 13:28:25] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 13:28:25] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 13:33:25] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 13:33:25] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 13:38:25] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 13:38:25] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 13:43:25] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 13:43:25] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 13:48:25] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 13:48:25] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 13:53:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 13:53:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 13:58:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 13:58:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:03:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:03:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:08:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:08:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:13:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:13:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:18:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:18:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:23:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:23:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:28:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:28:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:33:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:33:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:38:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:38:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:43:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:43:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:48:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:48:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 14:53:25] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 14:53:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 16:10:28] === Proyapi TRN Internal Distributor started (v2.1) ===
+[2025-12-17 16:10:28] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-17 16:10:28] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-17 16:10:28] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-17 16:10:28] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-17 16:10:28] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-17 16:10:28] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0536
+[2025-12-17 16:10:28] Scan stats => checked:1 matched:1 (Unread-only)
+[2025-12-17 16:10:28] FOUND => SPP2-PRO-KLN-TRN-0536 | PDFs=1 | Date=17 Dec 2025 | is_update=False | already_seen=False
+[2025-12-17 16:10:30] 👀 Displayed: SPP2-PRO-KLN-TRN-0536 | PDFs=1 (modal=False)
+[2025-12-17 16:10:30] ✅ Sent after display: SPP2-PRO-KLN-TRN-0536 | PDFs=1
+[2025-12-17 16:10:30] ✅ DONE => SPP2-PRO-KLN-TRN-0536 (incoming marked READ)
+[2025-12-17 16:15:30] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 16:15:30] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 16:20:30] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 16:20:30] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 16:25:30] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 16:25:30] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 16:30:30] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 16:30:30] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 16:35:30] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 16:35:30] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 17:18:50] === Proyapi TRN Internal Distributor started (v2.1) ===
+[2025-12-17 17:18:50] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-17 17:18:50] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-17 17:18:50] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-17 17:18:50] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-17 17:18:50] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-17 17:18:50] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0535
+[2025-12-17 17:18:50] Scan stats => checked:1 matched:1 (Unread-only)
+[2025-12-17 17:18:50] FOUND => SPP2-PRO-KLN-TRN-0535 | PDFs=1 | Date=17 Dec 2025 | is_update=False | already_seen=False
+[2025-12-17 17:18:51] 👀 Displayed: SPP2-PRO-KLN-TRN-0535 | PDFs=1 (modal=False)
+[2025-12-17 17:18:51] ✅ Sent after display: SPP2-PRO-KLN-TRN-0535 | PDFs=1
+[2025-12-17 17:18:51] ✅ DONE => SPP2-PRO-KLN-TRN-0535 (incoming marked READ)
+[2025-12-17 17:23:51] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 17:23:51] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 17:28:51] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 17:28:51] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 17:33:51] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 17:33:51] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 17:38:51] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 17:38:51] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 17:43:51] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 17:43:51] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 17:48:51] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-17 17:48:51] No matching unread TRN found. Sleeping 300s...
+[2025-12-17 17:53:51] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 17:53:51] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 17:58:51] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 17:58:51] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 18:03:51] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 18:03:51] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 18:08:51] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 18:08:51] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:07:02] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:07:02] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:12:02] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:12:02] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:17:02] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:17:02] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:22:02] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:22:02] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:27:02] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:27:02] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:32:02] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:32:02] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:37:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:37:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:42:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:42:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:47:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:47:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:52:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:52:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 19:57:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 19:57:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 20:02:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 20:02:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 20:07:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 20:07:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 21:15:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 21:15:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 21:20:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 21:20:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 21:25:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 21:25:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-17 21:30:47] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-17 21:30:47] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 10:46:35] === Proyapi TRN Internal Distributor started (v2.1) ===
+[2025-12-18 10:46:35] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-18 10:46:35] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-18 10:46:35] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-18 10:46:35] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-18 10:46:35] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-18 10:46:35] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0537
+[2025-12-18 10:46:35] Scan stats => checked:1 matched:1 (Unread-only)
+[2025-12-18 10:46:35] FOUND => SPP2-PRO-KLN-TRN-0537 | PDFs=1 | Date=18 Dec 2025 | is_update=False | already_seen=False
+[2025-12-18 10:46:36] 👀 Displayed: SPP2-PRO-KLN-TRN-0537 | PDFs=1 (modal=False)
+[2025-12-18 10:46:36] ✅ Sent after display: SPP2-PRO-KLN-TRN-0537 | PDFs=1
+[2025-12-18 10:46:36] ✅ DONE => SPP2-PRO-KLN-TRN-0537 (incoming marked READ)
+[2025-12-18 10:51:36] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-18 10:51:36] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 10:56:36] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-18 10:56:36] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 11:01:36] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-18 11:01:36] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 11:06:36] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-18 11:06:36] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 11:13:03] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-18 11:13:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 11:18:03] Scan stats => checked:0 matched:0 (Unread-only)
+[2025-12-18 11:18:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 11:23:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:23:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 11:28:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:28:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 11:33:03] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:33:03] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 11:38:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:38:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 11:43:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:43:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 11:48:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:48:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 11:53:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:53:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 11:58:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 11:58:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 12:03:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 12:03:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 12:08:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 12:08:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 12:13:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 12:13:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 12:18:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 12:18:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 12:23:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 12:23:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 12:28:10] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 12:28:10] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 12:58:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 12:58:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 13:03:28] Loop error: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 13:03:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 637, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 528, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 16:52:02] === Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===
+[2025-12-18 16:52:02] 🔄 Connecting to Outlook...
+[2025-12-18 16:52:02] ✅ Outlook connection established (attempt 1/3)
+[2025-12-18 16:52:02] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-18 16:52:02] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-18 16:52:02] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-18 16:52:02] Retry: 3 attempts | Delay: 5s | Reconnect interval: 3600s
+[2025-12-18 16:52:02] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-18 16:52:02] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-18 16:52:02] 
+[Loop #1] Scanning for unread TRN mails...
+[2025-12-18 16:52:02] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0538
+[2025-12-18 16:52:02] Scan stats => checked:1 matched:1 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 16:52:02] FOUND => SPP2-PRO-KLN-TRN-0538 | PDFs=1 | Date=18 Dec 2025 | is_update=False | already_seen=False
+[2025-12-18 16:52:03] 👀 Displayed: SPP2-PRO-KLN-TRN-0538 | PDFs=1 (modal=False)
+[2025-12-18 16:52:03] ✅ Sent after display: SPP2-PRO-KLN-TRN-0538 | PDFs=1
+[2025-12-18 16:52:03] ✅ DONE => SPP2-PRO-KLN-TRN-0538 (incoming marked READ)
+[2025-12-18 16:57:03] 
+[Loop #2] Scanning for unread TRN mails...
+[2025-12-18 16:57:03] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 16:57:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:02:03] 
+[Loop #3] Scanning for unread TRN mails...
+[2025-12-18 17:02:03] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:02:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:07:03] 
+[Loop #4] Scanning for unread TRN mails...
+[2025-12-18 17:07:03] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:07:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:12:03] 
+[Loop #5] Scanning for unread TRN mails...
+[2025-12-18 17:12:03] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:12:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:17:03] 
+[Loop #6] Scanning for unread TRN mails...
+[2025-12-18 17:17:03] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:17:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:22:03] 
+[Loop #7] Scanning for unread TRN mails...
+[2025-12-18 17:22:03] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:22:03] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:27:03] 
+[Loop #8] Scanning for unread TRN mails...
+[2025-12-18 17:27:04] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:27:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:32:04] 
+[Loop #9] Scanning for unread TRN mails...
+[2025-12-18 17:32:04] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:32:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:37:04] 
+[Loop #10] Scanning for unread TRN mails...
+[2025-12-18 17:37:04] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:37:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:42:04] 
+[Loop #11] Scanning for unread TRN mails...
+[2025-12-18 17:42:04] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:42:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:47:04] 
+[Loop #12] Scanning for unread TRN mails...
+[2025-12-18 17:47:04] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:47:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:52:04] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-18 17:52:04] 🔄 Connecting to Outlook...
+[2025-12-18 17:52:04] ✅ Outlook connection established (attempt 1/3)
+[2025-12-18 17:52:04] 
+[Loop #13] Scanning for unread TRN mails...
+[2025-12-18 17:52:04] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-18 17:52:04] No matching unread TRN found. Sleeping 300s...
+[2025-12-18 17:57:04] 
+[Loop #14] Scanning for unread TRN mails...
+[2025-12-18 17:57:04] ❌ COM/RPC error in main loop: (-2147023174, 'The RPC server is unavailable.', None, None)
+[2025-12-18 17:57:04] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 756, in main
+    payloads = scan_unread_trn_mails(folder, processed_ids)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_trn_distributor.py", line 613, in scan_unread_trn_mails
+    items = folder.Items
+            ^^^^^^^^^^^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\site-packages\win32com\client\dynamic.py", line 620, in __getattr__
+    ret = self._oleobj_.Invoke(retEntry.dispid, 0, invoke_type, 1)
+pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None)
+
+[2025-12-18 17:57:04] 🔄 Attempting to reconnect Outlook...
+[2025-12-18 17:57:04] 🔄 Connecting to Outlook...
+[2025-12-18 17:57:04] ✅ Outlook connection established (attempt 1/3)
+[2025-12-18 17:57:04] ✅ Reconnection successful, continuing...
+[2025-12-19 10:08:53] === Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===
+[2025-12-19 10:08:53] 🔄 Connecting to Outlook...
+[2025-12-19 10:08:54] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 10:08:54] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-19 10:08:54] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-19 10:08:54] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-19 10:08:54] Retry: 3 attempts | Delay: 5s | Reconnect interval: 3600s
+[2025-12-19 10:08:54] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-19 10:08:54] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-19 10:08:54] 
+[Loop #1] Scanning for unread TRN mails...
+[2025-12-19 10:08:54] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:08:54] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:13:54] 
+[Loop #2] Scanning for unread TRN mails...
+[2025-12-19 10:13:54] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:13:54] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:18:54] 
+[Loop #3] Scanning for unread TRN mails...
+[2025-12-19 10:18:54] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:18:54] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:23:54] 
+[Loop #4] Scanning for unread TRN mails...
+[2025-12-19 10:23:54] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:23:54] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:28:54] 
+[Loop #5] Scanning for unread TRN mails...
+[2025-12-19 10:28:54] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:28:54] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:33:54] 
+[Loop #6] Scanning for unread TRN mails...
+[2025-12-19 10:33:54] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:33:54] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:38:54] 
+[Loop #7] Scanning for unread TRN mails...
+[2025-12-19 10:38:54] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:38:54] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:47:58] 
+[Loop #8] Scanning for unread TRN mails...
+[2025-12-19 10:47:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:47:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:52:58] 
+[Loop #9] Scanning for unread TRN mails...
+[2025-12-19 10:52:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:52:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 10:57:58] 
+[Loop #10] Scanning for unread TRN mails...
+[2025-12-19 10:57:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 10:57:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:02:58] 
+[Loop #11] Scanning for unread TRN mails...
+[2025-12-19 11:02:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:02:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:07:58] 
+[Loop #12] Scanning for unread TRN mails...
+[2025-12-19 11:07:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:07:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:12:58] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-19 11:12:58] 🔄 Connecting to Outlook...
+[2025-12-19 11:12:58] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 11:12:58] 
+[Loop #13] Scanning for unread TRN mails...
+[2025-12-19 11:12:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:12:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:17:58] 
+[Loop #14] Scanning for unread TRN mails...
+[2025-12-19 11:17:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:17:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:22:58] 
+[Loop #15] Scanning for unread TRN mails...
+[2025-12-19 11:22:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:22:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:27:58] 
+[Loop #16] Scanning for unread TRN mails...
+[2025-12-19 11:27:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:27:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:32:58] 
+[Loop #17] Scanning for unread TRN mails...
+[2025-12-19 11:32:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:32:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:37:58] 
+[Loop #18] Scanning for unread TRN mails...
+[2025-12-19 11:37:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:37:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:42:58] 
+[Loop #19] Scanning for unread TRN mails...
+[2025-12-19 11:42:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:42:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:47:58] 
+[Loop #20] Scanning for unread TRN mails...
+[2025-12-19 11:47:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:47:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:52:58] 
+[Loop #21] Scanning for unread TRN mails...
+[2025-12-19 11:52:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:52:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 11:57:58] 
+[Loop #22] Scanning for unread TRN mails...
+[2025-12-19 11:57:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 11:57:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:02:58] 
+[Loop #23] Scanning for unread TRN mails...
+[2025-12-19 12:02:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:02:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:07:58] 
+[Loop #24] Scanning for unread TRN mails...
+[2025-12-19 12:07:58] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:07:58] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:12:58] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-19 12:12:58] 🔄 Connecting to Outlook...
+[2025-12-19 12:12:58] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 12:12:59] 
+[Loop #25] Scanning for unread TRN mails...
+[2025-12-19 12:12:59] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:12:59] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:17:59] 
+[Loop #26] Scanning for unread TRN mails...
+[2025-12-19 12:17:59] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:17:59] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:22:59] 
+[Loop #27] Scanning for unread TRN mails...
+[2025-12-19 12:22:59] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:22:59] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:28:05] 
+[Loop #28] Scanning for unread TRN mails...
+[2025-12-19 12:28:05] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:28:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:33:05] 
+[Loop #29] Scanning for unread TRN mails...
+[2025-12-19 12:33:05] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:33:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:38:05] 
+[Loop #30] Scanning for unread TRN mails...
+[2025-12-19 12:38:05] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:38:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:43:05] 
+[Loop #31] Scanning for unread TRN mails...
+[2025-12-19 12:43:05] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 12:43:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:48:05] 
+[Loop #32] Scanning for unread TRN mails...
+[2025-12-19 12:48:05] Scan stats => checked:1 matched:0 | skipped: read=0 sender=0 no_trn=1
+[2025-12-19 12:48:05] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:53:05] 
+[Loop #33] Scanning for unread TRN mails...
+[2025-12-19 12:53:06] Scan stats => checked:1 matched:0 | skipped: read=0 sender=0 no_trn=1
+[2025-12-19 12:53:06] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 12:58:06] 
+[Loop #34] Scanning for unread TRN mails...
+[2025-12-19 12:58:06] Scan stats => checked:1 matched:0 | skipped: read=0 sender=0 no_trn=1
+[2025-12-19 12:58:06] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:22:43] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-19 13:22:43] 🔄 Connecting to Outlook...
+[2025-12-19 13:22:45] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 13:22:45] 
+[Loop #35] Scanning for unread TRN mails...
+[2025-12-19 13:22:45] Scan stats => checked:1 matched:0 | skipped: read=0 sender=0 no_trn=1
+[2025-12-19 13:22:45] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:27:45] 
+[Loop #36] Scanning for unread TRN mails...
+[2025-12-19 13:27:45] Scan stats => checked:1 matched:0 | skipped: read=0 sender=0 no_trn=1
+[2025-12-19 13:27:45] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:32:45] 
+[Loop #37] Scanning for unread TRN mails...
+[2025-12-19 13:32:45] Scan stats => checked:1 matched:0 | skipped: read=0 sender=0 no_trn=1
+[2025-12-19 13:32:45] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:37:45] 
+[Loop #38] Scanning for unread TRN mails...
+[2025-12-19 13:37:45] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 13:37:45] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:44:48] 
+[Loop #39] Scanning for unread TRN mails...
+[2025-12-19 13:44:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 13:44:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:49:49] 
+[Loop #40] Scanning for unread TRN mails...
+[2025-12-19 13:49:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 13:49:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:54:49] 
+[Loop #41] Scanning for unread TRN mails...
+[2025-12-19 13:54:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 13:54:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 13:59:49] 
+[Loop #42] Scanning for unread TRN mails...
+[2025-12-19 13:59:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 13:59:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 14:04:49] 
+[Loop #43] Scanning for unread TRN mails...
+[2025-12-19 14:04:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:04:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 14:09:49] 
+[Loop #44] Scanning for unread TRN mails...
+[2025-12-19 14:09:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:09:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 14:14:49] 
+[Loop #45] Scanning for unread TRN mails...
+[2025-12-19 14:14:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:14:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 14:19:49] 
+[Loop #46] Scanning for unread TRN mails...
+[2025-12-19 14:19:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:19:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 14:24:49] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-19 14:24:49] 🔄 Connecting to Outlook...
+[2025-12-19 14:24:49] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 14:24:50] 
+[Loop #47] Scanning for unread TRN mails...
+[2025-12-19 14:24:50] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:24:50] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 14:29:50] 
+[Loop #48] Scanning for unread TRN mails...
+[2025-12-19 14:29:50] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:29:50] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 14:34:50] 
+[Loop #49] Scanning for unread TRN mails...
+[2025-12-19 14:34:50] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0539
+[2025-12-19 14:34:50] Scan stats => checked:1 matched:1 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:34:50] FOUND => SPP2-PRO-KLN-TRN-0539 | PDFs=1 | Date=19 Dec 2025 | is_update=False | already_seen=False
+[2025-12-19 14:34:50] 👀 Displayed: SPP2-PRO-KLN-TRN-0539 | PDFs=1 (modal=False)
+[2025-12-19 14:34:50] ✅ Sent after display: SPP2-PRO-KLN-TRN-0539 | PDFs=1
+[2025-12-19 14:34:50] ✅ DONE => SPP2-PRO-KLN-TRN-0539 (incoming marked READ)
+[2025-12-19 14:39:50] 
+[Loop #50] Scanning for unread TRN mails...
+[2025-12-19 14:39:50] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0540
+[2025-12-19 14:39:50] Scan stats => checked:1 matched:1 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:39:50] FOUND => SPP2-PRO-KLN-TRN-0540 | PDFs=1 | Date=19 Dec 2025 | is_update=False | already_seen=False
+[2025-12-19 14:51:10] 👀 Displayed: SPP2-PRO-KLN-TRN-0540 | PDFs=1 (modal=False)
+[2025-12-19 14:51:11] ✅ Sent after display: SPP2-PRO-KLN-TRN-0540 | PDFs=1
+[2025-12-19 14:51:11] ✅ DONE => SPP2-PRO-KLN-TRN-0540 (incoming marked READ)
+[2025-12-19 14:56:11] 
+[Loop #51] Scanning for unread TRN mails...
+[2025-12-19 14:56:11] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 14:56:11] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:01:11] 
+[Loop #52] Scanning for unread TRN mails...
+[2025-12-19 15:01:11] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0541
+[2025-12-19 15:01:11] Scan stats => checked:1 matched:1 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:01:11] FOUND => SPP2-PRO-KLN-TRN-0541 | PDFs=1 | Date=19 Dec 2025 | is_update=False | already_seen=False
+[2025-12-19 15:01:11] 👀 Displayed: SPP2-PRO-KLN-TRN-0541 | PDFs=1 (modal=False)
+[2025-12-19 15:01:11] ✅ Sent after display: SPP2-PRO-KLN-TRN-0541 | PDFs=1
+[2025-12-19 15:01:11] ✅ DONE => SPP2-PRO-KLN-TRN-0541 (incoming marked READ)
+[2025-12-19 15:06:11] 
+[Loop #53] Scanning for unread TRN mails...
+[2025-12-19 15:06:11] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:06:11] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:11:11] 
+[Loop #54] Scanning for unread TRN mails...
+[2025-12-19 15:11:11] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:11:11] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:16:11] 
+[Loop #55] Scanning for unread TRN mails...
+[2025-12-19 15:16:11] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:16:11] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:21:11] 
+[Loop #56] Scanning for unread TRN mails...
+[2025-12-19 15:21:11] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:21:11] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:26:11] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-19 15:26:11] 🔄 Connecting to Outlook...
+[2025-12-19 15:26:11] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 15:26:11] 
+[Loop #57] Scanning for unread TRN mails...
+[2025-12-19 15:26:11] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:26:11] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:31:11] 
+[Loop #58] Scanning for unread TRN mails...
+[2025-12-19 15:31:11] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:31:11] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:44:36] 
+[Loop #59] Scanning for unread TRN mails...
+[2025-12-19 15:44:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:44:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:49:38] 
+[Loop #60] Scanning for unread TRN mails...
+[2025-12-19 15:49:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:49:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:54:38] 
+[Loop #61] Scanning for unread TRN mails...
+[2025-12-19 15:54:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:54:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 15:59:38] 
+[Loop #62] Scanning for unread TRN mails...
+[2025-12-19 15:59:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 15:59:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:04:38] 
+[Loop #63] Scanning for unread TRN mails...
+[2025-12-19 16:04:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:04:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:09:38] 
+[Loop #64] Scanning for unread TRN mails...
+[2025-12-19 16:09:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:09:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:14:38] 
+[Loop #65] Scanning for unread TRN mails...
+[2025-12-19 16:14:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:14:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:19:38] 
+[Loop #66] Scanning for unread TRN mails...
+[2025-12-19 16:19:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:19:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:24:38] 
+[Loop #67] Scanning for unread TRN mails...
+[2025-12-19 16:24:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:24:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:29:38] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-19 16:29:38] 🔄 Connecting to Outlook...
+[2025-12-19 16:29:38] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 16:29:38] 
+[Loop #68] Scanning for unread TRN mails...
+[2025-12-19 16:29:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:29:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:34:38] 
+[Loop #69] Scanning for unread TRN mails...
+[2025-12-19 16:34:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:34:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:39:38] 
+[Loop #70] Scanning for unread TRN mails...
+[2025-12-19 16:39:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:39:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:44:38] 
+[Loop #71] Scanning for unread TRN mails...
+[2025-12-19 16:44:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:44:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:49:38] 
+[Loop #72] Scanning for unread TRN mails...
+[2025-12-19 16:49:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:49:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 16:54:38] 
+[Loop #73] Scanning for unread TRN mails...
+[2025-12-19 16:54:38] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 16:54:38] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:02:47] 
+[Loop #74] Scanning for unread TRN mails...
+[2025-12-19 17:02:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:02:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:07:49] 
+[Loop #75] Scanning for unread TRN mails...
+[2025-12-19 17:07:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:07:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:12:49] 
+[Loop #76] Scanning for unread TRN mails...
+[2025-12-19 17:12:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:12:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:17:49] 
+[Loop #77] Scanning for unread TRN mails...
+[2025-12-19 17:17:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:17:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:22:49] 
+[Loop #78] Scanning for unread TRN mails...
+[2025-12-19 17:22:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:22:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:27:49] 
+[Loop #79] Scanning for unread TRN mails...
+[2025-12-19 17:27:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:27:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:32:49] ⏰ Proactive reconnect scheduled (hourly refresh)
+[2025-12-19 17:32:49] 🔄 Connecting to Outlook...
+[2025-12-19 17:32:49] ✅ Outlook connection established (attempt 1/3)
+[2025-12-19 17:32:49] 
+[Loop #80] Scanning for unread TRN mails...
+[2025-12-19 17:32:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:32:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:37:49] 
+[Loop #81] Scanning for unread TRN mails...
+[2025-12-19 17:37:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:37:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:42:49] 
+[Loop #82] Scanning for unread TRN mails...
+[2025-12-19 17:42:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:42:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:47:49] 
+[Loop #83] Scanning for unread TRN mails...
+[2025-12-19 17:47:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:47:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:52:49] 
+[Loop #84] Scanning for unread TRN mails...
+[2025-12-19 17:52:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:52:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 17:57:49] 
+[Loop #85] Scanning for unread TRN mails...
+[2025-12-19 17:57:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 17:57:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 18:02:49] 
+[Loop #86] Scanning for unread TRN mails...
+[2025-12-19 18:02:49] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 18:02:49] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 18:10:16] 
+[Loop #87] Scanning for unread TRN mails...
+[2025-12-19 18:10:16] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 18:10:16] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 18:15:16] 
+[Loop #88] Scanning for unread TRN mails...
+[2025-12-19 18:15:16] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 18:15:16] No matching unread TRN found. Sleeping 300s...
+[2025-12-19 18:20:16] 
+[Loop #89] Scanning for unread TRN mails...
+[2025-12-19 18:20:16] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-19 18:20:16] No matching unread TRN found. Sleeping 300s...
