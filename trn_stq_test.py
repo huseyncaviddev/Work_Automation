@@ -1,20 +1,23 @@
 # -*- coding: utf-8 -*-
 """
-proyapi_unified_distributor.py (ULTRA PREMIUM v4.0 - SHORT + FAST)
+proyapi_unified_distributor.py (ULTRA PREMIUM v4.1 - RPC-PROOF)
 
-- One scan loop, profile-driven (TRN+STQ)
-- SQLite state (dedupe + history) => crash-safe, no resend loops
-- PRE-LOCK read + POST mark read (Exchange lag safe)
-- TRN UPDATED + signature skip, STQ plural/singular body
+Fixes:
+- RPC-proof Outlook COM: auto reconnect on -2147023174
+- No stale folder cache: re-resolve folder each loop (cheap, reliable)
+- Uses GetActiveObject + DispatchEx
+- COM cleanup to reduce freezes
 """
 
-import os, re, time, sqlite3, tempfile, shutil, traceback
+import os, re, time, sqlite3, tempfile, shutil, traceback, gc
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import List, Optional, Set
+from typing import List, Optional, Set, Tuple
 
 import win32com.client  # pywin32
+import pythoncom
+import pywintypes
 
 
 # =========================
@@ -35,17 +38,58 @@ SEND_MODE = "display"  # "send" | "draft" | "display"
 DISPLAY_MODAL = False
 AUTO_SEND_AFTER_DISPLAY = True
 
-# TEST recipients (only Cavid). Prod-da dəyişərsən.
-TO_RECIPIENTS = ["Cavid Huseyn <chuseyn@kolin.com.tr>"]
+TO_RECIPIENTS = [
+    "Hakan Teke <hteke@kolin.com.tr>",
+    "Saadet Gülbin Kalaycı <sgkalayci@kolin.com.tr>",
+    "Ertuğ Kuban <ekuban@kolin.com.tr>",
+    "Ali Orhan Barç <obarc@kolin.com.tr>",
+    "Cenk Erdoğan <cerdogan@kolin.com.tr>",
+    "Gülşah Der <gder@kolin.com.tr>",
+    "Davud Kerimov <dkerimov@kolin.com.tr>",
+    "Perviz Memmedov <pmemmedov@kolin.com.tr>",
+    "Azer Bayramlı <abayramli@kolin.com.tr>",
+    "Gökçe Çolakoğlu <gcolakoglu@kolin.com.tr>",
+    "Zafer Altay <zaltay@kolin.com.tr>",
+    "Yusif Esedov <yesedov@kolin.com.tr>",
+    "Mehemmedeli Hesenli <mhesenli@kolin.com.tr>",
+    "Vüqar Agaverdiyev <vagaverdiyev@kolin.com.tr>",
+    "Furkan Gökhan Karakaya <fgkarakaya@kolin.com.tr>",
+    "Tugay Altuntaş <taltuntas@kolin.com.tr>",
+    "Turgay Bal <tbal@kolin.com.tr>",
+    "Ali Doğan Karakuş <adkarakus@kolin.com.tr>",
+    "Aziz Yaşar İşidoğru <ayisidogru@kolin.com.tr>",
+    "Bersis Kök <bkok@kolin.com.tr>",
+    "Damla Yüceer <dyuceer@kolin.com.tr>",
+    "Erdinç Bey <ebey@kolin.com.tr>",
+    "Mehmet Özgün DEDEKARGINOĞLU <modedekarginoglu@kolin.com.tr>",
+    "Mehmet Tevfik Çelikkol <mtcelikkol@kolin.com.tr>",
+    "Mustafa Can ÜNVER <mcunver@kolin.com.tr>",
+    "Serdar Osman Boz <sboz@kolin.com.tr>",
+    "Anıl Uzun <auzun@kolin.com.tr>",
+    "Nurettin Biçer <nbicer@kolin.com.tr>",
+    "Yiğit Yücel <yyucel@kolin.com.tr>",
+    "Atilla Gündüz <atilla.gunduz@kolin.com.tr>",
+    "Ayşe KARA <akara@kolin.com.tr>",
+    "Burak PAPİLA <bpapila@kolin.com.tr>",
+    "Göker İnceoğlu <ginceoglu@kolin.com.tr>",
+    "Ali İsazade <aisazade@kolin.com.tr>",
+    "Fidan Quliyeva <fquliyeva@kolin.com.tr>",
+    "Orhan Doğan <odogan@kolin.com.tr>",
+    "Orxan Dursunov <odursunov@kolin.com.tr>",
+]
+
 CC_RECIPIENTS: List[str] = []
 
 OUTLOOK_MAILITEM_CLASS = 43
 PR_INTERNET_MESSAGE_ID = "http://schemas.microsoft.com/mapi/proptag/0x1035001E"
+
 UPDATED_RE = re.compile(
     r"\b(updated|update|corrected|correction|revised|revision|rev\.)\b|"
     r"\b(güncellendi|güncellenmiş|güncellenmistir|düzəldildi|duzeldildi|duzeltme)\b",
     re.IGNORECASE,
 )
+
+RPC_ERR = -2147023174  # "The RPC server is unavailable."
 
 
 def log(msg: str) -> None:
@@ -54,6 +98,13 @@ def log(msg: str) -> None:
     print(line)
     with open(LOG_PATH, "a", encoding="utf-8") as f:
         f.write(line + "\n")
+
+
+def is_rpc_error(e: Exception) -> bool:
+    try:
+        return isinstance(e, pywintypes.com_error) and e.args and e.args[0] == RPC_ERR
+    except Exception:
+        return False
 
 
 # =========================
@@ -73,7 +124,7 @@ class Profile:
 PROFILES = [
     Profile(
         name="STQ",
-        sender_contains="chuseyn@kolin.com.tr",  # TEST. Prod: proyapi sender
+        sender_contains="dccspp2@proyapimusavirlik.com",
         id_re=re.compile(
             r"\bKLN-SPP2-STQ-[A-Z]{2}-GN00-\d{3,4}_R\d{2}(?=_|\b|$)", re.I
         ),
@@ -86,7 +137,7 @@ PROFILES = [
     ),
     Profile(
         name="TRN",
-        sender_contains="chuseyn@kolin.com.tr",
+        sender_contains="dccspp2@proyapimusavirlik.com",
         id_re=re.compile(r"\bSPP2-PRO-KLN-TRN-\d{4}\b", re.I),
         exts={".pdf"},
         oft=Path(
@@ -114,7 +165,7 @@ def db():
             uid TEXT PRIMARY KEY,
             ts  TEXT NOT NULL
         );
-    """
+        """
     )
     con.execute(
         """
@@ -126,7 +177,7 @@ def db():
             last_ts  TEXT NOT NULL,
             PRIMARY KEY(profile, doc_id)
         );
-    """
+        """
     )
     con.execute("CREATE INDEX IF NOT EXISTS idx_processed_uid ON processed(uid);")
     con.execute(
@@ -169,17 +220,33 @@ def upsert_hist(con, profile: str, doc_id: str, sig: str, dt_iso: str):
             last_sig=excluded.last_sig,
             last_dt=excluded.last_dt,
             last_ts=excluded.last_ts
-    """,
+        """,
         (profile, doc_id, sig, dt_iso, datetime.now().isoformat()),
     )
 
 
 # =========================
-# OUTLOOK HELPERS
+# OUTLOOK HELPERS (RPC-PROOF)
 # =========================
 def get_outlook():
-    app = win32com.client.Dispatch("Outlook.Application")
+    # Ensure COM initialized in this thread
+    pythoncom.CoInitialize()
+
+    # Attach existing Outlook if possible, else create new instance
+    try:
+        app = win32com.client.GetActiveObject("Outlook.Application")
+    except Exception:
+        app = win32com.client.DispatchEx("Outlook.Application")
+
     ns = app.GetNamespace("MAPI")
+
+    # Avoid profile prompts; okay if fails
+    try:
+        ns.Logon("", "", False, False)
+    except Exception:
+        pass
+
+    # Touch folders to validate session
     _ = ns.Folders.Count
     return app, ns
 
@@ -204,6 +271,12 @@ def get_folder(root, path: str):
     return f
 
 
+def resolve_watch_folder(ns) -> Tuple[object, object]:
+    root = find_mailbox_root(ns, MAILBOX_HINT)
+    folder = get_folder(root, WATCH_FOLDER)
+    return root, folder
+
+
 def sender_smtp(mail) -> str:
     try:
         s = (getattr(mail, "SenderEmailAddress", "") or "").strip()
@@ -211,6 +284,7 @@ def sender_smtp(mail) -> str:
             return s.lower()
         sender_obj = getattr(mail, "Sender", None)
         if sender_obj:
+            ex = None
             try:
                 ex = sender_obj.GetExchangeUser()
                 if ex:
@@ -220,7 +294,11 @@ def sender_smtp(mail) -> str:
             except Exception:
                 pass
             finally:
-                del ex
+                try:
+                    if ex is not None:
+                        del ex
+                except Exception:
+                    pass
         return (s or "").lower()
     except Exception:
         return ""
@@ -247,7 +325,7 @@ def mark_read(mail):
 
 def save_attachments(mail, exts: Set[str], prefix: str) -> List[Path]:
     td = Path(tempfile.mkdtemp(prefix=prefix))
-    out = []
+    out: List[Path] = []
     atts = mail.Attachments
     count = atts.Count
     for i in range(1, count + 1):
@@ -259,6 +337,8 @@ def save_attachments(mail, exts: Set[str], prefix: str) -> List[Path]:
             p = td / safe
             att.SaveAsFile(str(p))
             out.append(p)
+        del att
+    del atts
     return out
 
 
@@ -390,10 +470,8 @@ def send_internal(
 # =========================
 # ONE-SCAN ENGINE
 # =========================
-def match_profile(
-    subject: str, sender: str
-) -> tuple[Optional[Profile], Optional[re.Match]]:
-    s = sender.lower()
+def match_profile(subject: str, sender: str):
+    s = (sender or "").lower()
     for p in PROFILES:
         if p.sender_contains.lower() in s:
             m = p.id_re.search(subject or "")
@@ -418,23 +496,24 @@ def restrict_unread(items, cutoff: datetime):
 
 
 def main():
-    log("=== Proyapi Unified Distributor v4.0 started ===")
+    log("=== Proyapi Unified Distributor v4.1 (RPC-PROOF) started ===")
     con = db()
-    app, ns = get_outlook()
-    root = find_mailbox_root(ns, MAILBOX_HINT)
-    folder = get_folder(root, WATCH_FOLDER)
 
-    log(f"Watching: {root.Name} / {WATCH_FOLDER}")
-    log(
-        f"Mode={SEND_MODE} Poll={POLL_SECONDS}s Lookback={LOOKBACK_DAYS}d MaxScan={MAX_SCAN}"
-    )
-    log("Profiles: " + ", ".join([p.name for p in PROFILES]))
+    app = ns = None
 
     loop = 0
     while True:
         loop += 1
         try:
-            log(f"\n[Loop #{loop}] scanning unread...")
+            # Always ensure Outlook is alive (cheap) + avoids stale pointers
+            if app is None or ns is None:
+                app, ns = get_outlook()
+                log("✅ Outlook session attached.")
+
+            # Re-resolve folder each loop to avoid stale COM folder after reconnect
+            root, folder = resolve_watch_folder(ns)
+
+            log(f"\n[Loop #{loop}] scanning unread... ({root.Name} / {WATCH_FOLDER})")
             items = folder.Items
             items.Sort("[ReceivedTime]", True)
 
@@ -455,93 +534,150 @@ def main():
                 except Exception:
                     continue
 
-                if getattr(mail, "Class", None) != OUTLOOK_MAILITEM_CLASS:
-                    continue
-                if not bool(getattr(mail, "UnRead", False)):
-                    continue
-
-                received = getattr(mail, "ReceivedTime", None)
-                received = received.replace(tzinfo=None) if received else None
-                if received and received < cutoff:
-                    break
-
-                subject = str(getattr(mail, "Subject", "") or "")
-                sender = sender_smtp(mail)
-
-                prof, id_match = match_profile(subject, sender)
-                if not prof:
-                    continue
-
-                doc_id = extract_id(id_match)
-                if not doc_id:
-                    continue
-
-                uid = internet_message_id(mail) or str(
-                    getattr(mail, "EntryID", "") or ""
-                )
-                if uid and already_processed(con, uid):
-                    continue
-
-                if preview_left > 0:
-                    log(
-                        f"DEBUG => [{prof.name}] uid={uid[:60]} sender={sender} subject={subject}"
-                    )
-                    preview_left -= 1
-
-                # PRE-LOCK + DB COMMIT => no resend loop
-                mark_read(mail)
-                mark_processed(con, uid)
-                con.commit()
-
-                sent_dt = getattr(mail, "SentOn", None) or received
-                sent_dt = sent_dt.replace(tzinfo=None) if sent_dt else None
-
-                prefix = f"proyapi_{prof.name.lower()}_"
-                files = save_attachments(mail, prof.exts, prefix)
-                if not files:
-                    log(f"⚠️ {prof.name} matched but no allowed attachments: {subject}")
-                    continue
-
-                sig = sig_of(files)
-                prev_sig, prev_dt_iso = get_hist(con, prof.name, doc_id)
-
-                is_update = False
-                if prof.enable_updated:
-                    # TRN anti-spam: same doc + same signature => skip EARLY
-                    if prev_sig and prev_sig == sig:
-                        log(f"⏭️ SKIP[{prof.name}] {doc_id} same signature")
-                        cleanup(files, prefix)
+                try:
+                    if getattr(mail, "Class", None) != OUTLOOK_MAILITEM_CLASS:
+                        del mail
                         continue
-                    is_update = bool(UPDATED_RE.search(subject or "")) or bool(prev_sig)
+                    if not bool(getattr(mail, "UnRead", False)):
+                        del mail
+                        continue
 
-                send_internal(
-                    app, prof, subject, doc_id, sent_dt, files, is_update, prev_dt_iso
-                )
+                    received = getattr(mail, "ReceivedTime", None)
+                    received = received.replace(tzinfo=None) if received else None
+                    if received and received < cutoff:
+                        del mail
+                        break
 
-                # POST mark read again (Exchange lag safe)
-                mark_read(mail)
+                    subject = str(getattr(mail, "Subject", "") or "")
+                    sender = sender_smtp(mail)
 
-                upsert_hist(
-                    con,
-                    prof.name,
-                    doc_id,
-                    sig,
-                    (sent_dt.isoformat() if sent_dt else ""),
-                )
-                con.commit()
+                    prof, id_match = match_profile(subject, sender)
+                    if not prof:
+                        del mail
+                        continue
 
-                cleanup(files, prefix)
-                found += 1
-                log(
-                    f"✅ DONE [{prof.name}] {doc_id} files={len(files)} update={is_update}"
-                )
+                    doc_id = extract_id(id_match)
+                    if not doc_id:
+                        del mail
+                        continue
+
+                    uid = internet_message_id(mail) or str(
+                        getattr(mail, "EntryID", "") or ""
+                    )
+                    if uid and already_processed(con, uid):
+                        del mail
+                        continue
+
+                    if preview_left > 0:
+                        log(
+                            f"DEBUG => [{prof.name}] uid={uid[:60]} sender={sender} subject={subject}"
+                        )
+                        preview_left -= 1
+
+                    # PRE-LOCK: mark read + DB commit (no resend loop)
+                    mark_read(mail)
+                    mark_processed(con, uid)
+                    con.commit()
+
+                    sent_dt = getattr(mail, "SentOn", None) or received
+                    sent_dt = sent_dt.replace(tzinfo=None) if sent_dt else None
+
+                    prefix = f"proyapi_{prof.name.lower()}_"
+                    files = save_attachments(mail, prof.exts, prefix)
+                    if not files:
+                        log(
+                            f"⚠️ {prof.name} matched but no allowed attachments: {subject}"
+                        )
+                        del mail
+                        continue
+
+                    sig = sig_of(files)
+                    prev_sig, prev_dt_iso = get_hist(con, prof.name, doc_id)
+
+                    is_update = False
+                    if prof.enable_updated:
+                        if prev_sig and prev_sig == sig:
+                            log(f"⏭️ SKIP[{prof.name}] {doc_id} same signature")
+                            cleanup(files, prefix)
+                            del mail
+                            continue
+                        is_update = bool(UPDATED_RE.search(subject or "")) or bool(
+                            prev_sig
+                        )
+
+                    send_internal(
+                        app,
+                        prof,
+                        subject,
+                        doc_id,
+                        sent_dt,
+                        files,
+                        is_update,
+                        prev_dt_iso,
+                    )
+
+                    # POST mark read again (Exchange lag safe)
+                    mark_read(mail)
+
+                    upsert_hist(
+                        con,
+                        prof.name,
+                        doc_id,
+                        sig,
+                        (sent_dt.isoformat() if sent_dt else ""),
+                    )
+                    con.commit()
+
+                    cleanup(files, prefix)
+                    found += 1
+                    log(
+                        f"✅ DONE [{prof.name}] {doc_id} files={len(files)} update={is_update}"
+                    )
+
+                    del mail
+
+                except Exception as e:
+                    # If RPC hits mid-item, force reconnect next loop
+                    if is_rpc_error(e):
+                        log(
+                            f"⚠️ RPC dropped while processing item. Reconnecting... ({e})"
+                        )
+                        try:
+                            del mail
+                        except Exception:
+                            pass
+                        app = ns = None
+                        gc.collect()
+                        break
+                    else:
+                        log(f"⚠️ Item error: {e}")
+                        log(traceback.format_exc())
+                        try:
+                            del mail
+                        except Exception:
+                            pass
+                        continue
 
             if found == 0:
                 log("No matching unread docs.")
 
+            # COM cleanup
+            try:
+                del items
+                del folder
+                del root
+            except Exception:
+                pass
+            gc.collect()
+
         except Exception as e:
-            log(f"❌ Loop error: {e}")
-            log(traceback.format_exc())
+            if is_rpc_error(e):
+                log(f"❌ RPC loop error. Reconnecting... ({e})")
+                app = ns = None
+                gc.collect()
+            else:
+                log(f"❌ Loop error: {e}")
+                log(traceback.format_exc())
 
         time.sleep(POLL_SECONDS)
 

@@ -58,7 +58,9 @@ MAX_SCAN = 200
 # Performance & Reliability settings
 MAX_RETRY_ATTEMPTS = 3
 RETRY_DELAY = 5  # seconds
-COM_RECONNECT_INTERVAL = 3600  # Recreate COM objects every hour to prevent stale connections
+COM_RECONNECT_INTERVAL = (
+    3600  # Recreate COM objects every hour to prevent stale connections
+)
 
 # Send behavior
 SEND_MODE = "display"  # "send" | "draft" | "display"
@@ -160,13 +162,22 @@ class OutlookConnectionManager:
                 return func(*args, **kwargs)
             except Exception as e:
                 error_str = str(e).lower()
-                is_com_error = any(keyword in error_str for keyword in [
-                    'rpc server', 'rpc_e_', 'disconnected', 'not available',
-                    'invalid', 'automation error'
-                ])
+                is_com_error = any(
+                    keyword in error_str
+                    for keyword in [
+                        "rpc server",
+                        "rpc_e_",
+                        "disconnected",
+                        "not available",
+                        "invalid",
+                        "automation error",
+                    ]
+                )
 
                 if is_com_error and attempt < MAX_RETRY_ATTEMPTS:
-                    log(f"⚠️ COM error detected (attempt {attempt}/{MAX_RETRY_ATTEMPTS}): {e}")
+                    log(
+                        f"⚠️ COM error detected (attempt {attempt}/{MAX_RETRY_ATTEMPTS}): {e}"
+                    )
                     log("🔄 Reconnecting to Outlook...")
                     time.sleep(RETRY_DELAY)
                     self.reconnect()
@@ -177,12 +188,14 @@ class OutlookConnectionManager:
 
     def get_folder(self, root, folder_path: str):
         """Get folder with retry logic."""
+
         def _get_folder():
             parts = folder_path.split("\\")
             f = root
             for p in parts:
                 f = f.Folders.Item(p)
             return f
+
         return self.execute_with_retry(_get_folder)
 
 
@@ -664,7 +677,9 @@ def scan_unread_trn_mails(folder, processed_ids: set) -> List[TrnMailPayload]:
             sender = get_sender_smtp_address(mail)
 
             if DEBUG_PREVIEW and preview_left > 0:
-                log(f"DEBUG => UnRead={mail.UnRead} | Sender={sender} | Subject={subject}")
+                log(
+                    f"DEBUG => UnRead={mail.UnRead} | Sender={sender} | Subject={subject}"
+                )
                 preview_left -= 1
 
             if SENDER_EMAIL.lower() not in sender:
@@ -732,7 +747,9 @@ def main():
     log(
         f"Mode: {SEND_MODE} | Poll: {POLL_SECONDS}s | Lookback: {LOOKBACK_DAYS}d | MaxScan:{MAX_SCAN}"
     )
-    log(f"Retry: {MAX_RETRY_ATTEMPTS} attempts | Delay: {RETRY_DELAY}s | Reconnect interval: {COM_RECONNECT_INTERVAL}s")
+    log(
+        f"Retry: {MAX_RETRY_ATTEMPTS} attempts | Delay: {RETRY_DELAY}s | Reconnect interval: {COM_RECONNECT_INTERVAL}s"
+    )
     log(
         f"Signature mode: {SIGNATURE_MODE} | OFT exists: {OFT_TEMPLATE_PATH.exists()} | Display modal: {DISPLAY_MODAL} | AutoSendAfterDisplay: {AUTO_SEND_AFTER_DISPLAY}"
     )
@@ -830,10 +847,17 @@ def main():
 
         except Exception as e:
             error_str = str(e).lower()
-            is_com_error = any(keyword in error_str for keyword in [
-                'rpc server', 'rpc_e_', 'disconnected', 'not available',
-                'invalid', 'automation error'
-            ])
+            is_com_error = any(
+                keyword in error_str
+                for keyword in [
+                    "rpc server",
+                    "rpc_e_",
+                    "disconnected",
+                    "not available",
+                    "invalid",
+                    "automation error",
+                ]
+            )
 
             if is_com_error:
                 log(f"❌ COM/RPC error in main loop: {e}")
