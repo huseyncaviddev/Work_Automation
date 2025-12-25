@@ -4196,3 +4196,2687 @@ pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Out
 [Loop #1] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
 [2025-12-24 15:56:31] Snapshot unread: 0
 [2025-12-24 15:56:31] No matching unread docs.
+[2025-12-24 15:57:48] === Proyapi Unified Distributor v5.2 started ===
+[2025-12-24 15:57:48] Profiles => ['STQ', 'TRN'] | WATCH='Inbox\From Proyapi' | MAX_SCAN=500 | LOOKBACK_DAYS=10
+[2025-12-24 15:57:48] SENDER_FILTER_CONTAINS => dccspp2@proyapimusavirlik.com
+[2025-12-24 15:57:48] SEND_MODE => send
+[2025-12-24 15:57:48] ✅ Outlook session attached.
+[2025-12-24 15:57:48] 
+[Loop #1] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 15:57:48] Snapshot unread: 0
+[2025-12-24 15:57:48] No matching unread docs.
+[2025-12-24 16:02:48] 
+[Loop #2] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:02:48] Snapshot unread: 0
+[2025-12-24 16:02:48] No matching unread docs.
+[2025-12-24 16:07:48] 
+[Loop #3] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:07:48] Snapshot unread: 0
+[2025-12-24 16:07:48] No matching unread docs.
+[2025-12-24 16:12:48] 
+[Loop #4] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:12:48] Snapshot unread: 0
+[2025-12-24 16:12:48] No matching unread docs.
+[2025-12-24 16:17:48] 
+[Loop #5] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:17:48] Snapshot unread: 0
+[2025-12-24 16:17:48] No matching unread docs.
+[2025-12-24 16:22:48] 
+[Loop #6] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:22:48] Snapshot unread: 0
+[2025-12-24 16:22:48] No matching unread docs.
+[2025-12-24 16:27:48] 
+[Loop #7] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:27:48] Snapshot unread: 0
+[2025-12-24 16:27:48] No matching unread docs.
+[2025-12-24 16:32:48] 
+[Loop #8] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:32:48] Snapshot unread: 0
+[2025-12-24 16:32:48] No matching unread docs.
+[2025-12-24 16:37:48] 
+[Loop #9] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:37:48] Snapshot unread: 0
+[2025-12-24 16:37:48] No matching unread docs.
+[2025-12-24 16:42:48] 
+[Loop #10] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:42:48] Snapshot unread: 0
+[2025-12-24 16:42:48] No matching unread docs.
+[2025-12-24 16:47:48] 
+[Loop #11] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:47:48] Snapshot unread: 0
+[2025-12-24 16:47:48] No matching unread docs.
+[2025-12-24 16:52:48] 
+[Loop #12] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:52:48] Snapshot unread: 0
+[2025-12-24 16:52:48] No matching unread docs.
+[2025-12-24 16:57:48] 
+[Loop #13] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 16:57:48] Snapshot unread: 0
+[2025-12-24 16:57:48] No matching unread docs.
+[2025-12-24 17:02:48] 
+[Loop #14] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 17:02:48] Snapshot unread: 1
+[2025-12-24 17:02:48] No matching unread docs.
+[2025-12-24 17:47:47] === Proyapi Unified Distributor v5.3 started ===
+[2025-12-24 17:47:47] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-24 17:47:47] SENDER_FILTER_CONTAINS => dccspp2@proyapimusavirlik.com | STQ_PREFIX => KLN-SPP2-STQ
+[2025-12-24 17:47:47] ✅ Outlook session attached.
+[2025-12-24 17:47:47] 
+[Loop #1] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 17:47:47] Snapshot unread: 1
+[2025-12-24 17:47:47] DEBUG_MATCH => [TRN] doc_key='SPP2-PRO-KLN-TRN-0551' subject='SPP2-PRO-KLN-TRN-0551'
+[2025-12-24 17:47:47] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-24 17:47:47] ✅ DONE [TRN] doc_key=SPP2-PRO-KLN-TRN-0551 files=1 update=False
+[2025-12-24 17:49:47] 
+[Loop #2] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-24 17:49:47] Snapshot unread: 0
+[2025-12-24 17:49:47] No matching unread docs.
+[2025-12-25 08:42:50] === Proyapi Unified Distributor v5.3 started ===
+[2025-12-25 08:42:50] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 08:42:50] SENDER_FILTER_CONTAINS => chuseyn@kolin.com.tr | STQ_PREFIX => KLN-SPP2-STQ
+[2025-12-25 08:42:50] ✅ Outlook session attached.
+[2025-12-25 08:42:50] 
+[Loop #1] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:50] Snapshot unread: 1
+[2025-12-25 08:42:50] DEBUG_MATCH => [STQ] doc_key='KLN-SPP2-STQ-MC-GN00-344_R00' subject='KLN-SPP2-STQ-MC-GN00-344_R00_Prokon_Reply'
+[2025-12-25 08:42:50] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 08:42:50] ⚠️ Item error: name 'TO_RECIPIENTS' is not defined
+[2025-12-25 08:42:50] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\test.py", line 802, in main
+    send_internal(
+    ~~~~~~~~~~~~~^
+        app=app,
+        ^^^^^^^^
+    ...<9 lines>...
+        prev_dt_iso=prev_dt_iso,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\test.py", line 637, in send_internal
+    msg.To = "; ".join(TO_RECIPIENTS)
+                       ^^^^^^^^^^^^^
+NameError: name 'TO_RECIPIENTS' is not defined. Did you mean: 'CC_RECIPIENTS'?
+
+[2025-12-25 08:42:50] No matching unread docs.
+[2025-12-25 08:42:51] 
+[Loop #2] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:51] Snapshot unread: 0
+[2025-12-25 08:42:51] No matching unread docs.
+[2025-12-25 08:42:53] 
+[Loop #3] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:53] Snapshot unread: 0
+[2025-12-25 08:42:53] No matching unread docs.
+[2025-12-25 08:42:54] 
+[Loop #4] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:54] Snapshot unread: 0
+[2025-12-25 08:42:54] No matching unread docs.
+[2025-12-25 08:42:55] 
+[Loop #5] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:55] Snapshot unread: 0
+[2025-12-25 08:42:55] No matching unread docs.
+[2025-12-25 08:42:56] 
+[Loop #6] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:56] Snapshot unread: 0
+[2025-12-25 08:42:56] No matching unread docs.
+[2025-12-25 08:42:57] 
+[Loop #7] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:57] Snapshot unread: 0
+[2025-12-25 08:42:57] No matching unread docs.
+[2025-12-25 08:42:58] 
+[Loop #8] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:58] Snapshot unread: 0
+[2025-12-25 08:42:58] No matching unread docs.
+[2025-12-25 08:42:59] 
+[Loop #9] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:42:59] Snapshot unread: 0
+[2025-12-25 08:42:59] No matching unread docs.
+[2025-12-25 08:43:49] === Proyapi Unified Distributor v5.3 started ===
+[2025-12-25 08:43:49] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 08:43:49] SENDER_FILTER_CONTAINS => chuseyn@kolin.com.tr | STQ_PREFIX => KLN-SPP2-STQ
+[2025-12-25 08:43:49] ✅ Outlook session attached.
+[2025-12-25 08:43:49] 
+[Loop #1] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:49] Snapshot unread: 0
+[2025-12-25 08:43:49] No matching unread docs.
+[2025-12-25 08:43:50] 
+[Loop #2] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:50] Snapshot unread: 0
+[2025-12-25 08:43:50] No matching unread docs.
+[2025-12-25 08:43:51] 
+[Loop #3] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:51] Snapshot unread: 0
+[2025-12-25 08:43:51] No matching unread docs.
+[2025-12-25 08:43:52] 
+[Loop #4] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:52] Snapshot unread: 0
+[2025-12-25 08:43:52] No matching unread docs.
+[2025-12-25 08:43:53] 
+[Loop #5] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:53] Snapshot unread: 0
+[2025-12-25 08:43:53] No matching unread docs.
+[2025-12-25 08:43:54] 
+[Loop #6] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:54] Snapshot unread: 0
+[2025-12-25 08:43:54] No matching unread docs.
+[2025-12-25 08:43:55] 
+[Loop #7] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:55] Snapshot unread: 0
+[2025-12-25 08:43:55] No matching unread docs.
+[2025-12-25 08:43:57] 
+[Loop #8] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:57] Snapshot unread: 0
+[2025-12-25 08:43:57] No matching unread docs.
+[2025-12-25 08:43:58] 
+[Loop #9] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:58] Snapshot unread: 0
+[2025-12-25 08:43:58] No matching unread docs.
+[2025-12-25 08:43:59] 
+[Loop #10] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:43:59] Snapshot unread: 0
+[2025-12-25 08:43:59] No matching unread docs.
+[2025-12-25 08:44:00] 
+[Loop #11] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:00] Snapshot unread: 0
+[2025-12-25 08:44:00] No matching unread docs.
+[2025-12-25 08:44:01] 
+[Loop #12] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:01] Snapshot unread: 0
+[2025-12-25 08:44:01] No matching unread docs.
+[2025-12-25 08:44:02] 
+[Loop #13] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:02] Snapshot unread: 0
+[2025-12-25 08:44:02] No matching unread docs.
+[2025-12-25 08:44:03] 
+[Loop #14] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:03] Snapshot unread: 0
+[2025-12-25 08:44:03] No matching unread docs.
+[2025-12-25 08:44:04] 
+[Loop #15] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:04] Snapshot unread: 0
+[2025-12-25 08:44:04] No matching unread docs.
+[2025-12-25 08:44:06] 
+[Loop #16] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:06] Snapshot unread: 0
+[2025-12-25 08:44:06] No matching unread docs.
+[2025-12-25 08:44:07] 
+[Loop #17] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:07] Snapshot unread: 0
+[2025-12-25 08:44:07] No matching unread docs.
+[2025-12-25 08:44:08] 
+[Loop #18] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:08] Snapshot unread: 0
+[2025-12-25 08:44:08] No matching unread docs.
+[2025-12-25 08:44:09] 
+[Loop #19] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:09] Snapshot unread: 0
+[2025-12-25 08:44:09] No matching unread docs.
+[2025-12-25 08:44:10] 
+[Loop #20] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:10] Snapshot unread: 0
+[2025-12-25 08:44:10] No matching unread docs.
+[2025-12-25 08:44:11] 
+[Loop #21] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:11] Snapshot unread: 0
+[2025-12-25 08:44:11] No matching unread docs.
+[2025-12-25 08:44:12] 
+[Loop #22] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:12] Snapshot unread: 0
+[2025-12-25 08:44:12] No matching unread docs.
+[2025-12-25 08:44:13] 
+[Loop #23] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:13] Snapshot unread: 0
+[2025-12-25 08:44:13] No matching unread docs.
+[2025-12-25 08:44:15] 
+[Loop #24] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:15] Snapshot unread: 0
+[2025-12-25 08:44:15] No matching unread docs.
+[2025-12-25 08:44:16] 
+[Loop #25] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:16] Snapshot unread: 0
+[2025-12-25 08:44:16] No matching unread docs.
+[2025-12-25 08:44:17] 
+[Loop #26] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:17] Snapshot unread: 0
+[2025-12-25 08:44:17] No matching unread docs.
+[2025-12-25 08:44:18] 
+[Loop #27] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:18] Snapshot unread: 0
+[2025-12-25 08:44:18] No matching unread docs.
+[2025-12-25 08:44:19] 
+[Loop #28] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:19] Snapshot unread: 0
+[2025-12-25 08:44:19] No matching unread docs.
+[2025-12-25 08:44:20] 
+[Loop #29] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:21] Snapshot unread: 0
+[2025-12-25 08:44:21] No matching unread docs.
+[2025-12-25 08:44:22] 
+[Loop #30] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:22] Snapshot unread: 0
+[2025-12-25 08:44:22] No matching unread docs.
+[2025-12-25 08:44:23] 
+[Loop #31] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:23] Snapshot unread: 0
+[2025-12-25 08:44:23] No matching unread docs.
+[2025-12-25 08:44:24] 
+[Loop #32] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:24] Snapshot unread: 0
+[2025-12-25 08:44:24] No matching unread docs.
+[2025-12-25 08:44:25] 
+[Loop #33] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:25] Snapshot unread: 0
+[2025-12-25 08:44:25] No matching unread docs.
+[2025-12-25 08:44:26] 
+[Loop #34] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:26] Snapshot unread: 0
+[2025-12-25 08:44:26] No matching unread docs.
+[2025-12-25 08:44:27] 
+[Loop #35] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:27] Snapshot unread: 0
+[2025-12-25 08:44:27] No matching unread docs.
+[2025-12-25 08:44:28] 
+[Loop #36] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:28] Snapshot unread: 0
+[2025-12-25 08:44:28] No matching unread docs.
+[2025-12-25 08:44:30] 
+[Loop #37] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:30] Snapshot unread: 0
+[2025-12-25 08:44:30] No matching unread docs.
+[2025-12-25 08:44:31] 
+[Loop #38] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:31] Snapshot unread: 0
+[2025-12-25 08:44:31] No matching unread docs.
+[2025-12-25 08:44:32] 
+[Loop #39] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:32] Snapshot unread: 0
+[2025-12-25 08:44:32] No matching unread docs.
+[2025-12-25 08:44:33] 
+[Loop #40] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:33] Snapshot unread: 0
+[2025-12-25 08:44:33] No matching unread docs.
+[2025-12-25 08:44:34] 
+[Loop #41] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:34] Snapshot unread: 0
+[2025-12-25 08:44:34] No matching unread docs.
+[2025-12-25 08:44:35] 
+[Loop #42] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:35] Snapshot unread: 0
+[2025-12-25 08:44:35] No matching unread docs.
+[2025-12-25 08:44:37] 
+[Loop #43] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:37] Snapshot unread: 0
+[2025-12-25 08:44:37] No matching unread docs.
+[2025-12-25 08:44:38] 
+[Loop #44] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:38] Snapshot unread: 0
+[2025-12-25 08:44:38] No matching unread docs.
+[2025-12-25 08:44:39] 
+[Loop #45] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:39] Snapshot unread: 0
+[2025-12-25 08:44:39] No matching unread docs.
+[2025-12-25 08:44:40] 
+[Loop #46] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:40] Snapshot unread: 0
+[2025-12-25 08:44:40] No matching unread docs.
+[2025-12-25 08:44:41] 
+[Loop #47] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:41] Snapshot unread: 0
+[2025-12-25 08:44:41] No matching unread docs.
+[2025-12-25 08:44:42] 
+[Loop #48] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:42] Snapshot unread: 0
+[2025-12-25 08:44:42] No matching unread docs.
+[2025-12-25 08:44:43] 
+[Loop #49] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:43] Snapshot unread: 0
+[2025-12-25 08:44:43] No matching unread docs.
+[2025-12-25 08:44:44] 
+[Loop #50] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:44] Snapshot unread: 0
+[2025-12-25 08:44:44] No matching unread docs.
+[2025-12-25 08:44:45] 
+[Loop #51] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:45] Snapshot unread: 0
+[2025-12-25 08:44:45] No matching unread docs.
+[2025-12-25 08:44:47] 
+[Loop #52] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:47] Snapshot unread: 0
+[2025-12-25 08:44:47] No matching unread docs.
+[2025-12-25 08:44:48] 
+[Loop #53] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:48] Snapshot unread: 0
+[2025-12-25 08:44:48] No matching unread docs.
+[2025-12-25 08:44:49] 
+[Loop #54] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:49] Snapshot unread: 0
+[2025-12-25 08:44:49] No matching unread docs.
+[2025-12-25 08:44:50] 
+[Loop #55] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:50] Snapshot unread: 0
+[2025-12-25 08:44:50] No matching unread docs.
+[2025-12-25 08:44:51] 
+[Loop #56] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:51] Snapshot unread: 0
+[2025-12-25 08:44:51] No matching unread docs.
+[2025-12-25 08:44:52] 
+[Loop #57] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:52] Snapshot unread: 0
+[2025-12-25 08:44:52] No matching unread docs.
+[2025-12-25 08:44:53] 
+[Loop #58] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:53] Snapshot unread: 0
+[2025-12-25 08:44:53] No matching unread docs.
+[2025-12-25 08:44:54] 
+[Loop #59] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:54] Snapshot unread: 0
+[2025-12-25 08:44:54] No matching unread docs.
+[2025-12-25 08:44:55] 
+[Loop #60] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:56] Snapshot unread: 0
+[2025-12-25 08:44:56] No matching unread docs.
+[2025-12-25 08:44:57] 
+[Loop #61] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:57] Snapshot unread: 0
+[2025-12-25 08:44:57] No matching unread docs.
+[2025-12-25 08:44:58] 
+[Loop #62] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:58] Snapshot unread: 0
+[2025-12-25 08:44:58] No matching unread docs.
+[2025-12-25 08:44:59] 
+[Loop #63] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:44:59] Snapshot unread: 0
+[2025-12-25 08:44:59] No matching unread docs.
+[2025-12-25 08:45:00] 
+[Loop #64] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:00] Snapshot unread: 0
+[2025-12-25 08:45:00] No matching unread docs.
+[2025-12-25 08:45:01] 
+[Loop #65] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:01] Snapshot unread: 0
+[2025-12-25 08:45:01] No matching unread docs.
+[2025-12-25 08:45:02] 
+[Loop #66] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:02] Snapshot unread: 0
+[2025-12-25 08:45:02] No matching unread docs.
+[2025-12-25 08:45:03] 
+[Loop #67] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:04] Snapshot unread: 0
+[2025-12-25 08:45:04] No matching unread docs.
+[2025-12-25 08:45:05] 
+[Loop #68] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:05] Snapshot unread: 0
+[2025-12-25 08:45:05] No matching unread docs.
+[2025-12-25 08:45:06] 
+[Loop #69] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:06] Snapshot unread: 0
+[2025-12-25 08:45:06] No matching unread docs.
+[2025-12-25 08:45:07] 
+[Loop #70] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:07] Snapshot unread: 0
+[2025-12-25 08:45:07] No matching unread docs.
+[2025-12-25 08:45:08] 
+[Loop #71] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:08] Snapshot unread: 0
+[2025-12-25 08:45:08] No matching unread docs.
+[2025-12-25 08:45:09] 
+[Loop #72] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:09] Snapshot unread: 0
+[2025-12-25 08:45:09] No matching unread docs.
+[2025-12-25 08:45:10] 
+[Loop #73] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:10] Snapshot unread: 0
+[2025-12-25 08:45:10] No matching unread docs.
+[2025-12-25 08:45:11] 
+[Loop #74] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:11] Snapshot unread: 0
+[2025-12-25 08:45:11] No matching unread docs.
+[2025-12-25 08:45:12] 
+[Loop #75] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:12] Snapshot unread: 0
+[2025-12-25 08:45:12] No matching unread docs.
+[2025-12-25 08:45:14] 
+[Loop #76] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:14] Snapshot unread: 0
+[2025-12-25 08:45:14] No matching unread docs.
+[2025-12-25 08:45:15] 
+[Loop #77] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:15] Snapshot unread: 0
+[2025-12-25 08:45:15] No matching unread docs.
+[2025-12-25 08:45:16] 
+[Loop #78] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:16] Snapshot unread: 0
+[2025-12-25 08:45:16] No matching unread docs.
+[2025-12-25 08:45:17] 
+[Loop #79] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:17] Snapshot unread: 0
+[2025-12-25 08:45:17] No matching unread docs.
+[2025-12-25 08:45:18] 
+[Loop #80] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:18] Snapshot unread: 0
+[2025-12-25 08:45:18] No matching unread docs.
+[2025-12-25 08:45:19] 
+[Loop #81] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:19] Snapshot unread: 0
+[2025-12-25 08:45:19] No matching unread docs.
+[2025-12-25 08:45:20] 
+[Loop #82] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:20] Snapshot unread: 0
+[2025-12-25 08:45:20] No matching unread docs.
+[2025-12-25 08:45:21] 
+[Loop #83] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:21] Snapshot unread: 0
+[2025-12-25 08:45:21] No matching unread docs.
+[2025-12-25 08:45:22] 
+[Loop #84] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:22] Snapshot unread: 0
+[2025-12-25 08:45:22] No matching unread docs.
+[2025-12-25 08:45:24] 
+[Loop #85] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:24] Snapshot unread: 0
+[2025-12-25 08:45:24] No matching unread docs.
+[2025-12-25 08:45:25] 
+[Loop #86] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:25] Snapshot unread: 0
+[2025-12-25 08:45:25] No matching unread docs.
+[2025-12-25 08:45:26] 
+[Loop #87] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:26] Snapshot unread: 0
+[2025-12-25 08:45:26] No matching unread docs.
+[2025-12-25 08:45:27] 
+[Loop #88] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:27] Snapshot unread: 0
+[2025-12-25 08:45:27] No matching unread docs.
+[2025-12-25 08:45:28] 
+[Loop #89] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:28] Snapshot unread: 0
+[2025-12-25 08:45:28] No matching unread docs.
+[2025-12-25 08:45:29] 
+[Loop #90] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:29] Snapshot unread: 0
+[2025-12-25 08:45:29] No matching unread docs.
+[2025-12-25 08:45:30] 
+[Loop #91] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:31] Snapshot unread: 0
+[2025-12-25 08:45:31] No matching unread docs.
+[2025-12-25 08:45:32] 
+[Loop #92] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:32] Snapshot unread: 0
+[2025-12-25 08:45:32] No matching unread docs.
+[2025-12-25 08:45:33] 
+[Loop #93] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:33] Snapshot unread: 0
+[2025-12-25 08:45:33] No matching unread docs.
+[2025-12-25 08:45:34] 
+[Loop #94] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:34] Snapshot unread: 0
+[2025-12-25 08:45:34] No matching unread docs.
+[2025-12-25 08:45:35] 
+[Loop #95] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:35] Snapshot unread: 0
+[2025-12-25 08:45:35] No matching unread docs.
+[2025-12-25 08:45:36] 
+[Loop #96] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:36] Snapshot unread: 0
+[2025-12-25 08:45:36] No matching unread docs.
+[2025-12-25 08:45:37] 
+[Loop #97] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:37] Snapshot unread: 0
+[2025-12-25 08:45:37] No matching unread docs.
+[2025-12-25 08:45:38] 
+[Loop #98] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:38] Snapshot unread: 0
+[2025-12-25 08:45:38] No matching unread docs.
+[2025-12-25 08:45:39] 
+[Loop #99] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:39] Snapshot unread: 0
+[2025-12-25 08:45:39] No matching unread docs.
+[2025-12-25 08:45:40] 
+[Loop #100] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:40] Snapshot unread: 0
+[2025-12-25 08:45:40] No matching unread docs.
+[2025-12-25 08:45:42] 
+[Loop #101] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:42] Snapshot unread: 0
+[2025-12-25 08:45:42] No matching unread docs.
+[2025-12-25 08:45:43] 
+[Loop #102] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:43] Snapshot unread: 0
+[2025-12-25 08:45:43] No matching unread docs.
+[2025-12-25 08:45:44] 
+[Loop #103] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:44] Snapshot unread: 0
+[2025-12-25 08:45:44] No matching unread docs.
+[2025-12-25 08:45:45] 
+[Loop #104] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:46] Snapshot unread: 0
+[2025-12-25 08:45:46] No matching unread docs.
+[2025-12-25 08:45:47] 
+[Loop #105] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:47] Snapshot unread: 0
+[2025-12-25 08:45:47] No matching unread docs.
+[2025-12-25 08:45:48] 
+[Loop #106] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:48] Snapshot unread: 0
+[2025-12-25 08:45:48] No matching unread docs.
+[2025-12-25 08:45:49] 
+[Loop #107] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:49] Snapshot unread: 0
+[2025-12-25 08:45:49] No matching unread docs.
+[2025-12-25 08:45:50] 
+[Loop #108] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:50] Snapshot unread: 0
+[2025-12-25 08:45:50] No matching unread docs.
+[2025-12-25 08:45:51] 
+[Loop #109] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:51] Snapshot unread: 0
+[2025-12-25 08:45:51] No matching unread docs.
+[2025-12-25 08:45:52] 
+[Loop #110] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:52] Snapshot unread: 0
+[2025-12-25 08:45:52] No matching unread docs.
+[2025-12-25 08:45:53] 
+[Loop #111] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:53] Snapshot unread: 0
+[2025-12-25 08:45:53] No matching unread docs.
+[2025-12-25 08:45:55] 
+[Loop #112] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:55] Snapshot unread: 0
+[2025-12-25 08:45:55] No matching unread docs.
+[2025-12-25 08:45:56] 
+[Loop #113] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:56] Snapshot unread: 0
+[2025-12-25 08:45:56] No matching unread docs.
+[2025-12-25 08:45:57] 
+[Loop #114] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:57] Snapshot unread: 0
+[2025-12-25 08:45:57] No matching unread docs.
+[2025-12-25 08:45:58] 
+[Loop #115] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:58] Snapshot unread: 0
+[2025-12-25 08:45:58] No matching unread docs.
+[2025-12-25 08:45:59] 
+[Loop #116] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:45:59] Snapshot unread: 0
+[2025-12-25 08:45:59] No matching unread docs.
+[2025-12-25 08:46:00] 
+[Loop #117] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:00] Snapshot unread: 0
+[2025-12-25 08:46:00] No matching unread docs.
+[2025-12-25 08:46:01] 
+[Loop #118] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:01] Snapshot unread: 0
+[2025-12-25 08:46:01] No matching unread docs.
+[2025-12-25 08:46:02] 
+[Loop #119] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:02] Snapshot unread: 0
+[2025-12-25 08:46:02] No matching unread docs.
+[2025-12-25 08:46:04] 
+[Loop #120] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:04] Snapshot unread: 0
+[2025-12-25 08:46:04] No matching unread docs.
+[2025-12-25 08:46:05] 
+[Loop #121] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:05] Snapshot unread: 0
+[2025-12-25 08:46:05] No matching unread docs.
+[2025-12-25 08:46:06] 
+[Loop #122] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:06] Snapshot unread: 0
+[2025-12-25 08:46:06] No matching unread docs.
+[2025-12-25 08:46:07] 
+[Loop #123] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:07] Snapshot unread: 0
+[2025-12-25 08:46:07] No matching unread docs.
+[2025-12-25 08:46:08] 
+[Loop #124] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:08] Snapshot unread: 0
+[2025-12-25 08:46:08] No matching unread docs.
+[2025-12-25 08:46:09] 
+[Loop #125] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:10] Snapshot unread: 0
+[2025-12-25 08:46:10] No matching unread docs.
+[2025-12-25 08:46:12] 
+[Loop #126] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:12] Snapshot unread: 0
+[2025-12-25 08:46:12] No matching unread docs.
+[2025-12-25 08:46:13] 
+[Loop #127] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:13] Snapshot unread: 0
+[2025-12-25 08:46:13] No matching unread docs.
+[2025-12-25 08:46:14] 
+[Loop #128] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:14] Snapshot unread: 0
+[2025-12-25 08:46:14] No matching unread docs.
+[2025-12-25 08:46:15] 
+[Loop #129] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:15] Snapshot unread: 0
+[2025-12-25 08:46:15] No matching unread docs.
+[2025-12-25 08:46:16] 
+[Loop #130] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:16] Snapshot unread: 0
+[2025-12-25 08:46:16] No matching unread docs.
+[2025-12-25 08:46:17] 
+[Loop #131] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:18] Snapshot unread: 0
+[2025-12-25 08:46:18] No matching unread docs.
+[2025-12-25 08:46:19] 
+[Loop #132] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:19] Snapshot unread: 0
+[2025-12-25 08:46:19] No matching unread docs.
+[2025-12-25 08:46:20] 
+[Loop #133] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:20] Snapshot unread: 0
+[2025-12-25 08:46:20] No matching unread docs.
+[2025-12-25 08:46:21] 
+[Loop #134] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:21] Snapshot unread: 0
+[2025-12-25 08:46:21] No matching unread docs.
+[2025-12-25 08:46:23] 
+[Loop #135] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:23] Snapshot unread: 0
+[2025-12-25 08:46:23] No matching unread docs.
+[2025-12-25 08:46:24] 
+[Loop #136] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:24] Snapshot unread: 0
+[2025-12-25 08:46:24] No matching unread docs.
+[2025-12-25 08:46:25] 
+[Loop #137] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:25] Snapshot unread: 0
+[2025-12-25 08:46:25] No matching unread docs.
+[2025-12-25 08:46:26] 
+[Loop #138] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:26] Snapshot unread: 0
+[2025-12-25 08:46:26] No matching unread docs.
+[2025-12-25 08:46:27] 
+[Loop #139] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:27] Snapshot unread: 0
+[2025-12-25 08:46:27] No matching unread docs.
+[2025-12-25 08:46:28] 
+[Loop #140] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:28] Snapshot unread: 0
+[2025-12-25 08:46:28] No matching unread docs.
+[2025-12-25 08:46:29] 
+[Loop #141] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:29] Snapshot unread: 0
+[2025-12-25 08:46:29] No matching unread docs.
+[2025-12-25 08:46:30] 
+[Loop #142] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:30] Snapshot unread: 0
+[2025-12-25 08:46:30] No matching unread docs.
+[2025-12-25 08:46:31] 
+[Loop #143] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:32] Snapshot unread: 0
+[2025-12-25 08:46:32] No matching unread docs.
+[2025-12-25 08:46:33] 
+[Loop #144] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:33] Snapshot unread: 0
+[2025-12-25 08:46:33] No matching unread docs.
+[2025-12-25 08:46:34] 
+[Loop #145] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:34] Snapshot unread: 0
+[2025-12-25 08:46:34] No matching unread docs.
+[2025-12-25 08:46:35] 
+[Loop #146] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:35] Snapshot unread: 0
+[2025-12-25 08:46:35] No matching unread docs.
+[2025-12-25 08:46:36] 
+[Loop #147] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:36] Snapshot unread: 0
+[2025-12-25 08:46:36] No matching unread docs.
+[2025-12-25 08:46:37] 
+[Loop #148] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:37] Snapshot unread: 0
+[2025-12-25 08:46:37] No matching unread docs.
+[2025-12-25 08:46:38] 
+[Loop #149] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:38] Snapshot unread: 0
+[2025-12-25 08:46:38] No matching unread docs.
+[2025-12-25 08:46:39] 
+[Loop #150] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:39] Snapshot unread: 0
+[2025-12-25 08:46:39] No matching unread docs.
+[2025-12-25 08:46:40] 
+[Loop #151] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:40] Snapshot unread: 0
+[2025-12-25 08:46:40] No matching unread docs.
+[2025-12-25 08:46:42] 
+[Loop #152] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:42] Snapshot unread: 0
+[2025-12-25 08:46:42] No matching unread docs.
+[2025-12-25 08:46:43] 
+[Loop #153] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:43] Snapshot unread: 0
+[2025-12-25 08:46:43] No matching unread docs.
+[2025-12-25 08:46:44] 
+[Loop #154] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:44] Snapshot unread: 0
+[2025-12-25 08:46:44] No matching unread docs.
+[2025-12-25 08:46:45] 
+[Loop #155] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:45] Snapshot unread: 0
+[2025-12-25 08:46:45] No matching unread docs.
+[2025-12-25 08:46:46] 
+[Loop #156] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:46] Snapshot unread: 0
+[2025-12-25 08:46:46] No matching unread docs.
+[2025-12-25 08:46:47] 
+[Loop #157] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:47] Snapshot unread: 0
+[2025-12-25 08:46:47] No matching unread docs.
+[2025-12-25 08:46:48] 
+[Loop #158] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:48] Snapshot unread: 0
+[2025-12-25 08:46:48] No matching unread docs.
+[2025-12-25 08:46:49] 
+[Loop #159] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:49] Snapshot unread: 0
+[2025-12-25 08:46:49] No matching unread docs.
+[2025-12-25 08:46:51] 
+[Loop #160] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:51] Snapshot unread: 0
+[2025-12-25 08:46:51] No matching unread docs.
+[2025-12-25 08:46:52] 
+[Loop #161] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:52] Snapshot unread: 0
+[2025-12-25 08:46:52] No matching unread docs.
+[2025-12-25 08:46:53] 
+[Loop #162] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:53] Snapshot unread: 0
+[2025-12-25 08:46:53] No matching unread docs.
+[2025-12-25 08:46:54] 
+[Loop #163] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:54] Snapshot unread: 0
+[2025-12-25 08:46:54] No matching unread docs.
+[2025-12-25 08:46:55] 
+[Loop #164] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:55] Snapshot unread: 0
+[2025-12-25 08:46:55] No matching unread docs.
+[2025-12-25 08:46:56] 
+[Loop #165] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:56] Snapshot unread: 0
+[2025-12-25 08:46:56] No matching unread docs.
+[2025-12-25 08:46:57] 
+[Loop #166] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:57] Snapshot unread: 0
+[2025-12-25 08:46:57] No matching unread docs.
+[2025-12-25 08:46:58] 
+[Loop #167] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:58] Snapshot unread: 0
+[2025-12-25 08:46:58] No matching unread docs.
+[2025-12-25 08:46:59] 
+[Loop #168] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:46:59] Snapshot unread: 0
+[2025-12-25 08:46:59] No matching unread docs.
+[2025-12-25 08:47:01] 
+[Loop #169] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:01] Snapshot unread: 0
+[2025-12-25 08:47:01] No matching unread docs.
+[2025-12-25 08:47:02] 
+[Loop #170] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:02] Snapshot unread: 0
+[2025-12-25 08:47:02] No matching unread docs.
+[2025-12-25 08:47:03] 
+[Loop #171] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:03] Snapshot unread: 0
+[2025-12-25 08:47:03] No matching unread docs.
+[2025-12-25 08:47:04] 
+[Loop #172] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:04] Snapshot unread: 0
+[2025-12-25 08:47:04] No matching unread docs.
+[2025-12-25 08:47:05] 
+[Loop #173] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:05] Snapshot unread: 0
+[2025-12-25 08:47:05] No matching unread docs.
+[2025-12-25 08:47:06] 
+[Loop #174] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:06] Snapshot unread: 0
+[2025-12-25 08:47:06] No matching unread docs.
+[2025-12-25 08:47:07] 
+[Loop #175] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:07] Snapshot unread: 0
+[2025-12-25 08:47:07] No matching unread docs.
+[2025-12-25 08:47:08] 
+[Loop #176] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:08] Snapshot unread: 0
+[2025-12-25 08:47:08] No matching unread docs.
+[2025-12-25 08:47:09] 
+[Loop #177] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:09] Snapshot unread: 0
+[2025-12-25 08:47:09] No matching unread docs.
+[2025-12-25 08:47:10] 
+[Loop #178] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:11] Snapshot unread: 0
+[2025-12-25 08:47:11] No matching unread docs.
+[2025-12-25 08:47:12] 
+[Loop #179] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:12] Snapshot unread: 0
+[2025-12-25 08:47:12] No matching unread docs.
+[2025-12-25 08:47:13] 
+[Loop #180] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:13] Snapshot unread: 0
+[2025-12-25 08:47:13] No matching unread docs.
+[2025-12-25 08:47:14] 
+[Loop #181] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:14] Snapshot unread: 0
+[2025-12-25 08:47:14] No matching unread docs.
+[2025-12-25 08:47:15] 
+[Loop #182] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:15] Snapshot unread: 0
+[2025-12-25 08:47:15] No matching unread docs.
+[2025-12-25 08:47:16] 
+[Loop #183] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:16] Snapshot unread: 0
+[2025-12-25 08:47:16] No matching unread docs.
+[2025-12-25 08:47:17] 
+[Loop #184] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:17] Snapshot unread: 0
+[2025-12-25 08:47:17] No matching unread docs.
+[2025-12-25 08:47:18] 
+[Loop #185] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:18] Snapshot unread: 0
+[2025-12-25 08:47:18] No matching unread docs.
+[2025-12-25 08:47:19] 
+[Loop #186] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:19] Snapshot unread: 0
+[2025-12-25 08:47:19] No matching unread docs.
+[2025-12-25 08:47:21] 
+[Loop #187] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:21] Snapshot unread: 0
+[2025-12-25 08:47:21] No matching unread docs.
+[2025-12-25 08:47:22] 
+[Loop #188] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:22] Snapshot unread: 0
+[2025-12-25 08:47:22] No matching unread docs.
+[2025-12-25 08:47:23] 
+[Loop #189] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:23] Snapshot unread: 0
+[2025-12-25 08:47:23] No matching unread docs.
+[2025-12-25 08:47:24] 
+[Loop #190] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:24] Snapshot unread: 0
+[2025-12-25 08:47:24] No matching unread docs.
+[2025-12-25 08:47:25] 
+[Loop #191] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:25] Snapshot unread: 0
+[2025-12-25 08:47:25] No matching unread docs.
+[2025-12-25 08:47:26] 
+[Loop #192] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:26] Snapshot unread: 0
+[2025-12-25 08:47:26] No matching unread docs.
+[2025-12-25 08:47:27] 
+[Loop #193] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:27] Snapshot unread: 0
+[2025-12-25 08:47:27] No matching unread docs.
+[2025-12-25 08:47:28] 
+[Loop #194] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:28] Snapshot unread: 0
+[2025-12-25 08:47:28] No matching unread docs.
+[2025-12-25 08:47:29] 
+[Loop #195] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:29] Snapshot unread: 0
+[2025-12-25 08:47:29] No matching unread docs.
+[2025-12-25 08:47:31] 
+[Loop #196] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:31] Snapshot unread: 0
+[2025-12-25 08:47:31] No matching unread docs.
+[2025-12-25 08:47:32] 
+[Loop #197] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:32] Snapshot unread: 0
+[2025-12-25 08:47:32] No matching unread docs.
+[2025-12-25 08:47:33] 
+[Loop #198] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:33] Snapshot unread: 0
+[2025-12-25 08:47:33] No matching unread docs.
+[2025-12-25 08:47:34] 
+[Loop #199] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:34] Snapshot unread: 0
+[2025-12-25 08:47:34] No matching unread docs.
+[2025-12-25 08:47:35] 
+[Loop #200] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:35] Snapshot unread: 0
+[2025-12-25 08:47:35] No matching unread docs.
+[2025-12-25 08:47:36] 
+[Loop #201] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:36] Snapshot unread: 0
+[2025-12-25 08:47:36] No matching unread docs.
+[2025-12-25 08:47:37] 
+[Loop #202] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:37] Snapshot unread: 0
+[2025-12-25 08:47:37] No matching unread docs.
+[2025-12-25 08:47:38] 
+[Loop #203] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:38] Snapshot unread: 0
+[2025-12-25 08:47:38] No matching unread docs.
+[2025-12-25 08:47:40] 
+[Loop #204] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:40] Snapshot unread: 0
+[2025-12-25 08:47:40] No matching unread docs.
+[2025-12-25 08:47:41] 
+[Loop #205] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:41] Snapshot unread: 0
+[2025-12-25 08:47:41] No matching unread docs.
+[2025-12-25 08:47:42] 
+[Loop #206] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:42] Snapshot unread: 0
+[2025-12-25 08:47:42] No matching unread docs.
+[2025-12-25 08:47:43] 
+[Loop #207] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:43] Snapshot unread: 0
+[2025-12-25 08:47:43] No matching unread docs.
+[2025-12-25 08:47:44] 
+[Loop #208] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:44] Snapshot unread: 0
+[2025-12-25 08:47:44] No matching unread docs.
+[2025-12-25 08:47:45] 
+[Loop #209] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:45] Snapshot unread: 0
+[2025-12-25 08:47:45] No matching unread docs.
+[2025-12-25 08:47:46] 
+[Loop #210] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:46] Snapshot unread: 0
+[2025-12-25 08:47:46] No matching unread docs.
+[2025-12-25 08:47:47] 
+[Loop #211] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:47] Snapshot unread: 0
+[2025-12-25 08:47:47] No matching unread docs.
+[2025-12-25 08:47:48] 
+[Loop #212] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:48] Snapshot unread: 0
+[2025-12-25 08:47:48] No matching unread docs.
+[2025-12-25 08:47:49] 
+[Loop #213] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:49] Snapshot unread: 0
+[2025-12-25 08:47:49] No matching unread docs.
+[2025-12-25 08:47:50] 
+[Loop #214] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:51] Snapshot unread: 0
+[2025-12-25 08:47:51] No matching unread docs.
+[2025-12-25 08:47:52] 
+[Loop #215] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:52] Snapshot unread: 0
+[2025-12-25 08:47:52] No matching unread docs.
+[2025-12-25 08:47:53] 
+[Loop #216] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:53] Snapshot unread: 0
+[2025-12-25 08:47:53] No matching unread docs.
+[2025-12-25 08:47:54] 
+[Loop #217] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:54] Snapshot unread: 0
+[2025-12-25 08:47:54] No matching unread docs.
+[2025-12-25 08:47:55] 
+[Loop #218] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:55] Snapshot unread: 0
+[2025-12-25 08:47:55] No matching unread docs.
+[2025-12-25 08:47:56] 
+[Loop #219] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:56] Snapshot unread: 0
+[2025-12-25 08:47:56] No matching unread docs.
+[2025-12-25 08:47:57] 
+[Loop #220] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:57] Snapshot unread: 0
+[2025-12-25 08:47:57] No matching unread docs.
+[2025-12-25 08:47:58] 
+[Loop #221] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:58] Snapshot unread: 0
+[2025-12-25 08:47:58] No matching unread docs.
+[2025-12-25 08:47:59] 
+[Loop #222] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:47:59] Snapshot unread: 0
+[2025-12-25 08:47:59] No matching unread docs.
+[2025-12-25 08:48:00] 
+[Loop #223] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:00] Snapshot unread: 0
+[2025-12-25 08:48:00] No matching unread docs.
+[2025-12-25 08:48:01] 
+[Loop #224] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:02] Snapshot unread: 0
+[2025-12-25 08:48:02] No matching unread docs.
+[2025-12-25 08:48:03] 
+[Loop #225] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:03] Snapshot unread: 0
+[2025-12-25 08:48:03] No matching unread docs.
+[2025-12-25 08:48:04] 
+[Loop #226] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:04] Snapshot unread: 0
+[2025-12-25 08:48:04] No matching unread docs.
+[2025-12-25 08:48:05] 
+[Loop #227] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:05] Snapshot unread: 0
+[2025-12-25 08:48:05] No matching unread docs.
+[2025-12-25 08:48:06] 
+[Loop #228] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:06] Snapshot unread: 0
+[2025-12-25 08:48:06] No matching unread docs.
+[2025-12-25 08:48:07] 
+[Loop #229] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:07] Snapshot unread: 0
+[2025-12-25 08:48:07] No matching unread docs.
+[2025-12-25 08:48:08] 
+[Loop #230] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:08] Snapshot unread: 0
+[2025-12-25 08:48:08] No matching unread docs.
+[2025-12-25 08:48:09] 
+[Loop #231] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:09] Snapshot unread: 0
+[2025-12-25 08:48:09] No matching unread docs.
+[2025-12-25 08:48:10] 
+[Loop #232] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:10] Snapshot unread: 0
+[2025-12-25 08:48:10] No matching unread docs.
+[2025-12-25 08:48:11] 
+[Loop #233] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:11] Snapshot unread: 0
+[2025-12-25 08:48:11] No matching unread docs.
+[2025-12-25 08:48:13] 
+[Loop #234] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:13] Snapshot unread: 0
+[2025-12-25 08:48:13] No matching unread docs.
+[2025-12-25 08:48:14] 
+[Loop #235] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:14] Snapshot unread: 0
+[2025-12-25 08:48:14] No matching unread docs.
+[2025-12-25 08:48:15] 
+[Loop #236] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:15] Snapshot unread: 0
+[2025-12-25 08:48:15] No matching unread docs.
+[2025-12-25 08:48:16] 
+[Loop #237] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:16] Snapshot unread: 0
+[2025-12-25 08:48:16] No matching unread docs.
+[2025-12-25 08:48:17] 
+[Loop #238] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:17] Snapshot unread: 0
+[2025-12-25 08:48:17] No matching unread docs.
+[2025-12-25 08:48:18] 
+[Loop #239] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:18] Snapshot unread: 0
+[2025-12-25 08:48:18] No matching unread docs.
+[2025-12-25 08:48:19] 
+[Loop #240] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:19] Snapshot unread: 0
+[2025-12-25 08:48:19] No matching unread docs.
+[2025-12-25 08:48:20] 
+[Loop #241] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:20] Snapshot unread: 0
+[2025-12-25 08:48:20] No matching unread docs.
+[2025-12-25 08:48:22] 
+[Loop #242] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:22] Snapshot unread: 0
+[2025-12-25 08:48:22] No matching unread docs.
+[2025-12-25 08:48:23] 
+[Loop #243] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:23] Snapshot unread: 0
+[2025-12-25 08:48:23] No matching unread docs.
+[2025-12-25 08:48:24] 
+[Loop #244] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:24] Snapshot unread: 0
+[2025-12-25 08:48:24] No matching unread docs.
+[2025-12-25 08:48:25] 
+[Loop #245] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:25] Snapshot unread: 0
+[2025-12-25 08:48:25] No matching unread docs.
+[2025-12-25 08:48:26] 
+[Loop #246] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:26] Snapshot unread: 0
+[2025-12-25 08:48:26] No matching unread docs.
+[2025-12-25 08:48:28] 
+[Loop #247] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:28] Snapshot unread: 0
+[2025-12-25 08:48:28] No matching unread docs.
+[2025-12-25 08:48:29] 
+[Loop #248] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:29] Snapshot unread: 0
+[2025-12-25 08:48:29] No matching unread docs.
+[2025-12-25 08:48:30] 
+[Loop #249] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:30] Snapshot unread: 0
+[2025-12-25 08:48:30] No matching unread docs.
+[2025-12-25 08:48:31] 
+[Loop #250] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:31] Snapshot unread: 0
+[2025-12-25 08:48:31] No matching unread docs.
+[2025-12-25 08:48:32] 
+[Loop #251] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:32] Snapshot unread: 0
+[2025-12-25 08:48:32] No matching unread docs.
+[2025-12-25 08:48:34] 
+[Loop #252] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:34] Snapshot unread: 0
+[2025-12-25 08:48:34] No matching unread docs.
+[2025-12-25 08:48:35] 
+[Loop #253] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:35] Snapshot unread: 0
+[2025-12-25 08:48:35] No matching unread docs.
+[2025-12-25 08:48:36] 
+[Loop #254] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:36] Snapshot unread: 0
+[2025-12-25 08:48:36] No matching unread docs.
+[2025-12-25 08:48:37] 
+[Loop #255] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:37] Snapshot unread: 0
+[2025-12-25 08:48:37] No matching unread docs.
+[2025-12-25 08:48:38] 
+[Loop #256] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:38] Snapshot unread: 0
+[2025-12-25 08:48:38] No matching unread docs.
+[2025-12-25 08:48:39] 
+[Loop #257] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:39] Snapshot unread: 0
+[2025-12-25 08:48:39] No matching unread docs.
+[2025-12-25 08:48:40] 
+[Loop #258] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:40] Snapshot unread: 0
+[2025-12-25 08:48:40] No matching unread docs.
+[2025-12-25 08:48:41] 
+[Loop #259] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:42] Snapshot unread: 0
+[2025-12-25 08:48:42] No matching unread docs.
+[2025-12-25 08:48:43] 
+[Loop #260] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:43] Snapshot unread: 0
+[2025-12-25 08:48:43] No matching unread docs.
+[2025-12-25 08:48:44] 
+[Loop #261] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:44] Snapshot unread: 0
+[2025-12-25 08:48:44] No matching unread docs.
+[2025-12-25 08:48:45] 
+[Loop #262] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:45] Snapshot unread: 0
+[2025-12-25 08:48:45] No matching unread docs.
+[2025-12-25 08:48:46] 
+[Loop #263] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:46] Snapshot unread: 0
+[2025-12-25 08:48:46] No matching unread docs.
+[2025-12-25 08:48:47] 
+[Loop #264] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:47] Snapshot unread: 0
+[2025-12-25 08:48:47] No matching unread docs.
+[2025-12-25 08:48:48] 
+[Loop #265] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:48] Snapshot unread: 0
+[2025-12-25 08:48:48] No matching unread docs.
+[2025-12-25 08:48:49] 
+[Loop #266] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:49] Snapshot unread: 0
+[2025-12-25 08:48:49] No matching unread docs.
+[2025-12-25 08:48:50] 
+[Loop #267] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:50] Snapshot unread: 0
+[2025-12-25 08:48:50] No matching unread docs.
+[2025-12-25 08:48:51] 
+[Loop #268] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:51] Snapshot unread: 1
+[2025-12-25 08:48:52] DEBUG_MATCH => [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 08:48:52] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 08:48:52] ✅ DONE [STQ] doc_key=KLN-SPP2-STQ-MC-EW13-349_R00 files=1 update=False
+[2025-12-25 08:48:53] 
+[Loop #269] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:53] Snapshot unread: 0
+[2025-12-25 08:48:53] No matching unread docs.
+[2025-12-25 08:48:54] 
+[Loop #270] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:54] Snapshot unread: 0
+[2025-12-25 08:48:54] No matching unread docs.
+[2025-12-25 08:48:55] 
+[Loop #271] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:56] Snapshot unread: 0
+[2025-12-25 08:48:56] No matching unread docs.
+[2025-12-25 08:48:57] 
+[Loop #272] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:57] Snapshot unread: 0
+[2025-12-25 08:48:57] No matching unread docs.
+[2025-12-25 08:48:58] 
+[Loop #273] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:58] Snapshot unread: 0
+[2025-12-25 08:48:58] No matching unread docs.
+[2025-12-25 08:48:59] 
+[Loop #274] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:48:59] Snapshot unread: 0
+[2025-12-25 08:48:59] No matching unread docs.
+[2025-12-25 08:49:00] 
+[Loop #275] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:00] Snapshot unread: 0
+[2025-12-25 08:49:00] No matching unread docs.
+[2025-12-25 08:49:01] 
+[Loop #276] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:01] Snapshot unread: 0
+[2025-12-25 08:49:01] No matching unread docs.
+[2025-12-25 08:49:02] 
+[Loop #277] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:02] Snapshot unread: 0
+[2025-12-25 08:49:02] No matching unread docs.
+[2025-12-25 08:49:03] 
+[Loop #278] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:03] Snapshot unread: 0
+[2025-12-25 08:49:03] No matching unread docs.
+[2025-12-25 08:49:04] 
+[Loop #279] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:04] Snapshot unread: 0
+[2025-12-25 08:49:04] No matching unread docs.
+[2025-12-25 08:49:05] 
+[Loop #280] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:05] Snapshot unread: 0
+[2025-12-25 08:49:05] No matching unread docs.
+[2025-12-25 08:49:07] 
+[Loop #281] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:07] Snapshot unread: 0
+[2025-12-25 08:49:07] No matching unread docs.
+[2025-12-25 08:49:08] 
+[Loop #282] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:08] Snapshot unread: 0
+[2025-12-25 08:49:08] No matching unread docs.
+[2025-12-25 08:49:09] 
+[Loop #283] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:09] Snapshot unread: 0
+[2025-12-25 08:49:09] No matching unread docs.
+[2025-12-25 08:49:10] 
+[Loop #284] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:10] Snapshot unread: 0
+[2025-12-25 08:49:10] No matching unread docs.
+[2025-12-25 08:49:11] 
+[Loop #285] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:11] Snapshot unread: 0
+[2025-12-25 08:49:11] No matching unread docs.
+[2025-12-25 08:49:12] 
+[Loop #286] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:12] Snapshot unread: 0
+[2025-12-25 08:49:12] No matching unread docs.
+[2025-12-25 08:49:13] 
+[Loop #287] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:13] Snapshot unread: 0
+[2025-12-25 08:49:13] No matching unread docs.
+[2025-12-25 08:49:14] 
+[Loop #288] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:14] Snapshot unread: 0
+[2025-12-25 08:49:14] No matching unread docs.
+[2025-12-25 08:49:15] 
+[Loop #289] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:15] Snapshot unread: 0
+[2025-12-25 08:49:15] No matching unread docs.
+[2025-12-25 08:49:16] 
+[Loop #290] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:16] Snapshot unread: 0
+[2025-12-25 08:49:16] No matching unread docs.
+[2025-12-25 08:49:18] 
+[Loop #291] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:18] Snapshot unread: 0
+[2025-12-25 08:49:18] No matching unread docs.
+[2025-12-25 08:49:19] 
+[Loop #292] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:19] Snapshot unread: 0
+[2025-12-25 08:49:19] No matching unread docs.
+[2025-12-25 08:49:20] 
+[Loop #293] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:20] Snapshot unread: 0
+[2025-12-25 08:49:20] No matching unread docs.
+[2025-12-25 08:49:21] 
+[Loop #294] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:21] Snapshot unread: 0
+[2025-12-25 08:49:21] No matching unread docs.
+[2025-12-25 08:49:22] 
+[Loop #295] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:22] Snapshot unread: 0
+[2025-12-25 08:49:22] No matching unread docs.
+[2025-12-25 08:49:23] 
+[Loop #296] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:23] Snapshot unread: 0
+[2025-12-25 08:49:23] No matching unread docs.
+[2025-12-25 08:49:24] 
+[Loop #297] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:24] Snapshot unread: 0
+[2025-12-25 08:49:24] No matching unread docs.
+[2025-12-25 08:49:25] 
+[Loop #298] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:25] Snapshot unread: 0
+[2025-12-25 08:49:25] No matching unread docs.
+[2025-12-25 08:49:26] 
+[Loop #299] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:26] Snapshot unread: 0
+[2025-12-25 08:49:26] No matching unread docs.
+[2025-12-25 08:49:28] 
+[Loop #300] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:28] Snapshot unread: 0
+[2025-12-25 08:49:28] No matching unread docs.
+[2025-12-25 08:49:29] 
+[Loop #301] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:29] Snapshot unread: 0
+[2025-12-25 08:49:29] No matching unread docs.
+[2025-12-25 08:49:30] 
+[Loop #302] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:30] Snapshot unread: 0
+[2025-12-25 08:49:30] No matching unread docs.
+[2025-12-25 08:49:31] 
+[Loop #303] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:31] Snapshot unread: 0
+[2025-12-25 08:49:31] No matching unread docs.
+[2025-12-25 08:49:32] 
+[Loop #304] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:32] Snapshot unread: 0
+[2025-12-25 08:49:32] No matching unread docs.
+[2025-12-25 08:49:33] 
+[Loop #305] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:33] Snapshot unread: 0
+[2025-12-25 08:49:33] No matching unread docs.
+[2025-12-25 08:49:35] 
+[Loop #306] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:35] Snapshot unread: 0
+[2025-12-25 08:49:35] No matching unread docs.
+[2025-12-25 08:49:36] 
+[Loop #307] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:36] Snapshot unread: 0
+[2025-12-25 08:49:36] No matching unread docs.
+[2025-12-25 08:49:37] 
+[Loop #308] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:37] Snapshot unread: 0
+[2025-12-25 08:49:37] No matching unread docs.
+[2025-12-25 08:49:38] 
+[Loop #309] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:38] Snapshot unread: 0
+[2025-12-25 08:49:38] No matching unread docs.
+[2025-12-25 08:49:39] 
+[Loop #310] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:39] Snapshot unread: 0
+[2025-12-25 08:49:39] No matching unread docs.
+[2025-12-25 08:49:40] 
+[Loop #311] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:40] Snapshot unread: 0
+[2025-12-25 08:49:40] No matching unread docs.
+[2025-12-25 08:49:41] 
+[Loop #312] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:41] Snapshot unread: 0
+[2025-12-25 08:49:41] No matching unread docs.
+[2025-12-25 08:49:42] 
+[Loop #313] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:42] Snapshot unread: 0
+[2025-12-25 08:49:42] No matching unread docs.
+[2025-12-25 08:49:43] 
+[Loop #314] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:43] Snapshot unread: 0
+[2025-12-25 08:49:43] No matching unread docs.
+[2025-12-25 08:49:44] 
+[Loop #315] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:45] Snapshot unread: 0
+[2025-12-25 08:49:45] No matching unread docs.
+[2025-12-25 08:49:46] 
+[Loop #316] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:46] Snapshot unread: 0
+[2025-12-25 08:49:46] No matching unread docs.
+[2025-12-25 08:49:47] 
+[Loop #317] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:47] Snapshot unread: 0
+[2025-12-25 08:49:47] No matching unread docs.
+[2025-12-25 08:49:48] 
+[Loop #318] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:48] Snapshot unread: 0
+[2025-12-25 08:49:48] No matching unread docs.
+[2025-12-25 08:49:49] 
+[Loop #319] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:49] Snapshot unread: 0
+[2025-12-25 08:49:49] No matching unread docs.
+[2025-12-25 08:49:50] 
+[Loop #320] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:50] Snapshot unread: 0
+[2025-12-25 08:49:50] No matching unread docs.
+[2025-12-25 08:49:51] 
+[Loop #321] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:51] Snapshot unread: 0
+[2025-12-25 08:49:51] No matching unread docs.
+[2025-12-25 08:49:52] 
+[Loop #322] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:52] Snapshot unread: 0
+[2025-12-25 08:49:52] No matching unread docs.
+[2025-12-25 08:49:53] 
+[Loop #323] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:53] Snapshot unread: 0
+[2025-12-25 08:49:53] No matching unread docs.
+[2025-12-25 08:49:54] 
+[Loop #324] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:54] Snapshot unread: 0
+[2025-12-25 08:49:54] No matching unread docs.
+[2025-12-25 08:49:55] 
+[Loop #325] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:55] Snapshot unread: 0
+[2025-12-25 08:49:55] No matching unread docs.
+[2025-12-25 08:49:57] 
+[Loop #326] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:57] Snapshot unread: 0
+[2025-12-25 08:49:57] No matching unread docs.
+[2025-12-25 08:49:58] 
+[Loop #327] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:58] Snapshot unread: 0
+[2025-12-25 08:49:58] No matching unread docs.
+[2025-12-25 08:49:59] 
+[Loop #328] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:49:59] Snapshot unread: 0
+[2025-12-25 08:49:59] No matching unread docs.
+[2025-12-25 08:50:00] 
+[Loop #329] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:00] Snapshot unread: 0
+[2025-12-25 08:50:00] No matching unread docs.
+[2025-12-25 08:50:01] 
+[Loop #330] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:01] Snapshot unread: 0
+[2025-12-25 08:50:01] No matching unread docs.
+[2025-12-25 08:50:02] 
+[Loop #331] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:02] Snapshot unread: 0
+[2025-12-25 08:50:02] No matching unread docs.
+[2025-12-25 08:50:03] 
+[Loop #332] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:03] Snapshot unread: 0
+[2025-12-25 08:50:03] No matching unread docs.
+[2025-12-25 08:50:04] 
+[Loop #333] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:04] Snapshot unread: 0
+[2025-12-25 08:50:04] No matching unread docs.
+[2025-12-25 08:50:05] 
+[Loop #334] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:05] Snapshot unread: 0
+[2025-12-25 08:50:05] No matching unread docs.
+[2025-12-25 08:50:06] 
+[Loop #335] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:06] Snapshot unread: 0
+[2025-12-25 08:50:06] No matching unread docs.
+[2025-12-25 08:50:09] 
+[Loop #336] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:09] Snapshot unread: 0
+[2025-12-25 08:50:09] No matching unread docs.
+[2025-12-25 08:50:10] 
+[Loop #337] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:10] Snapshot unread: 0
+[2025-12-25 08:50:10] No matching unread docs.
+[2025-12-25 08:50:11] 
+[Loop #338] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:11] Snapshot unread: 0
+[2025-12-25 08:50:11] No matching unread docs.
+[2025-12-25 08:50:12] 
+[Loop #339] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:12] Snapshot unread: 0
+[2025-12-25 08:50:12] No matching unread docs.
+[2025-12-25 08:50:13] 
+[Loop #340] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:13] Snapshot unread: 0
+[2025-12-25 08:50:13] No matching unread docs.
+[2025-12-25 08:50:14] 
+[Loop #341] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:14] Snapshot unread: 0
+[2025-12-25 08:50:14] No matching unread docs.
+[2025-12-25 08:50:15] 
+[Loop #342] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:15] Snapshot unread: 0
+[2025-12-25 08:50:15] No matching unread docs.
+[2025-12-25 08:50:16] 
+[Loop #343] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:16] Snapshot unread: 0
+[2025-12-25 08:50:16] No matching unread docs.
+[2025-12-25 08:50:17] 
+[Loop #344] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:17] Snapshot unread: 0
+[2025-12-25 08:50:17] No matching unread docs.
+[2025-12-25 08:50:19] 
+[Loop #345] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:19] Snapshot unread: 0
+[2025-12-25 08:50:19] No matching unread docs.
+[2025-12-25 08:50:20] 
+[Loop #346] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:20] Snapshot unread: 0
+[2025-12-25 08:50:20] No matching unread docs.
+[2025-12-25 08:50:21] 
+[Loop #347] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:21] Snapshot unread: 0
+[2025-12-25 08:50:21] No matching unread docs.
+[2025-12-25 08:50:22] 
+[Loop #348] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:22] Snapshot unread: 0
+[2025-12-25 08:50:22] No matching unread docs.
+[2025-12-25 08:50:23] 
+[Loop #349] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:23] Snapshot unread: 0
+[2025-12-25 08:50:23] No matching unread docs.
+[2025-12-25 08:50:25] 
+[Loop #350] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:25] Snapshot unread: 0
+[2025-12-25 08:50:25] No matching unread docs.
+[2025-12-25 08:50:26] 
+[Loop #351] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:26] Snapshot unread: 0
+[2025-12-25 08:50:26] No matching unread docs.
+[2025-12-25 08:50:27] 
+[Loop #352] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:27] Snapshot unread: 0
+[2025-12-25 08:50:27] No matching unread docs.
+[2025-12-25 08:50:28] 
+[Loop #353] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:28] Snapshot unread: 0
+[2025-12-25 08:50:28] No matching unread docs.
+[2025-12-25 08:50:29] 
+[Loop #354] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:29] Snapshot unread: 0
+[2025-12-25 08:50:29] No matching unread docs.
+[2025-12-25 08:50:30] 
+[Loop #355] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:30] Snapshot unread: 0
+[2025-12-25 08:50:30] No matching unread docs.
+[2025-12-25 08:50:31] 
+[Loop #356] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:31] Snapshot unread: 0
+[2025-12-25 08:50:31] No matching unread docs.
+[2025-12-25 08:50:32] 
+[Loop #357] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:32] Snapshot unread: 0
+[2025-12-25 08:50:32] No matching unread docs.
+[2025-12-25 08:50:33] 
+[Loop #358] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:33] Snapshot unread: 0
+[2025-12-25 08:50:33] No matching unread docs.
+[2025-12-25 08:50:34] 
+[Loop #359] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:34] Snapshot unread: 0
+[2025-12-25 08:50:34] No matching unread docs.
+[2025-12-25 08:50:36] 
+[Loop #360] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:36] Snapshot unread: 0
+[2025-12-25 08:50:36] No matching unread docs.
+[2025-12-25 08:50:37] 
+[Loop #361] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:37] Snapshot unread: 0
+[2025-12-25 08:50:37] No matching unread docs.
+[2025-12-25 08:50:38] 
+[Loop #362] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:38] Snapshot unread: 0
+[2025-12-25 08:50:38] No matching unread docs.
+[2025-12-25 08:50:39] 
+[Loop #363] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:39] Snapshot unread: 0
+[2025-12-25 08:50:39] No matching unread docs.
+[2025-12-25 08:50:40] 
+[Loop #364] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:40] Snapshot unread: 0
+[2025-12-25 08:50:40] No matching unread docs.
+[2025-12-25 08:50:41] 
+[Loop #365] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:41] Snapshot unread: 0
+[2025-12-25 08:50:41] No matching unread docs.
+[2025-12-25 08:50:42] 
+[Loop #366] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:42] Snapshot unread: 0
+[2025-12-25 08:50:42] No matching unread docs.
+[2025-12-25 08:50:43] 
+[Loop #367] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:43] Snapshot unread: 0
+[2025-12-25 08:50:43] No matching unread docs.
+[2025-12-25 08:50:44] 
+[Loop #368] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:44] Snapshot unread: 0
+[2025-12-25 08:50:44] No matching unread docs.
+[2025-12-25 08:50:46] 
+[Loop #369] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:46] Snapshot unread: 0
+[2025-12-25 08:50:46] No matching unread docs.
+[2025-12-25 08:50:47] 
+[Loop #370] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:47] Snapshot unread: 0
+[2025-12-25 08:50:47] No matching unread docs.
+[2025-12-25 08:50:48] 
+[Loop #371] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:48] Snapshot unread: 0
+[2025-12-25 08:50:48] No matching unread docs.
+[2025-12-25 08:50:49] 
+[Loop #372] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:49] Snapshot unread: 0
+[2025-12-25 08:50:49] No matching unread docs.
+[2025-12-25 08:50:50] 
+[Loop #373] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:50] Snapshot unread: 0
+[2025-12-25 08:50:50] No matching unread docs.
+[2025-12-25 08:50:51] 
+[Loop #374] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:51] Snapshot unread: 0
+[2025-12-25 08:50:51] No matching unread docs.
+[2025-12-25 08:50:53] 
+[Loop #375] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:53] Snapshot unread: 0
+[2025-12-25 08:50:53] No matching unread docs.
+[2025-12-25 08:50:54] 
+[Loop #376] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:54] Snapshot unread: 0
+[2025-12-25 08:50:54] No matching unread docs.
+[2025-12-25 08:50:55] 
+[Loop #377] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:55] Snapshot unread: 0
+[2025-12-25 08:50:55] No matching unread docs.
+[2025-12-25 08:50:56] 
+[Loop #378] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:56] Snapshot unread: 0
+[2025-12-25 08:50:56] No matching unread docs.
+[2025-12-25 08:50:57] 
+[Loop #379] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:57] Snapshot unread: 0
+[2025-12-25 08:50:57] No matching unread docs.
+[2025-12-25 08:50:59] 
+[Loop #380] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:50:59] Snapshot unread: 0
+[2025-12-25 08:50:59] No matching unread docs.
+[2025-12-25 08:51:00] 
+[Loop #381] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:00] Snapshot unread: 0
+[2025-12-25 08:51:00] No matching unread docs.
+[2025-12-25 08:51:01] 
+[Loop #382] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:01] Snapshot unread: 0
+[2025-12-25 08:51:01] No matching unread docs.
+[2025-12-25 08:51:02] 
+[Loop #383] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:02] Snapshot unread: 0
+[2025-12-25 08:51:02] No matching unread docs.
+[2025-12-25 08:51:03] 
+[Loop #384] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:03] Snapshot unread: 0
+[2025-12-25 08:51:03] No matching unread docs.
+[2025-12-25 08:51:04] 
+[Loop #385] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:04] Snapshot unread: 0
+[2025-12-25 08:51:04] No matching unread docs.
+[2025-12-25 08:51:06] 
+[Loop #386] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:06] Snapshot unread: 0
+[2025-12-25 08:51:06] No matching unread docs.
+[2025-12-25 08:51:07] 
+[Loop #387] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:07] Snapshot unread: 0
+[2025-12-25 08:51:07] No matching unread docs.
+[2025-12-25 08:51:08] 
+[Loop #388] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:08] Snapshot unread: 0
+[2025-12-25 08:51:08] No matching unread docs.
+[2025-12-25 08:51:09] 
+[Loop #389] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:09] Snapshot unread: 0
+[2025-12-25 08:51:09] No matching unread docs.
+[2025-12-25 08:51:10] 
+[Loop #390] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:10] Snapshot unread: 0
+[2025-12-25 08:51:10] No matching unread docs.
+[2025-12-25 08:51:11] 
+[Loop #391] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:11] Snapshot unread: 0
+[2025-12-25 08:51:11] No matching unread docs.
+[2025-12-25 08:51:12] 
+[Loop #392] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:12] Snapshot unread: 0
+[2025-12-25 08:51:12] No matching unread docs.
+[2025-12-25 08:51:13] 
+[Loop #393] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:13] Snapshot unread: 0
+[2025-12-25 08:51:13] No matching unread docs.
+[2025-12-25 08:51:15] 
+[Loop #394] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:15] Snapshot unread: 0
+[2025-12-25 08:51:15] No matching unread docs.
+[2025-12-25 08:51:16] 
+[Loop #395] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:16] Snapshot unread: 0
+[2025-12-25 08:51:16] No matching unread docs.
+[2025-12-25 08:51:17] 
+[Loop #396] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:17] Snapshot unread: 0
+[2025-12-25 08:51:17] No matching unread docs.
+[2025-12-25 08:51:18] 
+[Loop #397] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:18] Snapshot unread: 0
+[2025-12-25 08:51:18] No matching unread docs.
+[2025-12-25 08:51:19] 
+[Loop #398] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:19] Snapshot unread: 0
+[2025-12-25 08:51:19] No matching unread docs.
+[2025-12-25 08:51:20] 
+[Loop #399] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:20] Snapshot unread: 0
+[2025-12-25 08:51:20] No matching unread docs.
+[2025-12-25 08:51:21] 
+[Loop #400] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:21] Snapshot unread: 0
+[2025-12-25 08:51:21] No matching unread docs.
+[2025-12-25 08:51:22] 
+[Loop #401] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:22] Snapshot unread: 0
+[2025-12-25 08:51:22] No matching unread docs.
+[2025-12-25 08:51:23] 
+[Loop #402] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:23] Snapshot unread: 0
+[2025-12-25 08:51:23] No matching unread docs.
+[2025-12-25 08:51:25] 
+[Loop #403] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:25] Snapshot unread: 0
+[2025-12-25 08:51:25] No matching unread docs.
+[2025-12-25 08:51:26] 
+[Loop #404] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:26] Snapshot unread: 0
+[2025-12-25 08:51:26] No matching unread docs.
+[2025-12-25 08:51:27] 
+[Loop #405] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:27] Snapshot unread: 0
+[2025-12-25 08:51:27] No matching unread docs.
+[2025-12-25 08:51:28] 
+[Loop #406] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:28] Snapshot unread: 0
+[2025-12-25 08:51:28] No matching unread docs.
+[2025-12-25 08:51:29] 
+[Loop #407] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:29] Snapshot unread: 0
+[2025-12-25 08:51:29] No matching unread docs.
+[2025-12-25 08:51:30] 
+[Loop #408] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:30] Snapshot unread: 0
+[2025-12-25 08:51:30] No matching unread docs.
+[2025-12-25 08:51:31] 
+[Loop #409] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:31] Snapshot unread: 0
+[2025-12-25 08:51:31] No matching unread docs.
+[2025-12-25 08:51:32] 
+[Loop #410] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:32] Snapshot unread: 0
+[2025-12-25 08:51:32] No matching unread docs.
+[2025-12-25 08:51:34] 
+[Loop #411] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:34] Snapshot unread: 0
+[2025-12-25 08:51:34] No matching unread docs.
+[2025-12-25 08:51:35] 
+[Loop #412] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:35] Snapshot unread: 0
+[2025-12-25 08:51:35] No matching unread docs.
+[2025-12-25 08:51:36] 
+[Loop #413] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:36] Snapshot unread: 0
+[2025-12-25 08:51:36] No matching unread docs.
+[2025-12-25 08:51:37] 
+[Loop #414] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:37] Snapshot unread: 0
+[2025-12-25 08:51:37] No matching unread docs.
+[2025-12-25 08:51:38] 
+[Loop #415] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:38] Snapshot unread: 0
+[2025-12-25 08:51:38] No matching unread docs.
+[2025-12-25 08:51:39] 
+[Loop #416] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:39] Snapshot unread: 0
+[2025-12-25 08:51:39] No matching unread docs.
+[2025-12-25 08:51:40] 
+[Loop #417] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:40] Snapshot unread: 0
+[2025-12-25 08:51:40] No matching unread docs.
+[2025-12-25 08:51:41] 
+[Loop #418] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:41] Snapshot unread: 0
+[2025-12-25 08:51:41] No matching unread docs.
+[2025-12-25 08:51:42] 
+[Loop #419] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:42] Snapshot unread: 0
+[2025-12-25 08:51:43] No matching unread docs.
+[2025-12-25 08:51:44] 
+[Loop #420] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:44] Snapshot unread: 0
+[2025-12-25 08:51:44] No matching unread docs.
+[2025-12-25 08:51:45] 
+[Loop #421] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:45] Snapshot unread: 0
+[2025-12-25 08:51:45] No matching unread docs.
+[2025-12-25 08:51:46] 
+[Loop #422] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:46] Snapshot unread: 0
+[2025-12-25 08:51:46] No matching unread docs.
+[2025-12-25 08:51:47] 
+[Loop #423] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:47] Snapshot unread: 0
+[2025-12-25 08:51:47] No matching unread docs.
+[2025-12-25 08:51:48] 
+[Loop #424] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:48] Snapshot unread: 0
+[2025-12-25 08:51:48] No matching unread docs.
+[2025-12-25 08:51:49] 
+[Loop #425] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:49] Snapshot unread: 0
+[2025-12-25 08:51:49] No matching unread docs.
+[2025-12-25 08:51:50] 
+[Loop #426] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:50] Snapshot unread: 0
+[2025-12-25 08:51:50] No matching unread docs.
+[2025-12-25 08:51:51] 
+[Loop #427] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:51] Snapshot unread: 0
+[2025-12-25 08:51:51] No matching unread docs.
+[2025-12-25 08:51:52] 
+[Loop #428] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:52] Snapshot unread: 0
+[2025-12-25 08:51:52] No matching unread docs.
+[2025-12-25 08:51:54] 
+[Loop #429] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:54] Snapshot unread: 0
+[2025-12-25 08:51:54] No matching unread docs.
+[2025-12-25 08:51:55] 
+[Loop #430] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:55] Snapshot unread: 0
+[2025-12-25 08:51:55] No matching unread docs.
+[2025-12-25 08:51:56] 
+[Loop #431] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:56] Snapshot unread: 0
+[2025-12-25 08:51:56] No matching unread docs.
+[2025-12-25 08:51:57] 
+[Loop #432] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:57] Snapshot unread: 0
+[2025-12-25 08:51:57] No matching unread docs.
+[2025-12-25 08:51:58] 
+[Loop #433] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:58] Snapshot unread: 0
+[2025-12-25 08:51:58] No matching unread docs.
+[2025-12-25 08:51:59] 
+[Loop #434] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:51:59] Snapshot unread: 0
+[2025-12-25 08:51:59] No matching unread docs.
+[2025-12-25 08:52:00] 
+[Loop #435] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:00] Snapshot unread: 0
+[2025-12-25 08:52:00] No matching unread docs.
+[2025-12-25 08:52:01] 
+[Loop #436] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:01] Snapshot unread: 0
+[2025-12-25 08:52:01] No matching unread docs.
+[2025-12-25 08:52:02] 
+[Loop #437] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:02] Snapshot unread: 0
+[2025-12-25 08:52:02] No matching unread docs.
+[2025-12-25 08:52:03] 
+[Loop #438] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:04] Snapshot unread: 0
+[2025-12-25 08:52:04] No matching unread docs.
+[2025-12-25 08:52:05] 
+[Loop #439] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:05] Snapshot unread: 0
+[2025-12-25 08:52:05] No matching unread docs.
+[2025-12-25 08:52:06] 
+[Loop #440] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:06] Snapshot unread: 0
+[2025-12-25 08:52:06] No matching unread docs.
+[2025-12-25 08:52:07] 
+[Loop #441] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:07] Snapshot unread: 0
+[2025-12-25 08:52:07] No matching unread docs.
+[2025-12-25 08:52:08] 
+[Loop #442] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:08] Snapshot unread: 0
+[2025-12-25 08:52:08] No matching unread docs.
+[2025-12-25 08:52:09] 
+[Loop #443] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:09] Snapshot unread: 0
+[2025-12-25 08:52:09] No matching unread docs.
+[2025-12-25 08:52:10] 
+[Loop #444] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:10] Snapshot unread: 0
+[2025-12-25 08:52:10] No matching unread docs.
+[2025-12-25 08:52:11] 
+[Loop #445] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:11] Snapshot unread: 0
+[2025-12-25 08:52:11] No matching unread docs.
+[2025-12-25 08:52:12] 
+[Loop #446] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:12] Snapshot unread: 0
+[2025-12-25 08:52:12] No matching unread docs.
+[2025-12-25 08:52:14] 
+[Loop #447] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:14] Snapshot unread: 0
+[2025-12-25 08:52:14] No matching unread docs.
+[2025-12-25 08:52:15] 
+[Loop #448] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:15] Snapshot unread: 0
+[2025-12-25 08:52:15] No matching unread docs.
+[2025-12-25 08:52:16] 
+[Loop #449] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:16] Snapshot unread: 0
+[2025-12-25 08:52:16] No matching unread docs.
+[2025-12-25 08:52:17] 
+[Loop #450] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:17] Snapshot unread: 0
+[2025-12-25 08:52:17] No matching unread docs.
+[2025-12-25 08:52:18] 
+[Loop #451] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:18] Snapshot unread: 0
+[2025-12-25 08:52:18] No matching unread docs.
+[2025-12-25 08:52:19] 
+[Loop #452] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:19] Snapshot unread: 0
+[2025-12-25 08:52:19] No matching unread docs.
+[2025-12-25 08:52:20] 
+[Loop #453] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:20] Snapshot unread: 0
+[2025-12-25 08:52:20] No matching unread docs.
+[2025-12-25 08:52:21] 
+[Loop #454] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:21] Snapshot unread: 0
+[2025-12-25 08:52:21] No matching unread docs.
+[2025-12-25 08:52:22] 
+[Loop #455] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:22] Snapshot unread: 0
+[2025-12-25 08:52:22] No matching unread docs.
+[2025-12-25 08:52:24] 
+[Loop #456] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:24] Snapshot unread: 0
+[2025-12-25 08:52:24] No matching unread docs.
+[2025-12-25 08:52:25] 
+[Loop #457] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:25] Snapshot unread: 0
+[2025-12-25 08:52:25] No matching unread docs.
+[2025-12-25 08:52:26] 
+[Loop #458] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:26] Snapshot unread: 0
+[2025-12-25 08:52:26] No matching unread docs.
+[2025-12-25 08:52:27] 
+[Loop #459] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:27] Snapshot unread: 0
+[2025-12-25 08:52:27] No matching unread docs.
+[2025-12-25 08:52:28] 
+[Loop #460] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:28] Snapshot unread: 0
+[2025-12-25 08:52:28] No matching unread docs.
+[2025-12-25 08:52:29] 
+[Loop #461] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:29] Snapshot unread: 0
+[2025-12-25 08:52:29] No matching unread docs.
+[2025-12-25 08:52:30] 
+[Loop #462] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:30] Snapshot unread: 0
+[2025-12-25 08:52:30] No matching unread docs.
+[2025-12-25 08:52:31] 
+[Loop #463] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:31] Snapshot unread: 0
+[2025-12-25 08:52:31] No matching unread docs.
+[2025-12-25 08:52:32] 
+[Loop #464] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:32] Snapshot unread: 0
+[2025-12-25 08:52:32] No matching unread docs.
+[2025-12-25 08:52:34] 
+[Loop #465] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:34] Snapshot unread: 0
+[2025-12-25 08:52:34] No matching unread docs.
+[2025-12-25 08:52:35] 
+[Loop #466] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:35] Snapshot unread: 0
+[2025-12-25 08:52:35] No matching unread docs.
+[2025-12-25 08:52:36] 
+[Loop #467] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:36] Snapshot unread: 0
+[2025-12-25 08:52:36] No matching unread docs.
+[2025-12-25 08:52:37] 
+[Loop #468] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:37] Snapshot unread: 0
+[2025-12-25 08:52:37] No matching unread docs.
+[2025-12-25 08:52:38] 
+[Loop #469] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:38] Snapshot unread: 0
+[2025-12-25 08:52:38] No matching unread docs.
+[2025-12-25 08:52:39] 
+[Loop #470] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:39] Snapshot unread: 0
+[2025-12-25 08:52:39] No matching unread docs.
+[2025-12-25 08:52:40] 
+[Loop #471] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:40] Snapshot unread: 0
+[2025-12-25 08:52:40] No matching unread docs.
+[2025-12-25 08:52:41] 
+[Loop #472] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:41] Snapshot unread: 0
+[2025-12-25 08:52:41] No matching unread docs.
+[2025-12-25 08:52:42] 
+[Loop #473] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:43] Snapshot unread: 0
+[2025-12-25 08:52:43] No matching unread docs.
+[2025-12-25 08:52:44] 
+[Loop #474] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:44] Snapshot unread: 0
+[2025-12-25 08:52:44] No matching unread docs.
+[2025-12-25 08:52:45] 
+[Loop #475] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:45] Snapshot unread: 0
+[2025-12-25 08:52:45] No matching unread docs.
+[2025-12-25 08:52:46] 
+[Loop #476] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:46] Snapshot unread: 0
+[2025-12-25 08:52:46] No matching unread docs.
+[2025-12-25 08:52:47] 
+[Loop #477] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:47] Snapshot unread: 0
+[2025-12-25 08:52:47] No matching unread docs.
+[2025-12-25 08:52:48] 
+[Loop #478] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:48] Snapshot unread: 0
+[2025-12-25 08:52:48] No matching unread docs.
+[2025-12-25 08:52:49] 
+[Loop #479] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:49] Snapshot unread: 0
+[2025-12-25 08:52:49] No matching unread docs.
+[2025-12-25 08:52:50] 
+[Loop #480] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:50] Snapshot unread: 0
+[2025-12-25 08:52:50] No matching unread docs.
+[2025-12-25 08:52:51] 
+[Loop #481] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:51] Snapshot unread: 0
+[2025-12-25 08:52:51] No matching unread docs.
+[2025-12-25 08:52:53] 
+[Loop #482] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:53] Snapshot unread: 0
+[2025-12-25 08:52:53] No matching unread docs.
+[2025-12-25 08:52:54] 
+[Loop #483] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:54] Snapshot unread: 0
+[2025-12-25 08:52:54] No matching unread docs.
+[2025-12-25 08:52:55] 
+[Loop #484] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:55] Snapshot unread: 0
+[2025-12-25 08:52:55] No matching unread docs.
+[2025-12-25 08:52:56] 
+[Loop #485] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:56] Snapshot unread: 0
+[2025-12-25 08:52:56] No matching unread docs.
+[2025-12-25 08:52:57] 
+[Loop #486] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:57] Snapshot unread: 0
+[2025-12-25 08:52:57] No matching unread docs.
+[2025-12-25 08:52:58] 
+[Loop #487] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:58] Snapshot unread: 0
+[2025-12-25 08:52:58] No matching unread docs.
+[2025-12-25 08:52:59] 
+[Loop #488] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:52:59] Snapshot unread: 0
+[2025-12-25 08:52:59] No matching unread docs.
+[2025-12-25 08:53:00] 
+[Loop #489] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:00] Snapshot unread: 0
+[2025-12-25 08:53:00] No matching unread docs.
+[2025-12-25 08:53:01] 
+[Loop #490] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:01] Snapshot unread: 0
+[2025-12-25 08:53:02] No matching unread docs.
+[2025-12-25 08:53:03] 
+[Loop #491] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:03] Snapshot unread: 0
+[2025-12-25 08:53:03] No matching unread docs.
+[2025-12-25 08:53:04] 
+[Loop #492] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:04] Snapshot unread: 0
+[2025-12-25 08:53:04] No matching unread docs.
+[2025-12-25 08:53:05] 
+[Loop #493] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:05] Snapshot unread: 0
+[2025-12-25 08:53:05] No matching unread docs.
+[2025-12-25 08:53:06] 
+[Loop #494] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:06] Snapshot unread: 0
+[2025-12-25 08:53:06] No matching unread docs.
+[2025-12-25 08:53:07] 
+[Loop #495] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:07] Snapshot unread: 0
+[2025-12-25 08:53:07] No matching unread docs.
+[2025-12-25 08:53:08] 
+[Loop #496] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:08] Snapshot unread: 0
+[2025-12-25 08:53:08] No matching unread docs.
+[2025-12-25 08:53:09] 
+[Loop #497] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:09] Snapshot unread: 0
+[2025-12-25 08:53:09] No matching unread docs.
+[2025-12-25 08:53:10] 
+[Loop #498] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:10] Snapshot unread: 0
+[2025-12-25 08:53:10] No matching unread docs.
+[2025-12-25 08:53:11] 
+[Loop #499] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:12] Snapshot unread: 0
+[2025-12-25 08:53:12] No matching unread docs.
+[2025-12-25 08:53:13] 
+[Loop #500] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:13] Snapshot unread: 0
+[2025-12-25 08:53:13] No matching unread docs.
+[2025-12-25 08:53:14] 
+[Loop #501] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:14] Snapshot unread: 0
+[2025-12-25 08:53:14] No matching unread docs.
+[2025-12-25 08:53:15] 
+[Loop #502] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:15] Snapshot unread: 0
+[2025-12-25 08:53:15] No matching unread docs.
+[2025-12-25 08:53:16] 
+[Loop #503] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:16] Snapshot unread: 0
+[2025-12-25 08:53:16] No matching unread docs.
+[2025-12-25 08:53:17] 
+[Loop #504] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:17] Snapshot unread: 0
+[2025-12-25 08:53:17] No matching unread docs.
+[2025-12-25 08:53:18] 
+[Loop #505] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:18] Snapshot unread: 0
+[2025-12-25 08:53:18] No matching unread docs.
+[2025-12-25 08:53:19] 
+[Loop #506] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:19] Snapshot unread: 0
+[2025-12-25 08:53:19] No matching unread docs.
+[2025-12-25 08:53:20] 
+[Loop #507] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:20] Snapshot unread: 0
+[2025-12-25 08:53:20] No matching unread docs.
+[2025-12-25 08:53:24] 
+[Loop #508] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:24] Snapshot unread: 0
+[2025-12-25 08:53:24] No matching unread docs.
+[2025-12-25 08:53:25] 
+[Loop #509] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:25] Snapshot unread: 0
+[2025-12-25 08:53:25] No matching unread docs.
+[2025-12-25 08:53:26] 
+[Loop #510] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:26] Snapshot unread: 0
+[2025-12-25 08:53:26] No matching unread docs.
+[2025-12-25 08:53:27] 
+[Loop #511] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:27] Snapshot unread: 0
+[2025-12-25 08:53:27] No matching unread docs.
+[2025-12-25 08:53:28] 
+[Loop #512] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:28] Snapshot unread: 0
+[2025-12-25 08:53:28] No matching unread docs.
+[2025-12-25 08:53:29] 
+[Loop #513] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:29] Snapshot unread: 0
+[2025-12-25 08:53:29] No matching unread docs.
+[2025-12-25 08:53:30] 
+[Loop #514] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:30] Snapshot unread: 0
+[2025-12-25 08:53:30] No matching unread docs.
+[2025-12-25 08:53:31] 
+[Loop #515] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:31] Snapshot unread: 0
+[2025-12-25 08:53:31] No matching unread docs.
+[2025-12-25 08:53:32] 
+[Loop #516] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:32] Snapshot unread: 0
+[2025-12-25 08:53:32] No matching unread docs.
+[2025-12-25 08:53:33] 
+[Loop #517] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:33] Snapshot unread: 0
+[2025-12-25 08:53:33] No matching unread docs.
+[2025-12-25 08:53:34] 
+[Loop #518] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:34] Snapshot unread: 0
+[2025-12-25 08:53:34] No matching unread docs.
+[2025-12-25 08:53:35] 
+[Loop #519] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:35] Snapshot unread: 0
+[2025-12-25 08:53:35] No matching unread docs.
+[2025-12-25 08:53:36] 
+[Loop #520] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:36] Snapshot unread: 0
+[2025-12-25 08:53:36] No matching unread docs.
+[2025-12-25 08:53:37] 
+[Loop #521] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:37] Snapshot unread: 0
+[2025-12-25 08:53:37] No matching unread docs.
+[2025-12-25 08:53:38] 
+[Loop #522] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:38] Snapshot unread: 0
+[2025-12-25 08:53:38] No matching unread docs.
+[2025-12-25 08:53:39] 
+[Loop #523] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:39] Snapshot unread: 0
+[2025-12-25 08:53:39] No matching unread docs.
+[2025-12-25 08:53:40] 
+[Loop #524] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:40] Snapshot unread: 0
+[2025-12-25 08:53:40] No matching unread docs.
+[2025-12-25 08:53:41] 
+[Loop #525] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:41] Snapshot unread: 0
+[2025-12-25 08:53:41] No matching unread docs.
+[2025-12-25 08:53:42] 
+[Loop #526] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:42] Snapshot unread: 0
+[2025-12-25 08:53:42] No matching unread docs.
+[2025-12-25 08:53:43] 
+[Loop #527] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:44] Snapshot unread: 0
+[2025-12-25 08:53:44] No matching unread docs.
+[2025-12-25 08:53:45] 
+[Loop #528] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:45] Snapshot unread: 0
+[2025-12-25 08:53:45] No matching unread docs.
+[2025-12-25 08:53:46] 
+[Loop #529] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:46] Snapshot unread: 0
+[2025-12-25 08:53:46] No matching unread docs.
+[2025-12-25 08:53:47] 
+[Loop #530] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:47] Snapshot unread: 0
+[2025-12-25 08:53:47] No matching unread docs.
+[2025-12-25 08:53:48] 
+[Loop #531] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:48] Snapshot unread: 0
+[2025-12-25 08:53:48] No matching unread docs.
+[2025-12-25 08:53:49] 
+[Loop #532] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:49] Snapshot unread: 0
+[2025-12-25 08:53:49] No matching unread docs.
+[2025-12-25 08:53:50] 
+[Loop #533] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:50] Snapshot unread: 0
+[2025-12-25 08:53:50] No matching unread docs.
+[2025-12-25 08:53:51] 
+[Loop #534] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:51] Snapshot unread: 0
+[2025-12-25 08:53:51] No matching unread docs.
+[2025-12-25 08:53:52] 
+[Loop #535] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:52] Snapshot unread: 0
+[2025-12-25 08:53:52] No matching unread docs.
+[2025-12-25 08:53:53] 
+[Loop #536] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:53] Snapshot unread: 0
+[2025-12-25 08:53:53] No matching unread docs.
+[2025-12-25 08:53:54] 
+[Loop #537] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:54] Snapshot unread: 0
+[2025-12-25 08:53:54] No matching unread docs.
+[2025-12-25 08:53:55] 
+[Loop #538] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:55] Snapshot unread: 0
+[2025-12-25 08:53:55] No matching unread docs.
+[2025-12-25 08:53:56] 
+[Loop #539] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:56] Snapshot unread: 0
+[2025-12-25 08:53:56] No matching unread docs.
+[2025-12-25 08:53:57] 
+[Loop #540] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:57] Snapshot unread: 0
+[2025-12-25 08:53:57] No matching unread docs.
+[2025-12-25 08:53:58] 
+[Loop #541] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:58] Snapshot unread: 0
+[2025-12-25 08:53:58] No matching unread docs.
+[2025-12-25 08:53:59] 
+[Loop #542] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:53:59] Snapshot unread: 0
+[2025-12-25 08:53:59] No matching unread docs.
+[2025-12-25 08:54:00] 
+[Loop #543] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:00] Snapshot unread: 0
+[2025-12-25 08:54:00] No matching unread docs.
+[2025-12-25 08:54:01] 
+[Loop #544] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:01] Snapshot unread: 0
+[2025-12-25 08:54:01] No matching unread docs.
+[2025-12-25 08:54:02] 
+[Loop #545] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:02] Snapshot unread: 0
+[2025-12-25 08:54:02] No matching unread docs.
+[2025-12-25 08:54:03] 
+[Loop #546] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:03] Snapshot unread: 0
+[2025-12-25 08:54:03] No matching unread docs.
+[2025-12-25 08:54:04] 
+[Loop #547] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:04] Snapshot unread: 0
+[2025-12-25 08:54:04] No matching unread docs.
+[2025-12-25 08:54:05] 
+[Loop #548] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:05] Snapshot unread: 0
+[2025-12-25 08:54:05] No matching unread docs.
+[2025-12-25 08:54:06] 
+[Loop #549] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:06] Snapshot unread: 0
+[2025-12-25 08:54:06] No matching unread docs.
+[2025-12-25 08:54:07] 
+[Loop #550] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:07] Snapshot unread: 0
+[2025-12-25 08:54:07] No matching unread docs.
+[2025-12-25 08:54:08] 
+[Loop #551] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:08] Snapshot unread: 0
+[2025-12-25 08:54:08] No matching unread docs.
+[2025-12-25 08:54:09] 
+[Loop #552] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:09] Snapshot unread: 0
+[2025-12-25 08:54:09] No matching unread docs.
+[2025-12-25 08:54:10] 
+[Loop #553] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:10] Snapshot unread: 0
+[2025-12-25 08:54:10] No matching unread docs.
+[2025-12-25 08:54:11] 
+[Loop #554] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:11] Snapshot unread: 0
+[2025-12-25 08:54:11] No matching unread docs.
+[2025-12-25 08:54:12] 
+[Loop #555] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:12] Snapshot unread: 0
+[2025-12-25 08:54:12] No matching unread docs.
+[2025-12-25 08:54:13] 
+[Loop #556] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:13] Snapshot unread: 0
+[2025-12-25 08:54:13] No matching unread docs.
+[2025-12-25 08:54:14] 
+[Loop #557] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:14] Snapshot unread: 0
+[2025-12-25 08:54:14] No matching unread docs.
+[2025-12-25 08:54:15] 
+[Loop #558] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:15] Snapshot unread: 0
+[2025-12-25 08:54:15] No matching unread docs.
+[2025-12-25 08:54:16] 
+[Loop #559] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:16] Snapshot unread: 0
+[2025-12-25 08:54:16] No matching unread docs.
+[2025-12-25 08:54:17] 
+[Loop #560] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:17] Snapshot unread: 0
+[2025-12-25 08:54:17] No matching unread docs.
+[2025-12-25 08:54:19] 
+[Loop #561] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:19] Snapshot unread: 0
+[2025-12-25 08:54:19] No matching unread docs.
+[2025-12-25 08:54:20] 
+[Loop #562] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:20] Snapshot unread: 0
+[2025-12-25 08:54:20] No matching unread docs.
+[2025-12-25 08:54:21] 
+[Loop #563] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:21] Snapshot unread: 0
+[2025-12-25 08:54:21] No matching unread docs.
+[2025-12-25 08:54:22] 
+[Loop #564] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:22] Snapshot unread: 0
+[2025-12-25 08:54:22] No matching unread docs.
+[2025-12-25 08:54:23] 
+[Loop #565] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:23] Snapshot unread: 0
+[2025-12-25 08:54:23] No matching unread docs.
+[2025-12-25 08:54:24] 
+[Loop #566] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:24] Snapshot unread: 0
+[2025-12-25 08:54:24] No matching unread docs.
+[2025-12-25 08:54:25] 
+[Loop #567] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:25] Snapshot unread: 0
+[2025-12-25 08:54:25] No matching unread docs.
+[2025-12-25 08:54:26] 
+[Loop #568] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:26] Snapshot unread: 0
+[2025-12-25 08:54:26] No matching unread docs.
+[2025-12-25 08:54:27] 
+[Loop #569] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:27] Snapshot unread: 0
+[2025-12-25 08:54:27] No matching unread docs.
+[2025-12-25 08:54:28] 
+[Loop #570] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:28] Snapshot unread: 0
+[2025-12-25 08:54:28] No matching unread docs.
+[2025-12-25 08:54:29] 
+[Loop #571] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:29] Snapshot unread: 0
+[2025-12-25 08:54:29] No matching unread docs.
+[2025-12-25 08:54:30] 
+[Loop #572] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:30] Snapshot unread: 0
+[2025-12-25 08:54:30] No matching unread docs.
+[2025-12-25 08:54:31] 
+[Loop #573] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:31] Snapshot unread: 0
+[2025-12-25 08:54:31] No matching unread docs.
+[2025-12-25 08:54:32] 
+[Loop #574] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:32] Snapshot unread: 0
+[2025-12-25 08:54:32] No matching unread docs.
+[2025-12-25 08:54:33] 
+[Loop #575] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:33] Snapshot unread: 0
+[2025-12-25 08:54:33] No matching unread docs.
+[2025-12-25 08:54:34] 
+[Loop #576] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:34] Snapshot unread: 0
+[2025-12-25 08:54:34] No matching unread docs.
+[2025-12-25 08:54:35] 
+[Loop #577] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:35] Snapshot unread: 0
+[2025-12-25 08:54:35] No matching unread docs.
+[2025-12-25 08:54:36] 
+[Loop #578] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:36] Snapshot unread: 0
+[2025-12-25 08:54:36] No matching unread docs.
+[2025-12-25 08:54:37] 
+[Loop #579] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:37] Snapshot unread: 0
+[2025-12-25 08:54:37] No matching unread docs.
+[2025-12-25 08:54:38] 
+[Loop #580] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:38] Snapshot unread: 0
+[2025-12-25 08:54:38] No matching unread docs.
+[2025-12-25 08:54:39] 
+[Loop #581] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:39] Snapshot unread: 0
+[2025-12-25 08:54:39] No matching unread docs.
+[2025-12-25 08:54:40] 
+[Loop #582] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:40] Snapshot unread: 0
+[2025-12-25 08:54:40] No matching unread docs.
+[2025-12-25 08:54:41] 
+[Loop #583] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:41] Snapshot unread: 0
+[2025-12-25 08:54:41] No matching unread docs.
+[2025-12-25 08:54:42] 
+[Loop #584] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:42] Snapshot unread: 0
+[2025-12-25 08:54:42] No matching unread docs.
+[2025-12-25 08:54:43] 
+[Loop #585] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:43] Snapshot unread: 0
+[2025-12-25 08:54:43] No matching unread docs.
+[2025-12-25 08:54:44] 
+[Loop #586] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:44] Snapshot unread: 0
+[2025-12-25 08:54:44] No matching unread docs.
+[2025-12-25 08:54:45] 
+[Loop #587] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:45] Snapshot unread: 1
+[2025-12-25 08:54:45] DEBUG_MATCH => [TRN] doc_key='SPP2-PRO-KLN-TRN-0550' subject='SPP2-PRO-KLN-TRN-0550'
+[2025-12-25 08:54:45] ⏭️ SKIP[TRN] SPP2-PRO-KLN-TRN-0550 same signature
+[2025-12-25 08:54:45] No matching unread docs.
+[2025-12-25 08:54:46] 
+[Loop #588] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:46] Snapshot unread: 0
+[2025-12-25 08:54:46] No matching unread docs.
+[2025-12-25 08:54:47] 
+[Loop #589] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:47] Snapshot unread: 0
+[2025-12-25 08:54:47] No matching unread docs.
+[2025-12-25 08:54:48] 
+[Loop #590] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:48] Snapshot unread: 0
+[2025-12-25 08:54:48] No matching unread docs.
+[2025-12-25 08:54:50] 
+[Loop #591] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:50] Snapshot unread: 0
+[2025-12-25 08:54:50] No matching unread docs.
+[2025-12-25 08:54:51] 
+[Loop #592] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:51] Snapshot unread: 0
+[2025-12-25 08:54:51] No matching unread docs.
+[2025-12-25 08:54:52] 
+[Loop #593] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:52] Snapshot unread: 0
+[2025-12-25 08:54:52] No matching unread docs.
+[2025-12-25 08:54:53] 
+[Loop #594] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:53] Snapshot unread: 0
+[2025-12-25 08:54:53] No matching unread docs.
+[2025-12-25 08:54:54] 
+[Loop #595] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:54] Snapshot unread: 0
+[2025-12-25 08:54:54] No matching unread docs.
+[2025-12-25 08:54:55] 
+[Loop #596] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:55] Snapshot unread: 0
+[2025-12-25 08:54:55] No matching unread docs.
+[2025-12-25 08:54:56] 
+[Loop #597] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:56] Snapshot unread: 0
+[2025-12-25 08:54:56] No matching unread docs.
+[2025-12-25 08:54:57] 
+[Loop #598] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:57] Snapshot unread: 0
+[2025-12-25 08:54:57] No matching unread docs.
+[2025-12-25 08:54:58] 
+[Loop #599] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:58] Snapshot unread: 0
+[2025-12-25 08:54:58] No matching unread docs.
+[2025-12-25 08:54:59] 
+[Loop #600] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:54:59] Snapshot unread: 0
+[2025-12-25 08:54:59] No matching unread docs.
+[2025-12-25 08:55:00] 
+[Loop #601] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:00] Snapshot unread: 0
+[2025-12-25 08:55:00] No matching unread docs.
+[2025-12-25 08:55:01] 
+[Loop #602] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:01] Snapshot unread: 0
+[2025-12-25 08:55:01] No matching unread docs.
+[2025-12-25 08:55:02] 
+[Loop #603] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:02] Snapshot unread: 0
+[2025-12-25 08:55:02] No matching unread docs.
+[2025-12-25 08:55:03] 
+[Loop #604] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:03] Snapshot unread: 0
+[2025-12-25 08:55:03] No matching unread docs.
+[2025-12-25 08:55:04] 
+[Loop #605] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:04] Snapshot unread: 0
+[2025-12-25 08:55:04] No matching unread docs.
+[2025-12-25 08:55:05] 
+[Loop #606] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:05] Snapshot unread: 0
+[2025-12-25 08:55:05] No matching unread docs.
+[2025-12-25 08:55:06] 
+[Loop #607] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:06] Snapshot unread: 0
+[2025-12-25 08:55:06] No matching unread docs.
+[2025-12-25 08:55:07] 
+[Loop #608] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:07] Snapshot unread: 0
+[2025-12-25 08:55:07] No matching unread docs.
+[2025-12-25 08:55:08] 
+[Loop #609] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:08] Snapshot unread: 0
+[2025-12-25 08:55:08] No matching unread docs.
+[2025-12-25 08:55:09] 
+[Loop #610] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:09] Snapshot unread: 0
+[2025-12-25 08:55:09] No matching unread docs.
+[2025-12-25 08:55:10] 
+[Loop #611] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:10] Snapshot unread: 0
+[2025-12-25 08:55:10] No matching unread docs.
+[2025-12-25 08:55:11] 
+[Loop #612] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:11] Snapshot unread: 0
+[2025-12-25 08:55:11] No matching unread docs.
+[2025-12-25 08:55:12] 
+[Loop #613] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:12] Snapshot unread: 0
+[2025-12-25 08:55:12] No matching unread docs.
+[2025-12-25 08:55:14] 
+[Loop #614] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:14] Snapshot unread: 0
+[2025-12-25 08:55:14] No matching unread docs.
+[2025-12-25 08:55:15] 
+[Loop #615] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:15] Snapshot unread: 0
+[2025-12-25 08:55:15] No matching unread docs.
+[2025-12-25 08:55:16] 
+[Loop #616] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:16] Snapshot unread: 0
+[2025-12-25 08:55:16] No matching unread docs.
+[2025-12-25 08:55:17] 
+[Loop #617] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:17] Snapshot unread: 0
+[2025-12-25 08:55:17] No matching unread docs.
+[2025-12-25 08:55:18] 
+[Loop #618] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:18] Snapshot unread: 0
+[2025-12-25 08:55:18] No matching unread docs.
+[2025-12-25 08:55:19] 
+[Loop #619] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:19] Snapshot unread: 0
+[2025-12-25 08:55:19] No matching unread docs.
+[2025-12-25 08:55:20] 
+[Loop #620] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:20] Snapshot unread: 0
+[2025-12-25 08:55:20] No matching unread docs.
+[2025-12-25 08:55:21] 
+[Loop #621] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:21] Snapshot unread: 0
+[2025-12-25 08:55:21] No matching unread docs.
+[2025-12-25 08:55:22] 
+[Loop #622] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:22] Snapshot unread: 0
+[2025-12-25 08:55:22] No matching unread docs.
+[2025-12-25 08:55:23] 
+[Loop #623] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:23] Snapshot unread: 0
+[2025-12-25 08:55:23] No matching unread docs.
+[2025-12-25 08:55:24] 
+[Loop #624] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:24] Snapshot unread: 0
+[2025-12-25 08:55:24] No matching unread docs.
+[2025-12-25 08:55:25] 
+[Loop #625] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:25] Snapshot unread: 0
+[2025-12-25 08:55:25] No matching unread docs.
+[2025-12-25 08:55:26] 
+[Loop #626] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:26] Snapshot unread: 1
+[2025-12-25 08:55:26] DEBUG_MATCH => [TRN] doc_key='SPP2-PRO-KLN-TRN-0550' subject='SPP2-PRO-KLN-TRN-0550'
+[2025-12-25 08:55:26] ⏭️ SKIP[TRN] SPP2-PRO-KLN-TRN-0550 same signature
+[2025-12-25 08:55:26] No matching unread docs.
+[2025-12-25 08:55:27] 
+[Loop #627] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:27] Snapshot unread: 0
+[2025-12-25 08:55:27] No matching unread docs.
+[2025-12-25 08:55:28] 
+[Loop #628] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:28] Snapshot unread: 0
+[2025-12-25 08:55:28] No matching unread docs.
+[2025-12-25 08:55:29] 
+[Loop #629] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:29] Snapshot unread: 0
+[2025-12-25 08:55:29] No matching unread docs.
+[2025-12-25 08:55:30] 
+[Loop #630] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:30] Snapshot unread: 0
+[2025-12-25 08:55:30] No matching unread docs.
+[2025-12-25 08:55:31] 
+[Loop #631] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:31] Snapshot unread: 0
+[2025-12-25 08:55:31] No matching unread docs.
+[2025-12-25 08:55:32] 
+[Loop #632] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:32] Snapshot unread: 0
+[2025-12-25 08:55:32] No matching unread docs.
+[2025-12-25 08:55:33] 
+[Loop #633] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:33] Snapshot unread: 0
+[2025-12-25 08:55:33] No matching unread docs.
+[2025-12-25 08:55:34] 
+[Loop #634] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:34] Snapshot unread: 0
+[2025-12-25 08:55:34] No matching unread docs.
+[2025-12-25 08:55:35] 
+[Loop #635] scanning... mailbox='spp2dcc@kolin.com.tr' folder='Inbox\From Proyapi' store_id=OK
+[2025-12-25 08:55:35] Snapshot unread: 0
+[2025-12-25 08:55:35] No matching unread docs.

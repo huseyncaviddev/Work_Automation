@@ -6348,3 +6348,80 @@ pywintypes.com_error: (-2147023174, 'The RPC server is unavailable.', None, None
 [Loop #121] Scanning for unread TRN mails...
 [2025-12-20 00:21:35] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
 [2025-12-20 00:21:35] No matching unread TRN found. Sleeping 300s...
+[2025-12-25 08:57:32] === Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===
+[2025-12-25 08:57:32] 🔄 Connecting to Outlook...
+[2025-12-25 08:57:32] ✅ Outlook connection established (attempt 1/3)
+[2025-12-25 08:57:32] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-25 08:57:32] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-25 08:57:32] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-25 08:57:32] Retry: 3 attempts | Delay: 5s | Reconnect interval: 3600s
+[2025-12-25 08:57:32] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-25 08:57:32] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-25 08:57:32] 
+[Loop #1] Scanning for unread TRN mails...
+[2025-12-25 08:57:32] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-25 08:57:32] No matching unread TRN found. Sleeping 300s...
+[2025-12-25 09:25:47] === Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===
+[2025-12-25 09:25:47] 🔄 Connecting to Outlook...
+[2025-12-25 09:25:47] ✅ Outlook connection established (attempt 1/3)
+[2025-12-25 09:25:47] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-25 09:25:47] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-25 09:25:47] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-25 09:25:47] Retry: 3 attempts | Delay: 5s | Reconnect interval: 3600s
+[2025-12-25 09:25:47] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-25 09:25:47] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-25 09:25:47] 
+[Loop #1] Scanning for unread TRN mails...
+[2025-12-25 09:25:47] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0552
+[2025-12-25 09:25:47] Scan stats => checked:1 matched:1 | skipped: read=0 sender=0 no_trn=0
+[2025-12-25 09:25:47] FOUND => SPP2-PRO-KLN-TRN-0552 | PDFs=1 | Date=25 Dec 2025 | is_update=False | already_seen=False
+[2025-12-25 09:25:48] 👀 Displayed: SPP2-PRO-KLN-TRN-0552 | PDFs=1 (modal=False)
+[2025-12-25 09:25:48] ✅ Sent after display: SPP2-PRO-KLN-TRN-0552 | PDFs=1
+[2025-12-25 09:25:48] ✅ DONE => SPP2-PRO-KLN-TRN-0552 (incoming marked READ)
+[2025-12-25 16:34:07] === Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===
+[2025-12-25 16:34:07] 🔄 Connecting to Outlook...
+[2025-12-25 16:34:07] ✅ Outlook connection established (attempt 1/3)
+[2025-12-25 16:34:07] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-25 16:34:07] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-25 16:34:07] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-25 16:34:07] Retry: 3 attempts | Delay: 5s | Reconnect interval: 3600s
+[2025-12-25 16:34:07] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-25 16:34:07] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-25 16:34:07] 
+[Loop #1] Scanning for unread TRN mails...
+[2025-12-25 16:34:07] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0553
+[2025-12-25 16:34:07] Scan stats => checked:1 matched:1 | skipped: read=0 sender=0 no_trn=0
+[2025-12-25 16:34:07] FOUND => SPP2-PRO-KLN-TRN-0553 | PDFs=1 | Date=25 Dec 2025 | is_update=False | already_seen=False
+[2025-12-25 16:34:07] 👀 Displayed: SPP2-PRO-KLN-TRN-0553 | PDFs=1 (modal=False)
+[2025-12-25 16:34:08] ✅ Sent after display: SPP2-PRO-KLN-TRN-0553 | PDFs=1
+[2025-12-25 16:34:08] ✅ DONE => SPP2-PRO-KLN-TRN-0553 (incoming marked READ)
+[2025-12-25 16:34:38] === Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===
+[2025-12-25 16:34:38] 🔄 Connecting to Outlook...
+[2025-12-25 16:34:38] ✅ Outlook connection established (attempt 1/3)
+[2025-12-25 16:34:38] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-25 16:34:38] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-25 16:34:38] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-25 16:34:38] Retry: 3 attempts | Delay: 5s | Reconnect interval: 3600s
+[2025-12-25 16:34:38] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-25 16:34:38] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-25 16:34:38] 
+[Loop #1] Scanning for unread TRN mails...
+[2025-12-25 16:34:38] DEBUG => UnRead=True | Sender=dccspp2@proyapimusavirlik.com | Subject=SPP2-PRO-KLN-TRN-0554
+[2025-12-25 16:34:38] Scan stats => checked:1 matched:1 | skipped: read=0 sender=0 no_trn=0
+[2025-12-25 16:34:38] FOUND => SPP2-PRO-KLN-TRN-0554 | PDFs=1 | Date=25 Dec 2025 | is_update=False | already_seen=False
+[2025-12-25 16:34:39] 👀 Displayed: SPP2-PRO-KLN-TRN-0554 | PDFs=1 (modal=False)
+[2025-12-25 16:34:39] ✅ Sent after display: SPP2-PRO-KLN-TRN-0554 | PDFs=1
+[2025-12-25 16:34:39] ✅ DONE => SPP2-PRO-KLN-TRN-0554 (incoming marked READ)
+[2025-12-25 16:36:39] === Proyapi TRN Internal Distributor started (v2.2 ULTRA OPTIMIZED) ===
+[2025-12-25 16:36:39] 🔄 Connecting to Outlook...
+[2025-12-25 16:36:39] ✅ Outlook connection established (attempt 1/3)
+[2025-12-25 16:36:39] Watching: spp2dcc@kolin.com.tr / Inbox\From Proyapi
+[2025-12-25 16:36:39] Sender filter: dccspp2@proyapimusavirlik.com
+[2025-12-25 16:36:39] Mode: display | Poll: 300s | Lookback: 7d | MaxScan:200
+[2025-12-25 16:36:39] Retry: 3 attempts | Delay: 5s | Reconnect interval: 3600s
+[2025-12-25 16:36:39] Signature mode: oft | OFT exists: True | Display modal: False | AutoSendAfterDisplay: True
+[2025-12-25 16:36:39] Filter: ONLY UNREAD mails. Processed mail will be marked READ.
+[2025-12-25 16:36:39] 
+[Loop #1] Scanning for unread TRN mails...
+[2025-12-25 16:36:39] Scan stats => checked:0 matched:0 | skipped: read=0 sender=0 no_trn=0
+[2025-12-25 16:36:39] No matching unread TRN found. Sleeping 300s...

@@ -1,0 +1,3222 @@
+[2025-12-25 09:25:09] === STQ Internal Distributor ULTIMATE v3.0 started ===
+[2025-12-25 09:25:09] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 09:25:09] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 09:25:09] ✅ Outlook session attached.
+[2025-12-25 09:25:09] 
+[Loop #1] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:09] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:09] No matching unread STQ.
+[2025-12-25 09:25:10] 
+[Loop #2] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:10] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:10] No matching unread STQ.
+[2025-12-25 09:25:11] 
+[Loop #3] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:11] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:11] No matching unread STQ.
+[2025-12-25 09:25:12] 
+[Loop #4] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:12] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:13] No matching unread STQ.
+[2025-12-25 09:25:14] 
+[Loop #5] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:14] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:14] No matching unread STQ.
+[2025-12-25 09:25:15] 
+[Loop #6] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:15] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:15] No matching unread STQ.
+[2025-12-25 09:25:16] 
+[Loop #7] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:16] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:16] No matching unread STQ.
+[2025-12-25 09:25:17] 
+[Loop #8] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:17] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:17] No matching unread STQ.
+[2025-12-25 09:25:18] 
+[Loop #9] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:18] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:18] No matching unread STQ.
+[2025-12-25 09:25:19] 
+[Loop #10] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:19] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:19] No matching unread STQ.
+[2025-12-25 09:25:20] 
+[Loop #11] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:20] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:20] No matching unread STQ.
+[2025-12-25 09:25:21] 
+[Loop #12] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:21] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:21] No matching unread STQ.
+[2025-12-25 09:25:22] 
+[Loop #13] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:22] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:22] No matching unread STQ.
+[2025-12-25 09:25:23] 
+[Loop #14] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:23] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:23] No matching unread STQ.
+[2025-12-25 09:25:24] 
+[Loop #15] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:24] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:24] No matching unread STQ.
+[2025-12-25 09:25:25] 
+[Loop #16] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:25] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:25] No matching unread STQ.
+[2025-12-25 09:25:26] 
+[Loop #17] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:26] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:26] No matching unread STQ.
+[2025-12-25 09:25:27] 
+[Loop #18] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:27] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:27] No matching unread STQ.
+[2025-12-25 09:25:28] 
+[Loop #19] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:28] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:28] No matching unread STQ.
+[2025-12-25 09:25:29] 
+[Loop #20] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:29] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:29] No matching unread STQ.
+[2025-12-25 09:25:30] 
+[Loop #21] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:30] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:30] No matching unread STQ.
+[2025-12-25 09:25:31] 
+[Loop #22] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:31] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:31] No matching unread STQ.
+[2025-12-25 09:25:32] 
+[Loop #23] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:32] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:32] No matching unread STQ.
+[2025-12-25 09:25:33] 
+[Loop #24] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:33] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:33] No matching unread STQ.
+[2025-12-25 09:25:34] 
+[Loop #25] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:34] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:34] No matching unread STQ.
+[2025-12-25 09:25:35] 
+[Loop #26] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:35] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:35] No matching unread STQ.
+[2025-12-25 09:25:36] 
+[Loop #27] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:36] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:36] No matching unread STQ.
+[2025-12-25 09:25:37] 
+[Loop #28] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:37] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:37] No matching unread STQ.
+[2025-12-25 09:25:38] 
+[Loop #29] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:38] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:38] No matching unread STQ.
+[2025-12-25 09:25:39] 
+[Loop #30] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:39] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:39] No matching unread STQ.
+[2025-12-25 09:25:40] 
+[Loop #31] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:40] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:40] No matching unread STQ.
+[2025-12-25 09:25:42] 
+[Loop #32] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:42] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:42] No matching unread STQ.
+[2025-12-25 09:25:43] 
+[Loop #33] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:43] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:43] No matching unread STQ.
+[2025-12-25 09:25:44] 
+[Loop #34] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:44] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:44] No matching unread STQ.
+[2025-12-25 09:25:45] 
+[Loop #35] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:45] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:45] No matching unread STQ.
+[2025-12-25 09:25:46] 
+[Loop #36] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:46] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:46] No matching unread STQ.
+[2025-12-25 09:25:47] 
+[Loop #37] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:47] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0552'
+[2025-12-25 09:25:47] No matching unread STQ.
+[2025-12-25 09:25:48] 
+[Loop #38] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:48] No matching unread STQ.
+[2025-12-25 09:25:49] 
+[Loop #39] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:49] No matching unread STQ.
+[2025-12-25 09:25:50] 
+[Loop #40] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:50] No matching unread STQ.
+[2025-12-25 09:25:51] 
+[Loop #41] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:51] No matching unread STQ.
+[2025-12-25 09:25:52] 
+[Loop #42] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:52] No matching unread STQ.
+[2025-12-25 09:25:53] 
+[Loop #43] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:53] No matching unread STQ.
+[2025-12-25 09:25:54] 
+[Loop #44] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:54] No matching unread STQ.
+[2025-12-25 09:25:55] 
+[Loop #45] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:55] No matching unread STQ.
+[2025-12-25 09:25:56] 
+[Loop #46] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:56] No matching unread STQ.
+[2025-12-25 09:25:57] 
+[Loop #47] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:57] No matching unread STQ.
+[2025-12-25 09:25:58] 
+[Loop #48] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:58] No matching unread STQ.
+[2025-12-25 09:25:59] 
+[Loop #49] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:25:59] No matching unread STQ.
+[2025-12-25 09:26:00] 
+[Loop #50] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:00] No matching unread STQ.
+[2025-12-25 09:26:01] 
+[Loop #51] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:01] No matching unread STQ.
+[2025-12-25 09:26:02] 
+[Loop #52] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:02] No matching unread STQ.
+[2025-12-25 09:26:03] 
+[Loop #53] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:03] No matching unread STQ.
+[2025-12-25 09:26:04] 
+[Loop #54] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:04] No matching unread STQ.
+[2025-12-25 09:26:05] 
+[Loop #55] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:05] No matching unread STQ.
+[2025-12-25 09:26:07] 
+[Loop #56] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:07] No matching unread STQ.
+[2025-12-25 09:26:08] 
+[Loop #57] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:08] No matching unread STQ.
+[2025-12-25 09:26:09] 
+[Loop #58] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:09] No matching unread STQ.
+[2025-12-25 09:26:10] 
+[Loop #59] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:10] No matching unread STQ.
+[2025-12-25 09:26:11] 
+[Loop #60] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:11] No matching unread STQ.
+[2025-12-25 09:26:12] 
+[Loop #61] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:12] No matching unread STQ.
+[2025-12-25 09:26:13] 
+[Loop #62] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:13] No matching unread STQ.
+[2025-12-25 09:26:14] 
+[Loop #63] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:14] No matching unread STQ.
+[2025-12-25 09:26:15] 
+[Loop #64] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:15] No matching unread STQ.
+[2025-12-25 09:26:16] 
+[Loop #65] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:16] No matching unread STQ.
+[2025-12-25 09:26:17] 
+[Loop #66] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:17] No matching unread STQ.
+[2025-12-25 09:26:18] 
+[Loop #67] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:18] No matching unread STQ.
+[2025-12-25 09:26:19] 
+[Loop #68] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:19] No matching unread STQ.
+[2025-12-25 09:26:20] 
+[Loop #69] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:20] No matching unread STQ.
+[2025-12-25 09:26:21] 
+[Loop #70] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:21] No matching unread STQ.
+[2025-12-25 09:26:22] 
+[Loop #71] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:22] No matching unread STQ.
+[2025-12-25 09:26:23] 
+[Loop #72] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:23] No matching unread STQ.
+[2025-12-25 09:26:24] 
+[Loop #73] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:24] No matching unread STQ.
+[2025-12-25 09:26:25] 
+[Loop #74] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:25] No matching unread STQ.
+[2025-12-25 09:26:26] 
+[Loop #75] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:26] No matching unread STQ.
+[2025-12-25 09:26:27] 
+[Loop #76] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:27] No matching unread STQ.
+[2025-12-25 09:26:28] 
+[Loop #77] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:28] No matching unread STQ.
+[2025-12-25 09:26:29] 
+[Loop #78] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:29] No matching unread STQ.
+[2025-12-25 09:26:30] 
+[Loop #79] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:30] No matching unread STQ.
+[2025-12-25 09:26:31] 
+[Loop #80] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:31] No matching unread STQ.
+[2025-12-25 09:26:32] 
+[Loop #81] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:32] No matching unread STQ.
+[2025-12-25 09:26:33] 
+[Loop #82] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:33] No matching unread STQ.
+[2025-12-25 09:26:34] 
+[Loop #83] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:34] No matching unread STQ.
+[2025-12-25 09:26:35] 
+[Loop #84] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:35] No matching unread STQ.
+[2025-12-25 09:26:36] 
+[Loop #85] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:36] No matching unread STQ.
+[2025-12-25 09:26:37] 
+[Loop #86] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:37] No matching unread STQ.
+[2025-12-25 09:26:38] 
+[Loop #87] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:38] No matching unread STQ.
+[2025-12-25 09:26:39] 
+[Loop #88] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:39] No matching unread STQ.
+[2025-12-25 09:26:40] 
+[Loop #89] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:40] No matching unread STQ.
+[2025-12-25 09:26:42] 
+[Loop #90] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:42] No matching unread STQ.
+[2025-12-25 09:26:43] 
+[Loop #91] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:43] No matching unread STQ.
+[2025-12-25 09:26:44] 
+[Loop #92] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:44] No matching unread STQ.
+[2025-12-25 09:26:45] 
+[Loop #93] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:45] No matching unread STQ.
+[2025-12-25 09:26:46] 
+[Loop #94] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:46] No matching unread STQ.
+[2025-12-25 09:26:47] 
+[Loop #95] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:47] No matching unread STQ.
+[2025-12-25 09:26:48] 
+[Loop #96] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:48] No matching unread STQ.
+[2025-12-25 09:26:49] 
+[Loop #97] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:49] No matching unread STQ.
+[2025-12-25 09:26:50] 
+[Loop #98] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:50] No matching unread STQ.
+[2025-12-25 09:26:51] 
+[Loop #99] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:51] No matching unread STQ.
+[2025-12-25 09:26:52] 
+[Loop #100] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:52] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 09:26:52] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:26:52] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 09:26:53] 
+[Loop #101] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:53] No matching unread STQ.
+[2025-12-25 09:26:54] 
+[Loop #102] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:54] No matching unread STQ.
+[2025-12-25 09:26:55] 
+[Loop #103] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:55] No matching unread STQ.
+[2025-12-25 09:26:56] 
+[Loop #104] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:56] No matching unread STQ.
+[2025-12-25 09:26:57] 
+[Loop #105] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:57] No matching unread STQ.
+[2025-12-25 09:26:58] 
+[Loop #106] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:58] No matching unread STQ.
+[2025-12-25 09:26:59] 
+[Loop #107] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:26:59] No matching unread STQ.
+[2025-12-25 09:27:00] 
+[Loop #108] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:00] No matching unread STQ.
+[2025-12-25 09:27:01] 
+[Loop #109] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:01] No matching unread STQ.
+[2025-12-25 09:27:02] 
+[Loop #110] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:02] No matching unread STQ.
+[2025-12-25 09:27:03] 
+[Loop #111] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:03] No matching unread STQ.
+[2025-12-25 09:27:04] 
+[Loop #112] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:04] No matching unread STQ.
+[2025-12-25 09:27:05] 
+[Loop #113] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:05] No matching unread STQ.
+[2025-12-25 09:27:06] 
+[Loop #114] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:06] No matching unread STQ.
+[2025-12-25 09:27:07] 
+[Loop #115] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:07] No matching unread STQ.
+[2025-12-25 09:27:08] 
+[Loop #116] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:08] No matching unread STQ.
+[2025-12-25 09:27:09] 
+[Loop #117] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:09] No matching unread STQ.
+[2025-12-25 09:27:10] 
+[Loop #118] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:10] No matching unread STQ.
+[2025-12-25 09:27:11] 
+[Loop #119] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:11] No matching unread STQ.
+[2025-12-25 09:27:12] 
+[Loop #120] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:12] No matching unread STQ.
+[2025-12-25 09:27:13] 
+[Loop #121] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:13] No matching unread STQ.
+[2025-12-25 09:27:14] 
+[Loop #122] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:14] No matching unread STQ.
+[2025-12-25 09:27:16] 
+[Loop #123] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:16] No matching unread STQ.
+[2025-12-25 09:27:17] 
+[Loop #124] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:17] No matching unread STQ.
+[2025-12-25 09:27:18] 
+[Loop #125] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:18] No matching unread STQ.
+[2025-12-25 09:27:19] 
+[Loop #126] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:19] No matching unread STQ.
+[2025-12-25 09:27:20] 
+[Loop #127] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:20] No matching unread STQ.
+[2025-12-25 09:27:21] 
+[Loop #128] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:21] No matching unread STQ.
+[2025-12-25 09:27:22] 
+[Loop #129] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:22] No matching unread STQ.
+[2025-12-25 09:27:23] 
+[Loop #130] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:23] No matching unread STQ.
+[2025-12-25 09:27:24] 
+[Loop #131] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:24] No matching unread STQ.
+[2025-12-25 09:27:25] 
+[Loop #132] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:25] No matching unread STQ.
+[2025-12-25 09:27:26] 
+[Loop #133] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:26] No matching unread STQ.
+[2025-12-25 09:27:27] 
+[Loop #134] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:27] No matching unread STQ.
+[2025-12-25 09:27:28] 
+[Loop #135] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:28] No matching unread STQ.
+[2025-12-25 09:27:29] 
+[Loop #136] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:29] No matching unread STQ.
+[2025-12-25 09:27:30] 
+[Loop #137] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:30] No matching unread STQ.
+[2025-12-25 09:27:31] 
+[Loop #138] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:31] No matching unread STQ.
+[2025-12-25 09:27:32] 
+[Loop #139] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:32] No matching unread STQ.
+[2025-12-25 09:27:33] 
+[Loop #140] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:33] No matching unread STQ.
+[2025-12-25 09:27:34] 
+[Loop #141] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:34] No matching unread STQ.
+[2025-12-25 09:27:35] 
+[Loop #142] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:35] No matching unread STQ.
+[2025-12-25 09:27:36] 
+[Loop #143] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:36] No matching unread STQ.
+[2025-12-25 09:27:37] 
+[Loop #144] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:37] No matching unread STQ.
+[2025-12-25 09:27:38] 
+[Loop #145] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:38] No matching unread STQ.
+[2025-12-25 09:27:39] 
+[Loop #146] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:39] No matching unread STQ.
+[2025-12-25 09:27:40] 
+[Loop #147] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:40] No matching unread STQ.
+[2025-12-25 09:27:41] 
+[Loop #148] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:41] No matching unread STQ.
+[2025-12-25 09:27:42] 
+[Loop #149] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:42] No matching unread STQ.
+[2025-12-25 09:27:43] 
+[Loop #150] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:43] No matching unread STQ.
+[2025-12-25 09:27:44] 
+[Loop #151] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:44] No matching unread STQ.
+[2025-12-25 09:27:45] 
+[Loop #152] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:45] No matching unread STQ.
+[2025-12-25 09:27:46] 
+[Loop #153] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:46] No matching unread STQ.
+[2025-12-25 09:27:48] 
+[Loop #154] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:48] No matching unread STQ.
+[2025-12-25 09:27:49] 
+[Loop #155] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:49] No matching unread STQ.
+[2025-12-25 09:27:50] 
+[Loop #156] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:50] No matching unread STQ.
+[2025-12-25 09:27:51] 
+[Loop #157] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:51] No matching unread STQ.
+[2025-12-25 09:27:52] 
+[Loop #158] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:52] No matching unread STQ.
+[2025-12-25 09:27:53] 
+[Loop #159] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:53] No matching unread STQ.
+[2025-12-25 09:27:54] 
+[Loop #160] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:54] No matching unread STQ.
+[2025-12-25 09:27:55] 
+[Loop #161] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:55] No matching unread STQ.
+[2025-12-25 09:27:56] 
+[Loop #162] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:56] No matching unread STQ.
+[2025-12-25 09:27:57] 
+[Loop #163] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:57] No matching unread STQ.
+[2025-12-25 09:27:58] 
+[Loop #164] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:58] No matching unread STQ.
+[2025-12-25 09:27:59] 
+[Loop #165] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:27:59] No matching unread STQ.
+[2025-12-25 09:28:00] 
+[Loop #166] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:00] No matching unread STQ.
+[2025-12-25 09:28:01] 
+[Loop #167] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:01] No matching unread STQ.
+[2025-12-25 09:28:02] 
+[Loop #168] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:02] No matching unread STQ.
+[2025-12-25 09:28:03] 
+[Loop #169] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:03] No matching unread STQ.
+[2025-12-25 09:28:04] 
+[Loop #170] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:04] No matching unread STQ.
+[2025-12-25 09:28:05] 
+[Loop #171] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:05] No matching unread STQ.
+[2025-12-25 09:28:06] 
+[Loop #172] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:06] No matching unread STQ.
+[2025-12-25 09:28:07] 
+[Loop #173] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:07] No matching unread STQ.
+[2025-12-25 09:28:08] 
+[Loop #174] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:08] No matching unread STQ.
+[2025-12-25 09:28:09] 
+[Loop #175] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:09] No matching unread STQ.
+[2025-12-25 09:28:10] 
+[Loop #176] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:10] No matching unread STQ.
+[2025-12-25 09:28:11] 
+[Loop #177] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:11] No matching unread STQ.
+[2025-12-25 09:28:12] 
+[Loop #178] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:12] No matching unread STQ.
+[2025-12-25 09:28:13] 
+[Loop #179] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:13] No matching unread STQ.
+[2025-12-25 09:28:15] 
+[Loop #180] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:15] No matching unread STQ.
+[2025-12-25 09:28:16] 
+[Loop #181] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:16] No matching unread STQ.
+[2025-12-25 09:28:17] 
+[Loop #182] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:17] No matching unread STQ.
+[2025-12-25 09:28:18] 
+[Loop #183] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:18] No matching unread STQ.
+[2025-12-25 09:28:19] 
+[Loop #184] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:19] No matching unread STQ.
+[2025-12-25 09:28:20] 
+[Loop #185] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:20] No matching unread STQ.
+[2025-12-25 09:28:21] 
+[Loop #186] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:21] No matching unread STQ.
+[2025-12-25 09:28:22] 
+[Loop #187] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:22] No matching unread STQ.
+[2025-12-25 09:28:23] 
+[Loop #188] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:23] No matching unread STQ.
+[2025-12-25 09:28:24] 
+[Loop #189] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:24] No matching unread STQ.
+[2025-12-25 09:28:25] 
+[Loop #190] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:25] No matching unread STQ.
+[2025-12-25 09:28:26] 
+[Loop #191] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:26] No matching unread STQ.
+[2025-12-25 09:28:27] 
+[Loop #192] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:27] No matching unread STQ.
+[2025-12-25 09:28:28] 
+[Loop #193] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:28] No matching unread STQ.
+[2025-12-25 09:28:29] 
+[Loop #194] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:29] No matching unread STQ.
+[2025-12-25 09:28:30] 
+[Loop #195] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:30] No matching unread STQ.
+[2025-12-25 09:28:31] 
+[Loop #196] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:31] No matching unread STQ.
+[2025-12-25 09:28:32] 
+[Loop #197] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:32] No matching unread STQ.
+[2025-12-25 09:28:33] 
+[Loop #198] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:33] No matching unread STQ.
+[2025-12-25 09:28:34] 
+[Loop #199] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:34] No matching unread STQ.
+[2025-12-25 09:28:35] 
+[Loop #200] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:35] No matching unread STQ.
+[2025-12-25 09:28:36] 
+[Loop #201] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:36] No matching unread STQ.
+[2025-12-25 09:28:37] 
+[Loop #202] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:37] No matching unread STQ.
+[2025-12-25 09:28:38] 
+[Loop #203] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:38] No matching unread STQ.
+[2025-12-25 09:28:40] 
+[Loop #204] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:40] No matching unread STQ.
+[2025-12-25 09:28:41] 
+[Loop #205] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:41] No matching unread STQ.
+[2025-12-25 09:28:42] 
+[Loop #206] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:42] No matching unread STQ.
+[2025-12-25 09:28:43] 
+[Loop #207] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:43] No matching unread STQ.
+[2025-12-25 09:28:44] 
+[Loop #208] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:44] No matching unread STQ.
+[2025-12-25 09:28:45] 
+[Loop #209] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:45] No matching unread STQ.
+[2025-12-25 09:28:46] 
+[Loop #210] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:46] No matching unread STQ.
+[2025-12-25 09:28:47] 
+[Loop #211] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:47] No matching unread STQ.
+[2025-12-25 09:28:48] 
+[Loop #212] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:48] No matching unread STQ.
+[2025-12-25 09:28:49] 
+[Loop #213] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:49] No matching unread STQ.
+[2025-12-25 09:28:50] 
+[Loop #214] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:50] No matching unread STQ.
+[2025-12-25 09:28:51] 
+[Loop #215] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:51] No matching unread STQ.
+[2025-12-25 09:28:52] 
+[Loop #216] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:52] No matching unread STQ.
+[2025-12-25 09:28:53] 
+[Loop #217] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:53] No matching unread STQ.
+[2025-12-25 09:28:54] 
+[Loop #218] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:54] No matching unread STQ.
+[2025-12-25 09:28:55] 
+[Loop #219] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:55] No matching unread STQ.
+[2025-12-25 09:28:56] 
+[Loop #220] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:56] No matching unread STQ.
+[2025-12-25 09:28:57] 
+[Loop #221] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:57] No matching unread STQ.
+[2025-12-25 09:28:58] 
+[Loop #222] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:58] No matching unread STQ.
+[2025-12-25 09:28:59] 
+[Loop #223] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:28:59] No matching unread STQ.
+[2025-12-25 09:29:00] 
+[Loop #224] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:00] No matching unread STQ.
+[2025-12-25 09:29:01] 
+[Loop #225] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:01] No matching unread STQ.
+[2025-12-25 09:29:02] 
+[Loop #226] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:02] No matching unread STQ.
+[2025-12-25 09:29:03] 
+[Loop #227] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:03] No matching unread STQ.
+[2025-12-25 09:29:04] 
+[Loop #228] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:04] No matching unread STQ.
+[2025-12-25 09:29:05] 
+[Loop #229] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:05] No matching unread STQ.
+[2025-12-25 09:29:06] 
+[Loop #230] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:06] No matching unread STQ.
+[2025-12-25 09:29:07] 
+[Loop #231] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:07] No matching unread STQ.
+[2025-12-25 09:29:08] 
+[Loop #232] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:08] No matching unread STQ.
+[2025-12-25 09:29:09] 
+[Loop #233] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:09] No matching unread STQ.
+[2025-12-25 09:29:10] 
+[Loop #234] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:10] No matching unread STQ.
+[2025-12-25 09:29:11] 
+[Loop #235] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:11] No matching unread STQ.
+[2025-12-25 09:29:12] 
+[Loop #236] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:12] No matching unread STQ.
+[2025-12-25 09:29:13] 
+[Loop #237] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:13] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 09:29:13] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:29:14] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' files=4
+[2025-12-25 09:29:15] 
+[Loop #238] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:15] No matching unread STQ.
+[2025-12-25 09:29:16] 
+[Loop #239] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:16] No matching unread STQ.
+[2025-12-25 09:29:17] 
+[Loop #240] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:17] No matching unread STQ.
+[2025-12-25 09:29:18] 
+[Loop #241] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:18] No matching unread STQ.
+[2025-12-25 09:29:19] 
+[Loop #242] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:19] No matching unread STQ.
+[2025-12-25 09:29:20] 
+[Loop #243] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:20] No matching unread STQ.
+[2025-12-25 09:29:21] 
+[Loop #244] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:21] No matching unread STQ.
+[2025-12-25 09:29:22] 
+[Loop #245] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:22] No matching unread STQ.
+[2025-12-25 09:29:23] 
+[Loop #246] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:23] No matching unread STQ.
+[2025-12-25 09:29:24] 
+[Loop #247] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:24] No matching unread STQ.
+[2025-12-25 09:29:25] 
+[Loop #248] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:25] No matching unread STQ.
+[2025-12-25 09:29:26] 
+[Loop #249] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:26] No matching unread STQ.
+[2025-12-25 09:29:27] 
+[Loop #250] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:27] No matching unread STQ.
+[2025-12-25 09:29:28] 
+[Loop #251] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:28] No matching unread STQ.
+[2025-12-25 09:29:29] 
+[Loop #252] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:29] No matching unread STQ.
+[2025-12-25 09:29:30] 
+[Loop #253] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:30] No matching unread STQ.
+[2025-12-25 09:29:31] 
+[Loop #254] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:31] No matching unread STQ.
+[2025-12-25 09:29:32] 
+[Loop #255] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:32] No matching unread STQ.
+[2025-12-25 09:29:33] 
+[Loop #256] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:33] No matching unread STQ.
+[2025-12-25 09:29:34] 
+[Loop #257] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:34] No matching unread STQ.
+[2025-12-25 09:29:35] 
+[Loop #258] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:35] No matching unread STQ.
+[2025-12-25 09:29:36] 
+[Loop #259] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:36] No matching unread STQ.
+[2025-12-25 09:29:37] 
+[Loop #260] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:37] No matching unread STQ.
+[2025-12-25 09:29:38] 
+[Loop #261] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:38] No matching unread STQ.
+[2025-12-25 09:29:39] 
+[Loop #262] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:39] No matching unread STQ.
+[2025-12-25 09:29:40] 
+[Loop #263] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:40] No matching unread STQ.
+[2025-12-25 09:29:41] 
+[Loop #264] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:41] No matching unread STQ.
+[2025-12-25 09:29:42] 
+[Loop #265] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:42] No matching unread STQ.
+[2025-12-25 09:29:43] 
+[Loop #266] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:43] No matching unread STQ.
+[2025-12-25 09:29:44] 
+[Loop #267] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:44] No matching unread STQ.
+[2025-12-25 09:29:45] 
+[Loop #268] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:45] No matching unread STQ.
+[2025-12-25 09:29:46] 
+[Loop #269] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:46] No matching unread STQ.
+[2025-12-25 09:29:47] 
+[Loop #270] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:47] No matching unread STQ.
+[2025-12-25 09:29:48] 
+[Loop #271] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:48] No matching unread STQ.
+[2025-12-25 09:29:49] 
+[Loop #272] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:49] No matching unread STQ.
+[2025-12-25 09:29:50] 
+[Loop #273] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:50] No matching unread STQ.
+[2025-12-25 09:29:52] 
+[Loop #274] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:52] No matching unread STQ.
+[2025-12-25 09:29:53] 
+[Loop #275] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:53] No matching unread STQ.
+[2025-12-25 09:29:54] 
+[Loop #276] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:54] No matching unread STQ.
+[2025-12-25 09:29:55] 
+[Loop #277] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:55] No matching unread STQ.
+[2025-12-25 09:29:56] 
+[Loop #278] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:56] No matching unread STQ.
+[2025-12-25 09:29:57] 
+[Loop #279] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:57] No matching unread STQ.
+[2025-12-25 09:29:58] 
+[Loop #280] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:58] No matching unread STQ.
+[2025-12-25 09:29:59] 
+[Loop #281] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:29:59] No matching unread STQ.
+[2025-12-25 09:30:00] 
+[Loop #282] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:00] No matching unread STQ.
+[2025-12-25 09:30:01] 
+[Loop #283] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:01] No matching unread STQ.
+[2025-12-25 09:30:02] 
+[Loop #284] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:02] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 09:30:02] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:30:02] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 09:30:03] 
+[Loop #285] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:03] No matching unread STQ.
+[2025-12-25 09:30:04] 
+[Loop #286] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:04] No matching unread STQ.
+[2025-12-25 09:30:05] 
+[Loop #287] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:05] No matching unread STQ.
+[2025-12-25 09:30:06] 
+[Loop #288] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:06] No matching unread STQ.
+[2025-12-25 09:30:07] 
+[Loop #289] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:07] No matching unread STQ.
+[2025-12-25 09:30:08] 
+[Loop #290] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:08] No matching unread STQ.
+[2025-12-25 09:30:09] 
+[Loop #291] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:09] No matching unread STQ.
+[2025-12-25 09:30:10] 
+[Loop #292] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:10] No matching unread STQ.
+[2025-12-25 09:30:11] 
+[Loop #293] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:11] No matching unread STQ.
+[2025-12-25 09:30:12] 
+[Loop #294] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:12] No matching unread STQ.
+[2025-12-25 09:30:13] 
+[Loop #295] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:13] No matching unread STQ.
+[2025-12-25 09:30:14] 
+[Loop #296] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:14] No matching unread STQ.
+[2025-12-25 09:30:15] 
+[Loop #297] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:15] No matching unread STQ.
+[2025-12-25 09:30:16] 
+[Loop #298] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:16] No matching unread STQ.
+[2025-12-25 09:30:17] 
+[Loop #299] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:17] No matching unread STQ.
+[2025-12-25 09:30:18] 
+[Loop #300] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:18] No matching unread STQ.
+[2025-12-25 09:30:19] 
+[Loop #301] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:19] No matching unread STQ.
+[2025-12-25 09:30:20] 
+[Loop #302] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:20] No matching unread STQ.
+[2025-12-25 09:30:21] 
+[Loop #303] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:21] No matching unread STQ.
+[2025-12-25 09:30:22] 
+[Loop #304] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:22] No matching unread STQ.
+[2025-12-25 09:30:23] 
+[Loop #305] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:23] No matching unread STQ.
+[2025-12-25 09:30:24] 
+[Loop #306] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:24] No matching unread STQ.
+[2025-12-25 09:30:25] 
+[Loop #307] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:25] No matching unread STQ.
+[2025-12-25 09:30:26] 
+[Loop #308] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:26] No matching unread STQ.
+[2025-12-25 09:30:27] 
+[Loop #309] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:30:27] No matching unread STQ.
+[2025-12-25 09:32:24] === STQ Internal Distributor ULTIMATE v3.0 started ===
+[2025-12-25 09:32:24] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 09:32:24] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 09:32:24] ✅ Outlook session attached.
+[2025-12-25 09:32:24] 
+[Loop #1] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:24] No matching unread STQ.
+[2025-12-25 09:32:25] 
+[Loop #2] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:25] No matching unread STQ.
+[2025-12-25 09:32:26] 
+[Loop #3] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:26] No matching unread STQ.
+[2025-12-25 09:32:27] 
+[Loop #4] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:27] No matching unread STQ.
+[2025-12-25 09:32:28] 
+[Loop #5] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:28] No matching unread STQ.
+[2025-12-25 09:32:29] 
+[Loop #6] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:29] No matching unread STQ.
+[2025-12-25 09:32:30] 
+[Loop #7] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:30] No matching unread STQ.
+[2025-12-25 09:32:31] 
+[Loop #8] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:31] No matching unread STQ.
+[2025-12-25 09:32:32] 
+[Loop #9] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:32] No matching unread STQ.
+[2025-12-25 09:32:33] 
+[Loop #10] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:33] No matching unread STQ.
+[2025-12-25 09:32:34] 
+[Loop #11] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:34] No matching unread STQ.
+[2025-12-25 09:32:35] 
+[Loop #12] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:35] No matching unread STQ.
+[2025-12-25 09:32:36] 
+[Loop #13] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:36] No matching unread STQ.
+[2025-12-25 09:32:37] 
+[Loop #14] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:37] No matching unread STQ.
+[2025-12-25 09:32:38] 
+[Loop #15] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:38] No matching unread STQ.
+[2025-12-25 09:32:39] 
+[Loop #16] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:39] No matching unread STQ.
+[2025-12-25 09:32:40] 
+[Loop #17] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:40] No matching unread STQ.
+[2025-12-25 09:32:42] === STQ Internal Distributor ULTIMATE v3.0 started ===
+[2025-12-25 09:32:42] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 09:32:42] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 09:32:42] ✅ Outlook session attached.
+[2025-12-25 09:32:42] 
+[Loop #1] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:42] No matching unread STQ.
+[2025-12-25 09:32:43] 
+[Loop #2] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:43] No matching unread STQ.
+[2025-12-25 09:32:44] 
+[Loop #3] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:44] No matching unread STQ.
+[2025-12-25 09:32:45] 
+[Loop #4] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:45] No matching unread STQ.
+[2025-12-25 09:32:46] 
+[Loop #5] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:46] No matching unread STQ.
+[2025-12-25 09:32:47] 
+[Loop #6] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:47] No matching unread STQ.
+[2025-12-25 09:32:48] 
+[Loop #7] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:48] No matching unread STQ.
+[2025-12-25 09:32:49] 
+[Loop #8] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:49] No matching unread STQ.
+[2025-12-25 09:32:51] 
+[Loop #9] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:51] No matching unread STQ.
+[2025-12-25 09:32:52] 
+[Loop #10] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:52] No matching unread STQ.
+[2025-12-25 09:32:53] 
+[Loop #11] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:53] No matching unread STQ.
+[2025-12-25 09:32:54] 
+[Loop #12] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:54] No matching unread STQ.
+[2025-12-25 09:32:55] 
+[Loop #13] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:55] No matching unread STQ.
+[2025-12-25 09:32:56] 
+[Loop #14] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:56] No matching unread STQ.
+[2025-12-25 09:32:57] 
+[Loop #15] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:57] No matching unread STQ.
+[2025-12-25 09:32:58] 
+[Loop #16] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:58] No matching unread STQ.
+[2025-12-25 09:32:59] 
+[Loop #17] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:32:59] No matching unread STQ.
+[2025-12-25 09:33:00] 
+[Loop #18] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:00] No matching unread STQ.
+[2025-12-25 09:33:01] 
+[Loop #19] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:01] No matching unread STQ.
+[2025-12-25 09:33:02] 
+[Loop #20] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:02] No matching unread STQ.
+[2025-12-25 09:33:03] 
+[Loop #21] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:03] No matching unread STQ.
+[2025-12-25 09:33:04] 
+[Loop #22] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:04] No matching unread STQ.
+[2025-12-25 09:33:05] 
+[Loop #23] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:05] No matching unread STQ.
+[2025-12-25 09:33:06] 
+[Loop #24] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:06] No matching unread STQ.
+[2025-12-25 09:33:07] 
+[Loop #25] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:07] No matching unread STQ.
+[2025-12-25 09:33:08] 
+[Loop #26] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:08] No matching unread STQ.
+[2025-12-25 09:33:09] 
+[Loop #27] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:09] No matching unread STQ.
+[2025-12-25 09:33:10] 
+[Loop #28] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:10] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon'
+[2025-12-25 09:33:10] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:33:10] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 09:33:11] 
+[Loop #29] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:11] No matching unread STQ.
+[2025-12-25 09:33:12] 
+[Loop #30] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:12] No matching unread STQ.
+[2025-12-25 09:33:13] 
+[Loop #31] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:13] No matching unread STQ.
+[2025-12-25 09:33:14] 
+[Loop #32] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:14] No matching unread STQ.
+[2025-12-25 09:33:15] 
+[Loop #33] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:15] No matching unread STQ.
+[2025-12-25 09:33:16] 
+[Loop #34] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:16] No matching unread STQ.
+[2025-12-25 09:33:17] 
+[Loop #35] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:17] No matching unread STQ.
+[2025-12-25 09:33:19] 
+[Loop #36] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:19] No matching unread STQ.
+[2025-12-25 09:33:20] 
+[Loop #37] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:20] No matching unread STQ.
+[2025-12-25 09:33:21] 
+[Loop #38] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:21] No matching unread STQ.
+[2025-12-25 09:33:22] 
+[Loop #39] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:22] No matching unread STQ.
+[2025-12-25 09:33:23] 
+[Loop #40] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:23] No matching unread STQ.
+[2025-12-25 09:33:24] 
+[Loop #41] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:24] No matching unread STQ.
+[2025-12-25 09:33:25] 
+[Loop #42] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:25] No matching unread STQ.
+[2025-12-25 09:33:26] 
+[Loop #43] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:26] No matching unread STQ.
+[2025-12-25 09:33:27] 
+[Loop #44] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:27] No matching unread STQ.
+[2025-12-25 09:33:28] 
+[Loop #45] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:28] No matching unread STQ.
+[2025-12-25 09:33:29] 
+[Loop #46] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:29] No matching unread STQ.
+[2025-12-25 09:33:30] 
+[Loop #47] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:30] No matching unread STQ.
+[2025-12-25 09:33:31] 
+[Loop #48] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:31] No matching unread STQ.
+[2025-12-25 09:33:32] 
+[Loop #49] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:32] No matching unread STQ.
+[2025-12-25 09:33:33] 
+[Loop #50] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:33] No matching unread STQ.
+[2025-12-25 09:33:34] 
+[Loop #51] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:34] No matching unread STQ.
+[2025-12-25 09:33:35] 
+[Loop #52] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:35] No matching unread STQ.
+[2025-12-25 09:33:36] 
+[Loop #53] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:36] No matching unread STQ.
+[2025-12-25 09:33:37] 
+[Loop #54] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:37] No matching unread STQ.
+[2025-12-25 09:33:38] 
+[Loop #55] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:38] No matching unread STQ.
+[2025-12-25 09:33:39] 
+[Loop #56] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:39] No matching unread STQ.
+[2025-12-25 09:33:40] 
+[Loop #57] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:40] No matching unread STQ.
+[2025-12-25 09:33:41] 
+[Loop #58] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:41] No matching unread STQ.
+[2025-12-25 09:33:42] 
+[Loop #59] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:42] No matching unread STQ.
+[2025-12-25 09:33:43] 
+[Loop #60] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:43] No matching unread STQ.
+[2025-12-25 09:33:44] 
+[Loop #61] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:44] No matching unread STQ.
+[2025-12-25 09:33:45] 
+[Loop #62] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:45] No matching unread STQ.
+[2025-12-25 09:33:46] 
+[Loop #63] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:46] No matching unread STQ.
+[2025-12-25 09:33:47] 
+[Loop #64] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:47] No matching unread STQ.
+[2025-12-25 09:33:48] 
+[Loop #65] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:48] No matching unread STQ.
+[2025-12-25 09:33:49] 
+[Loop #66] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:49] No matching unread STQ.
+[2025-12-25 09:33:50] 
+[Loop #67] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:50] No matching unread STQ.
+[2025-12-25 09:33:51] 
+[Loop #68] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:51] No matching unread STQ.
+[2025-12-25 09:33:52] 
+[Loop #69] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:52] No matching unread STQ.
+[2025-12-25 09:33:53] 
+[Loop #70] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:53] No matching unread STQ.
+[2025-12-25 09:33:54] 
+[Loop #71] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:54] No matching unread STQ.
+[2025-12-25 09:33:55] 
+[Loop #72] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:55] No matching unread STQ.
+[2025-12-25 09:33:56] 
+[Loop #73] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:56] No matching unread STQ.
+[2025-12-25 09:33:58] 
+[Loop #74] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:58] No matching unread STQ.
+[2025-12-25 09:33:59] 
+[Loop #75] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:33:59] No matching unread STQ.
+[2025-12-25 09:34:00] 
+[Loop #76] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:00] No matching unread STQ.
+[2025-12-25 09:34:01] 
+[Loop #77] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:01] No matching unread STQ.
+[2025-12-25 09:34:02] 
+[Loop #78] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:02] No matching unread STQ.
+[2025-12-25 09:34:03] 
+[Loop #79] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:03] No matching unread STQ.
+[2025-12-25 09:34:04] 
+[Loop #80] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:04] No matching unread STQ.
+[2025-12-25 09:34:05] 
+[Loop #81] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:05] No matching unread STQ.
+[2025-12-25 09:34:06] 
+[Loop #82] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:06] No matching unread STQ.
+[2025-12-25 09:34:07] 
+[Loop #83] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:07] No matching unread STQ.
+[2025-12-25 09:34:08] 
+[Loop #84] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:08] No matching unread STQ.
+[2025-12-25 09:34:09] 
+[Loop #85] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:09] No matching unread STQ.
+[2025-12-25 09:34:10] 
+[Loop #86] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:10] No matching unread STQ.
+[2025-12-25 09:34:11] 
+[Loop #87] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:34:11] No matching unread STQ.
+[2025-12-25 09:44:40] === STQ Internal Distributor ULTIMATE v3.1 started ===
+[2025-12-25 09:44:40] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 09:44:40] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 09:44:40] ✅ Outlook session attached.
+[2025-12-25 09:44:40] 
+[Loop #1] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:40] No matching unread STQ.
+[2025-12-25 09:44:41] 
+[Loop #2] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:41] No matching unread STQ.
+[2025-12-25 09:44:42] 
+[Loop #3] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:42] No matching unread STQ.
+[2025-12-25 09:44:43] 
+[Loop #4] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:43] No matching unread STQ.
+[2025-12-25 09:44:44] 
+[Loop #5] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:44] No matching unread STQ.
+[2025-12-25 09:44:45] 
+[Loop #6] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:45] No matching unread STQ.
+[2025-12-25 09:44:46] 
+[Loop #7] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:46] No matching unread STQ.
+[2025-12-25 09:44:47] 
+[Loop #8] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:47] No matching unread STQ.
+[2025-12-25 09:44:48] 
+[Loop #9] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:48] No matching unread STQ.
+[2025-12-25 09:44:49] 
+[Loop #10] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:49] No matching unread STQ.
+[2025-12-25 09:44:50] 
+[Loop #11] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:50] No matching unread STQ.
+[2025-12-25 09:44:51] 
+[Loop #12] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:51] No matching unread STQ.
+[2025-12-25 09:44:52] 
+[Loop #13] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:52] No matching unread STQ.
+[2025-12-25 09:44:53] 
+[Loop #14] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:53] No matching unread STQ.
+[2025-12-25 09:44:54] 
+[Loop #15] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:54] No matching unread STQ.
+[2025-12-25 09:44:55] 
+[Loop #16] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:55] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 09:44:55] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:44:55] ⚠️ Item error: (-2147024809, 'The parameter is incorrect.', None, None)
+[2025-12-25 09:44:55] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 700, in main
+    create_internal_mail(app, ns, subject, sent_dt, files)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 561, in create_internal_mail
+    msg.Send()
+    ~~~~~~~~^^
+  File "<COMObject CreateItemFromTemplate>", line 2, in Send
+pywintypes.com_error: (-2147024809, 'The parameter is incorrect.', None, None)
+
+[2025-12-25 09:44:55] No matching unread STQ.
+[2025-12-25 09:44:56] 
+[Loop #17] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:56] No matching unread STQ.
+[2025-12-25 09:44:57] 
+[Loop #18] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:57] No matching unread STQ.
+[2025-12-25 09:44:59] 
+[Loop #19] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:44:59] No matching unread STQ.
+[2025-12-25 09:45:00] 
+[Loop #20] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:00] No matching unread STQ.
+[2025-12-25 09:45:01] 
+[Loop #21] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:01] No matching unread STQ.
+[2025-12-25 09:45:02] 
+[Loop #22] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:02] No matching unread STQ.
+[2025-12-25 09:45:03] 
+[Loop #23] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:03] No matching unread STQ.
+[2025-12-25 09:45:04] 
+[Loop #24] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:04] No matching unread STQ.
+[2025-12-25 09:45:05] 
+[Loop #25] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:05] No matching unread STQ.
+[2025-12-25 09:45:06] 
+[Loop #26] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:06] No matching unread STQ.
+[2025-12-25 09:45:07] 
+[Loop #27] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:07] No matching unread STQ.
+[2025-12-25 09:45:08] 
+[Loop #28] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:08] No matching unread STQ.
+[2025-12-25 09:45:09] 
+[Loop #29] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:09] No matching unread STQ.
+[2025-12-25 09:45:10] 
+[Loop #30] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:10] No matching unread STQ.
+[2025-12-25 09:45:11] 
+[Loop #31] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:11] No matching unread STQ.
+[2025-12-25 09:45:12] 
+[Loop #32] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:12] No matching unread STQ.
+[2025-12-25 09:45:13] 
+[Loop #33] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:13] No matching unread STQ.
+[2025-12-25 09:45:14] 
+[Loop #34] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:14] No matching unread STQ.
+[2025-12-25 09:45:15] 
+[Loop #35] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:15] No matching unread STQ.
+[2025-12-25 09:45:16] 
+[Loop #36] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:16] No matching unread STQ.
+[2025-12-25 09:45:17] 
+[Loop #37] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:17] No matching unread STQ.
+[2025-12-25 09:45:18] 
+[Loop #38] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:18] No matching unread STQ.
+[2025-12-25 09:45:19] 
+[Loop #39] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:19] No matching unread STQ.
+[2025-12-25 09:45:20] 
+[Loop #40] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:20] No matching unread STQ.
+[2025-12-25 09:45:21] 
+[Loop #41] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:21] No matching unread STQ.
+[2025-12-25 09:45:22] 
+[Loop #42] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:22] No matching unread STQ.
+[2025-12-25 09:45:23] 
+[Loop #43] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:23] No matching unread STQ.
+[2025-12-25 09:45:24] 
+[Loop #44] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:24] No matching unread STQ.
+[2025-12-25 09:45:25] 
+[Loop #45] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:25] No matching unread STQ.
+[2025-12-25 09:45:26] 
+[Loop #46] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:26] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 09:45:26] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:45:27] ⚠️ Item error: (-2147024809, 'The parameter is incorrect.', None, None)
+[2025-12-25 09:45:27] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 700, in main
+    create_internal_mail(app, ns, subject, sent_dt, files)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 561, in create_internal_mail
+    msg.Send()
+    ~~~~~~~~^^
+  File "<COMObject CreateItemFromTemplate>", line 2, in Send
+pywintypes.com_error: (-2147024809, 'The parameter is incorrect.', None, None)
+
+[2025-12-25 09:45:27] No matching unread STQ.
+[2025-12-25 09:45:28] 
+[Loop #47] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:28] No matching unread STQ.
+[2025-12-25 09:45:29] 
+[Loop #48] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:29] No matching unread STQ.
+[2025-12-25 09:45:30] 
+[Loop #49] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:30] No matching unread STQ.
+[2025-12-25 09:45:31] 
+[Loop #50] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:31] No matching unread STQ.
+[2025-12-25 09:45:32] 
+[Loop #51] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:32] No matching unread STQ.
+[2025-12-25 09:45:33] 
+[Loop #52] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:33] No matching unread STQ.
+[2025-12-25 09:45:34] 
+[Loop #53] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:34] No matching unread STQ.
+[2025-12-25 09:45:35] 
+[Loop #54] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:35] No matching unread STQ.
+[2025-12-25 09:45:36] 
+[Loop #55] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:36] No matching unread STQ.
+[2025-12-25 09:45:37] 
+[Loop #56] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:37] No matching unread STQ.
+[2025-12-25 09:45:38] 
+[Loop #57] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:38] No matching unread STQ.
+[2025-12-25 09:45:39] 
+[Loop #58] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:39] No matching unread STQ.
+[2025-12-25 09:45:40] 
+[Loop #59] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:40] No matching unread STQ.
+[2025-12-25 09:45:41] 
+[Loop #60] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:41] No matching unread STQ.
+[2025-12-25 09:45:42] 
+[Loop #61] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:42] No matching unread STQ.
+[2025-12-25 09:45:43] 
+[Loop #62] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:43] No matching unread STQ.
+[2025-12-25 09:45:44] 
+[Loop #63] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:44] No matching unread STQ.
+[2025-12-25 09:45:45] 
+[Loop #64] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:45] No matching unread STQ.
+[2025-12-25 09:45:46] 
+[Loop #65] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:46] No matching unread STQ.
+[2025-12-25 09:45:47] 
+[Loop #66] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:47] No matching unread STQ.
+[2025-12-25 09:45:48] 
+[Loop #67] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:48] No matching unread STQ.
+[2025-12-25 09:45:49] 
+[Loop #68] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:49] No matching unread STQ.
+[2025-12-25 09:45:50] 
+[Loop #69] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:50] No matching unread STQ.
+[2025-12-25 09:45:51] 
+[Loop #70] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:51] No matching unread STQ.
+[2025-12-25 09:45:52] 
+[Loop #71] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:52] No matching unread STQ.
+[2025-12-25 09:45:53] 
+[Loop #72] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:53] No matching unread STQ.
+[2025-12-25 09:45:54] 
+[Loop #73] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:54] No matching unread STQ.
+[2025-12-25 09:45:56] 
+[Loop #74] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:56] No matching unread STQ.
+[2025-12-25 09:45:57] 
+[Loop #75] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:57] No matching unread STQ.
+[2025-12-25 09:45:58] 
+[Loop #76] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:58] No matching unread STQ.
+[2025-12-25 09:45:59] 
+[Loop #77] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:45:59] No matching unread STQ.
+[2025-12-25 09:46:00] 
+[Loop #78] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:00] No matching unread STQ.
+[2025-12-25 09:46:01] 
+[Loop #79] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:01] No matching unread STQ.
+[2025-12-25 09:46:02] 
+[Loop #80] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:02] No matching unread STQ.
+[2025-12-25 09:46:03] 
+[Loop #81] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:03] No matching unread STQ.
+[2025-12-25 09:46:04] 
+[Loop #82] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:04] No matching unread STQ.
+[2025-12-25 09:46:05] 
+[Loop #83] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:05] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 09:46:05] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:46:05] ⚠️ Item error: (-2147024809, 'The parameter is incorrect.', None, None)
+[2025-12-25 09:46:05] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 700, in main
+    create_internal_mail(app, ns, subject, sent_dt, files)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 561, in create_internal_mail
+    msg.Send()
+    ~~~~~~~~^^
+  File "<COMObject CreateItemFromTemplate>", line 2, in Send
+pywintypes.com_error: (-2147024809, 'The parameter is incorrect.', None, None)
+
+[2025-12-25 09:46:05] No matching unread STQ.
+[2025-12-25 09:46:06] 
+[Loop #84] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:06] No matching unread STQ.
+[2025-12-25 09:46:07] 
+[Loop #85] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:07] No matching unread STQ.
+[2025-12-25 09:46:08] 
+[Loop #86] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:08] No matching unread STQ.
+[2025-12-25 09:46:09] 
+[Loop #87] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:09] No matching unread STQ.
+[2025-12-25 09:46:10] 
+[Loop #88] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:10] No matching unread STQ.
+[2025-12-25 09:46:11] 
+[Loop #89] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:11] No matching unread STQ.
+[2025-12-25 09:46:12] 
+[Loop #90] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:12] No matching unread STQ.
+[2025-12-25 09:46:13] 
+[Loop #91] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:13] No matching unread STQ.
+[2025-12-25 09:46:14] 
+[Loop #92] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:14] No matching unread STQ.
+[2025-12-25 09:46:15] 
+[Loop #93] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:15] No matching unread STQ.
+[2025-12-25 09:46:16] 
+[Loop #94] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:16] No matching unread STQ.
+[2025-12-25 09:46:17] 
+[Loop #95] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:17] No matching unread STQ.
+[2025-12-25 09:46:18] 
+[Loop #96] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:18] No matching unread STQ.
+[2025-12-25 09:46:20] 
+[Loop #97] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:20] No matching unread STQ.
+[2025-12-25 09:46:21] 
+[Loop #98] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:21] No matching unread STQ.
+[2025-12-25 09:46:22] 
+[Loop #99] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:22] No matching unread STQ.
+[2025-12-25 09:46:23] 
+[Loop #100] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:23] No matching unread STQ.
+[2025-12-25 09:46:24] 
+[Loop #101] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:24] No matching unread STQ.
+[2025-12-25 09:46:25] 
+[Loop #102] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:46:25] No matching unread STQ.
+[2025-12-25 09:51:45] === STQ Internal Distributor ULTIMATE v3.1 started ===
+[2025-12-25 09:51:45] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 09:51:45] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 09:51:45] ✅ Outlook session attached.
+[2025-12-25 09:51:45] 
+[Loop #1] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:45] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 09:51:45] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:51:45] ⚠️ Item error: (-2147024809, 'The parameter is incorrect.', None, None)
+[2025-12-25 09:51:45] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 700, in main
+    create_internal_mail(app, ns, subject, sent_dt, files)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 561, in create_internal_mail
+    msg.Send()
+    ~~~~~~~~^^
+  File "<COMObject CreateItemFromTemplate>", line 2, in Send
+pywintypes.com_error: (-2147024809, 'The parameter is incorrect.', None, None)
+
+[2025-12-25 09:51:45] No matching unread STQ.
+[2025-12-25 09:51:46] 
+[Loop #2] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:46] No matching unread STQ.
+[2025-12-25 09:51:47] 
+[Loop #3] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:47] No matching unread STQ.
+[2025-12-25 09:51:48] 
+[Loop #4] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:48] No matching unread STQ.
+[2025-12-25 09:51:50] 
+[Loop #5] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:50] No matching unread STQ.
+[2025-12-25 09:51:51] 
+[Loop #6] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:51] No matching unread STQ.
+[2025-12-25 09:51:52] 
+[Loop #7] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:52] No matching unread STQ.
+[2025-12-25 09:51:53] 
+[Loop #8] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:53] No matching unread STQ.
+[2025-12-25 09:51:54] 
+[Loop #9] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:54] No matching unread STQ.
+[2025-12-25 09:51:55] 
+[Loop #10] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:55] No matching unread STQ.
+[2025-12-25 09:51:56] 
+[Loop #11] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:56] No matching unread STQ.
+[2025-12-25 09:51:57] 
+[Loop #12] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:57] No matching unread STQ.
+[2025-12-25 09:51:58] 
+[Loop #13] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:58] No matching unread STQ.
+[2025-12-25 09:51:59] 
+[Loop #14] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:51:59] No matching unread STQ.
+[2025-12-25 09:52:00] 
+[Loop #15] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:00] No matching unread STQ.
+[2025-12-25 09:52:01] 
+[Loop #16] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:01] No matching unread STQ.
+[2025-12-25 09:52:02] 
+[Loop #17] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:02] No matching unread STQ.
+[2025-12-25 09:52:03] 
+[Loop #18] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:03] No matching unread STQ.
+[2025-12-25 09:52:04] 
+[Loop #19] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:04] No matching unread STQ.
+[2025-12-25 09:52:05] 
+[Loop #20] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:05] No matching unread STQ.
+[2025-12-25 09:52:06] 
+[Loop #21] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:06] No matching unread STQ.
+[2025-12-25 09:52:07] 
+[Loop #22] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:07] No matching unread STQ.
+[2025-12-25 09:52:08] 
+[Loop #23] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:08] No matching unread STQ.
+[2025-12-25 09:52:09] 
+[Loop #24] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:09] No matching unread STQ.
+[2025-12-25 09:52:10] 
+[Loop #25] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:10] No matching unread STQ.
+[2025-12-25 09:52:11] 
+[Loop #26] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:11] No matching unread STQ.
+[2025-12-25 09:52:12] 
+[Loop #27] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:12] No matching unread STQ.
+[2025-12-25 09:52:13] 
+[Loop #28] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:13] No matching unread STQ.
+[2025-12-25 09:52:14] 
+[Loop #29] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:14] No matching unread STQ.
+[2025-12-25 09:52:15] 
+[Loop #30] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:15] No matching unread STQ.
+[2025-12-25 09:52:16] 
+[Loop #31] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:16] No matching unread STQ.
+[2025-12-25 09:52:17] 
+[Loop #32] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:17] No matching unread STQ.
+[2025-12-25 09:52:18] 
+[Loop #33] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:18] No matching unread STQ.
+[2025-12-25 09:52:19] 
+[Loop #34] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:19] No matching unread STQ.
+[2025-12-25 09:52:20] 
+[Loop #35] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:20] No matching unread STQ.
+[2025-12-25 09:52:21] 
+[Loop #36] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:21] No matching unread STQ.
+[2025-12-25 09:52:22] 
+[Loop #37] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:22] No matching unread STQ.
+[2025-12-25 09:52:23] 
+[Loop #38] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:23] No matching unread STQ.
+[2025-12-25 09:52:24] 
+[Loop #39] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:24] No matching unread STQ.
+[2025-12-25 09:52:26] 
+[Loop #40] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:26] No matching unread STQ.
+[2025-12-25 09:52:27] 
+[Loop #41] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:27] No matching unread STQ.
+[2025-12-25 09:52:28] 
+[Loop #42] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:28] No matching unread STQ.
+[2025-12-25 09:52:29] 
+[Loop #43] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:29] No matching unread STQ.
+[2025-12-25 09:52:30] 
+[Loop #44] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:30] No matching unread STQ.
+[2025-12-25 09:52:31] 
+[Loop #45] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:31] No matching unread STQ.
+[2025-12-25 09:52:32] 
+[Loop #46] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:32] No matching unread STQ.
+[2025-12-25 09:52:33] 
+[Loop #47] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:33] No matching unread STQ.
+[2025-12-25 09:52:34] 
+[Loop #48] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:34] No matching unread STQ.
+[2025-12-25 09:52:35] 
+[Loop #49] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:35] No matching unread STQ.
+[2025-12-25 09:52:36] 
+[Loop #50] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:36] No matching unread STQ.
+[2025-12-25 09:52:37] 
+[Loop #51] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:37] No matching unread STQ.
+[2025-12-25 09:52:38] 
+[Loop #52] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:38] No matching unread STQ.
+[2025-12-25 09:52:39] 
+[Loop #53] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:39] No matching unread STQ.
+[2025-12-25 09:52:40] 
+[Loop #54] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:40] No matching unread STQ.
+[2025-12-25 09:52:41] 
+[Loop #55] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:41] No matching unread STQ.
+[2025-12-25 09:52:42] 
+[Loop #56] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:42] No matching unread STQ.
+[2025-12-25 09:52:43] 
+[Loop #57] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:43] No matching unread STQ.
+[2025-12-25 09:52:44] 
+[Loop #58] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:44] No matching unread STQ.
+[2025-12-25 09:52:45] 
+[Loop #59] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:45] No matching unread STQ.
+[2025-12-25 09:52:51] === STQ Internal Distributor ULTIMATE v3.0 started ===
+[2025-12-25 09:52:51] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 09:52:51] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 09:52:51] ✅ Outlook session attached.
+[2025-12-25 09:52:51] 
+[Loop #1] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:51] No matching unread STQ.
+[2025-12-25 09:52:52] 
+[Loop #2] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:52] No matching unread STQ.
+[2025-12-25 09:52:53] 
+[Loop #3] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:53] No matching unread STQ.
+[2025-12-25 09:52:54] 
+[Loop #4] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:54] No matching unread STQ.
+[2025-12-25 09:52:55] 
+[Loop #5] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:55] No matching unread STQ.
+[2025-12-25 09:52:56] 
+[Loop #6] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:56] No matching unread STQ.
+[2025-12-25 09:52:57] 
+[Loop #7] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:57] No matching unread STQ.
+[2025-12-25 09:52:58] 
+[Loop #8] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:58] No matching unread STQ.
+[2025-12-25 09:52:59] 
+[Loop #9] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:52:59] No matching unread STQ.
+[2025-12-25 09:53:00] 
+[Loop #10] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:00] No matching unread STQ.
+[2025-12-25 09:53:01] 
+[Loop #11] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:01] No matching unread STQ.
+[2025-12-25 09:53:02] 
+[Loop #12] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:02] No matching unread STQ.
+[2025-12-25 09:53:03] 
+[Loop #13] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:03] No matching unread STQ.
+[2025-12-25 09:53:05] 
+[Loop #14] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:05] No matching unread STQ.
+[2025-12-25 09:53:06] 
+[Loop #15] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:06] No matching unread STQ.
+[2025-12-25 09:53:07] 
+[Loop #16] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:07] No matching unread STQ.
+[2025-12-25 09:53:08] 
+[Loop #17] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:08] No matching unread STQ.
+[2025-12-25 09:53:09] 
+[Loop #18] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:09] No matching unread STQ.
+[2025-12-25 09:53:10] 
+[Loop #19] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:10] No matching unread STQ.
+[2025-12-25 09:53:11] 
+[Loop #20] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:11] No matching unread STQ.
+[2025-12-25 09:53:12] 
+[Loop #21] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:12] No matching unread STQ.
+[2025-12-25 09:53:13] 
+[Loop #22] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:13] No matching unread STQ.
+[2025-12-25 09:53:14] 
+[Loop #23] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:14] No matching unread STQ.
+[2025-12-25 09:53:15] 
+[Loop #24] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:15] No matching unread STQ.
+[2025-12-25 09:53:16] 
+[Loop #25] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:16] No matching unread STQ.
+[2025-12-25 09:53:17] 
+[Loop #26] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:17] No matching unread STQ.
+[2025-12-25 09:53:18] 
+[Loop #27] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:18] No matching unread STQ.
+[2025-12-25 09:53:19] 
+[Loop #28] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:19] No matching unread STQ.
+[2025-12-25 09:53:20] 
+[Loop #29] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:20] No matching unread STQ.
+[2025-12-25 09:53:21] 
+[Loop #30] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:21] No matching unread STQ.
+[2025-12-25 09:53:22] 
+[Loop #31] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:22] No matching unread STQ.
+[2025-12-25 09:53:23] 
+[Loop #32] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:23] No matching unread STQ.
+[2025-12-25 09:53:24] 
+[Loop #33] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:24] No matching unread STQ.
+[2025-12-25 09:53:25] 
+[Loop #34] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:25] No matching unread STQ.
+[2025-12-25 09:53:26] 
+[Loop #35] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:26] No matching unread STQ.
+[2025-12-25 09:53:27] 
+[Loop #36] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:27] No matching unread STQ.
+[2025-12-25 09:53:28] 
+[Loop #37] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:28] No matching unread STQ.
+[2025-12-25 09:53:29] 
+[Loop #38] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:29] No matching unread STQ.
+[2025-12-25 09:53:30] 
+[Loop #39] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:30] No matching unread STQ.
+[2025-12-25 09:53:31] 
+[Loop #40] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:31] No matching unread STQ.
+[2025-12-25 09:53:32] 
+[Loop #41] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:32] No matching unread STQ.
+[2025-12-25 09:53:33] 
+[Loop #42] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:33] No matching unread STQ.
+[2025-12-25 09:53:34] 
+[Loop #43] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:34] No matching unread STQ.
+[2025-12-25 09:53:35] 
+[Loop #44] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:35] No matching unread STQ.
+[2025-12-25 09:53:36] 
+[Loop #45] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:36] No matching unread STQ.
+[2025-12-25 09:53:37] 
+[Loop #46] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:37] No matching unread STQ.
+[2025-12-25 09:53:38] 
+[Loop #47] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:38] No matching unread STQ.
+[2025-12-25 09:53:39] 
+[Loop #48] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:39] No matching unread STQ.
+[2025-12-25 09:53:41] 
+[Loop #49] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:41] No matching unread STQ.
+[2025-12-25 09:53:42] 
+[Loop #50] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:42] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 09:53:42] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:53:42] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' files=4
+[2025-12-25 09:53:43] 
+[Loop #51] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:43] No matching unread STQ.
+[2025-12-25 09:53:44] 
+[Loop #52] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:44] No matching unread STQ.
+[2025-12-25 09:53:45] 
+[Loop #53] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:45] No matching unread STQ.
+[2025-12-25 09:53:46] 
+[Loop #54] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:46] No matching unread STQ.
+[2025-12-25 09:53:47] 
+[Loop #55] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:47] No matching unread STQ.
+[2025-12-25 09:53:48] 
+[Loop #56] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:48] No matching unread STQ.
+[2025-12-25 09:53:49] 
+[Loop #57] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:49] No matching unread STQ.
+[2025-12-25 09:53:50] 
+[Loop #58] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:50] No matching unread STQ.
+[2025-12-25 09:53:51] 
+[Loop #59] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:51] No matching unread STQ.
+[2025-12-25 09:53:52] 
+[Loop #60] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:52] No matching unread STQ.
+[2025-12-25 09:53:53] 
+[Loop #61] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:53] No matching unread STQ.
+[2025-12-25 09:53:54] 
+[Loop #62] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:54] No matching unread STQ.
+[2025-12-25 09:53:55] 
+[Loop #63] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:55] No matching unread STQ.
+[2025-12-25 09:53:56] 
+[Loop #64] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:56] No matching unread STQ.
+[2025-12-25 09:53:57] 
+[Loop #65] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:57] No matching unread STQ.
+[2025-12-25 09:53:58] 
+[Loop #66] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:58] No matching unread STQ.
+[2025-12-25 09:53:59] 
+[Loop #67] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:53:59] No matching unread STQ.
+[2025-12-25 09:54:00] 
+[Loop #68] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:00] No matching unread STQ.
+[2025-12-25 09:54:01] 
+[Loop #69] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:01] No matching unread STQ.
+[2025-12-25 09:54:02] 
+[Loop #70] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:02] No matching unread STQ.
+[2025-12-25 09:54:03] 
+[Loop #71] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:03] No matching unread STQ.
+[2025-12-25 09:54:04] 
+[Loop #72] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:04] No matching unread STQ.
+[2025-12-25 09:54:05] 
+[Loop #73] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:05] No matching unread STQ.
+[2025-12-25 09:54:06] 
+[Loop #74] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:06] No matching unread STQ.
+[2025-12-25 09:54:07] 
+[Loop #75] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:07] No matching unread STQ.
+[2025-12-25 09:54:08] 
+[Loop #76] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:08] No matching unread STQ.
+[2025-12-25 09:54:09] 
+[Loop #77] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:09] No matching unread STQ.
+[2025-12-25 09:54:10] 
+[Loop #78] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:10] No matching unread STQ.
+[2025-12-25 09:54:12] 
+[Loop #79] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:12] No matching unread STQ.
+[2025-12-25 09:54:13] 
+[Loop #80] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:13] No matching unread STQ.
+[2025-12-25 09:54:14] 
+[Loop #81] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:14] No matching unread STQ.
+[2025-12-25 09:54:15] 
+[Loop #82] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:15] No matching unread STQ.
+[2025-12-25 09:54:16] 
+[Loop #83] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:16] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 09:54:16] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:54:16] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 09:54:17] 
+[Loop #84] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:17] No matching unread STQ.
+[2025-12-25 09:54:18] 
+[Loop #85] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:18] No matching unread STQ.
+[2025-12-25 09:54:19] 
+[Loop #86] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:19] No matching unread STQ.
+[2025-12-25 09:54:20] 
+[Loop #87] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:20] No matching unread STQ.
+[2025-12-25 09:54:21] 
+[Loop #88] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:21] No matching unread STQ.
+[2025-12-25 09:54:22] 
+[Loop #89] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:22] No matching unread STQ.
+[2025-12-25 09:54:23] 
+[Loop #90] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:23] No matching unread STQ.
+[2025-12-25 09:54:24] 
+[Loop #91] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:24] No matching unread STQ.
+[2025-12-25 09:54:25] 
+[Loop #92] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:25] No matching unread STQ.
+[2025-12-25 09:54:26] 
+[Loop #93] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:26] No matching unread STQ.
+[2025-12-25 09:54:27] 
+[Loop #94] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:27] No matching unread STQ.
+[2025-12-25 09:54:28] 
+[Loop #95] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:28] No matching unread STQ.
+[2025-12-25 09:54:29] 
+[Loop #96] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:29] No matching unread STQ.
+[2025-12-25 09:54:30] 
+[Loop #97] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:30] No matching unread STQ.
+[2025-12-25 09:54:31] 
+[Loop #98] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:31] No matching unread STQ.
+[2025-12-25 09:54:32] 
+[Loop #99] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:32] No matching unread STQ.
+[2025-12-25 09:54:33] 
+[Loop #100] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:33] No matching unread STQ.
+[2025-12-25 09:54:34] 
+[Loop #101] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:34] No matching unread STQ.
+[2025-12-25 09:54:35] 
+[Loop #102] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:35] No matching unread STQ.
+[2025-12-25 09:54:36] 
+[Loop #103] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:36] No matching unread STQ.
+[2025-12-25 09:54:37] 
+[Loop #104] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:37] No matching unread STQ.
+[2025-12-25 09:54:38] 
+[Loop #105] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:38] No matching unread STQ.
+[2025-12-25 09:54:39] 
+[Loop #106] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:39] No matching unread STQ.
+[2025-12-25 09:54:41] 
+[Loop #107] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:41] No matching unread STQ.
+[2025-12-25 09:54:42] 
+[Loop #108] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:42] No matching unread STQ.
+[2025-12-25 09:54:43] 
+[Loop #109] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:43] No matching unread STQ.
+[2025-12-25 09:54:44] 
+[Loop #110] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:44] No matching unread STQ.
+[2025-12-25 09:54:45] 
+[Loop #111] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:45] No matching unread STQ.
+[2025-12-25 09:54:46] 
+[Loop #112] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:46] No matching unread STQ.
+[2025-12-25 09:54:47] 
+[Loop #113] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:47] No matching unread STQ.
+[2025-12-25 09:54:48] 
+[Loop #114] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:48] No matching unread STQ.
+[2025-12-25 09:54:49] 
+[Loop #115] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:49] No matching unread STQ.
+[2025-12-25 09:54:50] 
+[Loop #116] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:50] No matching unread STQ.
+[2025-12-25 09:54:51] 
+[Loop #117] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:51] No matching unread STQ.
+[2025-12-25 09:54:52] 
+[Loop #118] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:52] No matching unread STQ.
+[2025-12-25 09:54:53] 
+[Loop #119] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:53] No matching unread STQ.
+[2025-12-25 09:54:54] 
+[Loop #120] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:54] No matching unread STQ.
+[2025-12-25 09:54:55] 
+[Loop #121] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:55] No matching unread STQ.
+[2025-12-25 09:54:56] 
+[Loop #122] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:56] No matching unread STQ.
+[2025-12-25 09:54:57] 
+[Loop #123] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:57] No matching unread STQ.
+[2025-12-25 09:54:58] 
+[Loop #124] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:58] No matching unread STQ.
+[2025-12-25 09:54:59] 
+[Loop #125] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:54:59] No matching unread STQ.
+[2025-12-25 09:55:00] 
+[Loop #126] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:00] No matching unread STQ.
+[2025-12-25 09:55:01] 
+[Loop #127] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:01] No matching unread STQ.
+[2025-12-25 09:55:02] 
+[Loop #128] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:02] No matching unread STQ.
+[2025-12-25 09:55:03] 
+[Loop #129] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:03] No matching unread STQ.
+[2025-12-25 09:55:04] 
+[Loop #130] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:04] No matching unread STQ.
+[2025-12-25 09:55:05] 
+[Loop #131] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:05] No matching unread STQ.
+[2025-12-25 09:55:06] 
+[Loop #132] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:06] No matching unread STQ.
+[2025-12-25 09:55:07] 
+[Loop #133] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:07] No matching unread STQ.
+[2025-12-25 09:55:08] 
+[Loop #134] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:08] No matching unread STQ.
+[2025-12-25 09:55:09] 
+[Loop #135] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:09] No matching unread STQ.
+[2025-12-25 09:55:10] 
+[Loop #136] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:10] No matching unread STQ.
+[2025-12-25 09:55:11] 
+[Loop #137] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:11] No matching unread STQ.
+[2025-12-25 09:55:12] 
+[Loop #138] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:12] No matching unread STQ.
+[2025-12-25 09:55:14] 
+[Loop #139] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:14] No matching unread STQ.
+[2025-12-25 09:55:15] 
+[Loop #140] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:15] No matching unread STQ.
+[2025-12-25 09:55:16] 
+[Loop #141] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:16] No matching unread STQ.
+[2025-12-25 09:55:17] 
+[Loop #142] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:17] No matching unread STQ.
+[2025-12-25 09:55:18] 
+[Loop #143] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:18] No matching unread STQ.
+[2025-12-25 09:55:19] 
+[Loop #144] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:19] No matching unread STQ.
+[2025-12-25 09:55:20] 
+[Loop #145] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:20] No matching unread STQ.
+[2025-12-25 09:55:21] 
+[Loop #146] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:21] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-EL-ES01-363_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply'
+[2025-12-25 09:55:21] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:55:21] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-EL-ES01-363_R00' files=1
+[2025-12-25 09:55:22] 
+[Loop #147] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:22] No matching unread STQ.
+[2025-12-25 09:55:23] 
+[Loop #148] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:23] No matching unread STQ.
+[2025-12-25 09:55:24] 
+[Loop #149] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:24] No matching unread STQ.
+[2025-12-25 09:55:25] 
+[Loop #150] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:25] No matching unread STQ.
+[2025-12-25 09:55:26] 
+[Loop #151] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:26] No matching unread STQ.
+[2025-12-25 09:55:27] 
+[Loop #152] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:27] No matching unread STQ.
+[2025-12-25 09:55:28] 
+[Loop #153] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:28] No matching unread STQ.
+[2025-12-25 09:55:29] 
+[Loop #154] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:29] No matching unread STQ.
+[2025-12-25 09:55:30] 
+[Loop #155] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:30] No matching unread STQ.
+[2025-12-25 09:55:31] 
+[Loop #156] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:31] No matching unread STQ.
+[2025-12-25 09:55:32] 
+[Loop #157] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:32] No matching unread STQ.
+[2025-12-25 09:55:33] 
+[Loop #158] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:33] No matching unread STQ.
+[2025-12-25 09:55:34] 
+[Loop #159] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:34] No matching unread STQ.
+[2025-12-25 09:55:35] 
+[Loop #160] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:35] No matching unread STQ.
+[2025-12-25 09:55:36] 
+[Loop #161] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:36] No matching unread STQ.
+[2025-12-25 09:55:37] 
+[Loop #162] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:37] No matching unread STQ.
+[2025-12-25 09:55:38] 
+[Loop #163] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:38] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 09:55:39] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 09:55:39] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' files=4
+[2025-12-25 09:55:40] 
+[Loop #164] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:40] No matching unread STQ.
+[2025-12-25 09:55:41] 
+[Loop #165] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:41] No matching unread STQ.
+[2025-12-25 09:55:42] 
+[Loop #166] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:42] No matching unread STQ.
+[2025-12-25 09:55:43] 
+[Loop #167] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:43] No matching unread STQ.
+[2025-12-25 09:55:44] 
+[Loop #168] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:44] No matching unread STQ.
+[2025-12-25 09:55:45] 
+[Loop #169] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:45] No matching unread STQ.
+[2025-12-25 09:55:46] 
+[Loop #170] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:46] No matching unread STQ.
+[2025-12-25 09:55:47] 
+[Loop #171] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:47] No matching unread STQ.
+[2025-12-25 09:55:48] 
+[Loop #172] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:48] No matching unread STQ.
+[2025-12-25 09:55:49] 
+[Loop #173] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:49] No matching unread STQ.
+[2025-12-25 09:55:50] 
+[Loop #174] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:50] No matching unread STQ.
+[2025-12-25 09:55:51] 
+[Loop #175] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:51] No matching unread STQ.
+[2025-12-25 09:55:52] 
+[Loop #176] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:52] No matching unread STQ.
+[2025-12-25 09:55:53] 
+[Loop #177] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:53] No matching unread STQ.
+[2025-12-25 09:55:54] 
+[Loop #178] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:54] No matching unread STQ.
+[2025-12-25 09:55:55] 
+[Loop #179] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:55] No matching unread STQ.
+[2025-12-25 09:55:56] 
+[Loop #180] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:56] No matching unread STQ.
+[2025-12-25 09:55:57] 
+[Loop #181] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:57] No matching unread STQ.
+[2025-12-25 09:55:58] 
+[Loop #182] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:58] No matching unread STQ.
+[2025-12-25 09:55:59] 
+[Loop #183] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:55:59] No matching unread STQ.
+[2025-12-25 09:56:00] 
+[Loop #184] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:00] No matching unread STQ.
+[2025-12-25 09:56:01] 
+[Loop #185] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:01] No matching unread STQ.
+[2025-12-25 09:56:02] 
+[Loop #186] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:02] No matching unread STQ.
+[2025-12-25 09:56:03] 
+[Loop #187] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:03] No matching unread STQ.
+[2025-12-25 09:56:04] 
+[Loop #188] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:04] No matching unread STQ.
+[2025-12-25 09:56:05] 
+[Loop #189] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:05] No matching unread STQ.
+[2025-12-25 09:56:06] 
+[Loop #190] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:06] No matching unread STQ.
+[2025-12-25 09:56:07] 
+[Loop #191] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:07] No matching unread STQ.
+[2025-12-25 09:56:08] 
+[Loop #192] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:08] No matching unread STQ.
+[2025-12-25 09:56:09] 
+[Loop #193] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:09] No matching unread STQ.
+[2025-12-25 09:56:11] 
+[Loop #194] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:11] No matching unread STQ.
+[2025-12-25 09:56:12] 
+[Loop #195] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:12] No matching unread STQ.
+[2025-12-25 09:56:13] 
+[Loop #196] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:13] No matching unread STQ.
+[2025-12-25 09:56:14] 
+[Loop #197] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:14] No matching unread STQ.
+[2025-12-25 09:56:15] 
+[Loop #198] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:15] No matching unread STQ.
+[2025-12-25 09:56:16] 
+[Loop #199] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:16] No matching unread STQ.
+[2025-12-25 09:56:17] 
+[Loop #200] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:17] No matching unread STQ.
+[2025-12-25 09:56:18] 
+[Loop #201] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:18] No matching unread STQ.
+[2025-12-25 09:56:19] 
+[Loop #202] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:19] No matching unread STQ.
+[2025-12-25 09:56:20] 
+[Loop #203] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:20] No matching unread STQ.
+[2025-12-25 09:56:21] 
+[Loop #204] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:21] No matching unread STQ.
+[2025-12-25 09:56:22] 
+[Loop #205] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:22] No matching unread STQ.
+[2025-12-25 09:56:23] 
+[Loop #206] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:23] No matching unread STQ.
+[2025-12-25 09:56:24] 
+[Loop #207] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:24] No matching unread STQ.
+[2025-12-25 09:56:25] 
+[Loop #208] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:25] No matching unread STQ.
+[2025-12-25 09:56:26] 
+[Loop #209] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:26] No matching unread STQ.
+[2025-12-25 09:56:27] 
+[Loop #210] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:27] No matching unread STQ.
+[2025-12-25 09:56:28] 
+[Loop #211] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:28] No matching unread STQ.
+[2025-12-25 09:56:29] 
+[Loop #212] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:29] No matching unread STQ.
+[2025-12-25 09:56:30] 
+[Loop #213] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:30] No matching unread STQ.
+[2025-12-25 09:56:31] 
+[Loop #214] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:31] No matching unread STQ.
+[2025-12-25 09:56:32] 
+[Loop #215] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:32] No matching unread STQ.
+[2025-12-25 09:56:33] 
+[Loop #216] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:33] No matching unread STQ.
+[2025-12-25 09:56:34] 
+[Loop #217] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:34] No matching unread STQ.
+[2025-12-25 09:56:35] 
+[Loop #218] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:35] No matching unread STQ.
+[2025-12-25 09:56:36] 
+[Loop #219] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 09:56:36] No matching unread STQ.
+[2025-12-25 10:10:12] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 10:10:12] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 10:10:12] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 10:10:12] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 10:10:12] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 10:10:12] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 10:10:12] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 11:38:45] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 11:38:45] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 11:38:45] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 11:38:45] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 11:38:45] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 11:38:55] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 11:38:55] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 11:38:55] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 11:39:25] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 11:39:25] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 11:39:35] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 11:39:35] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 11:39:35] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 11:40:06] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 11:40:06] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 11:40:54] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 11:40:54] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 11:40:54] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 11:40:54] Snapshot unread: 2 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 11:40:54] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 11:40:54] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 11:40:54] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' files=4
+[2025-12-25 11:40:54] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 11:40:54] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 11:40:54] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 11:41:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 11:41:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 11:41:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 11:41:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 11:41:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 11:42:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 11:42:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 11:42:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Cavid Huseyn <chuseyn@kolin.com.tr>'
+[2025-12-25 11:43:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:44:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:45:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:46:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:47:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:48:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:49:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:50:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:51:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:52:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:53:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:54:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:55:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:55:13] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:56:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:57:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:58:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 11:59:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:00:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:01:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:02:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:03:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:04:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:05:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:06:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:07:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:08:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:09:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:10:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:11:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:12:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:13:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:14:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:15:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:16:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:17:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:18:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:19:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:20:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:21:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:22:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:23:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:24:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:25:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:26:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:27:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:28:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:29:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:30:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:31:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:32:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:33:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:34:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:35:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:36:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:37:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:38:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:39:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:40:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:41:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:42:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:43:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:44:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:45:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:46:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:47:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:48:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:49:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:50:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:51:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:52:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:53:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:54:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:55:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:56:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:57:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:58:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 12:59:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:00:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:01:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:02:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:03:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:04:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:05:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:06:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:07:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:08:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:09:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:10:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:11:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:12:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:13:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:14:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:15:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:16:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:17:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:18:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:19:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:20:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:21:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:22:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:23:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:24:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:25:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:26:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:27:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:28:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:29:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:30:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:31:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:32:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:33:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:34:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:35:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:35:55] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:35:58] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:36:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:36:18] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:36:20] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:37:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:37:03] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:38:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:39:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:40:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:40:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:40:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:40:27] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:40:28] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:40:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:40:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:41:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:41:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:41:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:41:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:41:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:42:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:42:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:42:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:42:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:42:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:43:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:43:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:43:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:43:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:43:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:44:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:44:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:44:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:44:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:44:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:45:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:45:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:45:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:45:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:45:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:46:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:46:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:46:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:46:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:46:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:47:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:47:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:47:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:47:31] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 13:47:31] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 13:48:00] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 13:48:00] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 13:48:00] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 13:48:39] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:49:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:49:45] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:50:00] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:56:01] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 13:57:44] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:11:27] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 14:11:27] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 14:11:27] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 14:11:28] Snapshot unread: 2 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 14:11:28] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 14:11:28] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 14:11:28] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 14:11:28] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 14:11:28] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 14:11:28] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' files=4
+[2025-12-25 14:20:14] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 14:20:14] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 14:20:14] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 14:20:14] Snapshot unread: 0 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 14:20:14] No matching unread STQ.
+[2025-12-25 14:20:55] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 14:20:55] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 14:20:55] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 14:20:55] Snapshot unread: 2 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 14:20:55] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 14:20:55] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 14:20:55] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' files=4
+[2025-12-25 14:20:56] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply'
+[2025-12-25 14:20:56] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 14:20:56] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00' files=1
+[2025-12-25 14:46:28] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 14:46:28] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 14:46:28] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 14:46:28] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 14:46:28] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 14:46:46] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 14:46:46] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 14:46:46] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 14:47:17] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 14:47:17] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 14:47:21] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 14:47:21] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 14:47:21] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 14:47:51] ❌ Fatal error: (-2146959355, 'Server execution failed', None, None)
+[2025-12-25 14:47:51] Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 239, in outlook_session
+    app = win32com.client.GetActiveObject("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 94, in GetActiveObject
+    dispatch = pythoncom.GetActiveObject(resultCLSID)
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 743, in main
+    run_once()
+    ~~~~~~~~^^
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 586, in run_once
+    with outlook_session() as (app, ns):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\husey\AppData\Local\Programs\Python\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\internal_stq_distributor.py", line 241, in outlook_session
+    app = win32com.client.DispatchEx("Outlook.Application")
+  File "C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\.venv\Lib\site-packages\win32com\client\__init__.py", line 142, in DispatchEx
+    dispatch = pythoncom.CoCreateInstanceEx(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+pywintypes.com_error: (-2146959355, 'Server execution failed', None, None)
+
+[2025-12-25 14:47:59] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 14:47:59] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 14:47:59] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 14:48:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:49:23] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:49:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:50:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:51:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:52:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:53:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:54:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 14:55:59] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:06:41] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:06:48] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:10:30] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:03] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:05] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:06] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:07] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:12] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:13] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:14] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:15] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:16] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:17] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:11:33] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:16:53] ⏭️ LOCKED: another instance is already running: C:\Users\husey\OneDrive\Desktop\Development\Work_Automation\locks\proyapi_stq_internal.lock
+[2025-12-25 15:19:49] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 15:19:49] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 15:19:49] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 15:19:50] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 15:19:50] DEBUG_MATCH(STQ) => doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' sender='chuseyn@kolin.com.tr' subject='KLN-SPP2-STQ-MC-EW13-349_R00_Prokon_Reply, KLN-SPP2-STQ-WE-GN00-362_R00_Prokon_Reply/KLN-SPP2-STQ-EL-ES01-363_R00_Prokon Reply/KLN-SPP2-STQ-EL-IW02-367_R00_Prokon_Reply'
+[2025-12-25 15:19:50] ✅ SendUsingAccount set => spp2dcc@kolin.com.tr
+[2025-12-25 15:19:51] ✅ DONE [STQ] doc_key='KLN-SPP2-STQ-MC-EW13-349_R00 | KLN-SPP2-STQ-WE-GN00-362_R00 | KLN-SPP2-STQ-EL-ES01-363_R00 | KLN-SPP2-STQ-EL-IW02-367_R00' files=4
+[2025-12-25 16:33:58] === STQ Internal Distributor ULTIMATE v3.1 (SINGLE RUN) started ===
+[2025-12-25 16:33:58] WATCH='Inbox\From Proyapi' | MAX_SCAN=800 | LOOKBACK_DAYS=14 | SEND_MODE=send
+[2025-12-25 16:33:58] SENDER_FILTER_CONTAINS='chuseyn@kolin.com.tr' | TO='Huseyn Cavid <huseyn.cavid.dev@outlook.com>'
+[2025-12-25 16:33:58] Snapshot unread: 1 | mailbox='spp2dcc@kolin.com.tr' store_id=OK
+[2025-12-25 16:33:58] DEBUG_SKIP(sender) => sender=dccspp2@proyapimusavirlik.com subject='SPP2-PRO-KLN-TRN-0553'
+[2025-12-25 16:33:58] No matching unread STQ.
